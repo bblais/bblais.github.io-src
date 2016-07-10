@@ -1,0 +1,23 @@
+I am a professor of [Science and Technology], [Bryant University] and a research professor at the [Institute for Brain and Neural Systems], Brown University. My interests include
+
+* Theoretical Neuroscience
+    * learning and memory in neural systems
+    * vision
+    * spike-timing dependent plasticity
+* Bayesian Inference
+    * frequentist versus Bayesian statistics
+    * Bayesian approaches to learning and memory
+* Digital to Analog Computer Control
+    * autonomous experiments
+    * neural networks and robotics
+* Global Resources
+    * Dynamics of global resources and economics
+    * Population growth, Malthusian traps, and energy
+
+You can [find my CV here].
+
+
+[Science and Technology]: http://web.bryant.edu/~scitech
+[Bryant University]: http://www.bryant.edu
+[Institute for Brain and Neural Systems]: http://www.brown.edu/research/projects/brain-and-neural-systems/
+[find my CV here]: http://web.bryant.edu/~bblais/pdf/cv.pdf
