@@ -1,0 +1,36 @@
+{% if SOCIAL %}
+    {% if not SOCIAL_PROFILE_LABEL %}
+        {% set SOCIAL_PROFILE_LABEL ='Contact' %}
+    {% endif %}
+<h4>{{ SOCIAL_PROFILE_LABEL }}</h4>
+{% for iconname, url,name in SOCIAL %}
+    {% set link_title = 'My ' + name + ' Profile' %}
+    {% set link_icon = iconname.lower() %}
+    {% if name.lower() == 'email' %}
+        {% set link_title = 'My ' + name + ' Address' %}
+        {% set link_icon = 'envelope' %}
+    {% endif %}
+    {% if 'a href' in url %}
+        {% set url=url.split('>')[0] %} 
+{{url}} title="{{link_title}}" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-{{link_icon}} sidebar-social-links"></i></a>
+    {% else %}    
+<a href="{{url|e}}" title="{{link_title}}" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-{{link_icon}} sidebar-social-links"></i></a>
+    {% endif %}
+{% endfor %}
+{% endif %}
+
+{% if SUBSCRIBE %}
+    {% if not SUBSCRIBE_PROFILE_LABEL %}
+        {% set SUBSCRIBE_PROFILE_LABEL ='Contact' %}
+    {% endif %}
+<h4>{{ SUBSCRIBE_PROFILE_LABEL }}</h4>
+{% for iconname, url,name in SUBSCRIBE %}
+    {% set link_title = 'Subscribe on ' + name %}
+    {% set link_icon = iconname.lower() %}
+<a href="{{url|e}}" title="{{link_title}}" class="sidebar-social-links" target="_blank">
+    <i class="fa fa-{{link_icon}} sidebar-social-links"></i></a>
+{% endfor %}
+{% endif %}
+
