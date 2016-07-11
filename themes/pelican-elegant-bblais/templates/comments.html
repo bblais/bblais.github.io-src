@@ -13,6 +13,9 @@
                 {% if article.disqus_identifier %}
                     data-disqus-identifier="{{ article.disqus_identifier }}"
                 {% endif %}
+
+                data-disqus-url="{{ SITEURL }}/{{ article.url }}"
+
                 href="{{ SITEURL }}/{{ article.url }}#disqus_thread">
                 Comments
             </a>

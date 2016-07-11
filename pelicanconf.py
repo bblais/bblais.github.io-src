@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 from markdown import markdown
 
 AUTHOR = 'Brian Blais'
 SITENAME = 'bblais on the web'
-SITEURL = 'http://bblais.github.io'
+SITEURL = 'https://bblais.github.io'
 
 THEME='themes/pelican-elegant-bblais'
 #THEME='themes/pelican-elegant-1.3'

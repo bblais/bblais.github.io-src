@@ -20,4 +20,4 @@ You can [find my CV here].
 [Science and Technology]: http://web.bryant.edu/~scitech
 [Bryant University]: http://www.bryant.edu
 [Institute for Brain and Neural Systems]: http://www.brown.edu/research/projects/brain-and-neural-systems/
-[find my CV here]: http://web.bryant.edu/~bblais/pdf/cv.pdf
+[find my CV here]: https://dl.dropboxusercontent.com/u/63237528/pdf/cv.pdf
