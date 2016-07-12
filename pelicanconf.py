@@ -30,8 +30,8 @@ ARTICLE_EXCLUDES = ('pages',)
 
 SOCIAL=[
 ('Email','mailto://bblais@bryant.edu','Email'),
-    ('LinkedIn','http://www.linkedin.com/profile/view?id=106100922','LinkedIn'),
-    ('Google-plus','<a href="https://plus.google.com/103727926638180804243" rel="publisher">','Google+'),
+    ('LinkedIn','https://www.linkedin.com/in/brian-blais-bb66482b','LinkedIn'),
+    ('Google-plus','<a href="https://plus.google.com/u/0/+BrianBlais">','Google+'),
     ('Twitter','http://twitter.com/bblais','Twitter'),    
     ('YouTube','https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w','YouTube',),    
     ]
@@ -73,6 +73,10 @@ DISQUS_SITENAME = 'bblaisontheweb'
 IMAGE_PREVIEW='Saturn_with_Dice_Square.png'
     
 STATIC_PATHS=['static','images','theme/images','theme/css']
+EXTRA_PATH_METADATA = {
+    'theme/images/favicon.ico': {'path': 'favicon.ico'}
+}
+
     
 LANDING_PAGE_ABOUT={'title':'Professor Brian Blais',
     'details': markdown(open('content/static/about.txt').read())}    
