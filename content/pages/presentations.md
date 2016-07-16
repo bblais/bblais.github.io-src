@@ -48,7 +48,7 @@ and Environmental Degradation: Exploring Models and Questioning the Existence of
 # 2007
 * [Statistics and Environmental Resources: Projects for Collaboration](https://dl.dropboxusercontent.com/u/63237528/pdf/blais_presentation_bryant_cug.pdf) . (Bryant-China University of Geosciences (CUG) Joint Research Event, December 2007)
 * [TTX and BCM](https://dl.dropboxusercontent.com/u/63237528/pdf/bearlab_080207.pdf) . (MIT Lab Presentation, August 2007)
-* [Numerical Computing in Python: A Guide for Matlab Users.](../bryant/numerical_computing) . Bryant University Faculty Development Seminar, May 2007.
+* [Numerical Computing in Python: A Guide for Matlab Users.](https://dl.dropboxusercontent.com/u/63237528/pdf/python_matlab.pdf) . Bryant University Faculty Development Seminar, May 2007.
 * [Teaching Bayesian Model Comparison with the Three-sided Coin.](https://dl.dropboxusercontent.com/u/63237528/pdf/pres_011407.pdf) with Scott Kuindersma (UMass Amherst). (Bryant University Faculty Research Day, January 2007).
 
 # 2006
