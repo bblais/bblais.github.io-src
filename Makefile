@@ -8,6 +8,9 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+HOMECONF=$(BASEDIR)/homeconf.py
+HOMEDIR=/Users/bblais/Sites
+
 FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
@@ -117,6 +120,12 @@ clean:
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+home:
+	$(PELICAN) $(INPUTDIR) -o $(HOMEDIR) -s $(HOMECONF) $(PELICANOPTS)
+
+debug:
+	$(PELICAN) --debug --autoreload $(INPUTDIR) -o $(HOMEDIR) -s $(HOMECONF) $(PELICANOPTS)
 
 serve:
 ifdef PORT
