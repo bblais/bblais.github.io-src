@@ -3,6 +3,8 @@ Title: Presentations
 
 # 2016
 
+* Blais, B.S. and Skaza, J., *[Modeling the Infectiousness of Twitter Hashtags](https://dl.dropboxusercontent.com/u/63237528/pdf/presentation Modeling the Infectiousness of Twitter Hashtags.pdf)*.  Sep 2016.  Bryant University Science Seminar.
+* Blais, B.S., *[Beginning with Bayes or Statistical Inference for Everyone](https://www.youtube.com/watch?v=chwyqhgCz9s)*.  May 2016. Electronic Conference On Teaching Statistics (eCOTS) 2016.
 * Blais, B.S., *[Conservation ADHD](https://dl.dropboxusercontent.com/u/63237528/pdf/Conservation_ADHD.pdf)*.  Mar 2016.  Land and Water Conservation Summit.  
 
 # 2015

@@ -1,6 +1,11 @@
 Title: Publications
 [TOC]
 
+# 2016
+
+* Skaza, J. and Blais, B.S. 2015. [Modeling the Infectiousness of Twitter Hashtags](http://authors.elsevier.com/a/1Tej31M2-1uo2K). Physica A: Statistical Mechanics and its Applications.  Volume 465, 1 January 2017, Pages 289–296.
+
+
 # 2015
 
 * Skaza, J. and Blais, B.S. 2015. [Modeling the Infectiousness of Twitter Hashtags](https://arxiv.org/abs/1603.00074).  eprint arXiv:1603.00074.
