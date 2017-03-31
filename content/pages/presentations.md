@@ -1,6 +1,10 @@
 Title: Presentations
 [TOC]
 
+# 2017
+
+* Blais, B.S., *[Twitter, Zombies, and the Fate of the World](http://web.bryant.edu/~bblais/pdf/Twitter Zombies and the Fate of the World.pdf)*. Mar 2017.  Analytics without Borders Conference.  [Supplemental Notebook is here](https://gist.github.com/bblais/181abd99f878282666b98a29588dda41).
+
 # 2016
 
 * Blais, B.S. and Skaza, J., *[Modeling the Infectiousness of Twitter Hashtags](http://web.bryant.edu/~bblais/pdf/presentation Modeling the Infectiousness of Twitter Hashtags.pdf)*.  Sep 2016.  Bryant University Science Seminar.
