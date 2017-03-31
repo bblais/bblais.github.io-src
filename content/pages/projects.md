@@ -38,14 +38,14 @@ Title: Projects
 
 ## Current and Potential Research Projects
 
-* Using disease dynamics to model social media meme transmission. [*current*]
 * Establishing the connection between rate-based and spike-based models of synaptic plasticity. 
-* Dynamics of homosynaptic and heterosynaptic plasticity.  [*current*]
 * Estimating the oscillation time-scales in paleo-climate - comparison of models of temperature dynamics.
 * Dynamics of the immune system - the role of interaction and transmission rates.
 * Ebola dynamics and policy
+* Estimating Dose-Response curve parameters
 * Biochemistry of synaptic plasticity - entropy, energy, and dynamics.
 * Bayesian inference in economics resource limits
 * Extrasolar planets and the search for Earth-like conditions - analysis of Kepler mission data.
 * Oscillatory models in climate - comparison of methods
-* Deep learning[*current*]
+* Deep learning
+* Environmental and economic dynamical systems
