@@ -13,6 +13,7 @@ Title: Presentations
 
 # 2015
 
+* Hartl, T. and Blais, B.S. Unbiased Reserve Estimates Based On Triangle GLMs: Bootstrapping vs Bayesian Analysis.  Actuarial Research Conference}. August 2015.
 * Blais, B.S., *[Statistical Inference for Everyone: One Scientist's Attempt to Set the Record Straight on Rational Thought](http://web.bryant.edu/~bblais/pdf/rationality.pdf)*. Mar 2015.  The Department of Science and Technology Seminar Series at Bryant University. You can download the [current textbook here](http://web.bryant.edu/~bblais/statistical-inference-for-everyone-sie.html).
 * Skaza, J. and Blais, B.S., *[Mathematical Modeling of Trending Topics on Twitter](http://web.bryant.edu/~bblais/pdf/twitter-modeling-presentation.pdf)*. Apr 14, 2015.  Honors Capstone Presentation.
 * Blais, B.S., *[Science, Probability, and Models of the World](http://web.bryant.edu/~bblais/pdf/Science_Probability_and_Models_of_the_World.pdf)*.  Aug 2015.  Presentation to China University of Geosciences Summer Exchange Trip.
