@@ -1,6 +1,7 @@
 title: Does Art Lead Math?
 subtitle: Not as far as I can see
-date: May 5, 2017
+Date: 2017-05-05
+
 
 <img src="images/artmath.jpg">
 
