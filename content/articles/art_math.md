@@ -1,9 +1,9 @@
 title: Does Art Lead Math?
 subtitle: Not as far as I can see
 Date: 2017-05-05
+summary: ![artmath](images/artmath.jpg) In all of these comparisons between art and mathematics I am struck with a feeling that the writer is somehow trying to add a layer of legitimacy to the art by connecting it to mathematics or to science.  I don't think this does a service to either the art or the mathematics.
 
-
-<img src="images/artmath.jpg">
+![artmath](images/artmath.jpg)
 
 I was sent a very interesting article on [the interplay between math and art](https://theconversation.com/did-artists-lead-the-way-in-mathematics-75355).  The basic premise of the article is
 

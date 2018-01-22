@@ -1,5 +1,6 @@
 Title: Four Types of Bayesian-Frequentist Comparisons
 Date: 2017-04-10
+summary: It is important when discussing different perspectives to keep clear what the vocabulary is. If you expand the problem set to include limited $N$ problems, with non-Normal distributions (such as Beta and Cauchy), then the differences start to become apparent.  
 
 <img src="images/ocean-water-1149661_960_720.jpg">
 

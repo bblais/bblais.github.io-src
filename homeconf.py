@@ -22,3 +22,7 @@ DELETE_OUTPUT_DIRECTORY = False
 
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['render_math','sitemap', 'extract_toc', 'tipue_search']    
+SITEMAP={'format':'xml'}

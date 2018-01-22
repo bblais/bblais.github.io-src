@@ -4,11 +4,48 @@ Subtitle: The Incorrect Musings of the Philosopher Alvin Plantinga
 Tags:  science, religion, probability
 Status: draft 
 
-In a recent [New York Times article] we have an interview with Christian philosopher Alvin Plantinga, on the topic of the rationality of atheism.  He runs off the rails pretty early, but makes some comments that can be reasonably formulated in terms of probability theory, and thus be demonstrated to be mathematically reasonable or not, as the case may be.  
+TODO - be clear on the math on this one
+
+In a [New York Times article] we have an interview with Christian philosopher Alvin Plantinga, on the topic of the rationality of atheism.  He runs off the rails pretty early, but makes some comments that can be reasonably formulated in terms of probability theory, and thus be demonstrated to be mathematically reasonable or not, as the case may be.  
 
 > I take atheism to be the belief that there is no such person as the God of the theistic religions.
 
 > But lack of evidence, if indeed evidence is lacking, is no grounds for atheism. No one thinks there is good evidence for the proposition that there are an even number of stars; but also, no one thinks the right conclusion to draw is that there are an uneven number of stars. The right conclusion would instead be agnosticism.
+ 
+As *atheists* typically use the terms, the latter is labeled *atheism* or *agnostic atheism* while the former would be labeled *antitheism* or sometimes (but not as often now) *strong atheism*.  In any event, these are just labels for the mathematical statements:
+
+* Theism
+$$
+P({\rm God}|{\rm evidence}) \gg 0.5
+$$
+
+* Atheism
+$$
+P({\rm God}|{\rm evidence}) \sim P({\rm God})
+$$
+
+* Antitheism
+$$
+P({\rm God}|{\rm evidence}) \ll 0.5
+$$
+
+When the term agnostic is used a modifier, we are speaking about *knowledge* which is simply probability above a threshold, say $\theta \sim 0.99$.
+
+* Gnostic Theism
+$$
+P({\rm God}|{\rm evidence}) > \theta
+$$
+
+* Agnostic Theism
+$$
+0.5 < P({\rm God}|{\rm evidence}) < \theta
+$$
+
+* Agnostic atheism
+$$
+\min\left((1-\theta),P({\rm God})\right) < P({\rm God}|{\rm evidence}) < 0.5
+$$
+
 
 > Clearly we have a great deal of evidence against teapotism. For example, as far as we know, the only way a teapot could have gotten into orbit around the sun would be if some country with suﬃciently developed space-shot capabilities had shot this pot into orbit. 
 

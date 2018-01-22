@@ -1,7 +1,7 @@
 title: Are there serious problems with evolution?
 subtitle: Part 2
 status: draft
-date: Mar 24 2017
+date: Jan 12, 2018
 
 <Img src="images/laura-aziz-78175.jpg">
 
@@ -15,3 +15,6 @@ We start with a quote from the article:
 >This is how it's supposed to work -- in theory. In the real world, however, merely generating a functionally advantageous trait does not guarantee it will persist, or become fixed. For example, what if by chance the white fox trips, breaks a leg, and gets eaten by a predator -- never passing on its genes? Random forces or events can prevent a trait from spreading through a population, even if it provides an advantage. 
 
 I would agree with that.  Being an unguided process, evolution has a fair amount of randomness in it - no big surprise.  One consequence of this is that the process needs a great deal of time for an advantageous trait to possibly become dominant.  Sometimes this occurs in a relatively isolated environment (e.g. islands) and thus can become domninant more rapidly, but in general it will take a long time.
+
+This is not a criticism of evolution, really.  It just means that there is a probabilistic element to the process which may put some constraits on time scales.  Since generations for animals occurs on the order of days to years, evolution must work on the order of at least many thousand times that scale - which, of course, easily fits in the age of the Earth.
+

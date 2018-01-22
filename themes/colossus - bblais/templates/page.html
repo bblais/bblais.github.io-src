@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ page.title }} {%if page.subtitle %} - {{ page.subtitle }} {% endif %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% if page.summary %}
+{{ page.summary|striptags }}
+{% endif %}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}" />
+{% endif %}
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+
+
+<div class="wrapper row3">
+  <main class="container clear"> 
+    <div class="sidebar one_quarter first">
+    {% if page.toc %}
+          <h6>Contents</h6>
+      <nav class="sdb_holder">
+        {{ page.toc }}
+    </nav>
+    {% endif %}
+    </div>
+
+    <div class="content three_quarter"> 
+   <h1>{{ page.title }} {%if page.subtitle %} <small> {{ page.subtitle }} </small> {% endif %} </h1>
+
+
+            {{ page.content }}
+            {% from 'comments.html' import comments with context %}
+            {{ comments(page) }}
+
+    </div>    
+</main>
+</div>
+
+    {% endblock content %}
+
+    {% block script %}
+    {{ super() }}
+    {% from 'comments.html' import comments_script with context %}
+    {{ comments_script(page) }}
+    {% endblock script %}

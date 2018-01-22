@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock title %}
+
+{% block content %}
+
+
+
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper">
+  <div id="slider" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="flexslider basicslider">
+      <ul class="slides">
+        <li><img src="images/Saturn_with_Dice_3_to_1.png" alt="">
+          <div class="txtoverlay">
+            <div class="centralise">
+              <div class="verticalwrap">
+                <article>
+                  <h2 class="heading uppercase">Statistical Inference for Everyone</h2>
+                  <p><a class="btn orange pushright" href="statistical-inference-for-everyone-sie.html">Get the Book</a> <a class="btn red" href="https://youtu.be/chwyqhgCz9s">See the Movie</a></p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><img src="images/pyndamics.png" alt="">
+          <div class="txtoverlay">
+            <div class="centralise">
+              <div class="verticalwrap">
+                <article>
+                  <h2 class="heading uppercase">pyndamics: Python Numerical Dynamics Simulator</h2>
+                  <p><a class="btn red" href="https://github.com/bblais/pyndamics">Download at GitHub</a></p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><img src="images/smallrocks1.png" alt="">
+          <div class="txtoverlay">
+            <div class="centralise">
+              <div class="verticalwrap">
+                <article>
+                  <h2 class="heading uppercase">PlasticNet: Plasticity in Rate and Spiking Neurons</h2>
+                  <p><a class="btn orange pushright" href="https://github.com/bblais/Plasticnet">Download from GitHub</a> <a class="btn red" href="http://web.bryant.edu/~bblais/pdf/Physics%20Neuroscience%20Talk%20Feb%202013.pdf">See the Slides</a></p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div id="services" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="group">
+            {% for article in articles %}
+            {% if not RECENT_ARTICLES_COUNT %}
+            {% set RECENT_ARTICLES_COUNT = 3 %}
+            {% endif %}
+            {% if loop.index0 < RECENT_ARTICLES_COUNT %}
+      {% if loop.index0==0 %}
+      <div class="one_third first">
+        {% else %}
+      <div class="one_third">
+            {% endif %}
+
+        <article class="service"><i class="icon {{['red','orange','green'][loop.index0]}} circle fa fa-cog"></i>
+          <h2 class="heading"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h2>
+          <p class="btmspace-10">
+      {{ article.summary}}
+          </p>
+          <p><a href="{{ SITEURL }}/{{ article.url }}">Read More &raquo;</a></p>
+        </article>
+      </div>
+            {% endif %}
+            {% endfor %}
+
+
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="wrapper row6">
+  <section id="cta" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="three_quarter first">
+      <h2 class="heading">My Projects</h2>
+      <p>Theoretical Neuroscience, Bayesian Inference, Systems Dynamics, Science Pedagogy, and Others</p>
+    </div>
+    <div class="one_quarter"><a class="btn" href="{{ SITEURL }}/pages/projects.html">Go to Projects <span class="fa fa-arrow-right"></span></a></div>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="container nospace clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="group">
+      <div class="three_quarter first">
+        <h2 class="heading uppercase btmspace-50">Recent Posts</h2>
+        <ul class="nospace group">
+
+            {% for article in articles %}
+            {% if not RECENT_ARTICLES_COUNT %}
+            {% set RECENT_ARTICLES_COUNT = 10 %}
+            {% endif %}
+            {% if loop.index0 < RECENT_ARTICLES_COUNT %}
+
+          <li class="btmspace-30">
+            <article class="service largeicon"><i class="icon nobg circle fa fa-cog"></i>
+              <h6 class="heading"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a></h6>
+              <p>
+                <section>
+                    posted in
+                <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                </div>
+                </section>
+                
+              </p>
+            </article>
+          </li>
+            {% endif %}
+            {% endfor %}
+
+        </ul>
+      </div>
+
+
+    <div class="one_quarter"  id="cta"><a class="btn" href="{{ SITEURL }}/archives.html">All Posts <span class="fa fa-arrow-right"></span></a></div>
+
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+{% endblock content %}

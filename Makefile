@@ -122,10 +122,11 @@ regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 home:
+	./check_publish_articles.py
 	$(PELICAN) $(INPUTDIR) -o $(HOMEDIR) -s $(HOMECONF) $(PELICANOPTS)
 
 debug:
-	$(PELICAN) --debug --autoreload $(INPUTDIR) -o $(HOMEDIR) -s $(HOMECONF) $(PELICANOPTS)
+	$(PELICAN) --relative-urls --debug --autoreload $(INPUTDIR) -o $(HOMEDIR) -s $(HOMECONF) $(PELICANOPTS)
 
 serve:
 ifdef PORT
@@ -154,6 +155,7 @@ stopserver:
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 publish:
+	./check_publish_articles.py
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 ssh_upload: publish
@@ -175,7 +177,10 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	cd output
+	git add -A
+	echo "Commit Message (empty to abort)"
+	git commit -m "`cat`"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

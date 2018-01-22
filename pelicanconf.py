@@ -4,9 +4,9 @@ from markdown import markdown
 
 AUTHOR = 'Brian Blais'
 SITENAME = 'bblais on the web'
-SITEURL = 'https://bblais.github.io'
+SITEURL = ''
 
-THEME='themes/pelican-elegant-bblais'
+THEME='themes/colossus - bblais'
 #THEME='themes/pelican-elegant-1.3'
 
 CUSTOM_CSS=True
@@ -22,7 +22,7 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-ARTICLE_EXCLUDES = ('pages',)
+ARTICLE_EXCLUDES = ('pages','publish',)
 
 #PAGE_ORDER_BY = 'page-order'
 
@@ -48,7 +48,7 @@ DELETE_OUTPUT_DIRECTORY=False
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 
 PROJECTS = [{'name':'Statistical Inference for Everyone',
@@ -72,7 +72,7 @@ PROJECTS = [{'name':'Statistical Inference for Everyone',
 DISQUS_SITENAME = 'bblaisontheweb'
 IMAGE_PREVIEW='Saturn_with_Dice_Square.png'
     
-STATIC_PATHS=['static','images','theme/images','theme/css']
+STATIC_PATHS=['static','images','theme/images','theme/layout','theme/css']
 EXTRA_PATH_METADATA = {
     'theme/images/favicon.ico': {'path': 'favicon.ico'}
 }
@@ -85,9 +85,16 @@ DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', 'social
 
 
 #MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc','elementid','urlize']
-MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra','toc',
-#'headerid','elementid',
-]
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.toc': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
+
 TAG_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''

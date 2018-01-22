@@ -1,0 +1,94 @@
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="title">My Details</h6>
+      <address class="btmspace-15">
+      Science Department<br>
+      Bryant University<br>
+      1150 Douglas Pike<br>
+      Smithfield, RI<br>
+      02917
+      </address>
+      <address class="btmspace-15">
+      Institute for Brain and Neural Systems<br>
+      Brown University<br>
+      182 Hope Street Pike<br>
+      Providence, RI<br>
+      02912
+      </address>
+      <ul class="nospace">
+        <li><span class="fa fa-envelope-o"></span> bblais@bryant.edu</li>
+      </ul>
+    </div>
+
+
+    <div class="one_quarter">
+      <h6 class="title">Quick Links</h6>
+      <ul class="nospace linklist">
+        <li><a href="{{ SITEURL }}">Home Page</a></li>
+        <li><a href="{{ SITEURL }}/archives.html">Blog</a></li>
+
+        {% for page in pages %}
+        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+
+        <li><a href="{{ SITEURL }}/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+
+    <div class="one_quarter">
+      <h6 class="title">Search</h6>
+      <ul class="nospace linklist">
+<li>
+      <form action="{{ SITEURL }}/search.html">
+      <div class="tipue_search_left"><img src="{{ SITEURL }}/theme/tipuesearch/search.png" class="tipue_search_icon"></div>
+      <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+      <div style="clear: both;"></div>
+      </form>
+
+      </li>
+      </ul>
+    </div>
+
+
+    <div class="one_quarter">
+      <h6 class="title">Keep In Touch</h6>
+<!--       <form class="btmspace-30" method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+ -->      <ul class="faico clear">
+        <li><a class="faicon-twitter" href="https://twitter.com/bblais"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/in/brian-blais-bb66482b/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-github" href="https://github.com/bblais"><i class="fa fa-github"></i></a></li>
+        <li><a class="faicon-envelope" href="mailto:bblais@bryant.edu"><i class="fa fa-envelope"></i></a></li>
+        <li><a class="faicon-youtube" href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved - <a href="#">Brian Blais</a></p>
+    <p class="fl_right"><a target="_blank" href="http://www.os-templates.com/free-website-templates/colossus">Colossus Template</a> by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>, Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a> 
+

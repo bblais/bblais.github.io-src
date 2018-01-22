@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<!--
+Template Name: Colossus
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+
+        <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        {% block head_links %}
+    <link href="{{ SITEURL }}/theme/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+        {%if CUSTOM_CSS %}
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+
+
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/tipuesearch/css/normalize.css">        
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/tipuesearch/css/tipuesearch.css">
+
+
+
+        {% endif %}
+        {% endblock head_links %}
+        {% include 'favicon_links.html' %}
+        {% block feed_links %}
+        {% include 'feeds.html' %}
+        {% endblock feed_links %}
+        {% include 'analytics.html' %}
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+    </div>
+    <!-- ################################################################################################ -->
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+                            <li {% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
+                            {% if DISPLAY_PAGES_ON_MENU %}
+                            {% for page in pages %}
+                            <li {% if output_file == page.url %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                            {% endfor %}
+                            {% endif %}
+
+
+                      <li><a class="drop" href="#">Blog</a>
+          <ul>
+
+                            <li {% if page_name == 'categories' %} class="active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
+                            <li {% if page_name == 'tags' %} class="active"{% endif %}><a href="{{ SITEURL }}/tags.html">Tags</a></li>
+                            <li {% if page_name == 'archives' %} class="active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+                            </ul>
+
+
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+
+
+                    {% block content %}
+                    {% endblock content %}
+
+{% include 'footer.html' %}
+{% block script %}
+
+<!-- JAVASCRIPTS -->
+<script src="{{ SITEURL }}/theme/layout/scripts/jquery.min.js"></script>
+<script src="{{ SITEURL }}/theme/layout/scripts/jquery.backtotop.js"></script>
+<script src="{{ SITEURL }}/theme/layout/scripts/jquery.mobilemenu.js"></script>
+<script src="{{ SITEURL }}/theme/layout/scripts/jquery.flexslider-min.js"></script>
+{% endblock script %}
+{% include 'stat_counter.html' %}
+
+</body>
+</html>
