@@ -41,7 +41,9 @@ for (path, dirs, files) in os.walk(base):
         if not ext=='.md':
             continue
 
+        print("[%s]" % f)
         s,dt=status_date(path+"/"+f)
+        print(s,dt)
         if s=='published':
             print (path+"/"+f,dt.strftime("%A, %d %b %Y"),end="")
             if not dt:
@@ -52,7 +54,12 @@ for (path, dirs, files) in os.walk(base):
                 print(" to be published now.")
 
                 start=path+"/"+f
-                subpath=path.replace(base+"/","")
+                subpath=path.replace(base,"")
+                if subpath.startswith('/'):
+                    subpath=subpath[1:]
+
+                print("path",path)
+                print("subpath",subpath)
                 end='content/articles/%s' % (subpath+"/"+f)
                 cmd='mv "%s" "%s"' % (start,end)
                 print("\t",cmd)

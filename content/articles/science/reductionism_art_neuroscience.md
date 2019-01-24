@@ -1,7 +1,6 @@
 title: Art, Scientific Reductionism, and the New Neuroscience
 Date: Jan 10, 2018
-
-![skeptic](images/photo_72511_landscape_650x433.jpg)
+image: photo_72511_landscape_650x433.jpg
 
 ## Introduction
 

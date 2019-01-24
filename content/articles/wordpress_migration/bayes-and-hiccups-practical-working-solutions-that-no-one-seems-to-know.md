@@ -43,7 +43,7 @@ steps:
 
 4.  say, out loud, the word "two"
 
-5.  \$latex {\\vdots }\$
+5. ...
 
 By the time you're at 9, they're gone. You may not even need to get up
 to nine, but still, 9 small sips of water is not bad. This is a

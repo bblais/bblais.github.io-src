@@ -1,8 +1,7 @@
 title: Where probabilities and theology meet
 date: 1/9/2018
 summary: ![theology](images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg) We start with the article [*Why the resurrection data can be evidence for theism, and why arguments for resurrection need not presuppose theism – formal demonstrations*](https://calumsblog.com/2012/02/18/resurrection-for-theism/).
-
-![theology](images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg) 
+image: Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg
 
 We start with the article [*Why the resurrection data can be evidence for theism, and why arguments for resurrection need not presuppose theism –
 formal demonstrations*](https://calumsblog.com/2012/02/18/resurrection-for-theism/).

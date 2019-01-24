@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    {% block head_links %}
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/animate.css">
+    
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/aos.css">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/flaticon.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/icomoon.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+
+    
+    {%if CUSTOM_CSS %}
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+    {% endif %}
+
+
+    {% endblock head_links %}
+
+
+  </head>
+  <body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+
+			<h1 id="colorlib-logo"><a href="{{ SITEURL }}">bblais<span>.</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+            {% if page_name == 'index' %}
+            <li class="colorlib-active"><a href="{{ SITEURL }}">Home</a></li>
+          {% endif %}
+          {% for page in pages %}
+          <li {% if output_file == page.url %}class="colorlib-active"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+          {% endfor %}
+          <li {% if page_name == 'archives' %}class="colorlib-active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+          <li {% if page_name == 'about' %}class="colorlib-active"{% endif %}><a href="{{ SITEURL }}/about.html">About</a></li>
+          <li {% if page_name == 'contact' %}class="colorlib-active"{% endif %}><a href="{{ SITEURL }}/contact.html">Contact</a></li>
+          
+        </ul>
+
+        <form action="{{ SITEURL }}/search.html" class="search-form">
+            <div class="form-group">
+              <span class="icon icon-search"></span>
+              <input type="text" class="form-control" name="q" placeholder="Search the blog..." ></div>
+                  <div style="clear: both;"></div>
+          </form>
+
+			</nav>
+
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="{{ SOCIAL.twitter }}"><i class="icon-twitter"></i></a></li>
+					<li><a href="{{ SOCIAL.linkedin }}"><i class="icon-linkedin"></i></a></li>
+					<li><a href="{{ SOCIAL.github }}"><i class="icon-github"></i></a></li>
+					<li><a href="{{ SOCIAL.youtube }}"><i class="icon-youtube"></i></a></li>
+					<li><a href="{{ SOCIAL.email }}"><i class="icon-envelope"></i></a></li>
+        </ul>
+				<p style="font-size:x-small"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> and modified for <a href="http://getpelican.com/">Pelican</a> by <a href="{{ SITEURL }}">bblais</a>.</p>        
+			</div>
+    </aside> <!-- END COLORLIB-ASIDE -->
+    
+
+		<div id="colorlib-main">
+
+        {% block content %}
+        {% endblock content %}
+
+
+        {% if page_name != 'about' %}
+        {% include 'footer.html' %}
+        {% endif %}
+
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  {% block script %}
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/popper.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.easing.1.3.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.waypoints.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.stellar.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/owl.carousel.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.magnific-popup.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/aos.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.animateNumber.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/bootstrap-datepicker.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.timepicker.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/scrollax.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/google-map.js"></script>
+  <script src="{{ SITEURL }}/theme/js/main.js"></script>
+    
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+  
+  {% endblock script %}
+
+
+  </body>
+</html>

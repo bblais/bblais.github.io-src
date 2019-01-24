@@ -4,9 +4,51 @@ from markdown import markdown
 
 AUTHOR = 'Brian Blais'
 SITENAME = 'bblais on the web'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
+#SITEURL = 'https://bblais.github.io'
 
-THEME='themes/colossus - bblais'
+ABOUT = "I am a Scientist, Skeptic, and <a href='http://web.bryant.edu/~science'>Professor</a> at <a href='http://web.bryant.edu/~science'>Bryant University</a> and the <a href='https://www.brown.edu/research/projects/brain-and-neural-systems/'>IBNS, Brown University</a>.  I have published in synaptic plasticity in vision, paleoclimate proxies, the dynamics of zombies, and using automatic flushing toilets to teach scientific methods.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems."
+
+ABOUT = "I am a Scientist, Skeptic, and <a href='http://web.bryant.edu/~science'>Professor</a> at <a href='http://web.bryant.edu/~science'>Bryant University</a> and the <a href='https://www.brown.edu/research/projects/brain-and-neural-systems/'>IBNS, Brown University</a>.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems."
+
+ABOUT_BLOG="Here I explore the intersection of science and society, as well as the life and tools of an academic, and anything else that strikes my fancy."
+
+SLIDER=[]
+
+SLIDER.append(
+    {
+    'image':'rosie-fraser-187327-unsplash.jpg',
+    'attribution': 'Photo by Rosie Fraser on Unsplash',
+    'url':'posts/2019/Jan/14/dynamical-systems-with-pyndamics/',
+    'title':'Zombies, Twitter, and the Fate of the Universe',
+    'text':"Use <em>pyndamics</em> to model dynamical systems and fit your data."
+    }
+)
+
+SLIDER.append(
+    {
+    'image':'Saturn1.jpg',
+    'attribution':'https://en.wikipedia.org/wiki/File:Saturn_eclipse.jpg',
+    'url':'posts/2019/Jan/14/stats-for-everyone/',
+    'title':'Stats for Everyone',
+    'text':"Read the book, see the movie, let's talk about your research."
+    }
+)
+
+SLIDER.append(
+    {
+    'image':'neuron1.jpg',
+    'attribution':'https://www.flickr.com/photos/functionalneurogenesis/7930156342',
+    'url':'posts/2019/Jan/14/models-of-learning-and-memory/',
+    'title':'Rewiring the Brain',
+    'text':"Explore models of synaptic plasticity from molecules to memory with <em>Plasticnet</em>"
+    }
+)
+
+
+
+THEME='themes/elen - bblais'
+#THEME='themes/colossus - bblais'
 #THEME='themes/pelican-elegant-1.3'
 
 CUSTOM_CSS=True
@@ -27,21 +69,21 @@ ARTICLE_EXCLUDES = ('pages','publish',)
 #PAGE_ORDER_BY = 'page-order'
 
 # 
+TWITTER_USERNAME='bblais'
 
-SOCIAL=[
-('Email','mailto://bblais@bryant.edu','Email'),
-    ('LinkedIn','https://www.linkedin.com/in/brian-blais-bb66482b','LinkedIn'),
-    ('Google-plus','<a href="https://plus.google.com/u/0/+BrianBlais">','Google+'),
-    ('Twitter','http://twitter.com/bblais','Twitter'),    
-    ('YouTube','https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w','YouTube',),    
-    ]
+SOCIAL = {'twitter': 'https://twitter.com/bblais',
+'linkedin':'https://www.linkedin.com/in/brian-blais-bb66482b/',
+'github':'https://github.com/bblais',
+'email':'mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;',
+'youtube':'https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w',}
+
 SUBSCRIBE=[ ('Rss','http://feeds.feedburner.com/bblaisontheweb','Rss'),
 ('Twitter','http://twitter.com/bblais','Twitter'),    
 ('Check-Square','http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp://web.bryant.edu/~bblais/','Feedly'),
 ]
-SOCIAL_PROFILE_LABEL='<h2>Contact</h2>'
 SUBSCRIBE_PROFILE_LABEL='<h2>Subscribe</h2>'
 
+SUMMARY_MAX_LENGTH = 30
 
 DELETE_OUTPUT_DIRECTORY=False
 
@@ -50,25 +92,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = False
 
-
-PROJECTS = [{'name':'Statistical Inference for Everyone',
-'url':'statistical-inference-for-everyone-sie.html',
-'description': '<em>Statistical Inference for Everyone</em> is an introductory textbook on statistical inference, motivated by probability theory as logic.  It is intended for a Statistics 101 audience.'},
-
-{'name':'pyndamics: Python Numerical Dynamics Simulator',
-'url':'https://github.com/bblais/pyndamics',
-'description': 'This package provides a way to describe a dynamical system in terms of the differential equations, or the stock-flow formalism. It is a wrapper around the Scipy odeint function, with further functionality for time plots, phase plots, and vector fields.'},
-{
-    'name': 'plasticity: synaptic modification in rate-based neurons',
-    'url': 'https://github.com/bblais/plasticity',
-    'description': 'Plasticity is a package with a convenient interface, used to run simulations of single cells and networks of neurons.'},
-    {'name':'more...',
-    'url':'pages/projects.html',
-    'description':'A detailed list of my projects...'
-    },
-    
-    ]
-    
+   
 DISQUS_SITENAME = 'bblaisontheweb'
 IMAGE_PREVIEW='Saturn_with_Dice_Square.png'
     
@@ -77,28 +101,39 @@ EXTRA_PATH_METADATA = {
     'theme/images/favicon.ico': {'path': 'favicon.ico'}
 }
 
+ARCHIVES_SAVE_AS = 'archives.html'
+YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
     
-LANDING_PAGE_ABOUT={'title':'Professor Brian Blais',
-    'details': markdown(open('content/static/about.txt').read())}    
     
-DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', 'social_links','404'))
+#DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', 'social_links','404'))
+DIRECT_TEMPLATES = ['index', 'categories', 'contact','about', 'search','thanks','archives']
+#DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors','contact', 'archives', 'search']
+#(('index', 'about','contact','search'))
 
+from mdx_urlize import UrlizeExtension
 
-#MD_EXTENSIONS = ['codehilite(css_class=highlight)', 'extra', 'headerid', 'toc','elementid','urlize']
 MARKDOWN = {
+    'extensions':['attr_list','codehilite','extra','meta','toc','footnotes',UrlizeExtension()],
     'extension_configs': {
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.extra': {},
-        'markdown.extensions.toc': {},
         'markdown.extensions.meta': {},
+        'markdown.extensions.toc' : {},
+        'markdown.extensions.footnotes' : {},
     },
     'output_format': 'html5',
 }
 
-TAG_SAVE_AS = ''
-CATEGORY_SAVE_AS = ''
+
+# TAG_SAVE_AS = ''
+# CATEGORY_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
-PLUGIN_PATHS = ['../pelican-plugins']
+PLUGIN_PATHS = ['/Users/bblais/Documents/Git/pelican-plugins']
 PLUGINS = ['render_math','sitemap', 'extract_toc', 'tipue_search']    
 SITEMAP={'format':'xml'}
 
+ARTICLE_URL = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
+PAGE_URL = 'pages/{slug}.html'
+PAGE_SAVE_AS = 'pages/{slug}.html'

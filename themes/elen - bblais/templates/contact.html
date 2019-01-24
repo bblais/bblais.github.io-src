@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock title %}
+
+{% block content %}
+
+			<section class="ftco-section contact-section">
+	      <div class="container">
+	        <div class="row d-flex mb-5 contact-info">
+	          <div class="col-md-12 mb-4">
+	            <h2 class="h4 font-weight-bold">Contact Information</h2>
+	          </div>
+	          <div class="w-100"></div>
+	          <div class="col-md-3">
+	            <p><span>Address:</span> 1150 Douglas Pike, Smithfield, Rhode Island, USA</p>
+	          </div>
+	          <div class="col-md-3">
+	            <p><span>Phone:</span> <a href="tel://4012326153">(401) 232-6153</a></p>
+	          </div>
+	          <div class="col-md-3">
+	            <p><span>Email:</span> <a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></p>
+	          </div>
+	          <div class="col-md-3">
+	            <p><span>Website</span> <a href="https://bblais.github.io">bblais.github.io</a></p>
+	          </div>
+	        </div>
+	        <div class="row block-9">
+	          <div class="col-md-6 order-md-last pr-md-5">
+
+								<form action="https://formspree.io/b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" method="POST">
+									<div class="form-group">
+											<input type="text" name="name" class="form-control" placeholder="Your Name">
+										</div>
+										<div class="form-group">
+												<input type="email"  name="_replyto" class="form-control" placeholder="Your Email">
+											</div>
+												<div class="form-group">
+													<textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+												</div>
+												<input type="hidden" name="_next" value="{{SITEURL}}/thanks.html" />
+												<input type="submit" value="Send" class="btn btn-primary py-3 px-5">
+								</form>
+
+	          
+	          </div>
+
+	          <div class="col-md-6">
+	          	<div><div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=bryant%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:400px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}</style></div></div>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+		
+		
+{% endblock content %}

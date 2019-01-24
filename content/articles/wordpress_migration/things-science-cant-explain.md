@@ -24,7 +24,7 @@ gaps, that could possibly be explained in the future, but were
     <p>
     > "Science must be silent on why natural laws take the form that
     > they do. For example, why is the gravitational law of the form
-    > \$latex {F \\sim 1/r\^2}\$, and not some other form, like inverse
+    > $F \sim 1/r^2$, and not some other form, like inverse
     > cube? It is precisely, exactly, and eternally an inverse square.
     > Why should that be? Science can never give an answer, because it
     > is only descriptive, not pre-scriptive of nature.

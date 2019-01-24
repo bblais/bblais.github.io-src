@@ -3,7 +3,7 @@ Title: Projects
 
 ## Computational Projects
 
-* [Statistical Inference for Everyone](../statistical-inference-for-everyone-sie.html)
+* [Statistical Inference for Everyone](../posts/2019/Jan/14/stats-for-everyone/)
 > *Statistical Inference for Everyone* is an introductory textbook on statistical inference, motivated by probability theory as logic.  It is intended for a Statistics 101 audience.  
 
 * [pyndamics: Python Numerical Dynamics Simulator](https://github.com/bblais/pyndamics)
@@ -28,7 +28,7 @@ Title: Projects
 > Plasticity is a package of programs, with a convenient interface, used to run simulations of single cells and networks of neurons. It is used to explore BCM synaptic modification and Hebbian learning, amongst others.
 
 * [$25 Thermal Cycler: A Programmable](http://web.bryant.edu/~bblais/projects/cycler/)
-> $25 Thermal Cycler is a very simple thermal cycler for performing PCR. The circuit itself costs a few dollars, and the control code can be easily run on a 486 running Linux. Go to the $25 Thermal Cycler page to learn more about it.
+> $25 Thermal Cycler is a very simple thermal cycler for performing PCR. The circuit itself costs a few dollars, and the control code can be easily run on a 486 running Linux. Go to the [Thermal Cycler page](http://web.bryant.edu/~bblais/projects/cycler/) to learn more about it.
 
 * [Quantity.py](files/Quantity.py)
 > A simple class for doing Monte Carlo error analysis

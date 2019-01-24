@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock title %}
+
+{% block content %}
+
+<!-- bb: timing for this slider in static/js/main.js under autoplayTimeout.  
+	default is 5 seconds, I upped it to 10 seconds -->
+<section class="home-slider js-fullheight owl-carousel">
+
+	{% for slide in SLIDER %}
+
+	<a href="{{slide.url}}">
+	<div class="slider-item js-fullheight" style="background-image:url({{ SITEURL }}/images/{{slide.image}});">
+		<div class="overlay"></div>
+	  <div class="container-fluid">
+		<div class="row no-gutters slider-text slider-text-2 js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+		<div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		  <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{slide.title}}</h1>
+		  <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{slide.text}}</p>
+		</div>
+	  </div>
+	  </div>
+	</div>
+	</a>
+    {% endfor %}
+  </section>
+
+			<!-- <div class="hero-wrap js-fullheight" style="background-image: url({{ SITEURL }}/theme/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="js-fullheight d-flex justify-content-center align-items-center">
+					<div class="col-md-8 text text-center">
+						<div class="img mb-4" style="background-image: url({{ SITEURL }}/theme/images/author.jpg);"></div>
+						<div class="desc">
+							<p class="mb-4">{{ ABOUT }}</p>
+							<p><a href="{{ SITEURL }}/about.html" class="btn-custom">More About Me <span class="ion-ios-arrow-forward"></span></a></p>
+						</div>
+					</div>
+				</div>
+      		</div> -->
+      
+
+
+
+			<section class="ftco-section">
+					<div class="container">
+						<div class="row justify-content-center mb-5 pb-2">
+							<div class="col-md-7 heading-section text-center ftco-animate">
+								<h2 class="mb-4" id="blog">Blog</h2>
+								<p>{{ ABOUT_BLOG }} </p>
+							</div>
+						</div>
+						<div class="row">
+
+
+							{% for article in articles %}
+							{% if not RECENT_ARTICLES_COUNT %}
+							{% set RECENT_ARTICLES_COUNT = 12 %}
+							{% endif %}
+							{% if loop.index0 < RECENT_ARTICLES_COUNT %}
+
+							<div class="col-md-4">
+								<div class="blog-entry ftco-animate">
+									<a href="{{ SITEURL }}/{{ article.url }}" class="img img-2" style="background-image: url({{ SITEURL }}/images/{{ article.image }});"></a>
+									<div class="text text-2 pt-2 mt-3">
+										<span class="category mb-3 d-block"><a href="#">{{ article.category }}</a></span>
+										<h3 class="mb-4"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h3>
+										<p class="mb-4">{{ article.summary}}</p>
+										<div class="author mb-4 d-flex align-items-center">
+											<div class="ml-3 info">
+												<h3><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></h3>
+											</div>
+										</div>
+										<div class="meta-wrap align-items-center">
+											<!-- <div class="half order-md-last">
+												<p class="meta">
+													<span><i class="icon-heart"></i>3</span>
+													<span><i class="icon-eye"></i>100</span>
+													<span><i class="icon-comment"></i>5</span>
+												</p>
+											</div> -->
+											<div class="half">
+												<p><a href="{{ SITEURL }}/{{ article.url }}" class="btn py-2">Continue Reading <span class="ion-ios-arrow-forward"></span></a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							{% endif %}
+							{% endfor %}
+				
+
+
+
+
+							
+						</div>
+					</div>
+				</section>
+		
+		
+		
+{% endblock content %}
+		

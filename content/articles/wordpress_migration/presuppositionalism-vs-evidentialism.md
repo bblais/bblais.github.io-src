@@ -19,11 +19,11 @@ In other words, they are "X is true and here is the evidence or logical
 argument for X" and "if we assume X, then W, Y, and Z that we observe
 make sense...otherwise W, Y, and Z do not make sense". Both of these are
 done in science all the time. Take, Newton's law of gravitation for
-example. When he proposed the form of the gravitational force, \$latex
-{F \\sim 1/r\^2}\$, Newton did not provide direct evidence for this
+example. When he proposed the form of the gravitational force, $
+F \sim 1/r^2$, Newton did not provide direct evidence for this
 form...that was first done only [100 years later by Cavendish][]. What
-he did is say was "*if* the form of the force is \$latex {F \\sim
-1/r\^2}\$, then many other things make sense (i.e. motion of the
+he did is say was "*if* the form of the force is $
+F \sim 1/r^2$, then many other things make sense (i.e. motion of the
 planets, the tides, the falling of objects near the surface of the
 Earth, etc...)". In a way, this is a presuppositionalist argument: if we
 take X to be true, then our observations of W, Y, and Z make sense. This

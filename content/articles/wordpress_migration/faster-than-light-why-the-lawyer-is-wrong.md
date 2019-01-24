@@ -56,8 +56,9 @@ Guess what? Scientists have explored all these possibilities! The most
 relevant ones to this post have to do with [MOND (Modified Newtonian
 Dynamics)][]. For example, Newton's law of gravity is of the form
 
-\$latex \\displaystyle F=\\frac{GMm}{r\^2} = ma \\ \\ \\ \\ \  
-(1)&fg=000000\$
+$$ 
+F=\frac{GMm}{r^2} = ma 
+$$
 
 The consequences of this have been checked out many decimal places, and
 explains things as diverse as the tides, the formation of planetary
@@ -70,28 +71,28 @@ why it took 200 years to significantly modify Newton's Theory of
 Gravity, with Einsteins General Theory of Relativity. An example of MOND
 could be something like
 
-\$latex \\displaystyle F=\\frac{GMm}{r\^2} =
-m\\mu\\left(\\frac{a}{a\_o}\\right)a \\ \\ \\ \\ \\ (2)&fg=000000\$
+$$
+F=\frac{GMm}{r^2}\times \mu\left(\frac{a}{a_o}\right) 
+$$
 
-where \$latex {\\mu(a/a\_o)}&fg=000000\$ is a function that needs to be
+where $\mu(a/a_o)$ is a function that needs to be
 close to 1 for normal situations (and thus look like Newton's laws), but
 be different for the case of spinning galaxies. In this case there is a
-single parameter, \$latex {a\_o}&fg=000000\$, which is a critical
+single parameter, $a_o$, which is a critical
 acceleration far above which the situation is "normal". Typical values
-are around \$latex {10\^{-10} {\\rm m/s\^2}}&fg=000000\$, and one
-possible form for \$latex {\\mu()}&fg=000000\$ is
+are around $ 10^{-10} {\rm m/s^2}$, and one
+possible form for $\mu()$ is
 
-\$latex \\displaystyle \\mu(x) = 1-e\^{-x} \\ \\ \\ \\ \  
-(3)&fg=000000\$
+$$ \mu(x) = 1-e^{-x}
+$$
 
 Near the Earth, this translates to
 
-\$latex \\displaystyle \\mu(x) =
-0.\\underbrace{99999999\\cdots}\_{10\^{10} {\\rm nines!}} \\ \\ \\ \\ \  
-(4)&fg=000000\$
+$$ \mu(x) =0.\underbrace{99999999\cdots}_{10^{10} {\rm nines!}} 
+$$
 
 On the big scale, on the outskirts of galaxies, the accelerations are
-comparable to \$latex {a\_o}&fg=000000\$ and the predictions can lead to
+comparable to $a_o$ and the predictions can lead to
 consistent mass curves without introducing more mass.
 
 The dark matter postulate has also been, and continues to be, explored.
@@ -124,17 +125,19 @@ constant speed). The derivation of the maximum speed is a consequence of
 this, and results in the Lorentz transformation. What we see in these
 equations is a factor entering in throughout of the form
 
-\$latex \\displaystyle \\gamma = \\frac{1}{\\sqrt{1-v\^2/c\^2}} \\ \\ \  
-\\ \\ (5)&fg=000000\$
+$$
+\gamma = \frac{1}{\sqrt{1-v^2/c^2}} 
+$$
 
-where \$latex {c}&fg=000000\$ is the speed of light, and \$latex
-{v}&fg=000000\$ is the speed of an object. This factor goes to infinity
-as \$latex {v\\rightarrow c}&fg=000000\$, which places the speed limit.
+where $c$ is the speed of light, and $v$ is the speed of an object. This factor goes to infinity
+as $v\rightarrow c$, which places the speed limit.
 However, in certain circumstances, it might be that the factor takes a
 different form and, say, looks like
 
-\$latex \\displaystyle \\gamma =
-\\frac{1}{\\sqrt{1-v\^2/c\^2+10\^{-20}}} \\ \\ \\ \\ \\ (6)&fg=000000\$
+$$
+\gamma = \frac{1}{\sqrt{1-v^2/c^2 +10^{-20}}} 
+$$
+
 
 which would allow speeds greater than the speed of light. This
 simplistic hack will break other parts of the theory, and so a more

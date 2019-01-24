@@ -2,8 +2,7 @@ title: I'm not a Denier, I'm a Skeptic
 Date: Jan 11, 2018
 subtitle: And yes, there is a difference
 status: published
-
-![skeptic](images/ocean-water-1149661_960_720.jpg)
+image: ocean-water-1149661_960_720.jpg
 
 In this tumultuous time, it is important to not demonize people who disagree with you.  It is also important to recognize that people can have nuanced views on complex subjects. Calling someone a denier when they have such views is not constructive.  For example, from ["Making (non)sense of climate denial"](http://judithcurry.com/2015/04/28/making-nonsense-of-climate-denial/) we have:
 

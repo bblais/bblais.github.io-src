@@ -1,9 +1,7 @@
 title: How to be productive - Part 1 - Apps
 date: 1/15/2018
 status: Published
-
-
-![productivity](images/productivity-1995781_1280.jpg)
+image: productivity-1995781_1280.jpg
 
 
 

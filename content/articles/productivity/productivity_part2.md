@@ -1,10 +1,7 @@
 title: How to be productive - Part 2 - Methods
 date: 1/16/2018
 status: Published
-
-
-
-![productivity](images/productivity-1995781_1280.jpg)
+image: productivity-1995781_1280.jpg
 
 
 

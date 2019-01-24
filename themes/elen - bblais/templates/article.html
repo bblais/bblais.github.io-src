@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% if article.summary %}
+{{ article.summary|striptags }}
+{% endif %}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if article.tags or article.category or article.keywords %}
+<meta name="keywords" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+{% endif %}
+
+<meta itemprop="name" content="{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %}">
+<meta itemprop="description" content="{{ article.content[:500]|striptags }}...">
+<meta name="name" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+
+<section class="ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+
+
+                        <div class="col-md-12">
+                            <div class="blog-entry ftco-animate">
+                                <a href="#" class="img" style="background-image: url({{ SITEURL }}/images/{{ article.image }});"></a>
+                                <div class="text pt-2 mt-3">
+                              <span class="category mb-1 d-block"><a href="#">{{ article.category }}</a></span>
+                          <h3 class="mb-4"><a href="{{ SITEURL }}/{{ article.url }}"> {{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a></h3>
+                          <p class="mb-4">
+                                {{ article.content }}
+                            </p>
+                          <div class="author mb-4 d-flex align-items-center">
+                            <div class="ml-3 info">
+                                <p>
+                                {% include 'twitter.html' %}
+                                </p>
+                                <span>Published</span>
+                                    <h3><span><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span></h3>
+                                    {% include 'disqus.html' %}
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div><!-- END-->
+                <div class="col-lg-4 sidebar ftco-animate">
+
+                    <div class="sidebar-box ftco-animate">
+                        <h3 class="sidebar-heading">Categories</h3>
+                      <ul class="categories">
+                          {% for category,articles in categories %}
+                        <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }} <span>({{ articles|length }})</span></a></li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+        
+        
+                    <div class="sidebar-box ftco-animate">
+                      <h3 class="sidebar-heading">Tag Cloud</h3>
+                      <ul class="tagcloud">
+                        {% for tag,articles in tags %}
+                        <a href="{{ SITEURL }}/{{ tag.url }}" class="tag-cloud-link">{{ tag }} ({{ articles | length}})</a>
+                        {% endfor %}
+                      </ul>
+                    </div>
+        
+
+                    {% include 'newsletter_sidebar.html' %}
+
+            <!-- <div class="sidebar-box subs-wrap img" style="background-image: url({{ SITEURL }}/theme/images/bg_1.jpg);">
+            <div class="overlay"></div>
+                            <h3 class="mb-4 sidebar-heading">Newsletter</h3>
+                            <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia</p>
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Email Address">
+                  <input type="submit" value="Subscribe" class="mt-2 btn btn-white submit">
+                </div>
+              </form>
+            </div> -->
+
+            <!-- <div class="sidebar-box ftco-animate">
+                <h3 class="sidebar-heading">Archives</h3>
+              <ul class="categories">
+                  <li><a href="#">October 2018 <span>(10)</span></a></li>
+                <li><a href="#">September 2018 <span>(6)</span></a></li>
+                <li><a href="#">August 2018 <span>(8)</span></a></li>
+                <li><a href="#">July 2018 <span>(2)</span></a></li>
+                <li><a href="#">June 2018 <span>(7)</span></a></li>
+                <li><a href="#">May 2018 <span>(5)</span></a></li>
+              </ul>
+            </div> -->
+
+
+
+          </div><!-- END COL -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+{% endblock content %}
+

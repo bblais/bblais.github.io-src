@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>childOrder</key>
+	<array/>
+	<key>resolutionData</key>
+	<dict>
+		<key>childOrder</key>
+		<dict/>
+		<key>sheetClusters</key>
+		<dict>
+			<key>Life from non-life and other conundrums.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>542079832.14385104</real>
+				<key>lastModification</key>
+				<real>542079832.14385104</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>24</integer>
+				</dict>
+			</dict>
+			<key>Top Reasons for Belief.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>541985615.82585502</real>
+				<key>lastModification</key>
+				<real>541985615.82585502</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>23</integer>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>Life from non-life and other conundrums.md</string>
+		</array>
+		<array>
+			<string>Top Reasons for Belief.md</string>
+		</array>
+	</array>
+	<key>storeFormatVersion</key>
+	<integer>1</integer>
+	<key>versioning</key>
+	<dict>
+		<key>childOrder</key>
+		<dict>
+			<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+			<integer>12</integer>
+		</dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+			<integer>24</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -98,20 +98,22 @@ false. Instead one wants to set up a list of models, hypotheses,
 theories to explain the data and evaluate those multiple models. Instead
 of,**
 
-\$latex  
-P({\\rm resurrection}|{\\rm data})  
-\$  
+$$  
+P({\rm resurrection}|{\rm data})  
+$$  
 and  
-\$latex  
-P(\\mbox{not resurrection}|{\\rm data})  
-\$
+$$
+P(\mbox{not resurrection}|{\rm data})  
+$$
 
 **you’d want**
 
-\$latex  
-P({\\rm resurrection}|{\\rm data}), P({\\rm hallucination}|{\\rm
-data}), P({\\rm legend}|{\\rm data}), P({\\rm literary}|{\\rm data}),
-P({\\rm hoax}|{\\rm data}),\$ etc…  
+$$
+P({\rm resurrection}|{\rm data}), P({\rm hallucination}|{\rm
+data}), P({\rm legend}|{\rm data}), P({\rm literary}|{\rm data}),
+P({\rm hoax}|{\rm data}),
+
+$$ etc…  
 **where of course each of these models would have many details beyond
 the simple label I’m putting in here. By being explicit with what you’re
 comparing to, it is easier to see where the different prior

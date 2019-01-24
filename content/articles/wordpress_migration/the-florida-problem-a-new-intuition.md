@@ -6,7 +6,7 @@ Slug: the-florida-problem-a-new-intuition
 **1. Introduction**
 
 In a prior couple of posts [here][] and [here][1] I look into the
-\`\`evil'' probability problem of the girl-named-Florida. This problem
+"evil" probability problem of the girl-named-Florida. This problem
 compares the following two situations:
 
 > Say you know a family has two children, and further that at least one

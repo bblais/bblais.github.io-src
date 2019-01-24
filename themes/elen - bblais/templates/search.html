@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Search · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+Search results for {{ SITENAME|striptags }} blog.
+{% endblock head_description %}
+
+{% block head_links %}
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/animate.css">
+    
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/aos.css">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/flaticon.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/icomoon.css">
+
+
+
+    <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+    <!-- <script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_content.js"></script> -->
+    <link rel="stylesheet" href="{{ SITEURL }}/themtipuesearch/css/tipuesearch.css">
+    <script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style2.css">
+    
+
+{% endblock head_links %}
+
+
+{% block script %}
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch({
+         {% if 'tipue_search' in PLUGINS %}
+             'mode' : 'json',
+         {% else %}
+             'mode': 'live',
+         {% endif %}
+         'show': 10,
+         'newWindow': false,
+         {# I cannot place following statements in the conditionals above because then Tipue Search fails to work. Possibly a bug in Tipue Search. #}
+         {% if 'tipue_search' in PLUGINS %}
+             'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
+         {% else %}
+             'liveDescription': '.article-content'
+         {% endif %}
+     });
+});</script>
+{% endblock script %}
+
+
+{% block content %}
+
+
+
+    <div class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url({{ SITEURL }}/theme/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+
+        <div class="col-lg-8">
+                <div class="row">
+
+
+                    <div class="col-md-12">
+                        <div class="blog-entry ">
+                <div class="text pt-2 mt-3">
+                        <form action="search.html">
+                                <div class="tipue_search_left"><img src="{{ SITEURL }}/theme/tipuesearch/search.png" class="tipue_search_icon"></div>
+                                <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+                                <div style="clear: both;"></div>
+                                </form>
+    
+                        <h3 class="mb-4">Search Results...</h3>
+                      <p class="mb-4">
+                            <div id="tipue_search_content"></div>
+                        </p>
+                    </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- END-->
+ 
+    </div>
+
+{% endblock content %}

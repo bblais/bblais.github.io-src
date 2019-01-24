@@ -1,10 +1,7 @@
 title: Naturalism Defined
 date: 1/22/2018
 status: Published
-
-
-
-![naturalism](images/Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg) 
+image: Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg
 
 
 The question of supernatural vs. natural has come up a lot in discussions with Christians. Such quotes as "[Naturalism](https://en.wikipedia.org/wiki/Naturalism_(philosophy)) is ambiguous. What is nature and what isn't nature?", "Naturalism is vacuous. It's only tenet is an entirely reactionary one - no theology", and "Naturalism is unable to ground its own intelligibility which means it collapses into nihilism" abound.  Philosopher  Alvin Plantinga has an [Evolutionary argument against naturalism](https://en.wikipedia.org/wiki/Evolutionary_argument_against_naturalism).

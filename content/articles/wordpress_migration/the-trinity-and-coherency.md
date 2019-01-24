@@ -28,15 +28,18 @@ Church][], but could well be from any Christian Church):
 
 This is what I hear:
 
-\$latex  
-a=b=c\\\\  
-a\\neq b\\\\  
-a\\neq c\\\\  
-c\\neq b  
-\$
+\begin{eqnarray}
+a&=&b=c\\\\
+a&\neq& b\\\\
+a&\neq& c\\\\
+c&\neq& b  
+\end{eqnarray}
+
+
+
 
 And then when I hear a Christian say something like this, which was on
-the Unbelievable facebook forum,
+the Unbelievable Facebook forum,
 
 > We [...] stress the Trinity a lot, not only because we think it is
 > true but because it explains some things.
@@ -50,26 +53,29 @@ What I hear is:
 
  
 
-> Not only do I think  
->  \$latex  
->  a=b=c\\\\  
->  a\\neq b\\\\  
->  a\\neq c\\\\  
->  c\\neq b  
->  \$  
+> We [...] stress the X a lot, Not only do I think  
+>\begin{eqnarray}
+>a&=&b=c\\\\
+>a&\neq& b\\\\
+>a&\neq& c\\\\
+>c&\neq& b  
+>\end{eqnarray}
+>
 >  is true, but it explains a number of things. For one thing, it means
 > that  
->  \$latex  
->  a+x=b+x  
->  \$  
+>
+>$$
+>a+x=b+x 
+>$$
+>
 >  is built into the system. For another it helps us understand how  
->  \$latex  
+>  $$
 >  a-x\\neq b-x  
->  \$  
+>  $$  
 >  and yet  
->  \$latex  
+>  $$
 >  b-x=c-x  
->  \$
+>  $$
 
 So where am I going wrong here? Where does the analogy break? If you say
 that the Trinity is a "mystery", that is simply an admission that the

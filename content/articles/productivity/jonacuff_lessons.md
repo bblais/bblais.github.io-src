@@ -1,9 +1,7 @@
 title: Lessons from Jon Acuff's book Finish
 date: 1/17/2018
 status: Published
-
-
-![productivity](images/plan-1725510_960_720.jpg)
+image: plan-1725510_960_720.jpg
 
 
 

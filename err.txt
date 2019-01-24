@@ -1,0 +1,809 @@
+pelican -vlr /Users/bblais/bblais_on_the_web_work/content -o /Users/bblais/bblais_on_the_web_work/output -s /Users/bblais/bblais_on_the_web_work/pelicanconf.py 
+-> Serving at port 8000, server .
+-> Writing /Users/bblais/bblais_on_the_web_work/output/feeds/brian-blais.atom.xml
+-> Writing /Users/bblais/bblais_on_the_web_work/output/feeds/brian-blais.rss.xml
+-> Writing /Users/bblais/bblais_on_the_web_work/output/feeds/brianblais.atom.xml
+-> Writing /Users/bblais/bblais_on_the_web_work/output/feeds/brianblais.rss.xml
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2019/Jan/14/dynamical-systems-with-pyndamics/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2019/Jan/14/models-of-learning-and-memory/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2019/Jan/14/stats-for-everyone/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jun/18/10-dogmas-of-science-dismantled/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/May/24/there-is-more-than-enough-time/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/May/22/a-cookbook-response-to-jordan-peterson/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/May/18/exploring-the-idea-of-scrum/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Mar/07/your-lack-of-imagination-can-kill-you/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Mar/06/life-from-non-life-and-other-conundrums/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Mar/05/top-reasons-for-belief/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/26/physics-lab-ideas-structure-or-no/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/18/getting-the-definitions-right/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/12/the-truth-of-a-story/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/09/the-power-of-a-story/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/07/sea-slug-brains/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/06/3-reasons-why-belief-in-god-makes-sense/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/05/facts-are-not-enough/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/02/more-than-enough-time/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Feb/01/happy-groundhog-day/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/31/matter-energy-and-the-spirit/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/29/cool-theorem-angle-bisector/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/22/naturalism-defined/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/17/lessons-from-jon-acuffs-book-finish/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/16/how-to-be-productive-part-2-methods/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/15/how-to-be-productive-part-1-apps/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/11/im-not-a-denier-im-a-skeptic/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/10/art-scientific-reductionism-and-the-new-neuroscience/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/09/where-probabilities-and-theology-meet/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2018/Jan/08/happy-new-year-again/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Oct/24/push-back-against-bayes/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Sep/05/not-all-extraordinary-claims-are-equal/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Jun/07/do-skeptics-underestimate-the-case-for-the-resurrection/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/May/05/does-art-lead-math/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Apr/10/four-types-of-bayesian-frequentist-comparisons/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Mar/31/twitter-zombies-and-the-fate-of-the-world/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Mar/24/mind-reader-and-skepticism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Mar/17/do-we-really-need-algebra-2-and-calculus/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Mar/11/are-there-serious-problems-with-evolution/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Mar/03/philosophy-of-science-and-the-burden-of-proof/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Feb/24/pascals-wager-again/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Feb/17/climate-change/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Feb/11/can-you-guess-my-sign/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Feb/03/even-if-determinism-were-true-it-wouldnt-matter/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2017/Jan/27/free-will-on-my-mind/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Nov/24/jaynes-vs-gelman/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Nov/17/probability-does-extend-logic/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Sep/06/mapping-worldview-to-probability/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Aug/19/is-science-a-self-sealing-process/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Jul/29/what-makes-an-explanation-bad/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Mar/28/laplace-and-twins/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Jan/15/student-course-evaluations/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Jan/11/philosophy-and-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Jan/03/incompetence-or-nervousness/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Jan/02/argument-is-not-evidence/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2016/Jan/01/happy-new-year/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Dec/21/end-of-a-long-semester/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Oct/07/disagreeing-with-neil-degrasse-tyson/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Sep/11/answering-unanswerable-questions/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Aug/23/the-giunta-dillahunty-debate/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Aug/10/deduction-induction-and-abduction-oh-my/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Jul/28/evidence-vs-argument/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Jul/03/pluto-pluto-here-we-come/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Jun/24/football-physics/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/May/18/we-find-god-not-guilty-of-existing/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/May/13/on-miracles/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/May/12/its-not-the-new-atheists-that-are-arrogant/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/May/09/expressing-ignorance/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/May/05/priors-vs-likelihoods/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Apr/23/superseding-the-t-test/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Mar/03/simple-questions-that-get-to-the-heart-of-the-matter/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Feb/21/misquoting-hume/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Feb/04/testing-the-supernatural/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Jan/23/how-to-deflate-a-football-deflating-story/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Jan/20/demo-vs-experiment/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2015/Jan/05/we-should-all-be-biased/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Dec/31/latex-vs-word/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Dec/23/the-longest-night-ever/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Dec/15/why-python-is-the-language-everyone-should-learn/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Dec/02/evolution-and-morality/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Nov/25/objective-morality-defined/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Nov/21/objective-morality/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Nov/21/statistical-inference-for-everyone-sie/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Oct/28/something-from-nothing/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Oct/14/what-is-ai/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Sep/30/naturalism-of-the-gaps/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Sep/23/three-years-of-weather/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Sep/22/will-the-sun-rise-tomorrow/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Sep/18/theism-vs-atheism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Aug/26/whats-the-harm-in-alternative-medicine/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Aug/15/what-evidence-would-it-take/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Aug/05/what-sane-climate-discussion-looks-like/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jul/29/what-is-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jul/28/is-faith-the-same-as-trust-or-baseless-belief/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jul/24/faith-trust-and-evidence/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jun/19/bayesian-vs-frequentist-perspectives/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jun/11/statistical-heresies-the-movie/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jun/09/turing-test-passed/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jun/06/its-unreasonable-to-believe-some-true-things/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jun/04/free-or-not-so-free-will/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jun/03/do-healing-miracles-happen/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/29/a-good-bet-lost/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/28/pennies/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/22/statistical-heresies/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/16/supporting-dualism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/14/siblings-and-astronomy/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/12/spurious-correlations/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/08/skeptics-vs-realists/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/May/06/dualism-naturalism-and-other-isms/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Mar/19/noah-and-the-flood-did-it-happen-16-february-2008/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Mar/13/how-to-dodge-the-consequences-of-belief/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Mar/10/a-foreshadowing-of-the-end-of-the-world/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Feb/26/is-astrology-scientific/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Feb/12/scientific-knowledge/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Feb/06/creationism-laid-bare/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/31/anyone-using-the-term-scientific-proof-doesnt-know-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/29/did-christians-steal-christmas-22-december-2007/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/25/unbelievable-project-did-jesus-exist-bart-ehrman-qa-18-august-2012/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/24/properly-basic-obscurantism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/22/physics-and-the-flash-mind-reader/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/21/philosophy-and-science-whats-the-difference/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/17/chess-morality-and-well-being/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/15/the-cover-art-for-statistical-inference-for-everyone-sie/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/14/statistical-inference-for-everyone-book-announcement/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/14/new-year-and-new-website/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/13/why-the-new-website/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/10/new-website/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2014/Jan/06/a-new-year-and-a-deepity/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Dec/18/religion-and-the-illusion-of-moral-authority/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Dec/01/a-story-of-humanity/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Nov/21/life-meaning-and-entropy/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Nov/19/the-trinity-and-coherency/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Nov/12/science-as-entertainment/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Oct/24/knowledge-faith-and-belief/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Oct/09/nobel-prize-the-higgs-and-predictions/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Sep/26/the-fallacy-of-all-natural/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Sep/25/moocs-and-treadmills/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Sep/19/what-to-do-when-youre-not-an-expert/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Sep/13/origins-of-religion-two-hypotheses/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Sep/04/the-supernatural-and-the-history-of-cosmology/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Sep/02/god-in-the-head/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Aug/30/presuppositions-and-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Aug/20/textual-transmission-bottlenecks/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Aug/19/trying-to-figure-out-fiction-i-like-game-of-thrones-semi-fail/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jul/27/what-would-it-take-for-me-to-believe-the-resurrection/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jul/13/a-question-for-theists-why-do-you-not-believe-ufos-are-alien-spacecraft/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jul/11/unbelievable-project-the-probability-of-the-resurrection/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jul/07/baseball-and-the-naming-of-the-gospels/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jun/14/rules-for-criticizing-opponents/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jun/13/the-source-of-morality/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jun/10/christianity-and-morality/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jun/07/miscellaneous-christian-topics-another-counter-to-marshall/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jun/05/model-helicopter-guided-by-power-of-thought/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Jun/05/evidence-of-other-universes/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/May/30/star-trek-and-storytelling/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/May/21/a-little-about-miracles/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/May/10/creationist-math/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/May/06/design-the-origin-of-life-and-creationism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Apr/28/consciousness-in-infants/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Apr/24/some-recent-presentations/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Apr/20/10-signs-of-intellectual-honesty/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/25/a-funny-little-probability-problem-some-closure/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/23/a-funny-little-probability-problem-correct/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/23/a-funny-little-probability-problem-4/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/21/proof-that-god-exists/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/18/unbelievable-project-miracles-and-healing-is-it-evidence-for-the-truth-of-christianity/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/15/unbelievable-project-a-proxy-atheist-explains-why-he-cant-believe/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/13/unbelievable-project-the-new-atheism-barry-duke-and-david-marshall-debate/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/11/unbelievable-project-john-lennox-debates-science-and-god-has-science-buried-god/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/08/unbelievable-project-god-delusion-debate-deluded-by-dawkins/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/06/unbelievable-project-atheist-and-christian-bloggers-discuss/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/04/unbelievable-project-gods-existence-free-will-and-faith-the-big-questions/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Mar/01/unbelievable-project-does-christianity-enslave-are-we-better-off-without-belief-in-god/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Feb/27/unbelievable-project-a-non-believers-armchair-perspective-on-six-years-of-christian-debates/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Feb/15/resurrection-linear-regression-and-the-art-of-harmonization/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2013/Feb/13/there-is-no-population/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Dec/11/science-refutes-god-debate/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Dec/07/logical-vs-reasonable/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Nov/26/god-does-not-exist-clearly/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Nov/09/a-few-things-about-carl-sagan/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Oct/16/bayesian-thinking/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Oct/16/great-science-ads/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Oct/12/breaking-news-doctor-hallucinates-and-is-convinced-that-science-is-wrong/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Oct/11/critical-thinking/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Sep/25/naturalistic-bias-presupposing-naturalism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Sep/07/aliens/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Aug/31/statistics-vs-probability/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Aug/19/presuppositionalist-arguments/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Jun/03/lessons-from-bayes-rule/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/May/14/suppression-of-ideas-in-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/May/07/free-will-and-entropy/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Mar/20/on-being-wrong/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Mar/06/evolution-and-rationality/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Mar/05/what-is-good-in-religion/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Jan/27/best-quote-in-a-while-about-global-warming/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Jan/14/bayes-and-hiccups-practical-working-solutions-that-no-one-seems-to-know/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2012/Jan/04/santa-and-other-delusions/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/27/einstein-and-the-motives-of-scientists/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/22/the-bible-foreshadows-scientific-discoveries/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/20/closed-to-the-supernatural/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/19/presuppositionalism-vs-evidentialism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/15/more-fine-tuning-not/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/09/things-science-cant-explain/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/06/conversation-with-steve-winsor/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Dec/06/whats-wrong-with-this/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Nov/29/best-evidence-for/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Nov/09/a-sensible-post-on-climate-change-for-a-change/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Nov/07/language-of-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Nov/07/offended-by-prayer-on-a-mural/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Oct/30/the-florida-problem-a-new-intuition/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Oct/16/faster-than-light-a-likely-solution/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Oct/14/faster-than-light-why-the-lawyer-is-wrong/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Aug/03/mystery-knowledge-science-and-television/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jul/28/climate-and-the-moon/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jul/27/knowledge-and-belief/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jul/26/science-and-attitudes-toward-criticism/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jun/02/reaping-the-benefits-of-science-while-hostile-to-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/May/28/frivolous-research-in-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Mar/09/energy-bracelet-experience/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Mar/08/religion-scripture-and-the-source-of-morality/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/25/wonders-in-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/24/a-reasonable-perspective-on-global-warming/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/23/does-watson-think/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/22/creationism-and-strawmen/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/18/wonders-in-science-2/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/17/20-years-of-being-an-atheist-ends-today/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/16/the-role-of-humanity-into-the-future/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/15/bill-oreilly-tides-and-the-god-of-the-gaps/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/12/why-i-cant-support-the-darwin-day-resolution/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Feb/11/the-world-is-flat/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jan/29/a-modest-proposal-about-uncertainty/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jan/29/the-economics-of-religion-more-good-than-harm/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jan/19/rounds-in-australian-open/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jan/18/predictions-for-the-australian-open/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jan/14/religion-science-and-humility/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2011/Jan/10/francis-collins-science-and-religion-how-religion-halts-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Dec/30/a-moral-argument-for-god/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Dec/01/are-science-and-religion-incompatible/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Nov/22/is-x2-positive-or-negative/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Nov/22/glenn-beck-on-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Oct/16/a-walk-down-memory-lane/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Oct/08/power-unbalance/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Sep/27/about/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Sep/25/multiple-model-comparisons-revisited/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Sep/12/god-and-hawking/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Sep/01/why-pseudoscientists-like-the-chi-square-test-and-why-it-shouldnt-be-taught/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Aug/31/orthodox-statistics-conducive-to-pseudo-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Aug/28/the-non-psychic-octopus/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jul/11/a-new-and-content-free-model/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jun/25/pascals-global-warming/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jun/08/religion-and-scientists/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jun/08/one-last-tv-post-about-battlestar-galactica/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jun/08/battlestar-galactica-lost-and-babylon-5-to-plan-or-not-to-plan/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jun/07/lord-of-the-rings/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Apr/19/nice-talk-about-science-and-vaccination/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Feb/26/the-not-so-hidden-flaw-in-this-climate-argument/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Feb/23/a-bit-of-must-read-economics/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Feb/22/coin-flips-and-names-evil-problems-in-probability-continued/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Feb/21/magnetic-therapy-getting-under-my-skin/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/31/economics/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/31/faith-and-science/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/12/a-couple-of-interesting-videos/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/12/creativity-science-and-the-brain/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/08/believing-the-unbelieveable/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/07/a-teachable-moment-lost/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/05/there-once-was-a-girl-named-florida-a-k-a-evil-problems-in-probability/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/05/weird-associations-and-the-brain/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2010/Jan/04/cool-little-fact-of-the-day/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Dec/22/polar-bears-data-opinions-and-global-warming/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Dec/15/open-information-reproducible-research-and-climategate/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Dec/12/word-of-the-day-micromort/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Dec/11/climate-change-denial-is-not-the-same-as-evolution-denial/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Dec/09/climategate-oh-my/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Dec/06/universality-of-religion/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Dec/01/a-great-observation/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Nov/30/information/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Nov/18/autotune-science-and-creativity/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Nov/14/yet-another-reason-to-leave-iraq-dowsing-for-bombs/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Oct/12/netflix-prize/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Oct/11/disturbing-video-misusing-einsteins-name/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Sep/16/recovery-from-vision/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Sep/16/probability-problems-and-simulation/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Sep/10/frequentist-thinking-or-just-bad-math/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Sep/02/a-nice-series-to-look-at/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Aug/12/230-miles-per-gallon/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/30/free-will/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/24/neat-way-to-introduce-programming/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/24/silly-challenge-to-silly-statement/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/20/a-quick-comment-on-error/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/19/laplace-and-the-divine/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/19/misunderstanding-laplace/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/10/homeopathic-medicine/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/08/erroneous-probabilistic-reasoning/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/08/a-little-geometry/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/posts/2009/Jul/07/beginnings/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index2.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index3.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index4.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index5.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index6.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index7.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index8.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index9.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index10.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index11.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index12.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index13.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index14.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index15.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index16.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index17.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index18.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index19.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index20.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index21.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index22.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index23.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index24.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index25.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index26.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index27.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index28.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index29.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/index30.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tags.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/categories.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/authors.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/contact.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/archives.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/search.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/science.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/science2.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/science3.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/dynamical-systems.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/sie.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/neuroscience.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/statistics.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/probability.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/productivity.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/religion.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/religion2.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/religion3.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/unbelievable-project.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/unbelievable-project2.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/unbelievable.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/education.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/pseudoscience.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/creationism.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/evolution.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/christmas.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/philosophy.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/data.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/chess.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/morality.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/dennett.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/web.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/uncategorized.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/logic.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/tag/fine-tuning.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles2.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles3.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles4.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles5.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles6.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles7.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles8.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/articles9.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/critical-thinking.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/math.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/presentations.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/productivity.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/projects.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/religion.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/science.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/unbelievable-project.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/unbelievable-project2.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration2.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration3.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration4.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration5.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration6.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration7.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration8.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration9.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration10.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration11.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration12.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration13.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration14.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration15.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/category/wordpress_migration16.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/cool-theorem-angle-bisector.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/matter-energy-and-the-spirit.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/lessons-from-jon-acuffs-book-finish.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/are-there-serious-problems-with-evolution.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/using-bayesian-reasoning-to-demonstrate-gods-existence.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/is-atheism-irrational.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/how-did-life-begin-adam-rutherford-fuz-rana-09-april-2013.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/why-i-became-an-atheist-part-1-and-part-2-john-loftus-peter-may-05-april-2008-12-april-2008.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/scratch.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/morality-do-we-need-god-to-be-good-26-january-2008.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/positive-atheism-02-february-2008.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/the-atheist-who-sold-his-soul-on-ebay-24-nov-2007.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/drafts/the-probability-of-the-resurrection.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/pages/presentations.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/pages/projects.html
+-> Writing /Users/bblais/bblais_on_the_web_work/output/pages/publications.html
+-> writing /Users/bblais/bblais_on_the_web_work/output/sitemap.xml
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/./.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/prepros-6.config to /Users/bblais/bblais_on_the_web_work/output/theme/./prepros-6.config
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/css/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/ajax-loader.gif to /Users/bblais/bblais_on_the_web_work/output/theme/css/ajax-loader.gif
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/animate.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/animate.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/aos.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/aos.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/bootstrap-datepicker.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/bootstrap-datepicker.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/bootstrap.min.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/bootstrap.min.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/custom.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/custom.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/flaticon.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/flaticon.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/icomoon.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/icomoon.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/ionicons.min.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/ionicons.min.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/jquery.timepicker.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/jquery.timepicker.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/magnific-popup.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/magnific-popup.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/open-iconic-bootstrap.min.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/open-iconic-bootstrap.min.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/owl.carousel.min.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/owl.carousel.min.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/owl.theme.default.min.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/owl.theme.default.min.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/style.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/style.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/bootstrap/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/css/bootstrap/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/bootstrap/bootstrap-grid.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/bootstrap/bootstrap-grid.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/bootstrap/bootstrap-reboot.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/bootstrap/bootstrap-reboot.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/css/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/css/css/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/css/bootstrap-reboot.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/css/bootstrap-reboot.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/css/css/mixins/_text-hide.css to /Users/bblais/bblais_on_the_web_work/output/theme/css/css/mixins/_text-hide.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/backup.txt to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/backup.txt
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/font/_flaticon.scss to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/font/_flaticon.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/font/flaticon.css to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/font/flaticon.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/font/Flaticon.eot to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/font/Flaticon.eot
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/font/flaticon.html to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/font/flaticon.html
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/font/Flaticon.svg to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/font/Flaticon.svg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/font/Flaticon.ttf to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/font/Flaticon.ttf
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/font/Flaticon.woff to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/font/Flaticon.woff
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/flaticon/license/license.pdf to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/flaticon/license/license.pdf
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/icomoon/icomoon.eot to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/icomoon/icomoon.eot
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/icomoon/icomoon.svg to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/icomoon/icomoon.svg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/icomoon/icomoon.ttf to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/icomoon/icomoon.ttf
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/icomoon/icomoon.woff to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/icomoon/icomoon.woff
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/css/_ionicons.scss to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/css/_ionicons.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/css/ionicons.min.css to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/css/ionicons.min.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/fonts/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/fonts/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/fonts/ionicons.eot to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/fonts/ionicons.eot
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/fonts/ionicons.svg to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/fonts/ionicons.svg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/fonts/ionicons.ttf to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/fonts/ionicons.ttf
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/fonts/ionicons.woff to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/fonts/ionicons.woff
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/ionicons/fonts/ionicons.woff2 to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/ionicons/fonts/ionicons.woff2
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/open-iconic/open-iconic.eot to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/open-iconic/open-iconic.eot
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/open-iconic/open-iconic.otf to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/open-iconic/open-iconic.otf
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/open-iconic/open-iconic.svg to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/open-iconic/open-iconic.svg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/open-iconic/open-iconic.ttf to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/open-iconic/open-iconic.ttf
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/fonts/open-iconic/open-iconic.woff to /Users/bblais/bblais_on_the_web_work/output/theme/fonts/open-iconic/open-iconic.woff
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/images/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/about.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/about.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/author.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/author.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/author_bak.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/author_bak.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/author_orig.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/author_orig.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/bg_1.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/bg_1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/bg_1.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/bg_1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/bg_1_orig.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/bg_1_orig.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/bg_2.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/bg_2.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/bg_3.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/bg_3.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/bg_4.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/bg_4.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_1.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_10.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_10.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_11.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_11.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_12.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_12.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_2.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_2.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_3.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_3.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_4.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_4.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_5.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_5.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_6.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_6.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_7.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_7.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_8.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_8.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/image_9.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/image_9.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/loc.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/loc.png
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/person_1.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/person_1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/person_2.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/person_2.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/person_3.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/person_3.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/images/person_4.jpg to /Users/bblais/bblais_on_the_web_work/output/theme/images/person_4.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/js/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/aos.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/aos.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/bootstrap-datepicker.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/bootstrap-datepicker.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/bootstrap.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/bootstrap.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/google-map.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/google-map.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery-3.2.1.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery-3.2.1.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery-migrate-3.0.1.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery-migrate-3.0.1.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.animateNumber.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.animateNumber.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.easing.1.3.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.easing.1.3.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.magnific-popup.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.magnific-popup.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.stellar.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.stellar.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.timepicker.css to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.timepicker.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.timepicker.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.timepicker.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.timepicker.min.css to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.timepicker.min.css
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.timepicker.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.timepicker.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/jquery.waypoints.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/jquery.waypoints.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/main.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/main.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/owl.carousel.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/owl.carousel.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/popper.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/popper.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/range.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/range.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/js/scrollax.min.js to /Users/bblais/bblais_on_the_web_work/output/theme/js/scrollax.min.js
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/theme/scss/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/style.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/style.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_alert.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_alert.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_badge.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_badge.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_breadcrumb.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_breadcrumb.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_button-group.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_button-group.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_buttons.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_buttons.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_card.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_card.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_carousel.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_carousel.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_close.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_close.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_code.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_code.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_custom-forms.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_custom-forms.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_dropdown.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_dropdown.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_forms.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_forms.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_functions.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_functions.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_grid.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_grid.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_images.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_images.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_input-group.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_input-group.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_jumbotron.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_jumbotron.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_list-group.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_list-group.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_media.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_media.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_mixins.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_mixins.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_modal.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_modal.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_nav.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_nav.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_navbar.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_navbar.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_pagination.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_pagination.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_popover.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_popover.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_print.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_print.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_progress.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_progress.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_reboot.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_reboot.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_root.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_root.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_tables.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_tables.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_tooltip.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_tooltip.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_transitions.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_transitions.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_type.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_type.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_utilities.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_utilities.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/_variables.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/_variables.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/bootstrap-grid.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/bootstrap-grid.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/bootstrap-reboot.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/bootstrap-reboot.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/bootstrap.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/bootstrap.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_alert.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_alert.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_background-variant.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_background-variant.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_badge.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_badge.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_border-radius.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_border-radius.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_box-shadow.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_box-shadow.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_breakpoints.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_breakpoints.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_buttons.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_buttons.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_caret.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_caret.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_clearfix.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_clearfix.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_float.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_float.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_forms.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_forms.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_gradients.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_gradients.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_grid-framework.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_grid-framework.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_grid.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_grid.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_hover.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_hover.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_image.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_image.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_list-group.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_list-group.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_lists.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_lists.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_nav-divider.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_nav-divider.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_pagination.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_pagination.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_reset-text.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_reset-text.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_resize.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_resize.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_screen-reader.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_screen-reader.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_size.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_size.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_table-row.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_table-row.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_text-emphasis.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_text-emphasis.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_text-hide.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_text-hide.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_text-truncate.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_text-truncate.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_transition.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_transition.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/mixins/_visibility.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/mixins/_visibility.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_align.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_align.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_background.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_background.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_borders.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_borders.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_clearfix.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_clearfix.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_display.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_display.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_embed.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_embed.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_flex.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_flex.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_float.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_float.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_position.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_position.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_screenreaders.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_screenreaders.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_shadows.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_shadows.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_sizing.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_sizing.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_spacing.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_spacing.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_text.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_text.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/themes/elen - bblais/static/scss/bootstrap/utilities/_visibility.scss to /Users/bblais/bblais_on_the_web_work/output/theme/scss/bootstrap/utilities/_visibility.scss
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/1.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/1.png to images/entropy/1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/1b.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/1b.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/1b.png to images/entropy/1b.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/rosie-fraser-187327-unsplash.jpg to /Users/bblais/bblais_on_the_web_work/output/images/rosie-fraser-187327-unsplash.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/rosie-fraser-187327-unsplash.jpg to images/rosie-fraser-187327-unsplash.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn1.jpg to /Users/bblais/bblais_on_the_web_work/output/images/Saturn1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn1.jpg to images/Saturn1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Science-Background-Fractal-Physics-Abstract-1280081.jpg to /Users/bblais/bblais_on_the_web_work/output/images/Science-Background-Fractal-Physics-Abstract-1280081.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Science-Background-Fractal-Physics-Abstract-1280081.jpg to images/Science-Background-Fractal-Physics-Abstract-1280081.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-76x76.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-76x76.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-76x76.png to theme/images/apple-touch-icon-76x76.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/landscape-54998_640.jpg to /Users/bblais/bblais_on_the_web_work/output/images/landscape-54998_640.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/landscape-54998_640.jpg to images/landscape-54998_640.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Ursus_maritimus_mother_with_cub.jpg to /Users/bblais/bblais_on_the_web_work/output/images/Ursus_maritimus_mother_with_cub.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Ursus_maritimus_mother_with_cub.jpg to images/Ursus_maritimus_mother_with_cub.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice.png to /Users/bblais/bblais_on_the_web_work/output/images/Saturn_with_Dice.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice.png to images/Saturn_with_Dice.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/nasa_zodiac.jpg to /Users/bblais/bblais_on_the_web_work/output/images/nasa_zodiac.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/nasa_zodiac.jpg to images/nasa_zodiac.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Pluto-System-June-29.png to /Users/bblais/bblais_on_the_web_work/output/images/Pluto-System-June-29.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Pluto-System-June-29.png to images/Pluto-System-June-29.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/flat_earth.png to /Users/bblais/bblais_on_the_web_work/output/images/flat_earth.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/flat_earth.png to images/flat_earth.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_3_to_1.png to /Users/bblais/bblais_on_the_web_work/output/images/Saturn_with_Dice_3_to_1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_3_to_1.png to images/Saturn_with_Dice_3_to_1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/2.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/2.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/2.png to images/entropy/2.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/football.jpg to /Users/bblais/bblais_on_the_web_work/output/images/football.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/football.jpg to images/football.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_2003_1_value.png to /Users/bblais/bblais_on_the_web_work/output/images/mass1965_2003_1_value.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_2003_1_value.png to images/mass1965_2003_1_value.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/static/cv.pdf to /Users/bblais/bblais_on_the_web_work/output/static/cv.pdf
+-> Copying /Users/bblais/bblais_on_the_web_work/content/static/cv.pdf to static/cv.pdf
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/math.jpg to /Users/bblais/bblais_on_the_web_work/output/images/math.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/math.jpg to images/math.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/artmath.jpg to /Users/bblais/bblais_on_the_web_work/output/images/artmath.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/artmath.jpg to images/artmath.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/clock.png to /Users/bblais/bblais_on_the_web_work/output/images/clock.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/clock.png to images/clock.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/1a.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/1a.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/1a.png to images/entropy/1a.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Pennies.png to /Users/bblais/bblais_on_the_web_work/output/images/Saturn_with_Pennies.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Pennies.png to images/Saturn_with_Pennies.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_2003_2_value_diff.png to /Users/bblais/bblais_on_the_web_work/output/images/mass1965_2003_2_value_diff.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_2003_2_value_diff.png to images/mass1965_2003_2_value_diff.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/zombie1.jpg to /Users/bblais/bblais_on_the_web_work/output/images/zombie1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/zombie1.jpg to images/zombie1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-72x72.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-72x72.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-72x72.png to theme/images/apple-touch-icon-72x72.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Asteroid_1.png to /Users/bblais/bblais_on_the_web_work/output/images/Asteroid_1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Asteroid_1.png to images/Asteroid_1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_2003_2_value.png to /Users/bblais/bblais_on_the_web_work/output/images/mass1965_2003_2_value.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_2003_2_value.png to images/mass1965_2003_2_value.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/clock_small.png to /Users/bblais/bblais_on_the_web_work/output/images/clock_small.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/clock_small.png to images/clock_small.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/background.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/background.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/background.png to theme/images/background.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/ocean-water-1149661_960_720.jpg to /Users/bblais/bblais_on_the_web_work/output/images/ocean-water-1149661_960_720.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/ocean-water-1149661_960_720.jpg to images/ocean-water-1149661_960_720.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/1600px-Saturn_eclipse.jpg to /Users/bblais/bblais_on_the_web_work/output/images/1600px-Saturn_eclipse.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/1600px-Saturn_eclipse.jpg to images/1600px-Saturn_eclipse.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/2018-01-09_03.14.49_pm.png to /Users/bblais/bblais_on_the_web_work/output/images/2018-01-09_03.14.49_pm.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/2018-01-09_03.14.49_pm.png to images/2018-01-09_03.14.49_pm.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-114x114.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-114x114.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-114x114.png to theme/images/apple-touch-icon-114x114.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_1974_1_value.png to /Users/bblais/bblais_on_the_web_work/output/images/mass1965_1974_1_value.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/mass1965_1974_1_value.png to images/mass1965_1974_1_value.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg to /Users/bblais/bblais_on_the_web_work/output/images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg to images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Thomas_Bayes.gif to /Users/bblais/bblais_on_the_web_work/output/images/Thomas_Bayes.gif
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Thomas_Bayes.gif to images/Thomas_Bayes.gif
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_Square.png to /Users/bblais/bblais_on_the_web_work/output/images/Saturn_with_Dice_Square.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_Square.png to images/Saturn_with_Dice_Square.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/static/about.txt to /Users/bblais/bblais_on_the_web_work/output/static/about.txt
+-> Copying /Users/bblais/bblais_on_the_web_work/content/static/about.txt to static/about.txt
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-57x57.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-57x57.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-57x57.png to theme/images/apple-touch-icon-57x57.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon.png to theme/images/apple-touch-icon.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/pyndamics.png to /Users/bblais/bblais_on_the_web_work/output/images/pyndamics.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/pyndamics.png to images/pyndamics.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_3_to_1_reverse.png to /Users/bblais/bblais_on_the_web_work/output/images/Saturn_with_Dice_3_to_1_reverse.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_3_to_1_reverse.png to images/Saturn_with_Dice_3_to_1_reverse.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/StonehengeSunrise1980s.jpg to /Users/bblais/bblais_on_the_web_work/output/images/StonehengeSunrise1980s.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/StonehengeSunrise1980s.jpg to images/StonehengeSunrise1980s.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_weave.png to /Users/bblais/bblais_on_the_web_work/output/images/Saturn_with_Dice_weave.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Saturn_with_Dice_weave.png to images/Saturn_with_Dice_weave.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/.DS_Store to /Users/bblais/bblais_on_the_web_work/output/images/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/.DS_Store to images/.DS_Store
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/uncertainty.jpg to /Users/bblais/bblais_on_the_web_work/output/images/uncertainty.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/uncertainty.jpg to images/uncertainty.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/productivity-1995781_1280.jpg to /Users/bblais/bblais_on_the_web_work/output/images/productivity-1995781_1280.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/productivity-1995781_1280.jpg to images/productivity-1995781_1280.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-180x180.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-180x180.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-180x180.png to theme/images/apple-touch-icon-180x180.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/bblais_tedx.jpg to /Users/bblais/bblais_on_the_web_work/output/images/bblais_tedx.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/bblais_tedx.jpg to images/bblais_tedx.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Triangle_ABC_with_bisector_AD.svg to /Users/bblais/bblais_on_the_web_work/output/images/Triangle_ABC_with_bisector_AD.svg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Triangle_ABC_with_bisector_AD.svg to images/Triangle_ABC_with_bisector_AD.svg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/favicon.ico to /Users/bblais/bblais_on_the_web_work/output/favicon.ico
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/favicon.ico to favicon.ico
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/chicken-2205233_960_720.jpg to /Users/bblais/bblais_on_the_web_work/output/images/chicken-2205233_960_720.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/chicken-2205233_960_720.jpg to images/chicken-2205233_960_720.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/SIE.png to /Users/bblais/bblais_on_the_web_work/output/images/SIE.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/SIE.png to images/SIE.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-152x152.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-152x152.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-152x152.png to theme/images/apple-touch-icon-152x152.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/horsehead1.png to /Users/bblais/bblais_on_the_web_work/output/images/horsehead1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/horsehead1.png to images/horsehead1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Sea_Squirt.jpg to /Users/bblais/bblais_on_the_web_work/output/images/Sea_Squirt.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Sea_Squirt.jpg to images/Sea_Squirt.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/4.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/4.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/4.png to images/entropy/4.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Sun.jpg to /Users/bblais/bblais_on_the_web_work/output/images/Sun.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Sun.jpg to images/Sun.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/effect_size.png to /Users/bblais/bblais_on_the_web_work/output/images/effect_size.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/effect_size.png to images/effect_size.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/capsule.png to /Users/bblais/bblais_on_the_web_work/output/images/capsule.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/capsule.png to images/capsule.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg to /Users/bblais/bblais_on_the_web_work/output/images/Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg to images/Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-120x120.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-120x120.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-120x120.png to theme/images/apple-touch-icon-120x120.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/5.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/5.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/5.png to images/entropy/5.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/photo_72511_landscape_650x433.jpg to /Users/bblais/bblais_on_the_web_work/output/images/photo_72511_landscape_650x433.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/photo_72511_landscape_650x433.jpg to images/photo_72511_landscape_650x433.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/pollock.jpg to /Users/bblais/bblais_on_the_web_work/output/images/pollock.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/pollock.jpg to images/pollock.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-144x144.png to /Users/bblais/bblais_on_the_web_work/output/theme/images/apple-touch-icon-144x144.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/apple-touch-icon-144x144.png to theme/images/apple-touch-icon-144x144.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/city-view-1427730_1920.jpg to /Users/bblais/bblais_on_the_web_work/output/images/city-view-1427730_1920.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/city-view-1427730_1920.jpg to images/city-view-1427730_1920.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/plan-1725510_960_720.jpg to /Users/bblais/bblais_on_the_web_work/output/images/plan-1725510_960_720.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/plan-1725510_960_720.jpg to images/plan-1725510_960_720.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/3.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/3.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/3.png to images/entropy/3.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/iconifier-readme.txt to /Users/bblais/bblais_on_the_web_work/output/theme/images/iconifier-readme.txt
+-> Copying /Users/bblais/bblais_on_the_web_work/content/theme/images/iconifier-readme.txt to theme/images/iconifier-readme.txt
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/laura-aziz-78175.jpg to /Users/bblais/bblais_on_the_web_work/output/images/laura-aziz-78175.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/laura-aziz-78175.jpg to images/laura-aziz-78175.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/neuron1.jpg to /Users/bblais/bblais_on_the_web_work/output/images/neuron1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/neuron1.jpg to images/neuron1.jpg
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/smallrocks1.png to /Users/bblais/bblais_on_the_web_work/output/images/smallrocks1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/smallrocks1.png to images/smallrocks1.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/7.png to /Users/bblais/bblais_on_the_web_work/output/images/entropy/7.png
+-> Copying /Users/bblais/bblais_on_the_web_work/content/images/entropy/7.png to images/entropy/7.png
+-> writing /Users/bblais/bblais_on_the_web_work/output/sitemap.xml
+
+-> Modified: content, theme, settings, [static]static, [static]images, [static]theme/images. re-generating...
+Done: Processed 294 articles, 13 drafts, 3 pages, 0 hidden pages and 0 draft pages in 7.31 seconds.
+
+-> Modified: theme. re-generating...
+Done: Processed 294 articles, 13 drafts, 3 pages, 0 hidden pages and 0 draft pages in 7.30 seconds.
+Process Process-1:
+Traceback (most recent call last):
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/bblais/anaconda3/lib/python3.6/site-packages/pelican/__init__.py", line 532, in autoreload
+    time.sleep(.5)  # sleep to avoid cpu load
+KeyboardInterrupt
+127.0.0.1 - - [14/Jan/2019 21:36:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [14/Jan/2019 21:36:35] "GET /search.html?q=chicken HTTP/1.1" 200 -
+Process Process-2:
+Traceback (most recent call last):
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/bblais/anaconda3/lib/python3.6/site-packages/pelican/__init__.py", line 548, in listen
+    httpd.serve_forever()
+  File "/Users/bblais/anaconda3/lib/python3.6/socketserver.py", line 238, in serve_forever
+    self._handle_request_noblock()
+  File "/Users/bblais/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/Users/bblais/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/Users/bblais/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Users/bblais/anaconda3/lib/python3.6/socketserver.py", line 696, in __init__
+    self.handle()
+  File "/Users/bblais/anaconda3/lib/python3.6/http/server.py", line 418, in handle
+    self.handle_one_request()
+  File "/Users/bblais/anaconda3/lib/python3.6/http/server.py", line 386, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/Users/bblais/anaconda3/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/bblais/anaconda3/bin/pelican", line 11, in <module>
+    sys.exit(main())
+  File "/Users/bblais/anaconda3/lib/python3.6/site-packages/pelican/__init__.py", line 602, in main
+    exc = excqueue.get()
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/queues.py", line 94, in get
+    res = self._recv_bytes()
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/Users/bblais/anaconda3/lib/python3.6/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+make: *** [dev] Error 1

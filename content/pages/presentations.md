@@ -1,6 +1,10 @@
 Title: Presentations
 [TOC]
 
+# 2018
+
+* Blais, B.S., *[Your Lack of Imagination Can Kill You — But You Can Be Saved by Math](https://www.youtube.com/watch?v=3xAb3aVGVM0&t=2s)*. Feb 2018.  TEDxBryantU.  Full [list of videos for the event](https://www.youtube.com/user/TEDxTalks/search?query=TEDxBryantU).
+
 # 2017
 
 * Blais, B.S., *[Twitter, Zombies, and the Fate of the World](http://web.bryant.edu/~bblais/pdf/Twitter Zombies and the Fate of the World.pdf)*. Mar 2017.  Analytics without Borders Conference.  [Supplemental Notebook is here](https://gist.github.com/bblais/181abd99f878282666b98a29588dda41).

@@ -1,8 +1,7 @@
 title: Lessons from Jon Acuff's book Finish
 date: 1/17/2018
 status: draft
-
-![productivity](images/productivity-1995781_1280.jpg) 
+image: productivity-1995781_1280.jpg
 
 Here are the lessons I learned from [Jon Acuff's book *Finish*](https://acuff.me/books/).
 
