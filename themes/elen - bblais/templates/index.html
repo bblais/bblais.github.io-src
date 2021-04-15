@@ -6,27 +6,100 @@
 
 {% block content %}
 
-<!-- bb: timing for this slider in static/js/main.js under autoplayTimeout.  
-	default is 5 seconds, I upped it to 10 seconds -->
-<section class="home-slider js-fullheight owl-carousel">
 
-	{% for slide in SLIDER %}
+   <section class="ftco-section-2">
 
-	<a href="{{slide.url}}">
-	<div class="slider-item js-fullheight" style="background-image:url({{ SITEURL }}/images/{{slide.image}});">
-		<div class="overlay"></div>
-	  <div class="container-fluid">
-		<div class="row no-gutters slider-text slider-text-2 js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-		<div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		  <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{slide.title}}</h1>
-		  <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">{{slide.text}}</p>
+	<h3 class="mb-4">Books</h3>
+
+	<div class="container">
+
+
+		<!-- <div class="row justify-content-center mb-5 pb-2">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<h2 class="mb-4" id="books">Books</h2>
+			</div>
 		</div>
-	  </div>
-	  </div>
+ -->
+		<div class="photograhy">
+			<div class="row no-gutters">
+
+				{% for slide in BOOKS_SLIDES %}
+
+				<div class="col-md-3">
+					<a href="{{slide.url}}" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url({{ SITEURL }}/images/{{slide.image}});">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>{{slide.title}}</h3>
+							<span>{{slide.text}}</span>
+						</div>
+					</a>
+				</div>
+
+
+
+
+				{% endfor %}
+
+
+
+
+			</div>
+		</div>
 	</div>
-	</a>
-    {% endfor %}
-  </section>
+
+
+
+</section>
+
+	<section class="ftco-section-2">
+
+		<h3 class="mb-4">Media Appearances</h3>
+
+	<div class="container">
+
+		<div class="photograhy">
+			<div class="row no-gutters">
+
+				{% for slide in MEDIA_SLIDES %}
+
+				<div class="col-md-3">  
+					<a href="{{slide.url}}" class="photography-entry img d-flex justify-content-center align-items-center" style="background-image: url({{ SITEURL }}/images/{{slide.image}});">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>{{slide.title}}</h3>
+							<span>{{slide.text}}</span>
+						</div>
+					</a>
+				</div>
+
+				{% endfor %}
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="ftco-section-2">
+	<div class="row justify-content-center mb-5 pb-2">
+		<div class="col-md-7 heading-section text-center ftco-animate">
+			<h2 class="mb-4" id="contact">Contact</h2>
+
+				<ul class="ftco-social mt-3">
+					<li class="ftco-animate"><a href="{{ SOCIAL.twitter }}"><span class="icon-twitter"></span></a></li>
+					<li class="ftco-animate"><a href="{{ SOCIAL.linkedin }}"><span class="icon-linkedin"></span></a></li>
+					<li class="ftco-animate"><a href="{{ SOCIAL.github }}"><span class="icon-github"></span></a></li>
+					<li class="ftco-animate"><a href="{{ SOCIAL.email }}"><span class="icon-envelope"></span></a></li>  
+					<li class="ftco-animate"><a href="{{ SITEURL }}/static/cv.pdf"><span class="icon-book"></span></a></li>  
+				</ul>
+		</div>
+	</div>
+</section>
+
+
+
 
 			<!-- <div class="hero-wrap js-fullheight" style="background-image: url({{ SITEURL }}/theme/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
@@ -55,11 +128,7 @@
 						<div class="row">
 
 
-							{% for article in articles %}
-							{% if not RECENT_ARTICLES_COUNT %}
-							{% set RECENT_ARTICLES_COUNT = 12 %}
-							{% endif %}
-							{% if loop.index0 < RECENT_ARTICLES_COUNT %}
+							{% for article in articles_page.object_list %}
 
 							<div class="col-md-4">
 								<div class="blog-entry ftco-animate">
@@ -89,11 +158,42 @@
 								</div>
 							</div>
 
-							{% endif %}
 							{% endfor %}
 				
 
+							{% if DEFAULT_PAGINATION %}
 
+
+							<div class="row mt-5">
+									<div class="col">
+									  <div class="block-27">
+										<ul>
+												{% if articles_page.has_previous() %}
+												<li class="active">
+														<a href="{{ SITEURL }}/{{ articles_previous_page.url }}#blog">&lt;</a>
+												</li>
+												{% else %}
+												<li>
+														<a href="#blog">&lt;</a>
+												</li>
+													{% endif %}											
+												{% if articles_page.has_next() %}
+												<li class="active">
+														<a href="{{ SITEURL }}/{{ articles_next_page.url }}#blog">&gt;</a>
+												</li>
+													{% else %}
+												<li>
+														<a href="#blog">&gt;</a>
+												</li>
+												{% endif %}
+										</ul>
+									  </div>
+									</div>
+								</div>
+			  
+				
+
+							{% endif %}
 
 
 							

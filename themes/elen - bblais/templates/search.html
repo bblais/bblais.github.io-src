@@ -53,7 +53,7 @@ $(document).ready(function() {
          {% else %}
              'mode': 'live',
          {% endif %}
-         'show': 10,
+         'show': 100,
          'newWindow': false,
          {# I cannot place following statements in the conditionals above because then Tipue Search fails to work. Possibly a bug in Tipue Search. #}
          {% if 'tipue_search' in PLUGINS %}
@@ -78,8 +78,9 @@ $(document).ready(function() {
 
 
                     <div class="col-md-12">
-                        <div class="blog-entry ">
+
                 <div class="text pt-2 mt-3">
+                        <div class="blog-entry ">
                         <form action="search.html">
                                 <div class="tipue_search_left"><img src="{{ SITEURL }}/theme/tipuesearch/search.png" class="tipue_search_icon"></div>
                                 <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>

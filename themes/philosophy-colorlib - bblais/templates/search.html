@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Seach {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+  Search results:
+{% endblock head_description %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.css"/>
+{% endblock %}
+
+{% block extra_js %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_content.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#tipue_search_input').tipuesearch({
+          'mode' : 'json',
+          'show': 10,
+          'newWindow': false,
+          'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
+      });
+    });
+  </script>
+{% endblock extra_js %}
+
+{% block top_center %}
+  <h1>
+    Search Results
+  </h1>
+{% endblock %}
+
+{% block content %}
+
+<section class="s-content s-content--narrow s-content--no-padding-bottom">
+
+    <article class="row format-standard">
+
+        <div class="s-content__header col-full">
+            <h1 class="s-content__header-title">
+                Search Results...
+            </h1>
+        </div> <!-- end s-content__header -->
+
+        <div class="col-full s-content__main">
+
+            <div id="tipue_search_content"></div>
+
+        </div> <!-- end s-content__main -->
+
+    </article>
+
+
+</section> <!-- s-content -->
+
+{% endblock content %}

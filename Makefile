@@ -6,6 +6,7 @@ PELICANOPTS=
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDEVDIR=$(BASEDIR)/output_dev
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -114,16 +115,24 @@ help:
 	@echo '                                                                          '
 
 html:
-	$(PELICAN) -v $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) -v $(INPUTDIR) -o $(OUTPUTDEVDIR) -s $(CONFFILE) $(PELICANOPTS)
+	cp redirects/* $(OUTPUTDEVDIR)
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)/*
 
+devclean:
+	[ ! -d $(OUTPUTDEVDIR) ] || rm -rf $(OUTPUTDEVDIR)/*
+
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-home:
+homee:
 	./check_publish_articles.py
+	$(PELICAN) $(INPUTDIR) -o $(HOMEDIR) -s $(HOMECONF) $(PELICANOPTS)
+	cp redirects/* $(HOMEDIR)
+
+home:
 	$(PELICAN) $(INPUTDIR) -o $(HOMEDIR) -s $(HOMECONF) $(PELICANOPTS)
 
 debug:
@@ -147,16 +156,16 @@ endif
 
 devserver:
 ifdef PORT
-	$(PELICAN) -vlr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
+	$(PELICAN) -vlr $(INPUTDIR) -o $(OUTPUTDEVDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
 else
-	$(PELICAN) -vlr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) -vlr $(INPUTDIR) -o $(OUTPUTDEVDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
 dev:
 ifdef PORT
-	$(PELICAN) -vlr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
+	$(PELICAN) -vr $(INPUTDIR) -o  $(OUTPUTDEVDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
 else
-	$(PELICAN) -vlr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) -vr $(INPUTDIR) -o  $(OUTPUTDEVDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
 stopserver:
@@ -164,8 +173,9 @@ stopserver:
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 publish:
-	./check_publish_articles.py
+	#./check_publish_articles.py
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	cp redirects/* $(OUTPUTDIR)
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
@@ -186,7 +196,7 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	open -a GitKraken
+	open -a GitHub\ Desktop
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
 

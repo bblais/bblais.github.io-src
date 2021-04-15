@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% if article.summary %}
+{{ article.summary|striptags }}
+{% endif %}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if article.tags or article.category or article.keywords %}
+<meta name="keywords" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+{% endif %}
+
+<meta itemprop="name" content="{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %}">
+<meta itemprop="description" content="{{ article.content[:500]|striptags }}...">
+<meta name="name" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--narrow s-content--no-padding-bottom">
+
+        <article class="row format-standard">
+
+            <div class="s-content__header col-full">
+                <h1 class="s-content__header-title">
+                    {{ article.title }} {%if article.subtitle %} <p><span class="h2"> {{ article.subtitle }} </span></p> {% endif %} 
+                </h1>
+                <ul class="s-content__header-meta">
+                    <li class="date"><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></li>
+                    {% if article.tags or article.category %}
+                    <li class="cat">
+                        In  
+                        {% for tag in article.tags %}
+                            <a href="#0">{{tag}}</a>
+                        {% endfor %}
+                        {% if article.category %}
+                            <a href="{{ SITEURL }}/{{article.category.url}}">{{article.category}}</a>
+                        {% endif %}
+                    </li>
+                    {% endif %}
+                </ul>
+            </div> <!-- end s-content__header -->
+    
+            {% if article.video %}
+                <div class="s-content__media col-full">
+                    <div class="video-container">
+                        <iframe src="{{article.video}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div> 
+                </div> <!-- end s-content__media -->
+
+            {% elif article.image %}
+
+                <div class="s-content__media col-full">
+                    <div class="s-content__post-thumb s-content__post-thumb-center">
+                        <img src="{{ SITEURL }}/images/{{ article.image }}">
+                    </div>
+                </div> <!-- end s-content__media -->
+
+            {% else %}
+                <div class="s-content__media col-full">
+                    <div class="s-content__post-thumb s-content__post-thumb-center">
+                        <img src="{{ SITEURL }}/images/default.png">
+                    </div>
+                </div> <!-- end s-content__media -->
+
+
+            {% endif %}
+
+            <div class="col-full s-content__main">
+
+                {{ article.content }}
+
+            </div> <!-- end s-content__main -->
+
+        </article>
+
+
+        <div class="comments-wrap">
+
+            <div id="comments" class="row">
+                <div class="col-full">
+
+        {% include 'disqus.html' %}
+
+    </div> <!-- end col-full -->
+
+</div> <!-- end row comments -->
+</div> <!-- end comments-wrap -->
+
+</section> <!-- s-content -->
+
+
+{% endblock content %}
+

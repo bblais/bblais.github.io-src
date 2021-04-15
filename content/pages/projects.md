@@ -6,8 +6,8 @@ Title: Projects
 * [Statistical Inference for Everyone](../posts/2019/Jan/14/stats-for-everyone/)
 > *Statistical Inference for Everyone* is an introductory textbook on statistical inference, motivated by probability theory as logic.  It is intended for a Statistics 101 audience.  
 
-* [pyndamics: Python Numerical Dynamics Simulator](https://github.com/bblais/pyndamics)
-> * Pyndamics provides a way to describe a dynamical system in terms of the differential equations, or the stock-flow formalism. It is a wrapper around the Scipy odeint function, with further functionality for time plots, phase plots, and vector fields.
+* [pyndamics3: Python Numerical Dynamics Simulator](https://bblais.github.io/pyndamics3/)
+> * Pyndamics3 provides a way to describe a dynamical system in terms of the differential equations, or the stock-flow formalism. It is a wrapper around the Scipy odeint function, with further functionality for time plots, phase plots, and vector fields.
 
 * [plasticity: synaptic modification in rate-based neurons](https://github.com/bblais/plasticity)
 > Plasticity is a package with a convenient interface, used to run simulations of single cells and networks of neurons.

@@ -1,8 +1,7 @@
 title: Not all Extraordinary Claims are Equal
 Date: 2017-09-05
-summary: ![chick](images/chicken-2205233_960_720.jpg) Although we may believe that a chick can be born inside a hen on weak testimonial evidence, we are not therefore justified to believe all other extraordinary claims on weak testimonial evidence.
-
-![chick](images/chicken-2205233_960_720.jpg)
+image: chicken-2205233_960_720.jpg
+summary: Although we may believe that a chick can be born inside a hen on weak testimonial evidence, we are not therefore justified to believe all other extraordinary claims on weak testimonial evidence.
 
 It's the beginning of the school year and time to get back into writing and exploring interesting scientific questions, or at least exploring scientific thinking. We start with [this article](http://www.saintsandsceptics.org/extraordinary-claims-do-not-require-extraordinary-evidence/) which maintains that extraordinary claims do not require extraordinary evidence. They make the analogy with a story about a vet claiming that a chicken gave birth to a chick internally, without laying the egg.  The author states that he believes this claim, despite the meager evidence, because "this is the sort of evidence that I’d expect if the claim is true and not at all what I’d expect if the claim is false."
 

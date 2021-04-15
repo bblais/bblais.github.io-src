@@ -2,6 +2,7 @@ title: The Power of a Story
 subtitle: …especially when it's wrong
 date: feb 9, 2018
 status: published
+popular: true
 image: ocean-water-1149661_960_720.jpg
 
 

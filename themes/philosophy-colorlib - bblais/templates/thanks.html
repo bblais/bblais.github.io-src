@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock title %}
+
+{% block content %}
+
+<section class="s-content s-content--narrow">
+
+    <div class="row">
+
+        <div class="s-content__header col-full">
+            <h1 class="s-content__header-title">
+                Thanks!
+            </h1>
+        </div> <!-- end s-content__header -->
+
+        <ul class="header__social">
+            {% include 'social_links.html' %}
+        </ul> <!-- end header__social -->
+
+    </div>
+    
+</section>
+
+		
+		
+{% endblock content %}

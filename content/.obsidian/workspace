@@ -1,0 +1,108 @@
+{
+  "main": {
+    "id": "f3c57ce04abcd74d",
+    "type": "split",
+    "children": [
+      {
+        "id": "386369d8b77be520",
+        "type": "leaf",
+        "dimension": 74.19354838709678,
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "articles/programming/lmfit with pyndamics.md",
+            "mode": "preview"
+          }
+        }
+      },
+      {
+        "id": "3e9feba4adfb5128",
+        "type": "leaf",
+        "dimension": 25.806451612903228,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "articles/programming/build_list_to_plot.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0809d73172d1a78",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6044c33f2918bf9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8698bb1c79b3dbaa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5120e70083a59e05",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "661c9ff9a79f4a66",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f546c582ad08c5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14780fab77987ee5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "articles/programming/lmfit with pyndamics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "articles/programming/lmfit with pyndamics.md",
+    "articles/programming/build_list_to_plot.md",
+    "articles/programming/Untitled.md",
+    "Untitled.md",
+    "articles/programming/pelican_theme.md"
+  ]
+}

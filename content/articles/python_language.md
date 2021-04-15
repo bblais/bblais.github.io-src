@@ -12,4 +12,4 @@ In my experience, Python is the easiest language for a beginner to learn, and it
 [Python programming language]: http://www.python.org
 [myths about Python]: https://www.paypal-engineering.com/2014/12/10/10-myths-of-enterprise-python
 [programming journey away from C and Java to Python]: http://allhailtothepenguin.blogspot.com/2014/12/after-years-of-c-and-java-i-chose-python.html
-[my own experience]: http://web.bryant.edu/~bblais/bryant/numerical_computing/python_matlab.pdf
+[my own experience]: https://web.bryant.edu/~bblais/pdf/python_matlab.pdf

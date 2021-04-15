@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ page.title }} {%if page.subtitle %} - {{ page.subtitle }} {% endif %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% if page.summary %}
+{{ page.summary|striptags }}
+{% endif %}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}" />
+{% endif %}
+{% endblock meta_tags_in_head %}
+
+
+{% block content %}
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--narrow s-content--no-padding-bottom">
+
+        <article class="row format-standard">
+
+            <div class="s-content__header col-full">
+                <h1 class="s-content__header-title">
+                    {{ page.title }} {%if page.subtitle %} <small> {{ page.subtitle }} </small> {% endif %} 
+                </h1>
+            </div> <!-- end s-content__header -->
+    
+            {% if page.image %}
+            <div class="s-content__media col-full">
+                <div class="s-content__post-thumb">
+                    <img src=" {{ SITEURL }}/images/{{ page.image }}" alt="" >
+                </div>
+            </div> <!-- end s-content__media -->
+            {% endif %}
+            
+            <div class="col-full s-content__main">
+
+                {{ page.content }}
+
+            </div>
+        </article>
+
+
+    </section> <!-- s-content -->
+
+
+
+{% endblock content %}
+
+{% block script %}
+{{ super() }}
+{% endblock script %}

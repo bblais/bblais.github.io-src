@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+All Posts · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+Full archives of {{ SITENAME|striptags|e }} blog.
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{{ super() }}
+<meta property="og:title" content="All Posts · {{ SITENAME|striptags|e }}"/>
+<meta name="twitter:title" content="All Posts · {{ SITENAME|striptags|e }}">
+<meta property="og:url" content="{{ SITEURL }}/archives.html" />
+<meta property="og:description" content="Full archives of {{ SITENAME|striptags|e }} blog" />
+<meta name="twitter:description" content="Full archives of {{ SITENAME|striptags|e }} blog">
+<meta property="og:site_name" content="{{ SITENAME|striptags|e }}" />
+<meta property="og:article:author" content="{{ AUTHOR }}" />
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+
+<section class="s-content s-content--narrow s-content--no-padding-bottom">
+
+        <article class="row format-standard">
+
+            <div class="s-content__header col-full">
+                <h1 class="s-content__header-title">
+                    All Posts...
+                </h1>
+            </div> <!-- end s-content__header -->
+        </article>
+
+            {% set ns = namespace(last_year=0) %}
+            {% for article in dates %}
+                {% set year = article.date.strftime('%Y') %}
+
+                {%if ns.last_year != year %}
+                    {%if ns.last_year == 0 %}   <!-- first time through -->
+                        <article class="row format-standard">
+                        <ul>
+                    {%else%}
+                        </ul>
+                        </article>
+                        <article class="row format-standard">
+                        <ul>
+                    {% endif %}
+                    <h1 id="{{year }}">{{ year }}</h1>
+                {% endif %}
+                {% set ns.last_year = year %}
+                    <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a>
+                    <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></li>
+            {% endfor %}
+            </ul>
+            </article> <!-- close up through -->
+
+</section> <!-- s-content -->
+
+{% endblock content %}
+
+{% block script %}
+{{ super() }}
+{% endblock script %}

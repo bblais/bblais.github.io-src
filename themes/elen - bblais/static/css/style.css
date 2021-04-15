@@ -114,7 +114,12 @@ dd {
   margin-left: 0; }
 
 blockquote {
-  margin: 0 0 1rem; }
+  margin: 1rem 1rem 1rem 1rem; 
+  font-style: italic;
+  font-size: 1.00rem; 
+  display: block;
+  color: #6c757d; }
+}
 
 dfn {
   font-style: italic; }
@@ -385,7 +390,9 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.25rem; }
+  font-style: italic;
+  font-size: 1.25rem; 
+  display: block;}
 
 .blockquote-footer {
   display: block;

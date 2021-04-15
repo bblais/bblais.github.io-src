@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock title %}
+
+{% block content %}
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--narrow">
+
+        <article class="row format-standard">
+
+        <div class="row">
+
+            <div class="s-content__header col-full">
+                <h1 class="s-content__header-title">
+                    Learn More About bblais
+                </h1>
+            </div> <!-- end s-content__header -->
+
+
+            <div class="col-full s-content__main">
+
+                <div class="s-content__media col-full">
+                    <img src="{{ SITEURL }}/images/{{ ABOUT_PICTURE }}" alt="bblais" >
+                </div> <!-- end s-content__media -->
+
+                <p class="lead">
+                    
+                    {{ ABOUT }}
+
+                </p>
+            </div> <!-- end s-content__main -->
+
+        </div> <!-- end row -->
+
+    </section> <!-- s-content -->
+
+
+		
+    {% endblock content %}
+
+

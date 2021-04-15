@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>A Simple Physics Problem Gets Messy  · bblais on the web
+</title>
+    <meta name="description" content="">
+    <meta name="author" content="Brian Blais">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/base.css">
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/vendor.css">
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="http://localhost:8000/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://localhost:8000/favicon.ico" type="image/x-icon">
+
+    <!-- script
+    ================================================== -->
+    <script src="http://localhost:8000/theme/js/modernizr.js"></script>
+    <script src="http://localhost:8000/theme/js/pace.min.js"></script>
+
+
+</head>
+
+
+<body id="top">
+
+    <!-- pageheader
+    ================================================== -->
+    <section class="s-pageheader  ">
+
+        
+        <header class="header">
+            <div class="header__content row">
+
+                <div class="header__logo">
+                    <a class="logo" href="http://localhost:8000/index.html">
+                        <img src="http://localhost:8000/theme/images/logo.svg" alt="Homepage">
+                    </a>
+                </div> <!-- end header__logo -->
+
+                <ul class="header__social">
+<li><a href="https://twitter.com/bblais"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a href="https://github.com/bblais"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>                </ul> <!-- end header__social -->
+
+                <a class="header__search-trigger" href="#0"></a>
+
+                <div class="header__search">
+
+                    <form class="header__search-form"" role="search" action="http://localhost:8000/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" name="q" id="tipue_search_input" class="search-field" title="Search for:" autocomplete="off" placeholder="Search" required />
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+
+                    <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+                </div>  <!-- end header__search -->
+                
+
+
+                <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+                <nav class="header__nav-wrap">
+
+                    <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                    <ul class="header__nav">
+                        <li class=""><a href="http://localhost:8000/index.html" title="">Home</a></li>
+                        <li class="has-children">
+                            <a href="#0" title="">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="http://localhost:8000/index.html#blog">Recent</a></li>
+                                    <li><a href="http://localhost:8000/category/articles.html">articles <span>(85)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/books.html">books <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/math.html">math <span>(5)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/media.html">media <span>(9)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/presentations.html">presentations <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/productivity.html">productivity <span>(6)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/projects.html">projects <span>(4)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/religion.html">religion <span>(10)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/science.html">science <span>(7)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/unbelievable-project.html">Unbelievable Project <span>(19)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/wordpress_migration.html">wordpress_migration <span>(160)</span></a></li>
+                            
+                            </ul>
+                        </li>
+
+                        <li ><a href="http://localhost:8000/pages/presentations.html">Presentations</a></li>
+                        <li ><a href="http://localhost:8000/pages/projects.html">Projects</a></li>
+                        <li ><a href="http://localhost:8000/pages/publications.html">Publications</a></li>
+                        <li ><a href="http://localhost:8000/archives.html">Archives</a></li>
+                        <li ><a href="http://localhost:8000/about.html">About</a></li>
+                        <li ><a href="http://localhost:8000/contact.html">Contact</a></li>
+                    </ul> <!-- end header__nav -->
+
+                    <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+                </nav> <!-- end header__nav-wrap -->
+
+            </div> <!-- header-content -->
+        </header> <!-- header -->
+
+
+    </section> <!-- end s-pageheader -->
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--narrow s-content--no-padding-bottom">
+
+        <article class="row format-standard">
+
+            <div class="s-content__header col-full">
+                <h1 class="s-content__header-title">
+                    A Simple Physics Problem Gets Messy  
+                </h1>
+                <ul class="s-content__header-meta">
+                    <li class="date"><time pubdate="pubdate" datetime="2020-08-03T00:00:00-04:00">Mon 03 August 2020</time></li>
+                    <li class="cat">
+                        In  
+                            <a href="#0">science</a>
+                            <a href="http://localhost:8000/category/science.html">science</a>
+                    </li>
+                </ul>
+            </div> <!-- end s-content__header -->
+    
+
+                <div class="s-content__media col-full">
+                    <div class="s-content__post-thumb s-content__post-thumb-center">
+                        <img src="http://localhost:8000/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                    </div>
+                </div> <!-- end s-content__media -->
+
+
+            <div class="col-full s-content__main">
+
+                <p>A physics problem from a practice AP test came to my attention, when my daughter was in AP physics this past spring.  I went over her solutions when she did the practice questions so that she would have another resource to explain the concepts involved.  Due the new format this year, adjusting to the COVID-19 restrictions, there were <em>only four such practice problems</em> available to work from.  Although the four questions were generally pretty good, I thought, <a href="https://youtu.be/L1oIsHMB1RQ?t=1751">the official solution</a> to a quarter of one of the questions was simply incorrect. </p>
+<p>It's a good example of how assumptions affect any problem, how a simple problem can get messy quickly, and how one can use computation to explore even a messy version of a physics problem.  I was unable to solve the final part analytically because of an assumption <a href="https://youtu.be/L1oIsHMB1RQ?t=1751">the official solution</a> made that was not explicitly stated in the problem.  It turned out that this assumption was not physically reasonable, but was necessary in order to actually solve the problem.</p>
+<p>The introduction to the problem is given here:</p>
+<blockquote>
+<p>A student is given a spring that does NOT obey Hooke's Law. The student is told that the relationship between the magnitude of the force exerted by the spring and the magnitude of the spring's stretch or compression is given by the function <span class="math">\(F = Bx^3\)</span> . <strong>The student wishes to determine whether this is the correct relationship between <span class="math">\(F\)</span> and <span class="math">\(x\)</span> and, if it is, to determine the value of <span class="math">\(B\)</span>.</strong></p>
+<p><img src="http://localhost:8000/images/AP20/car_table.png" width=400></p>
+<p>The student fixes the spring to a vertical wall just above a flat table, as shown above. The student also has a cart of known mass <span class="math">\(M\)</span> that has light wheels and frictionless bearings. The student also has access to a meterstick and a scientific calculator that can perform four functions, exponents and roots, but cannot perform curve fitting or analyze lists of data.</p>
+<p>(a) State the measurements that the student should make, and give each measurement a meaningful algebraic symbol.</p>
+<p>(b) Describe the procedure that the student should follow in order to make the measurements necessary to accomplish the student's purpose.</p>
+<p>(c) Explain how the student should use the measurements in order to accomplish the student's purpose. Explicitly explain how the relationship between <span class="math">\(F\)</span> and <span class="math">\(x\)</span> can be tested and the value of <span class="math">\(B\)</span> determined.</p>
+<p>(d) Suppose that the table is not level, so that the cart, upon becoming a projectile, has a sight upward launch angle. How would the true value of <span class="math">\(B\)</span> compare to the value calculated by a student following your procedure and data analysis outlined above?</p>
+</blockquote>
+<p>The official solution to the questions is posted is here:  <a href="https://youtu.be/L1oIsHMB1RQ?t=1751">https://youtu.be/L1oIsHMB1RQ?t=1751</a></p>
+<h2 id="determining-b">Determining <span class="math">\(B\)</span></h2>
+<blockquote>
+<p>(a) State the measurements that the student should make, and give each measurement a meaningful algebraic symbol.</p>
+</blockquote>
+<p>First I define the quantities, and derive expressions for the constants.  I really answer this part</p>
+<ul>
+<li><span class="math">\(x_o\)</span> is the compression length</li>
+<li><span class="math">\(M\)</span> is the mass</li>
+<li><span class="math">\(v_o\)</span> is the horizontal launch speed off the flat table</li>
+</ul>
+<div class="math">$$U = \int F(x) dx = \frac{B x_o^4}{4}$$</div>
+<div class="math">$$
+\begin{aligned}
+\frac{B x_o^4}{4} &amp;= \frac{1}{2} mv_o^2 \\
+v_o^2 &amp;= \frac{B x_o^4}{2 m} \\
+v_o \cdot t &amp;= R \\
+h&amp;= \frac{1}{2} g t^2 \\
+t^2 &amp;= \frac{2h}{g} = \frac{R^2}{v_o^2} \\
+\frac{R^2 g}{h} &amp;= \frac{B x_o^4}{4}\\
+R^2 &amp;= x_o^4\cdot \frac{B\cdot h}{4g}
+\end{aligned}
+$$</div>
+<div class="math">$$
+B = \frac{R^2 g m}{x_o^4 h}
+$$</div>
+<p>So, varying <span class="math">\(x_o\)</span> and measuring the range, <span class="math">\(R\)</span>, we can determine <span class="math">\(B\)</span>.  </p>
+<h2 id="from-data-to-b">From data to <span class="math">\(B\)</span></h2>
+<blockquote>
+<p>(b) Describe the procedure that the student should follow in order to make the measurements necessary to accomplish the student's purpose.</p>
+</blockquote>
+<p>Plotting <span class="math">\(R^2\)</span> vs <span class="math">\(x_o^4\)</span> the slope will be <span class="math">\(B\cdot h/4g\)</span>.  Or better yet, plot <span class="math">\(\log(R)\)</span> vs <span class="math">\(\log(x_o)\)</span>.  </p>
+<div class="math">$$
+\begin{aligned}
+\frac{R^2 g}{h} &amp;= \frac{B x_o^4}{4} \\
+R^2 &amp;= x_o^4\cdot \frac{B\cdot h}{4g} \\
+2\log(R) &amp;= 4\log(x_o) + \log\left(\frac{B\cdot h}{4g}\right)
+\end{aligned}
+$$</div>
+<p>so the intercept will be <span class="math">\(\log\left(\frac{B\cdot h}{4g}\right)\)</span>.</p>
+<h2 id="verifyingdetermining-the-form-of-the-force">Verifying/Determining the form of the Force</h2>
+<blockquote>
+<p>(c) Explain how the student should use the measurements in order to accomplish the student's purpose. Explicitly explain how the relationship between <span class="math">\(F\)</span> and <span class="math">\(x\)</span> can be tested and the value of <span class="math">\(B\)</span> determined.</p>
+</blockquote>
+<p>The slope of the line from <span class="math">\(\log(R)\)</span> vs <span class="math">\(\log(x_o)\)</span> will determine the power of the spring energy function.  Slope of <span class="math">\(4\)</span> will confirm the <span class="math">\(x^3\)</span> form of the force.  </p>
+<h2 id="the-ramp-and-the-official-incorrect-solution">The Ramp and the Official (Incorrect) Solution</h2>
+<blockquote>
+<p>(d) Suppose that the table is not level, so that the cart, upon becoming a projectile, has a sight upward launch angle. How would the true value of <span class="math">\(B\)</span> compare to the value calculated by a student following your procedure and data analysis outlined above?</p>
+<p><img src="http://localhost:8000/images/AP20/car_table_ramp.png" width=400></p>
+</blockquote>
+<p>This is where the official solution goes off the rails.   He states that,</p>
+<blockquote>
+<p>If launch angle is a little bit up, the value of the range [<span class="math">\(R\)</span> in my notation, <span class="math">\(D\)</span> in theirs] will be a little bit farther than they ideally would have been, so if you get a farther distance <span class="math">\(R\)</span> than you should have gotten, then you would get a higher <span class="math">\(B\)</span>.</p>
+</blockquote>
+<p>Hidden in this solution, but one not stated in the problem, is an assumption which we'll discuss later.  We continue our solution of the ramp projectile.  The range launched from a height <span class="math">\(h\)</span> at an angle <span class="math">\(\theta\)</span> is (<a href="https://en.wikipedia.org/wiki/Range_of_a_projectile">https://en.wikipedia.org/wiki/Range_of_a_projectile</a>),</p>
+<div class="math">$$
+R_1=\frac{v^2}{2g} \left(1+\sqrt{1+\frac{2gh}{v^2\sin^2(\theta)}}\right)\sin(2\theta)
+$$</div>
+<p>
+this form doesn't look much like the flat-table range, </p>
+<div class="math">$$
+\begin{aligned}
+R_o^2 &amp;= \frac{2 v_o^2 h}{g} \\
+R_o &amp;= v_o \cdot \sqrt{\frac{2h}{g}}
+\end{aligned}
+$$</div>
+<p>
+but you can show that they are the same in the limit <span class="math">\(\theta\rightarrow 0\)</span>,</p>
+<div class="math">$$
+\begin{aligned}
+R_1&amp;=\frac{v^2}{2g} \left(1+\sqrt{1+\frac{2gh}{v^2\sin^2(\theta)}}\right)\sin(2\theta) \\
+&amp;\sim \frac{v^2}{2g} \left(1+\sqrt{1+\frac{2gh}{v^2 \theta^2}}\right)\cdot 2\theta \\
+&amp;\sim \frac{v^2}{2g} \left(\sqrt{\frac{2gh}{v^2 \theta^2}}\right)\cdot 2\theta \\
+&amp;=v \sqrt{\frac{2 h}{g}}
+\end{aligned}
+$$</div>
+<p>
+which matches the form of <span class="math">\(R_o\)</span>.</p>
+<p>It's not obvious that <span class="math">\(R_1\)</span> is an increasing function of <span class="math">\(\theta\)</span>, as stated in the solution (e.g. angle goes up, the range goes up) but numerically it is easy to demonstrate,</p>
+<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<span class="n">x0</span><span class="o">=</span><span class="mf">1.1</span>
+<span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
+<span class="n">h</span><span class="o">=</span><span class="mi">20</span>
+<span class="n">g</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="n">θ</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">U</span><span class="o">=</span><span class="n">B</span><span class="o">*</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">KE</span><span class="o">=</span><span class="n">U</span>
+<span class="n">v</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">KE</span><span class="o">*</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">R0</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+<span class="n">R1</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">))</span>
+
+<span class="n">θ_at_max</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">θ_at_max2</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">B</span><span class="o">/</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="p">))</span>
+
+<span class="n">B_est0</span><span class="o">=</span><span class="n">R0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+<span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
+
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max2</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Range&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$B$&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="http://localhost:8000/images/AP20/output_9_1.png"></p>
+<p>As you can see, for small angle, the range increases with angle before decreasing again for steep angles.  So far, so good.  You wouldn't expect a student on a test to do the next parts, but I wasn't convinced that the assumption made in the solution held in all cases, or that there wasn't some range of parameters for which the simplistic "angle goes up, range goes up" would hold experimentally.  So, I continued the analysis in as much deatil as I could.</p>
+<h3 id="maximum-angle">Maximum angle</h3>
+<p>What is shown in the plot is that above some critical angle, the range starts going down.  We expect that, because obviously if you had a ramp of <span class="math">\(\theta=90^\circ\)</span> you'd have no range.  But what if that critical angle was somehow small, like <span class="math">\(2^\circ\)</span>?  One might miss it experimentally if you were measuring, say, every <span class="math">\(5^\circ\)</span>.  But could this ever happen in this simple system?  Let's see.</p>
+<p>The critical angle that gives the maximum range is determined analytically from,</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sym</span>
+<span class="n">v</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">h</span><span class="p">,</span><span class="n">θ</span><span class="p">,</span><span class="n">x_o</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;v g h θ x_o B m&quot;</span><span class="p">)</span>
+<span class="n">R1</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sym</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">θ</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sym</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">R1</span><span class="p">)</span>
+</code></pre></div>
+
+<p><span class="math">\(\displaystyle \frac{v^{2} \left(\sqrt{\frac{2 g h}{v^{2} \sin^{2}{\left(θ \right)}} + 1} + 1\right) \sin{\left(2 θ \right)}}{2 g}\)</span></p>
+<div class="codehilite"><pre><span></span><code><span class="n">df</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">R1</span><span class="p">,</span><span class="n">θ</span><span class="p">)</span>
+<span class="n">soln</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">sym</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">df</span><span class="p">),</span><span class="n">θ</span><span class="p">)</span>
+<span class="n">soln</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="err">[-asin(sqrt(2)*v*sqrt(1/(g*h + v**2))/2),</span>
+<span class="err"> asin(sqrt(2)*v*sqrt(1/(g*h + v**2))/2)]</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">sin_θ_at_max</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">display</span><span class="p">(</span><span class="n">sin_θ_at_max</span><span class="p">)</span>
+</code></pre></div>
+
+<p><span class="math">\(\displaystyle \frac{\sqrt{2} v \sqrt{\frac{1}{g h + v^{2}}}}{2}\)</span></p>
+<p>The slope near <span class="math">\(\theta=0\)</span> is positive, as can be derived by </p>
+<div class="math">$$
+\frac{dR_1}{d\theta}=- \frac{h \sin{\left(2 θ \right)} \cos{\left(θ \right)}}{\sqrt{\frac{2 g h}{v^{2} \sin^{2}{\left(θ \right)}} + 1} \sin^{3}{\left(θ \right)}} + \frac{v^{2} \left(\sqrt{\frac{2 g h}{v^{2} \sin^{2}{\left(θ \right)}} + 1} + 1\right) \cos{\left(2 θ \right)}}{g}
+$$</div>
+<p>Applying small angle approximation for the trigonometric functions (e.g. <span class="math">\(\sin\theta\sim \theta\)</span>, <span class="math">\(\cos\theta \sim 1\)</span>) we get</p>
+<div class="math">$$
+\frac{dR_1}{d\theta}=\frac{v^{2}}{g} 
+$$</div>
+<p>
+which is positive.  Checking that this works numerically as well,</p>
+<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<span class="n">x0</span><span class="o">=</span><span class="mf">1.1</span>
+<span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
+<span class="n">h</span><span class="o">=</span><span class="mi">20</span>
+<span class="n">g</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="n">θ</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">U</span><span class="o">=</span><span class="n">B</span><span class="o">*</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">KE</span><span class="o">=</span><span class="n">U</span>
+<span class="n">v</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">KE</span><span class="o">*</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">R0</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+<span class="n">R1</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">))</span>
+
+<span class="n">θ_at_max</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">θ_at_max2</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">B</span><span class="o">/</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="p">))</span>
+
+<span class="n">B_est0</span><span class="o">=</span><span class="n">R0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+<span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
+
+<span class="n">x</span><span class="o">=</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">[:</span><span class="mi">30</span><span class="p">])</span>
+<span class="n">m</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span>
+<span class="n">b</span><span class="o">=</span><span class="n">R0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span><span class="o">=</span><span class="n">m</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="n">b</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">[:</span><span class="mi">30</span><span class="p">],</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;c--&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Small Angle Approx&#39;</span><span class="p">)</span>
+
+
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max2</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Range&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$B$&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="http://localhost:8000/images/AP20/output_16_1.png"></p>
+<p>Given the symmetry, the point where the range starts decreasing with angle is at twice this angle.  Subsituting in the launch speed for the flat table, <span class="math">\(v_o^2 = \frac{B x_o^4}{2 m}\)</span>, we get something interesting.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">sin_θ_at_max</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">B</span><span class="o">*</span><span class="n">x_o</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">))</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
+</code></pre></div>
+
+<p><span class="math">\(\displaystyle \frac{\sqrt{2} v \sqrt{\frac{1}{g h + v^{2}}}}{2}\)</span></p>
+<p>yielding,</p>
+<div class="math">$$
+\sin \theta_{\rm max} = \frac{1}{\sqrt{2} \sqrt{1 + \frac{2 g h m}{B x_{o}^{4}}}}
+$$</div>
+<p>the point here is that, while technically true that the range is an increasing function of <span class="math">\(\theta\)</span> for small <span class="math">\(\theta\)</span>, the turning point can be made arbitrarily small in certain parameter regions (e.g. small <span class="math">\(B\)</span>, small <span class="math">\(x_o\)</span>, large <span class="math">\(m\)</span>, etc...).  For instance,</p>
+<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<span class="n">x0</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
+<span class="n">h</span><span class="o">=</span><span class="mi">20</span>
+<span class="n">g</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="n">θ</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">U</span><span class="o">=</span><span class="n">B</span><span class="o">*</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">KE</span><span class="o">=</span><span class="n">U</span>
+<span class="n">v</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">KE</span><span class="o">*</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">R0</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+<span class="n">R1</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">))</span>
+
+<span class="n">θ_at_max</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">θ_at_max2</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">1</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="n">B</span><span class="o">/</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="p">))</span>
+
+<span class="n">B_est0</span><span class="o">=</span><span class="n">R0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+<span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
+
+<span class="n">x</span><span class="o">=</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">[:</span><span class="mi">30</span><span class="p">])</span>
+<span class="n">m</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span>
+<span class="n">b</span><span class="o">=</span><span class="n">R0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span><span class="o">=</span><span class="n">m</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="n">b</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">[:</span><span class="mi">30</span><span class="p">],</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;c--&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Small Angle Approx&#39;</span><span class="p">)</span>
+
+
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max2</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Range&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$B$&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="http://localhost:8000/images/AP20/output_22_1.png"></p>
+<p>So the claim that "range increases with angle" could be missed experimentally if the turning point is smaller than the ramp angle. To the person making the measurement, the range would <em>decrease</em> with angle.  Still, technically, that claim is true...assuming the same launch speed. </p>
+<h2 id="the-primary-assumption">The primary assumption</h2>
+<p>This brings us to the real problem with the given solution: <strong>the launch speed for the ramp case is not the same as the flat case</strong>.  The spring gives the same amount to the kinetic energy, but it does so by <em>having the block move up the ramp</em> as the spring expands.  Thus, the total kinetic energy of the block upon launch depends on the angle,</p>
+<div class="math">$$
+\begin{aligned}
+U&amp;= \frac{B x_o^4}{4} \\
+{\rm KE}_{\rm flat} &amp;= U \\
+{\rm KE}_{\rm ramp} &amp;= U - mgx_o\sin(\theta) 
+\end{aligned}
+$$</div>
+<p>This leads to a range equation like the one above for <span class="math">\(R_1\)</span>, but with an angle-dependent speed.  We'll call this range <span class="math">\(R_2\)</span>.</p>
+<p>(<a href="https://en.wikipedia.org/wiki/Range_of_a_projectile">https://en.wikipedia.org/wiki/Range_of_a_projectile</a>),</p>
+<div class="math">$$
+\begin{aligned}
+R_1&amp;=\frac{v^2}{2g} \left(1+\sqrt{1+\frac{2gh}{v^2\sin^2(\theta)}}\right)\sin(2\theta)\\
+R_2&amp;=\frac{v_o^2-2 g x_o\sin \theta}{2g} \left(1+\sqrt{1+\frac{2gh}{\left(v_o^2-2 g x_o\sin \theta\right)\sin^2(\theta)}}\right)\sin(2\theta)
+\end{aligned}
+$$</div>
+<p>which is a whole lot messier, and the slope is difficult to attain analytically.  Numerically however, it is easy to see the effect.  Depending on the parameters, <strong>the range could increase or decrease with angle</strong>. </p>
+<p>Here's an example with increasing with angle.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<span class="n">x0</span><span class="o">=</span><span class="mf">1.1</span>
+<span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
+<span class="n">h</span><span class="o">=</span><span class="mi">20</span>
+<span class="n">g</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="n">θ</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">U</span><span class="o">=</span><span class="n">B</span><span class="o">*</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">KE</span><span class="o">=</span><span class="n">U</span>
+<span class="n">v</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">KE</span><span class="o">*</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+<span class="n">v_o</span><span class="o">=</span><span class="n">v</span>
+
+<span class="n">R0</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+<span class="n">R1</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">))</span>
+
+<span class="n">θ_at_max</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">KE</span><span class="o">=</span><span class="n">U</span><span class="o">-</span><span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">x0</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+<span class="n">v</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">KE</span><span class="o">*</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+<span class="n">R2</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">))</span>
+
+
+
+
+<span class="n">B_est0</span><span class="o">=</span><span class="n">R0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+<span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+<span class="n">B_est2</span><span class="o">=</span><span class="n">R2</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp no speed reduction&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp with speed reduction&#39;</span><span class="p">)</span>
+
+
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Range&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp no speed reduction&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp with speed reduction&#39;</span><span class="p">)</span>
+<span class="n">vlines</span><span class="p">(</span><span class="n">degrees</span><span class="p">(</span><span class="n">θ_at_max</span><span class="p">),</span><span class="o">*</span><span class="n">ylim</span><span class="p">(),</span><span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$B$&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="http://localhost:8000/images/AP20/output_26_1.png"></p>
+<p>Here's an example with decreasing with angle.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<span class="n">x0</span><span class="o">=.</span><span class="mi">4</span>
+<span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
+<span class="n">h</span><span class="o">=</span><span class="mi">20</span>
+<span class="n">g</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="n">θ</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">U</span><span class="o">=</span><span class="n">B</span><span class="o">*</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">KE</span><span class="o">=</span><span class="n">U</span>
+<span class="n">v</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">KE</span><span class="o">*</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">R0</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+<span class="n">R1</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">))</span>
+
+
+<span class="n">KE</span><span class="o">=</span><span class="n">U</span><span class="o">-</span><span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">x0</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+<span class="n">v</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">KE</span><span class="o">*</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">)</span>
+<span class="n">R2</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">radians</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">))</span>
+
+<span class="n">B_est0</span><span class="o">=</span><span class="n">R0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+<span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+<span class="n">B_est2</span><span class="o">=</span><span class="n">R2</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp no speed reduction&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp with speed reduction&#39;</span><span class="p">)</span>
+
+
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Range&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp no speed reduction&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">B_est2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp with speed reduction&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$B$&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Angle&#39;</span><span class="p">)</span>
+<span class="n">legend</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="http://localhost:8000/images/AP20/output_29_1.png"></p>
+<h2 id="conclusions">Conclusions</h2>
+<p>This problem was a very nice problem for the AP test until the last section.  A hidden assumption -- that the launch speed is unaffected by the ramp -- would have made it much better and avoided any possible complications.  However it's not a great assumption given the way the table and block are set up -- there is definitely a gravitational component to energy picked up along the ramp.  Without this simplifying assumption the effect is much more complicated. </p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+            </div> <!-- end s-content__main -->
+
+        </article>
+
+
+        <div class="comments-wrap">
+
+            <div id="comments" class="row">
+                <div class="col-full">
+
+
+<script src="https://utteranc.es/client.js"
+        repo="bblais/bblais.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div> <!-- end col-full -->
+
+</div> <!-- end row comments -->
+</div> <!-- end comments-wrap -->
+
+</section> <!-- s-content -->
+
+
+
+
+    <!-- s-extra
+    ================================================== -->
+    <section class="s-extra">
+
+        <div class="row top">
+
+            <div class="col-eight md-six tab-full popular">
+                <h3>Popular Posts</h3>
+
+                <div class="block-1-2 block-m-full popular__posts">
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2021/Apr/09/gravitational-attraction/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/muzammil-soorma-R11bppS4q8o-unsplash.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2021/Apr/09/gravitational-attraction/">Gravitational Attraction</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2021-04-09T00:00:00-04:00">Fri 09 April 2021</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/">A Simple Physics Problem Gets Messy</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2020-08-03T00:00:00-04:00">Mon 03 August 2020</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/">Skepticism and Dubious Medical Procedures</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2020-07-09T00:00:00-04:00">Thu 09 July 2020</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2019/May/15/useful-fictions/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/green-chameleon-21532-unsplash.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2019/May/15/useful-fictions/">Useful Fictions</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2019-05-15T00:00:00-04:00">Wed 15 May 2019</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2019/Mar/24/an-interesting-twist-on-the-gamblers-fallacy/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/markus-spiske-1182636-unsplash.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2019/Mar/24/an-interesting-twist-on-the-gamblers-fallacy/">An Interesting Twist on the Gambler's Fallacy</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2019-03-24T00:00:00-04:00">Sun 24 March 2019</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2018/Jun/18/10-dogmas-of-science-dismantled/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/ocean-water-1149661_960_720.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2018/Jun/18/10-dogmas-of-science-dismantled/">10 dogmas of science dismantled</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2018-06-18T00:00:00-04:00">Mon 18 June 2018</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2018/May/18/exploring-the-idea-of-scrum/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/productivity-1995781_1280.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2018/May/18/exploring-the-idea-of-scrum/">Exploring the Idea of Scrum</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2018-05-18T00:00:00-04:00">Fri 18 May 2018</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2018/Feb/09/the-power-of-a-story/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/ocean-water-1149661_960_720.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2018/Feb/09/the-power-of-a-story/">The Power of a Story</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2018-02-09T00:00:00-05:00">Fri 09 February 2018</time></span>
+                        </section>
+                    </article>
+
+
+                    <article class="col-block popular__post">
+                        <a href="http://localhost:8000/posts/2018/Jan/09/where-probabilities-and-theology-meet/" class="popular__thumb">
+                                <img src="http://localhost:8000/images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg">
+                        </a>
+                        <h5><a href="http://localhost:8000/posts/2018/Jan/09/where-probabilities-and-theology-meet/">Where probabilities and theology meet</a></h5>
+                        <section class="popular__meta">
+                            <span class="popular__date"><span>on</span> <time datetime="2018-01-09T00:00:00-05:00">Tue 09 January 2018</time></span>
+                        </section>
+                    </article>
+
+
+                </div>
+
+            </div> <!-- end popular -->
+            
+            <div class="col-four md-six tab-full about">
+                <h3>About bblais</h3>
+
+                <p>
+                    I am a Scientist, Skeptic, and <a href='http://web.bryant.edu/~science'>Professor</a> at <a href='http://web.bryant.edu/~science'>Bryant University</a> and the <a href='https://www.brown.edu/research/projects/brain-and-neural-systems/'>IBNS, Brown University</a>.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems.
+                </p>
+
+                <ul class="about__social">
+<li><a href="https://twitter.com/bblais"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+<li><a href="https://github.com/bblais"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>                </ul> <!-- end header__social -->
+            </div> <!-- end about -->
+
+        </div> <!-- end row -->
+
+      
+
+        <div class="row bottom tags-wrap">
+            <div class="col-full tags">
+                <h3>Tags</h3>
+
+                <div class="tagcloud">
+                        <a href="http://localhost:8000/tag/religion.html">religion</a>
+                        <a href="http://localhost:8000/tag/science.html">science</a>
+                        <a href="http://localhost:8000/tag/unbelievable-project.html">Unbelievable Project</a>
+                        <a href="http://localhost:8000/tag/probability.html">probability</a>
+                        <a href="http://localhost:8000/tag/statistics.html">statistics</a>
+                        <a href="http://localhost:8000/tag/sie.html">sie</a>
+                        <a href="http://localhost:8000/tag/bayesian.html">bayesian</a>
+                        <a href="http://localhost:8000/tag/critical-thinking.html">critical thinking</a>
+                        <a href="http://localhost:8000/tag/unbelievable.html">unbelievable</a>
+                        <a href="http://localhost:8000/tag/education.html">education</a>
+                        <a href="http://localhost:8000/tag/neuroscience.html">neuroscience</a>
+                        <a href="http://localhost:8000/tag/creationism.html">creationism</a>
+                        <a href="http://localhost:8000/tag/evolution.html">evolution</a>
+                        <a href="http://localhost:8000/tag/philosophy.html">philosophy</a>
+                        <a href="http://localhost:8000/tag/uncategorized.html">Uncategorized</a>
+                        <a href="http://localhost:8000/tag/logic.html">Logic</a>
+                        <a href="http://localhost:8000/tag/miracles.html">miracles</a>
+                        <a href="http://localhost:8000/tag/intelligent-design.html">intelligent design</a>
+                        <a href="http://localhost:8000/tag/consciousness.html">consciousness</a>
+                        <a href="http://localhost:8000/tag/faith.html">faith</a>
+                        <a href="http://localhost:8000/tag/history.html">history</a>
+                        <a href="http://localhost:8000/tag/physics.html">physics</a>
+                        <a href="http://localhost:8000/tag/dynamical-systems.html">dynamical systems</a>
+                        <a href="http://localhost:8000/tag/productivity.html">productivity</a>
+                        <a href="http://localhost:8000/tag/pseudoscience.html">pseudoscience</a>
+                        <a href="http://localhost:8000/tag/christmas.html">Christmas</a>
+                        <a href="http://localhost:8000/tag/data.html">data</a>
+                        <a href="http://localhost:8000/tag/chess.html">chess</a>
+                        <a href="http://localhost:8000/tag/morality.html">morality</a>
+                        <a href="http://localhost:8000/tag/dennett.html">Dennett</a>
+                        <a href="http://localhost:8000/tag/web.html">web</a>
+                        <a href="http://localhost:8000/tag/fine-tuning.html">Fine Tuning</a>
+                </div> <!-- end tagcloud -->
+            </div> <!-- end tags -->
+        </div> <!-- end tags-wrap -->
+
+    </section> <!-- end s-extra -->
+
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__main">
+            <div class="row">
+                
+                <div class="col-two md-four mob-full s-footer__sitelinks">
+                        
+                    <h4>Quick Links</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="http://localhost:8000/index.html">Home</a></li>
+                        <li><a href="http://localhost:8000/index.html#blog">Blog</a></li>
+                        <li><a href="http://localhost:8000/pages/presentations.html">Presentations</a></li>
+                        <li><a href="http://localhost:8000/pages/projects.html">Projects</a></li>
+                        <li><a href="http://localhost:8000/pages/publications.html">Publications</a></li>
+                        <li><a href="http://localhost:8000/archives.html">Archives</a></li>
+                        <li><a href="http://localhost:8000/about.html">About</a></li>
+                        <li><a href="http://localhost:8000/contact.html">Contact</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__sitelinks -->
+
+                <div class="col-two md-four mob-full s-footer__social">
+                        
+                    <h4>Social</h4>
+
+                    <ul class="s-footer__linklist">
+                        <li><a href="https://twitter.com/bblais">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/">LinkedIn</a></li>
+                        <li><a href="https://github.com/bblais">Github</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w">YouTube</a></li>
+                        <li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;">Email</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__social -->
+
+                <div class="col-five md-full end s-footer__subscribe">
+                        
+                    <h4>My Newsletter</h4>
+
+                    <p>Want to hear about the free stuff I make?   Want to hear about what I can do to help your projects?  Sign up here!  Low-traffic, no misuse of your email, opt out any time.</p>
+
+                    <div class="subscribe-form">
+                        <form action="https://formspree.io/b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" method="POST" class="subscribe-form">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="_replyto" placeholder="Email Address">
+                              <input type="submit" value="Send" class="mt-2 btn btn-white submit">
+                              <input type="hidden" name="name" value="Newsletter Subscribe" placeholder="Your Name">
+                              <input type="hidden" name="_next" value="http://localhost:8000/thanks.html" />
+                            </div>
+                          </form>
+                    </div>
+
+                </div> <!-- end s-footer__subscribe -->
+
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="col-full">
+                    <div class="s-footer__copyright">
+                        <span>© Copyright bblais 2020</span> 
+                        <span>Site Template by <a href="https://colorlib.com/">Colorlib</a> and modified for Pelican by bblais</span>
+                    </div>
+
+                    <div class="go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="http://localhost:8000/theme/js/jquery-3.2.1.min.js"></script>
+    <script src="http://localhost:8000/theme/js/plugins.js"></script>
+    <script src="http://localhost:8000/theme/js/main.js"></script>
+
+
+</body>
+
+</html>

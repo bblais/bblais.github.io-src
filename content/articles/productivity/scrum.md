@@ -1,6 +1,7 @@
 title: Exploring the Idea of Scrum
 date: 5/18/2018
 status: published
+popular: true
 image: productivity-1995781_1280.jpg
 
 Although I am not in software development, and I don't work in a lot of teams, I have recently read the book *Scrum: The Art of Doing Twice the Work in Half the Time* (https://www.scruminc.com/new-scrum-the-book/) which I find very interesting and possibly quite useful[^1].  As far as I can tell, the Scrum process derives its value from a few key concepts, which can equally well apply to individuals as well as teams, to academia as well as software development.  These key concepts, as I see them is, 

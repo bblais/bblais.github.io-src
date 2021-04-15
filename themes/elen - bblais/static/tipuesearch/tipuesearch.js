@@ -25,7 +25,7 @@ http://www.tipue.com/search
           'minimumLength'          : 3,
           'mode'                   : 'static',
           'newWindow'              : false,
-          'show'                   : 9,
+          'show'                   : 99,
           'showContext'            : true,
           'showRelated'            : true,
           'showTime'               : true,

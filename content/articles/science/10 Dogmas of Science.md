@@ -2,6 +2,7 @@ title: 10 dogmas of science dismantled
 date: 6/18/2018
 tags: science
 status: published
+popular: true
 image: ocean-water-1149661_960_720.jpg
 
 In  his [talk about the limitations of science](https://www.youtube.com/watch?v=1TerTgDEgUE&t=583s), Rupert Sheldrake lists the "10 dogmas of modern science" (also listed here in text  [http://wariscrime.com/new/the-ten-dogmas-of-modern-science/][1]).  They are:

@@ -1,1 +1,3 @@
-make devserver
+python -m http.server 8000 &
+make dev
+#make devserver
