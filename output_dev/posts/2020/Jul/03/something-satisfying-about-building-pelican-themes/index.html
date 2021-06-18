@@ -91,11 +91,11 @@
                                     <li><a href="http://localhost:8000/category/articles.html">articles <span>(85)</span></a></li>
                                     <li><a href="http://localhost:8000/category/books.html">books <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/math.html">math <span>(5)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/math.html">math <span>(7)</span></a></li>
                                     <li><a href="http://localhost:8000/category/media.html">media <span>(9)</span></a></li>
                                     <li><a href="http://localhost:8000/category/presentations.html">presentations <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/productivity.html">productivity <span>(6)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/projects.html">projects <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/religion.html">religion <span>(10)</span></a></li>
                                     <li><a href="http://localhost:8000/category/science.html">science <span>(7)</span></a></li>
@@ -155,7 +155,7 @@
                 <p><a href="https://docs.getpelican.com/en/stable/">Pelican is a Python package</a> for developing static websites.  I started out my blog with Wordpress and then toyed with Wix and Weebly.  But I found I didn't like the idea of a company holding my content -- if that company suddenly started to charge for the services, or disappeared altogether I didn't want my information caught in the middle.  I also liked the control that a static site builder, like <a href="https://docs.getpelican.com/en/stable/">Pelican</a> gives you.  Finally, I like working in <a href="https://www.markdownguide.org/basic-syntax">Markdown</a> for my blog content (and most of my other content as well).</p>
 <p>There are a lot of <a href="http://pelicanthemes.com">themes for Pelican</a> to choose from, and although I have <a href="https://elegant.oncrashreboot.com">used some before</a> I find them looking a little dated.  So for the past few designs of this website what I've done is head over to <a href="https://colorlib.com/wp/templates/">Colorlibs Free Web Templates</a> and find a template that looks good, like <a href="https://colorlib.com/wp/template/elen/">Elen</a>, <a href="https://colorlib.com/wp/template/miniblog/">Miniblog</a>, or <a href="https://colorlib.com/wp/template/philosophy/">Philosophy</a>.  For good measure, get a pelican theme to help with comparisons, something like <a href="https://github.com/kdeldycke/plumage">Plummage</a>.  Make sure to have the <a href="https://docs.getpelican.com/en/latest/themes.html">Creating Pelican Themes</a> site handy!  After that, it's pretty straightforward to port the web template over to a pelican theme -- but I still do a lot of trial and error! </p>
 <p>I think the satisfying parts of the developing a Pelican theme is to see years of articles instantly look like new.  For example, in the <a href="https://colorlib.com/wp/template/philosophy/">Philosophy</a> template <code>index.html</code> there is this snippet which presents the summary of a blog article,</p>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;masonry__brick entry format-standard&quot;</span> <span class="na">data-aos</span><span class="o">=</span><span class="s">&quot;fade-up&quot;</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;masonry__brick entry format-standard&quot;</span> <span class="na">data-aos</span><span class="o">=</span><span class="s">&quot;fade-up&quot;</span><span class="p">&gt;</span>
 
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;entry__thumb&quot;</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;single-standard.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;entry__thumb-link&quot;</span><span class="p">&gt;</span>
@@ -190,7 +190,7 @@
 </code></pre></div>
 
 <p>This is repeated once for many different articles, making for a long <code>index.html</code> file.  In the pelican theme, the <code>index.html</code> loops over all of the articles and generates this long list using <a href="https://jinja.palletsprojects.com/en/2.11.x/">Jinja</a> syntax,</p>
-<div class="codehilite"><pre><span></span><code>{% for article in articles_page.object_list %}
+<div class="highlight"><pre><span></span><code>{% for article in articles_page.object_list %}
 
     <span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;masonry__brick entry format-standard&quot;</span> <span class="na">data-aos</span><span class="o">=</span><span class="s">&quot;fade-up&quot;</span><span class="p">&gt;</span>
 
@@ -240,7 +240,7 @@
 </ul>
 <p>This provides a level of control that is hard to match.  </p>
 <p>To make the theme, as shown in the docs, you need to just make the following files</p>
-<div class="codehilite"><pre><span></span><code><span class="err">  ├── static</span>
+<div class="highlight"><pre><span></span><code><span class="err">  ├── static</span>
 <span class="err">  │   ├── css</span>
 <span class="err">  │   └── images</span>
 <span class="err">  └── templates</span>
@@ -258,7 +258,7 @@
 </code></pre></div>
 
 <p>Starting from the free web template, I break off the parts that are included in all of the files and put it in <code>base.html</code>, copying the <a href="https://jinja.palletsprojects.com/en/2.11.x/">Jinja</a> parts from a pelican theme.  Like,</p>
-<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;no-js&quot;</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
 

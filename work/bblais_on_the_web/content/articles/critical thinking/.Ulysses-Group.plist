@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>childOrder</key>
+	<array>
+		<string>The Truth of a Story</string>
+	</array>
+	<key>resolutionData</key>
+	<dict>
+		<key>childOrder</key>
+		<dict>
+			<key>The Truth of a Story</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>540689640.74519002</real>
+				<key>lastModification</key>
+				<real>540689640.74519002</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+		</dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>Facts are Not Enough.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>540689785.46514595</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>2</integer>
+				</dict>
+			</dict>
+			<key>The Power of a Story …especially when it's wrong.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>540689785.46514702</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>2</integer>
+				</dict>
+			</dict>
+			<key>The Truth of a Story.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>540689785.46514702</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>2</integer>
+				</dict>
+			</dict>
+			<key>title- The Truth of a Story.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>540689828.67759395</real>
+				<key>lastModification</key>
+				<real>540689828.67759395</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>title- The Truth of a Story.md</string>
+		</array>
+		<array>
+			<string>Facts are Not Enough.md</string>
+		</array>
+		<array>
+			<string>The Truth of a Story.md</string>
+		</array>
+		<array>
+			<string>The Power of a Story …especially when it's wrong.md</string>
+		</array>
+	</array>
+	<key>storeFormatVersion</key>
+	<integer>1</integer>
+	<key>versioning</key>
+	<dict>
+		<key>childOrder</key>
+		<dict>
+			<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+			<integer>3</integer>
+		</dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

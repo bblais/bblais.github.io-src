@@ -91,11 +91,11 @@
                                     <li><a href="http://localhost:8000/category/articles.html">articles <span>(85)</span></a></li>
                                     <li><a href="http://localhost:8000/category/books.html">books <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/math.html">math <span>(5)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/math.html">math <span>(7)</span></a></li>
                                     <li><a href="http://localhost:8000/category/media.html">media <span>(9)</span></a></li>
                                     <li><a href="http://localhost:8000/category/presentations.html">presentations <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/productivity.html">productivity <span>(6)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/projects.html">projects <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/religion.html">religion <span>(10)</span></a></li>
                                     <li><a href="http://localhost:8000/category/science.html">science <span>(7)</span></a></li>
@@ -177,7 +177,7 @@ $$</div>
 simply outline every possible two-hand deal, and count the number of
 cards in each case.</p>
 <h3 id="with-replacement">With replacement:</h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">Game</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">Game</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">deals</span><span class="o">=</span><span class="p">[]</span>
 <span class="n">deck</span><span class="o">=</span><span class="n">makedeck</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">card1</span> <span class="ow">in</span> <span class="n">deck</span><span class="p">:</span>
@@ -191,7 +191,7 @@ cards in each case.</p>
 <p>The length of "found" is 104, and the length of the "deals" is 2704 (52
 x 52).</p>
 <h3 id="without-replacement">Without replacement:</h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">Game</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">Game</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">deals</span><span class="o">=</span><span class="p">[]</span>
 <span class="n">deck</span><span class="o">=</span><span class="n">makedeck</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">card1</span> <span class="ow">in</span> <span class="n">deck</span><span class="p">:</span>
@@ -273,10 +273,13 @@ card.  </p>
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -290,6 +293,8 @@ card.  </p>
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -310,6 +315,8 @@ card.  </p>
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 </script>

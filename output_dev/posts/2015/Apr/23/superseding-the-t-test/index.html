@@ -91,11 +91,11 @@
                                     <li><a href="http://localhost:8000/category/articles.html">articles <span>(85)</span></a></li>
                                     <li><a href="http://localhost:8000/category/books.html">books <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/math.html">math <span>(5)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/math.html">math <span>(7)</span></a></li>
                                     <li><a href="http://localhost:8000/category/media.html">media <span>(9)</span></a></li>
                                     <li><a href="http://localhost:8000/category/presentations.html">presentations <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/productivity.html">productivity <span>(6)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/projects.html">projects <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/religion.html">religion <span>(10)</span></a></li>
                                     <li><a href="http://localhost:8000/category/science.html">science <span>(7)</span></a></li>
@@ -154,23 +154,23 @@
 
                 <p>There's a very nice paper, <a href="http://www.indiana.edu/~kruschke/articles/Kruschke2013JEPG.pdf">Bayesian estimation supersedes the t test</a>. John K. Kruschke, Journal of Experimental Psychology: General, 2013, v.142(2), pp.573-603. The methods described provide at once posterior probabilities not just for the means of two groups, but their standard deviations, their normality, and effect size.  The <a href="http://www.indiana.edu/~kruschke/BEST/">supporting website</a> has a lot of useful resources, including a number of implementations.  The original implementation is in R, but there is a <a href="https://github.com/strawlab/best">Python implementation using PyMC</a>.</p>
 <p>I decided to implement the same thing using the <a href="http://dan.iel.fm/emcee/current/">emcee package</a>.  The full implementation is <a href="http://nbviewer.ipython.org/gist/bblais/7a1c6ec3b4c8d1b0465f">viewable here</a>.  My implementation is pretty general, and can handle some arbitrary tests of the variables, like:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;(mu1&gt;101) &amp; (mu1&lt;102.1)&#39;</span><span class="p">)</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;(mu1&gt;101) &amp; (mu1&lt;102.1)&#39;</span><span class="p">)</span>
 
 <span class="mf">0.85502222222222224</span>
 </code></pre></div>
 </td></tr></table>
 <p>and</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;sigma1&lt;sigma2&#39;</span><span class="p">)</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">P</span><span class="p">(</span><span class="s1">&#39;sigma1&lt;sigma2&#39;</span><span class="p">)</span>
 
 <span class="mf">0.0060111111111111112</span>
 </code></pre></div>
 </td></tr></table>
 <p>and</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">plot_distribution</span><span class="p">(</span><span class="s1">&#39;Effect Size=(mu1-mu2)/sqrt((sigma1**2+sigma2**2)/2)&#39;</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">plot_distribution</span><span class="p">(</span><span class="s1">&#39;Effect Size=(mu1-mu2)/sqrt((sigma1**2+sigma2**2)/2)&#39;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 <p><img alt="effectsize" src="images/effect_size.png"></p>

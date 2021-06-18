@@ -91,11 +91,11 @@
                                     <li><a href="http://localhost:8000/category/articles.html">articles <span>(85)</span></a></li>
                                     <li><a href="http://localhost:8000/category/books.html">books <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/math.html">math <span>(5)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/math.html">math <span>(7)</span></a></li>
                                     <li><a href="http://localhost:8000/category/media.html">media <span>(9)</span></a></li>
                                     <li><a href="http://localhost:8000/category/presentations.html">presentations <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/productivity.html">productivity <span>(6)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/projects.html">projects <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/religion.html">religion <span>(10)</span></a></li>
                                     <li><a href="http://localhost:8000/category/science.html">science <span>(7)</span></a></li>
@@ -244,7 +244,7 @@ $$</div>
 <p>
 which matches the form of <span class="math">\(R_o\)</span>.</p>
 <p>It's not obvious that <span class="math">\(R_1\)</span> is an increasing function of <span class="math">\(\theta\)</span>, as stated in the solution (e.g. angle goes up, the range goes up) but numerically it is easy to demonstrate,</p>
-<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<div class="highlight"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
 <span class="n">x0</span><span class="o">=</span><span class="mf">1.1</span>
 <span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
 <span class="n">h</span><span class="o">=</span><span class="mi">20</span>
@@ -266,7 +266,7 @@ which matches the form of <span class="math">\(R_o\)</span>.</p>
 <span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
@@ -293,23 +293,23 @@ which matches the form of <span class="math">\(R_o\)</span>.</p>
 <h3 id="maximum-angle">Maximum angle</h3>
 <p>What is shown in the plot is that above some critical angle, the range starts going down.  We expect that, because obviously if you had a ramp of <span class="math">\(\theta=90^\circ\)</span> you'd have no range.  But what if that critical angle was somehow small, like <span class="math">\(2^\circ\)</span>?  One might miss it experimentally if you were measuring, say, every <span class="math">\(5^\circ\)</span>.  But could this ever happen in this simple system?  Let's see.</p>
 <p>The critical angle that gives the maximum range is determined analytically from,</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sym</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sym</span>
 <span class="n">v</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">h</span><span class="p">,</span><span class="n">θ</span><span class="p">,</span><span class="n">x_o</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;v g h θ x_o B m&quot;</span><span class="p">)</span>
 <span class="n">R1</span><span class="o">=</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">g</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">sym</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">θ</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">*</span><span class="n">sym</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">θ</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">R1</span><span class="p">)</span>
 </code></pre></div>
 
 <p><span class="math">\(\displaystyle \frac{v^{2} \left(\sqrt{\frac{2 g h}{v^{2} \sin^{2}{\left(θ \right)}} + 1} + 1\right) \sin{\left(2 θ \right)}}{2 g}\)</span></p>
-<div class="codehilite"><pre><span></span><code><span class="n">df</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">R1</span><span class="p">,</span><span class="n">θ</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">R1</span><span class="p">,</span><span class="n">θ</span><span class="p">)</span>
 <span class="n">soln</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">sym</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">df</span><span class="p">),</span><span class="n">θ</span><span class="p">)</span>
 <span class="n">soln</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="err">[-asin(sqrt(2)*v*sqrt(1/(g*h + v**2))/2),</span>
+<div class="highlight"><pre><span></span><code><span class="err">[-asin(sqrt(2)*v*sqrt(1/(g*h + v**2))/2),</span>
 <span class="err"> asin(sqrt(2)*v*sqrt(1/(g*h + v**2))/2)]</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="n">sin_θ_at_max</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
+<div class="highlight"><pre><span></span><code><span class="n">sin_θ_at_max</span><span class="o">=</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
 <span class="n">display</span><span class="p">(</span><span class="n">sin_θ_at_max</span><span class="p">)</span>
 </code></pre></div>
 
@@ -324,7 +324,7 @@ $$</div>
 $$</div>
 <p>
 which is positive.  Checking that this works numerically as well,</p>
-<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<div class="highlight"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
 <span class="n">x0</span><span class="o">=</span><span class="mf">1.1</span>
 <span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
 <span class="n">h</span><span class="o">=</span><span class="mi">20</span>
@@ -346,7 +346,7 @@ which is positive.  Checking that this works numerically as well,</p>
 <span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
@@ -377,7 +377,7 @@ which is positive.  Checking that this works numerically as well,</p>
 
 <p><img alt="png" src="http://localhost:8000/images/AP20/output_16_1.png"></p>
 <p>Given the symmetry, the point where the range starts decreasing with angle is at twice this angle.  Subsituting in the launch speed for the flat table, <span class="math">\(v_o^2 = \frac{B x_o^4}{2 m}\)</span>, we get something interesting.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">sin_θ_at_max</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">B</span><span class="o">*</span><span class="n">x_o</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">))</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">sin_θ_at_max</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">sym</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">B</span><span class="o">*</span><span class="n">x_o</span><span class="o">**</span><span class="mi">4</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">m</span><span class="p">))</span><span class="o">.</span><span class="n">simplify</span><span class="p">()</span>
 </code></pre></div>
 
 <p><span class="math">\(\displaystyle \frac{\sqrt{2} v \sqrt{\frac{1}{g h + v^{2}}}}{2}\)</span></p>
@@ -386,7 +386,7 @@ which is positive.  Checking that this works numerically as well,</p>
 \sin \theta_{\rm max} = \frac{1}{\sqrt{2} \sqrt{1 + \frac{2 g h m}{B x_{o}^{4}}}}
 $$</div>
 <p>the point here is that, while technically true that the range is an increasing function of <span class="math">\(\theta\)</span> for small <span class="math">\(\theta\)</span>, the turning point can be made arbitrarily small in certain parameter regions (e.g. small <span class="math">\(B\)</span>, small <span class="math">\(x_o\)</span>, large <span class="math">\(m\)</span>, etc...).  For instance,</p>
-<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<div class="highlight"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
 <span class="n">x0</span><span class="o">=</span><span class="mf">0.1</span>
 <span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
 <span class="n">h</span><span class="o">=</span><span class="mi">20</span>
@@ -408,7 +408,7 @@ $$</div>
 <span class="n">B_est1</span><span class="o">=</span><span class="n">R1</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp&#39;</span><span class="p">)</span>
@@ -458,7 +458,7 @@ R_2&amp;=\frac{v_o^2-2 g x_o\sin \theta}{2g} \left(1+\sqrt{1+\frac{2gh}{\left(v_
 $$</div>
 <p>which is a whole lot messier, and the slope is difficult to attain analytically.  Numerically however, it is easy to see the effect.  Depending on the parameters, <strong>the range could increase or decrease with angle</strong>. </p>
 <p>Here's an example with increasing with angle.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<div class="highlight"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
 <span class="n">x0</span><span class="o">=</span><span class="mf">1.1</span>
 <span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
 <span class="n">h</span><span class="o">=</span><span class="mi">20</span>
@@ -488,7 +488,7 @@ $$</div>
 <span class="n">B_est2</span><span class="o">=</span><span class="n">R2</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp no speed reduction&#39;</span><span class="p">)</span>
@@ -513,7 +513,7 @@ $$</div>
 
 <p><img alt="png" src="http://localhost:8000/images/AP20/output_26_1.png"></p>
 <p>Here's an example with decreasing with angle.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
+<div class="highlight"><pre><span></span><code><span class="n">B</span><span class="o">=</span><span class="mi">2</span>  <span class="c1"># true value</span>
 <span class="n">x0</span><span class="o">=.</span><span class="mi">4</span>
 <span class="n">m</span><span class="o">=</span><span class="mf">0.01</span>
 <span class="n">h</span><span class="o">=</span><span class="mi">20</span>
@@ -538,7 +538,7 @@ $$</div>
 <span class="n">B_est2</span><span class="o">=</span><span class="n">R2</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">m</span><span class="o">/</span><span class="p">(</span><span class="n">x0</span><span class="o">**</span><span class="mi">4</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R0</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;No Ramp&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">θ</span><span class="p">,</span><span class="n">R1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;With Ramp no speed reduction&#39;</span><span class="p">)</span>
@@ -577,10 +577,13 @@ $$</div>
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -594,6 +597,8 @@ $$</div>
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -614,6 +619,8 @@ $$</div>
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 </script>

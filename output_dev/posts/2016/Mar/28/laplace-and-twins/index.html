@@ -91,11 +91,11 @@
                                     <li><a href="http://localhost:8000/category/articles.html">articles <span>(85)</span></a></li>
                                     <li><a href="http://localhost:8000/category/books.html">books <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/math.html">math <span>(5)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/math.html">math <span>(7)</span></a></li>
                                     <li><a href="http://localhost:8000/category/media.html">media <span>(9)</span></a></li>
                                     <li><a href="http://localhost:8000/category/presentations.html">presentations <span>(3)</span></a></li>
                                     <li><a href="http://localhost:8000/category/productivity.html">productivity <span>(6)</span></a></li>
-                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(3)</span></a></li>
+                                    <li><a href="http://localhost:8000/category/programming.html">programming <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/projects.html">projects <span>(4)</span></a></li>
                                     <li><a href="http://localhost:8000/category/religion.html">religion <span>(10)</span></a></li>
                                     <li><a href="http://localhost:8000/category/science.html">science <span>(7)</span></a></li>
@@ -230,7 +230,7 @@ P(I|S) &amp;=&amp; \int_0^1 \frac{1/2 \cdot q}{1/2\cdot q + 1/4\cdot (1-q)} dq =
 P(I|S) &amp;=&amp; \int_0^1 \frac{1/2 \cdot q}{1/2\cdot q + 1/4\cdot (1-q)} {\rm Beta}(h+1,N+1) dq 
 \end{eqnarray}</div>
 <p>which is easiest done numerically.  Using the sie library from <a href="http://web.bryant.edu/~bblais/statistical-inference-for-everyone-sie.html">my book</a> I have for <span class="math">\(h=0\)</span>, <span class="math">\(N=0\)</span>, </p>
-<div class="codehilite"><pre><span></span><code><span class="n">h</span><span class="o">=</span><span class="mi">0</span>
+<div class="highlight"><pre><span></span><code><span class="n">h</span><span class="o">=</span><span class="mi">0</span>
 <span class="n">N</span><span class="o">=</span><span class="mi">0</span>
 
 <span class="n">d</span><span class="o">=</span><span class="n">beta</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
@@ -246,7 +246,7 @@ P(I|S) &amp;=&amp; \int_0^1 \frac{1/2 \cdot q}{1/2\cdot q + 1/4\cdot (1-q)} {\rm
 <p>f = 0.614</p>
 </blockquote>
 <p>matching our analytical calculation.  Now, with a modest 30 sets of twins, 10 of which are identical (consistent with our modern observations), we have</p>
-<div class="codehilite"><pre><span></span><code><span class="n">h</span><span class="o">=</span><span class="mi">10</span>
+<div class="highlight"><pre><span></span><code><span class="n">h</span><span class="o">=</span><span class="mi">10</span>
 <span class="n">N</span><span class="o">=</span><span class="mi">30</span>
 
 <span class="n">d</span><span class="o">=</span><span class="n">beta</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
@@ -278,10 +278,13 @@ P(I|S) &amp;=&amp; \int_0^1 \frac{1/2 \cdot q}{1/2\cdot q + 1/4\cdot (1-q)} {\rm
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -295,6 +298,8 @@ P(I|S) &amp;=&amp; \int_0^1 \frac{1/2 \cdot q}{1/2\cdot q + 1/4\cdot (1-q)} {\rm
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -315,6 +320,8 @@ P(I|S) &amp;=&amp; \int_0^1 \frac{1/2 \cdot q}{1/2\cdot q + 1/4\cdot (1-q)} {\rm
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 </script>

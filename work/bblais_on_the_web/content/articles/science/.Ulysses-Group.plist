@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>resolutionData</key>
+	<dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>Physics Lab Ideas - Structure or No.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>541366520.30833495</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>6</integer>
+				</dict>
+			</dict>
+			<key>Sea Slug Brains …delicious or no.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>541366236.72841406</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+			<key>not_a_denier.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>541366236.72841299</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+			<key>reductionism_art_neuroscience.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>541366236.72841299</real>
+				<key>version</key>
+				<dict>
+					<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>Physics Lab Ideas - Structure or No.md</string>
+		</array>
+		<array>
+			<string>not_a_denier.md</string>
+		</array>
+		<array>
+			<string>reductionism_art_neuroscience.md</string>
+		</array>
+		<array>
+			<string>Sea Slug Brains …delicious or no.md</string>
+		</array>
+	</array>
+	<key>storeFormatVersion</key>
+	<integer>1</integer>
+	<key>versioning</key>
+	<dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>6fdc779fa40f4dc6fe283adf628452f343ef23d5c3ee8c0ad64a0586104b93af</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

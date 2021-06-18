@@ -134,8 +134,8 @@ from mdx_urlize import UrlizeExtension
 MARKDOWN = {
     'extensions':['attr_list','codehilite','extra','meta','toc','footnotes',UrlizeExtension()],
     'extension_configs': {
-        #'markdown.extensions.codehilite': {'noclasses':True,'pygments_style':'native'},
-#        'markdown.extensions.codehilite': {'css_class':'highlight'},
+        'markdown.extensions.codehilite': {'noclasses':True,'pygments_style':'native'},
+        'markdown.extensions.codehilite': {'css_class':'highlight'},
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
         'markdown.extensions.toc' : {},
