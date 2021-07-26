@@ -1,7 +1,6 @@
 title: Something from Nothing
 Date: 2014-10-28
-
-![nothing](http://upload.wikimedia.org/wikipedia/commons/6/6f/CMB_Timeline300_no_WMAP.jpg)
+image: CMB_Timeline300_no_WMAP.jpg
 
 In a talk about [something from nothing], Lawrence Krauss describes how physics addresses the concept of "nothing".  He has been criticized [here] and [again here], primarily for redefining "nothing" in a way that the philosophers don't consider as nothing.  Essentially, philosophers want to say that "nothing" is without properties or process, and that Krauss' physics-based "nothing" has properties.  Thus the apologists claim that the universe cannot come from "nothing", that there must be a creator.
 

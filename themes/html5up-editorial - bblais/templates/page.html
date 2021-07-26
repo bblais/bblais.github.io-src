@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ page.title }} {%if page.subtitle %} - {{ page.subtitle }} {% endif %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% if page.summary %}
+{{ page.summary|striptags }}
+{% endif %}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords }}" />
+{% endif %}
+{% endblock meta_tags_in_head %}
+
+
+{% block content %}
+
+        <!-- Content -->
+        <section>
+            <header class="main">
+                <h1>{{ page.title }}</h1> 
+                {%if page.subtitle %} <h2> {{ page.subtitle }} </h2>{% endif %} 
+            </header>
+
+
+            {% if page.image %}
+                <span class="image main"><img src="{{ SITEURL }}/images/{{ page.image }}"></span>
+            {% endif %}
+
+
+            {% if page.toc %}
+            <div class="span2 table-of-content">
+                <nav>
+                <h4>Contents</h4>
+                {{ page.toc }}
+                </nav>
+            </div>
+            {% endif %}
+
+            {{ page.content }}
+
+
+        </section>
+
+
+
+
+{% endblock content %}
+
+{% block script %}
+{{ super() }}
+{% endblock script %}

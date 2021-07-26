@@ -1,7 +1,6 @@
 title: What Sane Climate Discussion Looks Like
 Date: 2014-08-05
-
-![bear](images/Ursus_maritimus_mother_with_cub.jpg)
+image: Ursus_maritimus_mother_with_cub.jpg
 
 
 One of the standard climate blogs I read is [Judith Curry's blog Climate Etc...]  I find that the topics she brings up, and the points she adds to it, are always very engaging and even-handed, without the usual alarmism.  For example, here is a [summary of Bjorn Lomborg's Senate testimony], all points perfectly reasonable, as far as I can see.

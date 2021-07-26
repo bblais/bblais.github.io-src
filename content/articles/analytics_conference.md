@@ -1,7 +1,6 @@
 Title: Twitter, Zombies, and the Fate of the World
 Date: 2017-03-31
-
-<img src="images/zombie1.jpg">
+image: zombie1.jpg
 
  *[Twitter, Zombies, and the Fate of the World](http://web.bryant.edu/~bblais/pdf/Twitter Zombies and the Fate of the World.pdf)* is my presentation today at the [Analytics without Borders Conference](http://www.bentley.edu/analytics-without-borders). 
 

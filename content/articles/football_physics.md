@@ -1,8 +1,7 @@
 title: Football Physics 
 Date: 2015-06-24
 subtitle: Why I'm not Convinced the Patriots Cheated
-
-<img src="images/football.jpg" width=400px>
+image: football.jpg
 
 In [another post], I outlined how the drop in pressure was entirely consistent with what was measured with the laws of physics.  That post was done when the only data was the drop in pressure - nothing specific about the methods, or the data.  Then the 243 page [Wells report] came out with the methods and the data, as well as a sophisticated statistical report (see the Appendix A, page 229).  Once I saw (one page 231 (A-2)) that the pre-game pressures were "Assumed Pressure at Start of Game", I realized that there was nothing that the report could say.  The fact that there weren't *measurements* taken at the beginning of the game invalidates nearly any analysis.  I was going to leave it at that, and possibly explore the problem as an introductory statistics problem, but basically dropped it.  
 

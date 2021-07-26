@@ -1,8 +1,7 @@
 title: Statistical Heresies
 Date: 2014-05-22
 subtitle: Teaching Statistical Inference in the Bayesian Revolution
-
-![saturn](images/Saturn_with_Dice_weave.png)
+image: Saturn_with_Dice_weave.png
 
 I'm giving a talk today, highlighting some of the current Bayesian/frequentist relationships as they relate to introductory statistics education.  You can [download the pdf here](pdf/Statistical%20Heresies.pdf).
 

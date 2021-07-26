@@ -1,7 +1,6 @@
 Title: Even if determinism were true it wouldn't matter
 Date: 2017-02-03
-
-<img src="images/uncertainty.jpg" width=300  align=center>
+image: uncertainty.jpg
 
 ## Introduction
 

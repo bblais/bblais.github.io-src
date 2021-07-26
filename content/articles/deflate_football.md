@@ -1,8 +1,7 @@
 title: How to Deflate a Football Deflating Story
 Date: 2015-01-23
 subtitle: Why Science Should Trump Personal Opinion
-
-<img src="images/football.jpg" width=400px>
+image: football.jpg
 
 So, it's all over the news, the [Patriots cheated] with deflating the football by 1-2 psi, and are [lying about not knowing anything about it].  There are even claims that there are [scientific reasons for this being an advantage].  What seems to be lacking at this point is:
 

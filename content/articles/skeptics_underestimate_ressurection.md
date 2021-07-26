@@ -1,10 +1,8 @@
 title: Do Skeptics Underestimate the Case for the Resurrection?
 date: 6/7/17
 subtitle: Not so much.
-summary: ![ocean](images/ocean-water-1149661_960_720.jpg) As someone who is skeptical of the resurrection myself, I am not particularly impressed when someone finds it “extremely difficult to deal with as a critic”.  It really isn’t all that hard.
-
-
-![ocean](images/ocean-water-1149661_960_720.jpg)
+summary:  As someone who is skeptical of the resurrection myself, I am not particularly impressed when someone finds it “extremely difficult to deal with as a critic”.  It really isn’t all that hard.
+image: ocean-water-1149661_960_720.jpg
 
 Here's a post that has been brewing for quite a while and never really made it out.
 

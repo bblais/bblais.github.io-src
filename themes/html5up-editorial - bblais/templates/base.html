@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
+
+        {%if CUSTOM_CSS %}
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
+        {% endif %}
+    
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+		<!-- Main -->
+			<div id="main">
+
+				<div class="inner">
+
+					<!-- Header -->
+						<header id="header">
+							<a href="{{ SITEURL }}/index.html" class="logo"><strong>bblais on the web</strong></a>
+							<ul class="icons">
+								<li><a href="{{ SOCIAL.twitter }}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="{{ SOCIAL.linkedin }}" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="{{ SOCIAL.github }}" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="{{ SOCIAL.youtube }}" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+								<li><a href="{{ SOCIAL.email }}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</header>
+
+
+
+				{% block content %}
+				{% endblock content %}
+
+
+				</div>
+			</div>
+	
+			{% include 'sidebar.html' %}
+
+		</div>
+
+	{% block script %}
+
+    <!-- Scripts -->
+	<script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/elegant.prod.9e9d5ce754.js"></script>
+	<script src="{{ SITEURL }}/theme/js/browser.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/breakpoints.min.js"></script>
+	<script src="{{ SITEURL }}/theme/js/util.js"></script>
+	<script src="{{ SITEURL }}/theme/js/main.js"></script>
+	<script>
+		function validateForm(query)
+		{
+			return (query.length > 0);
+		}
+	</script>
+	{% endblock script %}
+	
+	
+	</body>
+</html>

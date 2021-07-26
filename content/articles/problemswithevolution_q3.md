@@ -1,7 +1,6 @@
 title: Are there serious problems with evolution?
 date: Mar 11 2017
-
-<Img src="images/laura-aziz-78175.jpg">
+image: laura-aziz-78175.jpg
 
 
 In their article, [*Top 10 problems with biological and chemical evolution*](http://www.discovery.org/a/24041), the Discovery Institute outlines their best critiques of evolution (i.e. biological evolution) and abiogenesis (i.e. chemical evolution).  As an initial response, I thought to start with [Problem 3: Random Mutations Cannot Generate the Genetic Information Required for Irreducibly Complex Structures](http://www.discovery.org/a/24041#problem3).  

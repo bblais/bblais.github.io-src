@@ -1,8 +1,7 @@
 title: What Makes an Explanation Bad?
 date: July 29, 2016
 subtitle: When it's easy to vary
-
-<Img src="images/ocean-water-1149661_960_720.jpg">
+image:ocean-water-1149661_960_720.jpg
 
 In [David Deutsch's TED Talk](https://www.ted.com/talks/david_deutsch_a_new_way_to_explain_explanation) he describes what makes good and bad explanations.  In particular he outlines what makes scientific explanations good ones whereas mythological ones bad.  Many people claim that what makes an explanation bad is its lack of testability - goblins are a bad explanation for my car breaking down because you cannot test for goblins.  Although somewhat true, this is not the primary problem with the explanation, according to Deutsch.  The problem is that, even if shown to be false, the goblin explanation is *too easy to vary*.  We can tweak it slightly to get the different prediction.  The example in the talk refers to the Greek gods creating the seasons, and that one can easily modify the presumed behavior of those gods to get any result you'd like.  
 

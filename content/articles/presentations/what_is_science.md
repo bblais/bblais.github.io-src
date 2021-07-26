@@ -1,7 +1,6 @@
 title: What is Science?
 Date: 2014-07-29
-
-![Flat Earth](images/flat_earth.png)
+image:flat_earth.png
 
 Today I gave [a presentation on the general topic of "What is Science?"]  After some brief remarks about what science isn't and some of the factors (such as attitude) which reflects the best of science, I had the audience of around 16 students perform tests on automatic flushing toilets.  The exercise, which I [published before], is a great way of getting at all of the concepts of experimental verification without any specialize equipment or preparation - the perfect platform for an informal talk or class. 
 

@@ -1,0 +1,85 @@
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                        <section id="search" class="alt">
+                            <form class="navbar-search" action="{{ SITEURL }}/search.html" onsubmit="return validateForm(this.elements['q'].value);"> 
+                                <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+                        </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="{{ SITEURL }}/index.html">Homepage</a></li>
+                                    <li>
+                                        <span class="opener"><a href="{{ SITEURL }}/index.html#0" title="">Blog</a></span>
+                                        <ul>
+                                            <li><a href="{{ SITEURL }}/index.html#blog">Recent</a></li>
+                                            {% for category,articles in categories %}
+                                            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }} <span>({{ articles|length }})</span></a></li>
+                                            {% endfor %}     
+                                        </ul>
+                                    </li>
+                                    {% for page in pages %}
+                                    <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                                    {% endfor %}
+                                    <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+                                    <li><a href="{{ SITEURL }}/about.html">About</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Popular Posts</h2>
+                                </header>
+
+                                <div class="mini-posts">
+                                {% for article in articles if article.popular %}
+                                    {% if loop.index <=3 %}
+                                        <article>
+                                            <a href="{{ SITEURL }}/{{ article.url }}" class="image">
+                                                {% if article.image %}
+                                                <img src="{{ SITEURL }}/images/{{ article.image }}" alt="{{ article.image }}">
+                                            {% else %}
+                                                <img src="{{ SITEURL }}/images/default.png" alt="default">
+                                            {% endif %}
+                                            </a>
+                                            <p><strong>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</strong>
+                                                {{ article.summary}}</p>
+                                        </article>
+                                    {% endif %}
+                                {% endfor %}
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>What problems are you interested in?  How can I help?</p>
+                                <ul class="contact">
+                                    <li class="icon brands fa-twitter"><a href="{{ SOCIAL.twitter }}">@bblais</a></li>
+                                    <li class="icon solid fa-envelope"><a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></li>
+                                    <li class="icon solid fa-phone"><a href="tel://4012326153">(401) 232-6153</a></li>
+                                    <li class="icon solid fa-home">Bryant University<br>
+                                        1150 Douglas Pike<br>
+                                        Smithfield, RI<br>
+                                        02917 US</li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">&copy; 2021 - All rights reserved. Adapted from <a href="https://html5up.net/editorial">Editorial Theme</a> html5up.net | @ajlkn, 
+                                    Converted to <a href="https://blog.getpelican.com">Pelican</a> theme by <a href="#">Brian Blais</a>. </p>
+                            </footer>
+
+                    </div>
+                </div>
+

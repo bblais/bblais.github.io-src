@@ -1,7 +1,6 @@
 title: Push Back Against Bayes
 date: October 24, 2017
-
-![city](images/city-view-1427730_1920.jpg)
+image: city-view-1427730_1920.jpg
 
 In his [blog post about Bayes' theorem](http://www.debunking-christianity.com/2017/08/the-parameters-of-bayes-thereom-part-1.html)  [part 1](http://www.debunking-christianity.com/2017/08/the-parameters-of-bayes-thereom-part-1.html) and [part 2](http://www.debunking-christianity.com/2017/08/the-parameters-of-bayes-theorem-part-2.html), John Loftus wrestles with the notion of prior probability and the application of Bayes' Theorem.  His concern seems to be primarily with the idea that there should be some things that are impossible (e.g. pigs flying) and that one shouldn't even consider these claims.  He then feels that people using  Bayes' theorem in religious arguments are using it both to give the veneer of credibility but also so that they can attempt to justify impossible things - clearly an abuse.
 

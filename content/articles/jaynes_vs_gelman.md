@@ -1,8 +1,7 @@
 title: Jaynes vs Gelman
 subtitle: Bayes for Messy Data
 date: Nov 24 2016
-
-<img src="images/landscape-54998_640.jpg" height=100>
+image: landscape-54998_640.jpg
 
 I copied a [comment on my old site](https://brianblais.wordpress.com/2016/08/20/is-science-a-self-sealing-process/#comment-1306), and am replying to it here.  It is a *fantastically interesting question*, which I have been enjoying thinking about.
 

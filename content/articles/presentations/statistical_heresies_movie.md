@@ -1,8 +1,7 @@
 title: Statistical Heresies - The Movie
 Date: 2014-06-11
 subtitle: Coming to a YouTube Channel Near You
-
-![saturn](images/Saturn_with_Dice_weave.png)
+image: Saturn_with_Dice_weave.png
 
 The moment we've been all waiting for, Statistical Heresies the movie is out!  You can watch it in a couple of places:
 

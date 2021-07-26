@@ -1,8 +1,7 @@
 title: Naturalism of the Gaps?
 Date: 2014-09-30
 subtitle: Not so much
-
-![naturalism](http://upload.wikimedia.org/wikipedia/commons/5/53/Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg)
+image: Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg
 
 I heard a term yesterday that I hadn't every heard before, while listening to a very interesting interview/debate with [Mike Licona on the Resurrection].  The term is "naturalism of the gaps", as a parallel (and supposedly equally flawed) argument to the "god of the gaps".  In a nutshell, it refers to those people who claim that someday there will be a natural explanation for a particular problem currently not understood (e.g. consciousness, origin of life, origin of the universe, etc...)  As [one apologetic website puts it],
 

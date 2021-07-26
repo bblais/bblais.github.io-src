@@ -1,7 +1,6 @@
 title: Pluto, Pluto, Here We Come
 Date: 2015-07-03
-
-<img src="images/Pluto-System-June-29.png" width=400px>
+image:Pluto-System-June-29.png
 
 In anticipation of the [New Horizons] close [flyby of Pluto] in a little over a week on July 14, 2015, I read with interest the article "[Calculating Pluto’s Mass With Snapshots From New Horizons]".  This is totally something I would do with my students, although I would have done it a little differently.  Both my approach and theirs are perfectly fine, and come to equivalent answers.  The difference is in which concepts are stressed.  
 

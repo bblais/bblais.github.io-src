@@ -1,10 +1,18 @@
 Title: "Skeptics" vs "Realists"
 Date: 2014-05-08
 Subtitle: A proposed solution
+image: skeptic_gw.png
+
+The graphic below has circulated the internet for a while, and I think it worthy of comment.  The *intent* of the graphic is to point out how [silly those so-called global warming "skeptics" are].  However, I think there is a hidden proposal there as well, worthy of an undergraduate project.  
 
 ![Skeptics vs Realists](http://www.skepticalscience.com/graphics/Escalator_2012_500.gif)
 
-The above graphic has circulated the internet for a while, and I think it worthy of comment.  The *intent* of the graphic is to point out how [silly those so-called global warming "skeptics" are].  However, I think there is a hidden proposal there as well, worthy of an undergraduate project.  If we call the "skeptics" model $M_S$ and the "realists" model $M_R$, then we want the following probabilities:
+
+
+If we call the "skeptics" model $M_S$ and the "realists" model $M_R$, then we want the following probabilities:
+
+
+
 
 \begin{eqnarray}
 P(M_S|{\rm data})

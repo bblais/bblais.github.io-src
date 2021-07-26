@@ -1,10 +1,13 @@
 Title: It's Unreasonable to Believe Some True Things
 Date: 2014-06-06
 Subtitle: A Comment about Presupossitionalism
+image: Screen Shot 2021-07-26 at 15.06.02.png
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/OL8LREmbDi0" frameborder="0" allowfullscreen></iframe>
 
-In the [frustrating debate] between  Matt Dillahunty and Sye Ten Bruggencate, linked above, an "argument" is put forward that belief in God is reasonable.  If you are unfamiliar with presuppositional apologetics, it doesn't use evidence at all and can be a frustrating process.  Have a look at what stands in for a proof of God from the [Sye's website].  A nice summary, and some tactics to use against presuppositionalists, can be found at the [Reasonable Doubts Podcast].
+In the [frustrating debate] between  Matt Dillahunty and Sye Ten Bruggencate, linked below, an "argument" is put forward that belief in God is reasonable.  If you are unfamiliar with presuppositional apologetics, it doesn't use evidence at all and can be a frustrating process.  Have a look at what stands in for a proof of God from the [Sye's website].  A nice summary, and some tactics to use against presuppositionalists, can be found at the [Reasonable Doubts Podcast].
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OL8LREmbDi0" frameborder="0" allowfullscreen></iframe>
+
 
 In this post I want to summarize the initial "argument" put forward by Sye:
 

@@ -1,8 +1,7 @@
 Title: Spurious Correlations
 Date: 2014-05-12
 Subtitle: A funny list of strangely correlated things
-
-![alt](http://i.imgur.com/VSKqqzC.png)
+image:VSKqqzC.png
 
 I saw this list of [spurious correlations], including "US spending on science, space, and technology"  correlates with "Suicides by hanging, strangulation and suffocation", "Number people who drowned by falling into a swimming-pool" correlates with "Number of films Nicolas Cage appeared in" and "Per capita consumption of cheese (US)" correlates with "Number of people who died by becoming tangled in their bedsheets".  These aren't spurious correlations, actually, they are spurious *causations*.  The correlation is real, it's just that there isn't a cause-and-effect relationship (in either direction) - there is some third variable (or variables) influencing both.
 

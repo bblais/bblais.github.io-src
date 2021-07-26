@@ -2,8 +2,7 @@ title: Are there serious problems with evolution?
 subtitle: Part 2
 status: draft
 date: Jan 12, 2018
-
-<Img src="images/laura-aziz-78175.jpg">
+image: laura-aziz-78175.jpg
 
 
 In their article, [*Top 10 problems with biological and chemical evolution*](http://www.discovery.org/a/24041), the Discovery Institute outlines their best critiques of evolution (i.e. biological evolution) and abiogenesis (i.e. chemical evolution). As my next response I'm going to respond to [Problem 4: Natural Selection Struggles to Fix Advantageous Traits into Populations](http://www.discovery.org/a/24041#problem4).  

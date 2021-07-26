@@ -1,8 +1,7 @@
 title: Demo vs Experiment
 Date: 2015-01-20
 subtitle: Science fair gone wrong
-
-<img src="images/landscape-54998_640.jpg" height=100>
+image:landscape-54998_640.jpg
 
 I was a judge for a local science fair this past week, and found a number of projects lacking.  After thinking about it for a while, I realized that one of the problems seems to be the distinction (or, rather, lack of distinction) made between *demos* and *experiments*.  In teaching science, especially in the younger grades, it seems common to say something like *"today we are going to do an experiment, mixing baking soda and vinegar"*.  This, to me, is not an *experiment*.  So, what do I think is the difference?  Here are a few thoughts.  Are there any more?
 

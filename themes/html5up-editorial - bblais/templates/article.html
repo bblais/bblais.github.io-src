@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %} · {{ super() }}
+{% endblock title %}
+
+{% block head_description %}
+{% if article.summary %}
+{{ article.summary|striptags }}
+{% endif %}
+{% endblock head_description %}
+
+{% block meta_tags_in_head %}
+{% if article.tags or article.category or article.keywords %}
+<meta name="keywords" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+{% endif %}
+
+<meta itemprop="name" content="{{ article.title|striptags }} {%if article.subtitle %} - {{ article.subtitle }} {% endif %}">
+<meta itemprop="description" content="{{ article.content[:500]|striptags }}...">
+<meta name="name" content="{{ [article.tags|join(', '), article.category, article.keywords]|join(', ') }}" />
+
+{% endblock meta_tags_in_head %}
+
+{% block content %}
+
+
+
+
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>{{ article.title }}</h1> 
+										{%if article.subtitle %} <h2> {{ article.subtitle }} </h2>{% endif %} 
+										<p><strong><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</strong>
+											{% if article.tags or article.category %}
+												In  
+												{% for tag in article.tags %}
+													<a href="#0">#{{tag}}</a>
+												{% endfor %}
+												{% if article.category %}
+													<em><a href="{{ SITEURL }}/{{article.category.url}}">#{{article.category}}</a></em>
+												{% endif %}
+											{% endif %}
+										</p>
+									</header>
+
+									{% if article.video %}
+										<span class="image main"><iframe src="{{article.video}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></span>
+									{% elif article.image %}
+										<span class="image left"><img src="{{ SITEURL }}/images/{{ article.image }}"></span>
+									{% else %}
+										<span class="image left"><img src="{{ SITEURL }}/images/default.png"></span>
+									{% endif %}
+
+
+									{{ article.content }}
+
+
+								</section>
+
+
+
+
+{% endblock content %}

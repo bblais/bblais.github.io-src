@@ -1,0 +1,555 @@
+"pelican" --debug "/Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/content" -o "/Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/output" -s "/Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/pelicanconf.py" 
+DEBUG: Pelican version: 4.5.1
+DEBUG: Python version: 3.8.10
+DEBUG: Adding current directory to system path
+DEBUG: Finding namespace plugins
+DEBUG: Loading plugin `render_math`
+DEBUG: Loading plugin `sitemap`
+DEBUG: Loading plugin `extract_toc`
+DEBUG: Loading plugin `tipue_search`
+DEBUG: Registering plugin `render_math`
+DEBUG: Registering plugin `sitemap`
+DEBUG: Registering plugin `extract_toc`
+DEBUG: Registering plugin `tipue_search`
+DEBUG: Found generator: <class 'sitemap.sitemap.SitemapGenerator'>
+DEBUG: Found generator: <class 'tipue_search.tipue_search.Tipue_Search_JSON_Generator'>
+DEBUG: Template list: ['!simple/archives.html', '!simple/article.html', '!simple/author.html', '!simple/authors.html', '!simple/base.html', '!simple/categories.html', '!simple/category.html', '!simple/gosquared.html', '!simple/index.html', '!simple/page.html', '!simple/pagination.html', '!simple/period_archives.html', '!simple/tag.html', '!simple/tags.html', '!simple/translations.html', '!theme/base.html', '!theme/index.html', '!theme/search.html', 'archives.html', 'article.html', 'author.html', 'authors.html', 'base.html', 'categories.html', 'category.html', 'gosquared.html', 'index.html', 'page.html', 'pagination.html', 'period_archives.html', 'search.html', 'tag.html', 'tags.html', 'translations.html']
+DEBUG: Read file articles/wordpress_migration/a-quick-comment-on-error.md -> Article
+DEBUG: Signal article_generator_preread.send(ArticlesGenerator)
+DEBUG: Successfully loaded extension "render_math.pelican_mathjax_markdown_extension.PelicanMathJaxExtension".
+DEBUG: Successfully imported extension module "markdown.extensions.codehilite".
+DEBUG: Successfully loaded extension "markdown.extensions.codehilite.CodeHiliteExtension".
+DEBUG: Successfully imported extension module "markdown.extensions.extra".
+DEBUG: Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: Successfully loaded extension "markdown.extensions.md_in_html.MarkdownInHtmlExtension".
+DEBUG: Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+DEBUG: Successfully imported extension module "markdown.extensions.meta".
+DEBUG: Successfully loaded extension "markdown.extensions.meta.MetaExtension".
+DEBUG: Signal article_generator_context.send(ArticlesGenerator, <metadata>)
+DEBUG: Read file articles/obj_morality_reduc.md -> Article
+DEBUG: Read file articles/wordpress_migration/climate-and-the-moon.md -> Article
+DEBUG: Read file articles/evidence.md -> Article
+DEBUG: Read file articles/religion/naturalism_explored.md -> Article
+DEBUG: Read file articles/wordpress_migration/whats-wrong-with-this.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-supernatural-and-the-history-of-cosmology.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-funny-little-probability-problem-some-closure.md -> Article
+DEBUG: Read file articles/wordpress_migration/religion-science-and-humility.md -> Article
+DEBUG: Read file articles/science/not_a_denier.md -> Article
+DEBUG: Read file articles/wordpress_migration/language-of-science.md -> Article
+DEBUG: Read file articles/wordpress_migration/god-and-hawking.md -> Article
+DEBUG: Read file articles/wordpress_migration/free-will-and-entropy.md -> Article
+DEBUG: Read file articles/wordpress_migration/free-will.md -> Article
+DEBUG: Read file articles/abduction.md -> Article
+DEBUG: Read file articles/wordpress_migration/230-miles-per-gallon.md -> Article
+DEBUG: Read file articles/wordpress_migration/yet-another-reason-to-leave-iraq-dowsing-for-bombs.md -> Article
+DEBUG: Read file articles/wordpress_migration/glenn-beck-on-science.md -> Article
+DEBUG: Read file articles/wordpress_migration/20-years-of-being-an-atheist-ends-today.md -> Article
+DEBUG: Read file articles/a_good_bet.md -> Article
+DEBUG: Read file articles/wordpress_migration/open-information-reproducible-research-and-climategate.md -> Article
+DEBUG: Read file articles/books/mof.md -> Article
+DEBUG: Read file articles/wordpress_migration/breaking-news-doctor-hallucinates-and-is-convinced-that-science-is-wrong.md -> Article
+DEBUG: Read file articles/wordpress_migration/rounds-in-australian-open.md -> Article
+WARNING: Empty alt attribute for image upper3.png?w=73 in /Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/content/articles/wordpress_migration/rounds-in-australian-open.md
+DEBUG: Read file articles/wordpress_migration/nobel-prize-the-higgs-and-predictions.md -> Article
+DEBUG: Read file articles/wordpress_migration/about.md -> Article
+DEBUG: Read file articles/wordpress_migration/closed-to-the-supernatural.md -> Article
+DEBUG: Read file articles/useful_fictions.md -> Article
+DEBUG: Read file articles/wordpress_migration/polar-bears-data-opinions-and-global-warming.md -> Article
+DEBUG: Read file articles/productivity/scrum.md -> Article
+DEBUG: Read file articles/wordpress_migration/presuppositionalist-arguments.md -> Article
+DEBUG: Read file articles/angle_bisector.md -> Article
+DEBUG: Read file articles/wordpress_migration/rules-for-criticizing-opponents.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-john-lennox-debates-science-and-god-has-science-buried-god.md -> Article
+DEBUG: Read file articles/religion/probability of resurrection.md -> Article
+DEBUG: Read file articles/wordpress_migration/god-does-not-exist-clearly.md -> Article
+DEBUG: Read file articles/hume_miracles.md -> Article
+DEBUG: Read file articles/argumentnotevidence.md -> Article
+DEBUG: Read file articles/wordpress_migration/science-as-entertainment.md -> Article
+DEBUG: Read file articles/unanswerable.md -> Article
+DEBUG: Read file articles/math/MCMC Simple - mu known sigma.md -> Article
+WARNING: Empty alt attribute for image μ chains.png in /Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/content/articles/math/MCMC Simple - mu known sigma.md
+WARNING: Empty alt attribute for image μ distribution.png in /Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/content/articles/math/MCMC Simple - mu known sigma.md
+WARNING: Empty alt attribute for image compare μ.png in /Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/content/articles/math/MCMC Simple - mu known sigma.md
+DEBUG: Read file articles/wordpress_migration/cool-little-fact-of-the-day.md -> Article
+DEBUG: Read file articles/wordpress_migration/are-science-and-religion-incompatible.md -> Article
+DEBUG: Read file articles/wordpress_migration/neat-way-to-introduce-programming.md -> Article
+DEBUG: Read file articles/wordpress_migration/lord-of-the-rings.md -> Article
+DEBUG: Read file articles/wordpress_migration/energy-bracelet-experience.md -> Article
+DEBUG: Read file articles/wordpress_migration/some-recent-presentations.md -> Article
+DEBUG: Read file articles/wordpress_migration/frivolous-research-in-science.md -> Article
+DEBUG: Read file articles/religion/Getting the Definitions Right.md -> Article
+DEBUG: Read file articles/wordpress_migration/great-science-ads.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0034] Unbelievable? 2 Feb 2008 Positive atheism? - 02 February 2008.md -> Article
+DEBUG: Read file articles/Unbelievable Project/sun_rise_tomorrow.md -> Article
+DEBUG: Read file articles/bayes_freq.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-world-is-flat.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-story-of-humanity.md -> Article
+DEBUG: Read file articles/jaynesprob.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-nice-series-to-look-at.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-sensible-post-on-climate-change-for-a-change.md -> Article
+DEBUG: Read file articles/science/10 Dogmas of Science.md -> Article
+DEBUG: Read file articles/science/Physics Lab Ideas - Structure or No.md -> Article
+DEBUG: Read file articles/newyear2016.md -> Article
+DEBUG: Read file articles/productivity/There is more than enough time.md -> Article
+DEBUG: Read file articles/wordpress_migration/beginnings.md -> Article
+DEBUG: Read file articles/wordpress_migration/recovery-from-vision.md -> Article
+DEBUG: Read file articles/wordpress_migration/textual-transmission-bottlenecks.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-bit-of-must-read-economics.md -> Article
+DEBUG: Read file articles/philosophy_and_science.md -> Article
+DEBUG: Read file articles/problemswithevolution_q4.md -> Article
+DEBUG: Read file articles/wordpress_migration/god-in-the-head.md -> Article
+DEBUG: Read file articles/wordpress_migration/what-is-good-in-religion.md -> Article
+DEBUG: Read file articles/best_test.md -> Article
+DEBUG: Read file articles/wordpress_migration/erroneous-probabilistic-reasoning.md -> Article
+DEBUG: Read file articles/wordpress_migration/bill-oreilly-tides-and-the-god-of-the-gaps.md -> Article
+DEBUG: Read file articles/wordpress_migration/climategate-oh-my.md -> Article
+DEBUG: Read file articles/sane_climate.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0024] Unbelievable? 24 Nov 2007 - The atheist who sold his soul on ebay - 24 November 2007.md -> Article
+DEBUG: Read file articles/wordpress_migration/weird-associations-and-the-brain.md -> Article
+DEBUG: Read file articles/wordpress_migration/knowledge-and-belief.md -> Article
+DEBUG: Read file articles/wordpress_migration/believing-the-unbelieveable.md -> Article
+DEBUG: Read file articles/wordpress_migration/moocs-and-treadmills.md -> Article
+DEBUG: Read file articles/Unbelievable Project/scratch.md -> Article
+DEBUG: Read file articles/programming/build_list_to_plot.md -> Article
+DEBUG: Read file articles/wordpress_migration/climate-change-denial-is-not-the-same-as-evolution-denial.md -> Article
+DEBUG: Read file articles/media/bryant_faculty_spotlight_2018.md -> Article
+DEBUG: Read file articles/media/unbelievable_2019.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-walk-down-memory-lane.md -> Article
+DEBUG: Read file articles/nye_vs_ham.md -> Article
+DEBUG: Read file articles/critical thinking/The Truth of a Story.md -> Article
+DEBUG: Read file articles/chicken_egg.md -> Article
+DEBUG: Read file articles/mcgrath_dawkins.md -> Article
+DEBUG: Read file articles/wordpress_migration/wonders-in-science-2.md -> Article
+DEBUG: Read file articles/dualism.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-florida-problem-a-new-intuition.md -> Article
+WARNING: Other images have empty alt attributes
+DEBUG: Read file articles/wordpress_migration/information.md -> Article
+DEBUG: Read file articles/sibling_sun.md -> Article
+DEBUG: Read file articles/wordpress_migration/star-trek-and-storytelling.md -> Article
+DEBUG: Read file articles/media/tedx_talk.md -> Article
+DEBUG: Read file articles/wordpress_migration/einstein-and-the-motives-of-scientists.md -> Article
+DEBUG: Read file articles/wordpress_migration/orthodox-statistics-conducive-to-pseudo-science.md -> Article
+DEBUG: Read file articles/wordpress_migration/life-meaning-and-entropy.md -> Article
+DEBUG: Read file articles/wordpress_migration/lessons-from-bayes-rule.md -> Article
+DEBUG: Read file articles/wordpress_migration/laplace-and-the-divine.md -> Article
+DEBUG: Read file articles/wordpress_migration/10-signs-of-intellectual-honesty.md -> Article
+DEBUG: Read file articles/wordpress_migration/statistical-inference-for-everyone-book-announcement.md -> Article
+DEBUG: Read file articles/wordpress_migration/faster-than-light-why-the-lawyer-is-wrong.md -> Article
+DEBUG: Read file articles/math/quora1.md -> Article
+DEBUG: Read file articles/naturalism_of_the_gaps.md -> Article
+DEBUG: Read file articles/critical thinking/Your Lack of Imagination Can Kill You…but you can be saved by math.md -> Article
+DEBUG: Read file articles/longest_night.md -> Article
+DEBUG: Read file articles/math/MCMC Simple - mu unknown sigma.md -> Article
+DEBUG: Read file articles/turing.md -> Article
+DEBUG: Read file articles/wordpress_migration/is-x2-positive-or-negative.md -> Article
+DEBUG: Read file articles/books/plasticnet.md -> Article
+DEBUG: Read file articles/jaynes_vs_gelman.md -> Article
+DEBUG: Read file articles/python_language.md -> Article
+DEBUG: Read file articles/wordpress_migration/critical-thinking.md -> Article
+DEBUG: Read file articles/religion/mind_energy_spirit.md -> Article
+DEBUG: Read file articles/wordpress_migration/offended-by-prayer-on-a-mural.md -> Article
+DEBUG: Read file articles/noalgebra2.md -> Article
+DEBUG: Read file articles/Unbelievable Project/probability_theism_vs_atheism.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-a-proxy-atheist-explains-why-he-cant-believe.md -> Article
+DEBUG: Read file articles/bayes_god.md -> Article
+DEBUG: Read file articles/wordpress_migration/there-once-was-a-girl-named-florida-a-k-a-evil-problems-in-probability.md -> Article
+DEBUG: Read file articles/wordpress_migration/bayes-and-hiccups-practical-working-solutions-that-no-one-seems-to-know.md -> Article
+DEBUG: Read file articles/wordpress_migration/autotune-science-and-creativity.md -> Article
+DEBUG: Read file articles/wordpress_migration/homeopathic-medicine.md -> Article
+DEBUG: Read file articles/critical thinking/The Power of a Story …especially when it's wrong.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-the-new-atheism-barry-duke-and-david-marshall-debate.md -> Article
+DEBUG: Read file articles/wordpress_migration/nice-talk-about-science-and-vaccination.md -> Article
+DEBUG: Read file articles/wordpress_migration/does-watson-think.md -> Article
+DEBUG: Read file articles/productivity/jonacuff_lessons.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-trinity-and-coherency.md -> Article
+DEBUG: Read file articles/wordpress_migration/religion-and-scientists.md -> Article
+DEBUG: Read file articles/wordpress_migration/things-science-cant-explain.md -> Article
+DEBUG: Read file articles/on_miracles.md -> Article
+DEBUG: Read file articles/wordpress_migration/power-unbalance.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-reasonable-perspective-on-global-warming.md -> Article
+DEBUG: Read file articles/science/reductionism_art_neuroscience.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-a-non-believers-armchair-perspective-on-six-years-of-christian-debates.md -> Article
+DEBUG: Read file articles/art_math.md -> Article
+DEBUG: Read file articles/wordpress_migration/pascals-global-warming.md -> Article
+DEBUG: Read file articles/morality_evolution.md -> Article
+DEBUG: Read file articles/wordpress_migration/new-year-and-new-website.md -> Article
+DEBUG: Read file articles/proof.md -> Article
+DEBUG: Read file articles/why-the-new-website.md -> Article
+DEBUG: Read file articles/wordpress_migration/faster-than-light-a-likely-solution.md -> Article
+DEBUG: Read file articles/productivity/lessons_from_finish.md -> Article
+DEBUG: Read file articles/skeptics_underestimate_ressurection.md -> Article
+DEBUG: Read file articles/wordpress_migration/magnetic-therapy-getting-under-my-skin.md -> Article
+DEBUG: Read file articles/programming/pelican_theme.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0028] Unbelievable? 22 Dec 2007 - Did Christians steal Christmas? - 22 December 2007.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-question-for-theists-why-do-you-not-believe-ufos-are-alien-spacecraft.md -> Article
+DEBUG: Read file articles/wordpress_migration/santa-and-other-delusions.md -> Article
+DEBUG: Read file articles/simple_questions.md -> Article
+DEBUG: Read file articles/wordpress_migration/silly-challenge-to-silly-statement.md -> Article
+DEBUG: Read file articles/wordpress_migration/statistics-vs-probability.md -> Article
+DEBUG: Read file articles/free_will.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-new-year-and-a-deepity.md -> Article
+DEBUG: Read file articles/problemswithevolution_q3.md -> Article
+DEBUG: Read file articles/football_physics.md -> Article
+DEBUG: Read file articles/math/cool_theorem.md -> Article
+DEBUG: Read file articles/arrogance.md -> Article
+DEBUG: Read file articles/climate_modeling_intro_pres.md -> Article
+DEBUG: Read file articles/priors_vs_likelihood.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-modest-proposal-about-uncertainty.md -> Article
+DEBUG: Read file articles/wordpress_migration/aliens.md -> Article
+DEBUG: Read file articles/scientific_knowledge.md -> Article
+DEBUG: Read file articles/productivity/more_than_enough_time.md -> Article
+DEBUG: Read file articles/wordpress_migration/what-to-do-when-youre-not-an-expert.md -> Article
+DEBUG: Read file articles/projects/sie.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-moral-argument-for-god.md -> Article
+DEBUG: Read file articles/Unbelievable Project/Healing Miracles_.md -> Article
+DEBUG: Read file articles/wordpress_migration/predictions-for-the-australian-open.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-fallacy-of-all-natural.md -> Article
+DEBUG: Read file articles/science/2021-04-09 Attraction.md -> Article
+DEBUG: Read file articles/wordpress_migration/economics.md -> Article
+DEBUG: Read file articles/presentations/what_is_science.md -> Article
+DEBUG: Read file articles/wordpress_migration/battlestar-galactica-lost-and-babylon-5-to-plan-or-not-to-plan.md -> Article
+DEBUG: Read file articles/becoming superman.md -> Article
+DEBUG: Read file articles/wordpress_migration/model-helicopter-guided-by-power-of-thought.md -> Article
+DEBUG: Read file articles/Unbelievable Project/lennox.md -> Article
+DEBUG: Read file articles/wordpress_migration/evolution-and-rationality.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-economics-of-religion-more-good-than-harm.md -> Article
+DEBUG: Read file articles/obj_morality.md -> Article
+DEBUG: Read file articles/bias_probability.md -> Article
+DEBUG: Read file articles/wordpress_migration/there-is-no-population.md -> Article
+DEBUG: Read file articles/wordpress_migration/knowledge-faith-and-belief.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-bible-foreshadows-scientific-discoveries.md -> Article
+DEBUG: Read file articles/wordpress_migration/netflix-prize.md -> Article
+DEBUG: Read file articles/wordpress_migration/universality-of-religion.md -> Article
+DEBUG: Read file articles/wordpress_migration/proof-that-god-exists.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0036] Unbelievable? 16 Feb 2008 Noah and the Flood - did it happen? - 16 February 2008.md -> Article
+DEBUG: Read file articles/wordpress_migration/naturalistic-bias-presupposing-naturalism.md -> Article
+DEBUG: Read file articles/science/Sea Slug Brains …delicious or no.md -> Article
+DEBUG: Read file articles/ebola.md -> Article
+DEBUG: Read file articles/media/still_unbelievable_2019_1.md -> Article
+DEBUG: Read file articles/media/still_unbelievable_2020_1.md -> Article
+DEBUG: Read file articles/science/2020-07-18 - Write Up AP Physics Problem.md -> Article
+DEBUG: Read file articles/media/proscenium_2020_bayesian.md -> Article
+DEBUG: Read file articles/atheism_belief.md -> Article
+DEBUG: Read file articles/projects/sie_cover.md -> Article
+DEBUG: Read file articles/media/local_maximum_2020_bayes.md -> Article
+DEBUG: Read file articles/laplace_twins.md -> Article
+DEBUG: Read file articles/wordpress_migration/disturbing-video-misusing-einsteins-name.md -> Article
+DEBUG: Read file articles/wordpress_migration/misunderstanding-laplace.md -> Article
+DEBUG: Read file articles/analytics_conference.md -> Article
+DEBUG: Read file articles/death_debate1.md -> Article
+DEBUG: Read file articles/math/MCMC Simple - proportion.md -> Article
+DEBUG: Read file articles/psychic_flash_reader2.md -> Article
+DEBUG: Read file articles/wordpress_migration/why-i-cant-support-the-darwin-day-resolution.md -> Article
+DEBUG: Read file articles/wordpress_migration/presuppositions-and-science.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0308] How did life begin? Adam Rutherford & Fuz Rana - Unbelievable? - 09 April 2013.md -> Article
+DEBUG: Read file articles/productivity/productivity_part1.md -> Article
+DEBUG: Read file articles/religion/probability_theism_resurrection.md -> Article
+DEBUG: Read file articles/religion/Skepticism and Dubious Medical Procedures.md -> Article
+DEBUG: Read file articles/burden_of_proof.md -> Article
+DEBUG: Read file articles/media/graceful_atheist_2021.md -> Article
+DEBUG: Read file articles/wordpress_migration/conversation-with-steve-winsor.md -> Article
+DEBUG: Read file articles/wordpress_migration/religion-and-the-illusion-of-moral-authority.md -> Article
+DEBUG: Read file articles/priors_and_ignorance.md -> Article
+DEBUG: Read file articles/wordpress_migration/science-refutes-god-debate.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-miracles-and-healing-is-it-evidence-for-the-truth-of-christianity.md -> Article
+DEBUG: Read file articles/wordpress_migration/logical-vs-reasonable.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0274] Did Jesus Exist? Bart Ehrman Q&A - Unbelievable? - 18 August 2012.md -> Article
+DEBUG: Read file articles/philosophy_science_.md -> Article
+DEBUG: Read file articles/wordpress_migration/resurrection-linear-regression-and-the-art-of-harmonization.md -> Article
+DEBUG: Read file articles/push_back_against_bayes.md -> Article
+DEBUG: Read file articles/first.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-atheist-and-christian-bloggers-discuss.md -> Article
+DEBUG: Read file articles/psychic_flash_reader.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0043] Unbelievable? 5 Apr 2008 12 Apr 2008 "Why I became an atheist" Part 1 and Part 2 - John Loftus & Peter May - 05 April 2008.md -> Article
+DEBUG: Read file articles/reasonable_truth.md -> Article
+DEBUG: Read file articles/wordpress_migration/on-being-wrong.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-role-of-humanity-into-the-future.md -> Article
+DEBUG: Read file articles/wordpress_migration/creationist-math.md -> Article
+DEBUG: Read file articles/books/sfe.md -> Article
+DEBUG: Read file articles/wordpress_migration/miscellaneous-christian-topics-another-counter-to-marshall.md -> Article
+DEBUG: Read file articles/wordpress_migration/christianity-and-morality.md -> Article
+DEBUG: Read file articles/blake_debate.md -> Article
+DEBUG: Read file articles/wordpress_migration/probability-problems-and-simulation.md -> Article
+DEBUG: Read file articles/Unbelievable Project/faith_empirical.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-god-delusion-debate-deluded-by-dawkins.md -> Article
+DEBUG: Read file articles/correlation.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-little-geometry.md -> Article
+DEBUG: Read file articles/religion/Life from non-life and other conundrums.md -> Article
+DEBUG: Read file articles/presentations/statistical_heresies.md -> Article
+DEBUG: Read file articles/supernatural_dark_matter.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-non-psychic-octopus.md -> Article
+DEBUG: Read file articles/coursevals.md -> Article
+DEBUG: Read file articles/religion/A Cookbook Response to Jordan Peterson.md -> Article
+DEBUG: Read file articles/presentations/statistical_heresies_movie.md -> Article
+DEBUG: Read file articles/wordpress_migration/more-fine-tuning-not.md -> Article
+DEBUG: Read file articles/latex_vs_word.md -> Article
+DEBUG: Read file articles/pascalagain.md -> Article
+DEBUG: Read file articles/back.md -> Article
+DEBUG: Read file articles/wordpress_migration/multiple-model-comparisons-revisited.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-gods-existence-free-will-and-faith-the-big-questions.md -> Article
+DEBUG: Read file articles/three_years_weather.md -> Article
+DEBUG: Read file articles/determinism_entropy.md -> Article
+DEBUG: Read file articles/wordpress_migration/suppression-of-ideas-in-science.md -> Article
+DEBUG: Read file articles/wordpress_migration/mystery-knowledge-science-and-television.md -> Article
+DEBUG: Read file articles/worldviewprobability.md -> Article
+DEBUG: Read file articles/programming/lmfit with pyndamics.md -> Article
+DEBUG: Read file articles/what_is_ai.md -> Article
+DEBUG: Read file articles/math/Jaynes Deciderata.md -> Article
+DEBUG: Read file articles/projects/pennies_sie.md -> Article
+DEBUG: Read file articles/atheism_irrational.md -> Article
+DEBUG: Read file articles/productivity/productivity_part2.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-source-of-morality.md -> Article
+DEBUG: Read file articles/wordpress_migration/religion-scripture-and-the-source-of-morality.md -> Article
+DEBUG: Read file articles/wordpress_migration/creativity-science-and-the-brain.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-the-probability-of-the-resurrection.md -> Article
+DEBUG: Read file articles/critical thinking/Facts are Not Enough.md -> Article
+DEBUG: Read file articles/fourbayes.md -> Article
+DEBUG: Read file articles/wordpress_migration/best-evidence-for.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-funny-little-probability-problem-correct.md -> Article
+DEBUG: Read file articles/wordpress_migration/frequentist-thinking-or-just-bad-math.md -> Article
+DEBUG: Read file articles/wordpress_migration/presuppositionalism-vs-evidentialism.md -> Article
+DEBUG: Read file articles/wordpress_migration/creationism-and-strawmen.md -> Article
+DEBUG: Read file articles/groundhog2018.md -> Article
+DEBUG: Read file articles/projects/pyndamics.md -> Article
+DEBUG: Read file articles/wordpress_migration/bayesian-thinking.md -> Article
+DEBUG: Read file articles/Unbelievable Project/faith_and_trust.md -> Article
+DEBUG: Read file articles/morality_chess_.md -> Article
+DEBUG: Read file articles/wordpress_migration/why-pseudoscientists-like-the-chi-square-test-and-why-it-shouldnt-be-taught.md -> Article
+DEBUG: Read file articles/sean_carroll_free_will.md -> Article
+DEBUG: Read file articles/wordpress_migration/origins-of-religion-two-hypotheses.md -> Article
+DEBUG: Read file articles/wordpress_migration/wonders-in-science.md -> Article
+DEBUG: Read file articles/wordpress_migration/science-and-attitudes-toward-criticism.md -> Article
+DEBUG: Read file articles/badexplanation.md -> Article
+DEBUG: Read file articles/neil_on_interstellar.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0033] Unbelievable? 26 Jan 2008 Morality - do we need God to be Good? - 26 January 2008.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-teachable-moment-lost.md -> Article
+DEBUG: Read file articles/a_lot_about_nothing.md -> Article
+DEBUG: Read file articles/wordpress_migration/baseball-and-the-naming-of-the-gospels.md -> Article
+DEBUG: Read file articles/naturalism_explored2.md -> Article
+DEBUG: Read file articles/defending_claims.md -> Article
+DEBUG: Read file articles/wordpress_migration/what-would-it-take-for-me-to-believe-the-resurrection.md -> Article
+DEBUG: Read file articles/wordpress_migration/best-quote-in-a-while-about-global-warming.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-new-and-content-free-model.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-funny-little-probability-problem-4.md -> Article
+DEBUG: Read file articles/astrology_scientific.md -> Article
+DEBUG: Read file articles/close_shave.md -> Article
+DEBUG: Read file articles/Unbelievable Project/unbelievable-project-does-christianity-enslave-are-we-better-off-without-belief-in-god.md -> Article
+DEBUG: Read file articles/wordpress_migration/trying-to-figure-out-fiction-i-like-game-of-thrones-semi-fail.md -> Article
+DEBUG: Read file articles/on_pluto.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-great-observation.md -> Article
+DEBUG: Read file articles/properly_basic.md -> Article
+DEBUG: Read file articles/wordpress_migration/word-of-the-day-micromort.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-few-things-about-carl-sagan.md -> Article
+DEBUG: Read file articles/wordpress_migration/evidence-of-other-universes.md -> Article
+DEBUG: Read file articles/Unbelievable Project/Top Reasons for Belief.md -> Article
+DEBUG: Read file articles/deflate_football.md -> Article
+DEBUG: Read file articles/Unbelievable Project/[0321] The Probability of the Resurrection - Calum Miller & Chris Hallquist - Unbelievable? - 06 July 2013.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-couple-of-interesting-videos.md -> Article
+DEBUG: Read file articles/wordpress_migration/coin-flips-and-names-evil-problems-in-probability-continued.md -> Article
+DEBUG: Read file articles/astrology_test1.md -> Article
+DEBUG: Read file articles/climate_perspective.md -> Article
+DEBUG: Read file articles/demo_vs_experiment.md -> Article
+DEBUG: Read file articles/wordpress_migration/faith-and-science.md -> Article
+DEBUG: Read file articles/wordpress_migration/a-little-about-miracles.md -> Article
+DEBUG: Read file articles/religion/3 Reasons Why Belief In God Makes Sense …or not.md -> Article
+DEBUG: Read file articles/wordpress_migration/one-last-tv-post-about-battlestar-galactica.md -> Article
+DEBUG: Read file articles/media/proscenium_2019_panpsychism.md -> Article
+DEBUG: Read file articles/wordpress_migration/design-the-origin-of-life-and-creationism.md -> Article
+DEBUG: Read file articles/selfsealingscience.md -> Article
+DEBUG: Read file articles/newyear2018.md -> Article
+DEBUG: Read file articles/wordpress_migration/francis-collins-science-and-religion-how-religion-halts-science.md -> Article
+DEBUG: Read file articles/math/An Interesting Twist on the Gambler’s Fallacy.md -> Article
+DEBUG: Read file articles/wordpress_migration/consciousness-in-infants.md -> Article
+DEBUG: Read file articles/evidence_philosophical.md -> Article
+DEBUG: Read file articles/religion/unbelievable_review.md -> Article
+DEBUG: Read file articles/wordpress_migration/reaping-the-benefits-of-science-while-hostile-to-science.md -> Article
+DEBUG: Read file articles/wordpress_migration/the-not-so-hidden-flaw-in-this-climate-argument.md -> Article
+DEBUG: Read file pages/presentations.md -> Page
+DEBUG: Signal page_generator_preread.send(PagesGenerator)
+DEBUG: Signal page_generator_context.send(PagesGenerator, <metadata>)
+DEBUG: Read file pages/projects.md -> Page
+DEBUG: Read file pages/publications.md -> Page
+DEBUG: Read file images/AP20/orig/output_16_1.png -> Static
+DEBUG: Signal static_generator_preread.send(StaticGenerator)
+DEBUG: Signal static_generator_context.send(StaticGenerator, <metadata>)
+DEBUG: Read file images/.DS_Store -> Static
+DEBUG: Read file theme/images/iconifier-readme.txt -> Static
+DEBUG: Read file images/smallrocks1.png -> Static
+DEBUG: Read file images/entropy/3.png -> Static
+DEBUG: Read file images/mass1965_1974_1_value.png -> Static
+DEBUG: Read file static/anim_improved.swf -> Static
+DEBUG: Read file images/pyndamics.png -> Static
+DEBUG: Read file images/2018-10-25-11-43-40.png -> Static
+DEBUG: Read file images/2018-01-09_03.14.49_pm.png -> Static
+DEBUG: Read file images/compare μ t.png -> Static
+DEBUG: Read file images/AP20/car_table.png -> Static
+DEBUG: Read file images/AP20/output_16_1.png -> Static
+DEBUG: Read file static/about.txt -> Static
+DEBUG: Read file images/Pluto-System-June-29.png -> Static
+DEBUG: Read file images/media/local_maximum_2020.png -> Static
+DEBUG: Read file theme/images/apple-touch-icon-152x152.png -> Static
+DEBUG: Read file images/media/.DS_Store -> Static
+DEBUG: Read file images/Saturn_with_Dice_weave.png -> Static
+DEBUG: Read file images/media/sie.png -> Static
+DEBUG: Read file images/fit2.png -> Static
+DEBUG: Read file images/andrew-ridley-76547-unsplash-0686333.jpg -> Static
+DEBUG: Read file images/clock.png -> Static
+DEBUG: Read file images/media/rebirth.png -> Static
+DEBUG: Read file images/media/library.png -> Static
+DEBUG: Read file images/entropy/1b.png -> Static
+DEBUG: Read file images/roman-mager-59976-unsplash.jpg -> Static
+DEBUG: Read file images/Saturn_with_Pennies.png -> Static
+DEBUG: Read file images/default.png -> Static
+DEBUG: Read file images/1600px-Saturn_eclipse.jpg -> Static
+DEBUG: Read file images/mass1965_2003_2_value_diff.png -> Static
+DEBUG: Read file theme/images/favicon.ico -> Static
+DEBUG: Read file images/μt distribution.png -> Static
+DEBUG: Read file images/bblais_avatar.jpg -> Static
+DEBUG: Read file images/AP20/orig/output_29_1.png -> Static
+DEBUG: Read file images/Asteroid_1.png -> Static
+DEBUG: Read file images/coin_flips_rigged.png -> Static
+DEBUG: Read file images/chicken-2205233_960_720.jpg -> Static
+DEBUG: Read file images/Saturn_with_Dice_3_to_1.png -> Static
+DEBUG: Read file images/Fallen_Monarchs_1886_by_William_Bliss_Baker.jpg -> Static
+DEBUG: Read file images/city-view-1427730_1920.jpg -> Static
+DEBUG: Read file images/entropy/7.png -> Static
+DEBUG: Read file images/compare σ.png -> Static
+DEBUG: Read file images/Sun.jpg -> Static
+DEBUG: Read file static/.DS_Store -> Static
+DEBUG: Read file images/Thomas_Bayes.gif -> Static
+DEBUG: Read file static/cv.pdf -> Static
+DEBUG: Read file images/effect_size.png -> Static
+DEBUG: Read file theme/images/apple-touch-icon-120x120.png -> Static
+DEBUG: Read file images/laura-aziz-78175.jpg -> Static
+DEBUG: Read file images/bblais headshot 2014.jpg -> Static
+DEBUG: Read file theme/images/apple-touch-icon-144x144.png -> Static
+DEBUG: Read file images/entropy/1.png -> Static
+DEBUG: Read file images/ocean-water-1149661_960_720.jpg -> Static
+DEBUG: Read file images/entropy/4.png -> Static
+DEBUG: Read file images/photo_72511_landscape_650x433.jpg -> Static
+DEBUG: Read file images/media/mof.png -> Static
+DEBUG: Read file images/AP20/output_22_1.png -> Static
+DEBUG: Read file images/roman-mager-5mZ_M06Fc9g-unsplash.jpg -> Static
+DEBUG: Read file images/Saturn_with_Dice_Square.png -> Static
+DEBUG: Read file images/muzammil-soorma-R11bppS4q8o-unsplash.jpg -> Static
+DEBUG: Read file theme/images/background.png -> Static
+DEBUG: Read file theme/images/apple-touch-icon-180x180.png -> Static
+DEBUG: Read file images/σ distribution.png -> Static
+DEBUG: Read file images/Saturn_with_Dice_3_to_1_reverse.png -> Static
+DEBUG: Read file images/Bibliology-Bible-Theology-Magnifying-Glass-162886.jpg -> Static
+DEBUG: Read file images/bblais_mst3k_b5.png -> Static
+DEBUG: Read file images/media/graceful_atheist_2021.png -> Static
+DEBUG: Read file images/DUJARDIN_Karel_St_Paul_Healing_the_Cripple_at_Lystra.jpg -> Static
+DEBUG: Read file images/pollock.jpg -> Static
+DEBUG: Read file images/groundhog.jpg -> Static
+DEBUG: Read file images/zombie1.jpg -> Static
+DEBUG: Read file images/compare μ.png -> Static
+DEBUG: Read file images/AP20/orig/car_table_ramp.png -> Static
+DEBUG: Read file images/AP20/output_26_1.png -> Static
+DEBUG: Read file images/AP20/orig/output_26_1.png -> Static
+DEBUG: Read file images/horsehead1.png -> Static
+DEBUG: Read file images/AP20/output_29_1.png -> Static
+DEBUG: Read file images/productivity-1995781_1280.jpg -> Static
+DEBUG: Read file images/188px-DUJARDIN_Karel_St_Paul_Healing_the_Cripple_at_Lystra.jpg -> Static
+DEBUG: Read file images/edge2edge-media-uKlneQRwaxY-unsplash.jpg -> Static
+DEBUG: Read file images/media/book_sie.png -> Static
+DEBUG: Read file images/μσ chains.png -> Static
+DEBUG: Read file images/plan-1725510_960_720.jpg -> Static
+DEBUG: Read file images/media/tcp.png -> Static
+DEBUG: Read file images/media/book_rebirth.png -> Static
+DEBUG: Read file images/becoming_superman.jpg -> Static
+DEBUG: Read file images/media/book_mof.png -> Static
+DEBUG: Read file images/nasa_zodiac.jpg -> Static
+DEBUG: Read file images/media/stillunbelievable2019_1.jpg -> Static
+DEBUG: Read file images/bblais_tedx.jpg -> Static
+DEBUG: Read file images/mass1965_2003_2_value.png -> Static
+DEBUG: Read file theme/images/apple-touch-icon-114x114.png -> Static
+DEBUG: Read file images/media/unbelievable_2019.png -> Static
+DEBUG: Read file images/x1x2.png -> Static
+DEBUG: Read file images/fit1.jpg -> Static
+DEBUG: Read file images/measure_of_faith_cover_draft2.png -> Static
+DEBUG: Read file images/math.jpg -> Static
+DEBUG: Read file theme/images/apple-touch-icon.png -> Static
+DEBUG: Read file images/media/proscenium_2019.jpg -> Static
+DEBUG: Read file images/mass1965_2003_1_value.png -> Static
+DEBUG: Read file images/Saturn1.jpg -> Static
+DEBUG: Read file images/media/book_tcp.jpg -> Static
+DEBUG: Read file images/andrew-ridley-76547-unsplash.jpg -> Static
+DEBUG: Read file images/unfit_growth.png -> Static
+DEBUG: Read file images/Saturn_with_Dice.png -> Static
+DEBUG: Read file images/katarzyna-urbanek-l0PCrW_4J4A-unsplash.jpg -> Static
+DEBUG: Read file images/media/book_tcp.png -> Static
+DEBUG: Read file images/patrick-schneider-wczrs3Unfnk-unsplash.jpg -> Static
+DEBUG: Read file images/patrick-mcmanaman-LN_g3qA8ohg-unsplash.jpg -> Static
+DEBUG: Read file images/StonehengeSunrise1980s.jpg -> Static
+DEBUG: Read file images/Ursus_maritimus_mother_with_cub.jpg -> Static
+DEBUG: Read file images/SIE.png -> Static
+DEBUG: Read file images/entropy/2.png -> Static
+DEBUG: Read file images/AP20/orig/car_table.png -> Static
+DEBUG: Read file theme/images/apple-touch-icon-57x57.png -> Static
+DEBUG: Read file images/AP20/car_table_ramp.png -> Static
+DEBUG: Read file images/lea-bohm-576729-unsplash.jpg -> Static
+DEBUG: Read file images/Triangle_ABC_with_bisector_AD.svg -> Static
+DEBUG: Read file theme/images/apple-touch-icon-72x72.png -> Static
+DEBUG: Read file images/media/proscenium_2020.jpg -> Static
+DEBUG: Read file images/AP20/orig/output_22_1.png -> Static
+DEBUG: Read file images/AP20/orig/output_9_1.png -> Static
+DEBUG: Read file images/fit3.png -> Static
+DEBUG: Read file images/AP20/output_9_1.png -> Static
+DEBUG: Read file images/two people.png -> Static
+DEBUG: Read file images/clock_small.png -> Static
+DEBUG: Read file images/entropy/5.png -> Static
+DEBUG: Read file images/green-chameleon-21532-unsplash.jpg -> Static
+DEBUG: Read file images/Sea_Squirt.jpg -> Static
+DEBUG: Read file images/artmath.jpg -> Static
+DEBUG: Read file images/media/stillunbelievable2020_1.jpg -> Static
+DEBUG: Read file theme/images/apple-touch-icon-76x76.png -> Static
+DEBUG: Read file images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg -> Static
+DEBUG: Read file images/neuron1.jpg -> Static
+DEBUG: Read file images/landscape-54998_640.jpg -> Static
+DEBUG: Read file images/football.jpg -> Static
+DEBUG: Read file theme/images/author.jpg -> Static
+DEBUG: Read file images/uncertainty.jpg -> Static
+DEBUG: Read file images/μ distribution.png -> Static
+DEBUG: Read file images/rosie-fraser-187327-unsplash.jpg -> Static
+DEBUG: Read file images/capsule.png -> Static
+DEBUG: Read file images/μ chains.png -> Static
+DEBUG: Read file images/markus-spiske-1182636-unsplash.jpg -> Static
+DEBUG: Read file images/Science-Background-Fractal-Physics-Abstract-1280081.jpg -> Static
+DEBUG: Read file images/flat_earth.png -> Static
+DEBUG: Read file images/entropy/1a.png -> Static
+CRITICAL: 'articles_page' is undefined
+Traceback (most recent call last):
+  File "/Users/bblais/opt/anaconda3/envs/py3/bin/pelican", line 10, in <module>
+    sys.exit(main())
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/__init__.py", line 512, in main
+    pelican.run()
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/__init__.py", line 121, in run
+    p.generate_output(writer)
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/generators.py", line 686, in generate_output
+    self.generate_pages(writer)
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/generators.py", line 595, in generate_pages
+    self.generate_articles(write)
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/generators.py", line 466, in generate_articles
+    write(article.save_as, self.get_template(article.template),
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/writers.py", line 269, in write_file
+    _write_file(template, localcontext, self.output_path, name,
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/writers.py", line 202, in _write_file
+    output = template.render(localcontext)
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/pelican/themes/simple/templates/article.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/bblais/Documents/Git/bblais.github.io-src/work/bblais_on_the_web/themes/html5up-editorial - bblais/templates/base.html", line 100, in top-level template code
+    {% for article in articles_page.object_list %}
+  File "/Users/bblais/opt/anaconda3/envs/py3/lib/python3.8/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'articles_page' is undefined
+make: *** [debug] Error 1

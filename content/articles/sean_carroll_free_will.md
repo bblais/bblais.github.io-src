@@ -1,7 +1,6 @@
 Title: Free Will On My Mind
 Date: 2017-01-27
-
-<img src="images/football.jpg" width=200>
+image:football.jpg
 
 Usually when thinking about free will my thoughts run in circles.  However the [recent talks by Sean Carroll] were some of the clearest exposition on the topic. In summary we have different levels of description. Footballs for example are not in the fundamental laws of physics but that doesn't make footballs any less real - they are an emergent phenomenon. It also doesn't make the word *football* any less useful in describing the world at the level of human interactions.  The problem occurs when you try to mix levels of description.
 

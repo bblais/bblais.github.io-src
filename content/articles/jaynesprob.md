@@ -1,7 +1,6 @@
 title: Probability Does Extend Logic
 date: Nov 17, 2016
-
-<Img src="images/horsehead1.png">
+image:horsehead1.png
 
 In the article [*Probability theory does not extend logic*](https://meaningness.com/probability-and-logic) David Chapman, the author, criticizes the claim that probability theory generalizes logic to cases with uncertainty.  He is particularly scornful of [E. T. Jaynes'](https://en.wikipedia.org/wiki/Edwin_Thompson_Jaynes) [treatment of this](http://bayes.wustl.edu/etj/prob/book.pdf).  As far as I can see, his criticisms are misplaced.  I have broken the critcisms up into into a couple of categories, and explained the problem with each.  In summary, I couldn't find a *specific* problem where a logical conclusion was outside the domain of probability, or a *specific* problem where probability theory resulted in an incorrect conclusion that could be demonstrated independently.  Mostly, it seemed to be a criticism of notation and the ambiguity of English.
 

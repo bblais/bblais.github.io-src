@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock title %}
+
+{% block content %}
+
+
+
+                        <!-- Banner -->
+                            <section id="banner">
+                                <div class="content">
+                                    <header>
+                                        <h1>Hi, I’m bblais<br /></h1>
+                                    </header>
+                                    <p>{{ ABOUT }}</p>
+                                    <ul class="actions">
+                                        <li><a href="{{ SITEURL }}/about.html" class="button big">Learn More</a></li>
+                                    </ul>
+                                </div>
+                                <span class="image object">
+                                    <img src="{{ SITEURL }}/images/{{ ABOUT_PICTURE }}" alt="" />
+                                </span>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Features</h2>
+                                </header>
+                                <div class="features">
+                                    <article>
+                                        <a style="border-bottom: none;" href="{{SITEURL}}/category/books.html">
+                                        <span class="icon solid fa-book"></span></a>
+                                        <div class="content">
+                                            <h3><a href="{{SITEURL}}/category/books.html">Books</a></h3>
+                                            <p>Books that I have written.</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <a  style="border-bottom: none;" href="{{SITEURL}}/category/media.html">
+                                        <span class="icon solid fa-camera"></span></a>
+                                        <div class="content">
+                                            <h3><a href="{{SITEURL}}/category/media.html">Media Appearances</a></h3>
+                                            <p>Podcasts and Videos in which I have appeared or which I have created.</p>
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <a  style="border-bottom: none;" href="https://bblais.github.io/pyndamics3/">
+                                        <span class="icon solid fa-rocket"></span></a>
+                                        <div class="content">
+                                            <h3><a href="https://bblais.github.io/pyndamics3/">pyndamics3</a></h3>
+                                            <p>Dynamical systems simulation in Python.  Includes both continuous and stochastic simulation.</p>
+                                        </div>
+                                    </article>
+
+                                    
+
+                                    <article>
+                                        <a  style="border-bottom: none;" href="{{SITEURL}}/posts/2019/Jan/14/stats-for-everyone/">
+                                        <span class="icon solid fa-cube"></span></a>
+                                        <div class="content">
+                                            <h3><a href="{{SITEURL}}/posts/2019/Jan/14/stats-for-everyone/">Stats for Everyone</a></h3>
+                                            <p>An introductory stats book from a Bayesian perspective, including Python software.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <div id="blog"></div>
+                                    <h2>Blog</h2>
+                                </header>
+                                <div class="posts">
+
+                                {% for article in articles_page.object_list %}
+
+                                    <article>
+                                        <a href="{{ SITEURL }}/{{ article.url }}" class="image">
+                                            {% if article.image %}
+                                            <img src="{{ SITEURL }}/images/{{ article.image }}" alt="{{ article.image }}">
+                                        {% else %}
+                                            <img src="{{ SITEURL }}/images/default.png" alt="default">
+                                        {% endif %}
+                                        </a>
+                                        <h3>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</h3>
+                                        <p>{{ article.summary}}</p>
+                                        <p>
+                                            <strong><time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></strong>
+                                            <em>#{{ article.category }}</em>
+                                        </p>
+                                        <ul class="actions">
+                                            <li><a href="{{ SITEURL }}/{{ article.url }}" class="button">More</a></li>
+                                        </ul>
+                                    </article>
+
+                                {% endfor %}
+
+                                </div>
+
+
+
+                                {% if DEFAULT_PAGINATION %}
+
+                                {% if articles_page and articles_paginator.num_pages > 1 %}
+                            
+                            
+                                {% if articles_paginator.num_pages>10 %}
+                                {%     set start_page=1 %}
+                                {%     set end_page=10 %}
+                            
+                                {%     if articles_page.number>5 %}
+                                {%         set start_page = articles_page.number-5 %}
+                                {%         set end_page = articles_page.number+4 %}
+                                {%     endif %}
+                            
+                                {%     if end_page > articles_paginator.num_pages %}
+                                {%         set start_page=articles_paginator.num_pages-9 %}
+                                {%         set end_page=articles_paginator.num_pages %}
+                                {%     endif %}
+                                {% else %}
+                                {%    set start_page=1 %}
+                                {%    set end_page=articles_paginator.num_pages %}
+                                {% endif %}
+                            
+                            
+                            
+                                    <ul class="pagination">
+
+                                        {% if articles_page.number > 1%}
+                                            {% set num = articles_page.number-1 %}
+                                            <li><a  class="button" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html#blog">Prev</a></li>
+                                        {% else %}
+                                            <li><span class="button disabled">Prev</span></li>
+                                        {% endif %}
+                        
+                        
+                                        {% if start_page > 1 %}
+                                            {% set jumppage=articles_page.number-9 %}
+                                            {% if jumppage < 1 %}
+                                                {% set jumppage=1 %}
+                                            {% endif %}
+                        
+                                            <li><a class="page" href="{{ SITEURL }}/{{ page_name }}{{ jumppage if jumppage > 1 else '' }}.html#blog">...</a></li>
+                                        {% endif %}
+                        
+                                        {% for num in range( start_page, 1 + end_page ) %}
+                                            {% if num == articles_page.number %}
+                                                <li><span class="page active">{{ num }}</span></li>
+                                            {% else %}
+                                                <li><a class="page" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html#blog">{{ num }}</a></li>
+                                            {% endif %}
+                                        {% endfor %}
+                        
+                                        {% if end_page < articles_paginator.num_pages %}
+                                            {% set jumppage=articles_page.number+9 %}
+                                            {% if jumppage>articles_paginator.num_pages %}
+                                                {% set jumppage=articles_paginator.num_pages %}
+                                            {% endif %}
+                        
+                                            <li><a class="page" href="{{ SITEURL }}/{{ page_name }}{{ jumppage if jumppage > 1 else '' }}.html#blog">...</a></li>
+                                        {% endif %}
+                                        
+                        
+                        
+                                        {% if articles_page.number < articles_paginator.num_pages %}
+                                            {% set num = articles_page.number+1 %}
+                                            <li><a class="button" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html#blog">Next</a></li>
+                                        {% else %}  
+                                            <li><<span class="button disabled">Next</span></li>
+                                        {% endif %}
+                        
+                                    </ul>
+                                {% endif %}
+                                {% endif %}
+                                                            
+
+
+
+
+
+
+                            </section>
+
+    
+
+        
+
+		
+{% endblock content %}
+

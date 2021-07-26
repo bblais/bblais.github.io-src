@@ -1,8 +1,7 @@
 Title: Can you guess my sign?
 Subtitle: Testing Astrology
 Date: 2017-02-11
-
-<img src="images/nasa_zodiac.jpg" width=500  align=center>
+image: nasa_zodiac.jpg
 
 A friend of mine who is interested in astrology claims that he can determine my astrological sign from some simple questions, and knowing me for years (although not knowing my birthday).  The claim is that he can determine it "well above random chance".   A 20% number was floated out by him, although without many specifics, and I note that this number may depend on the procedures used. Also, this sort of $N=1$ exercise is not exactly compelling regardless of the result but I find it interesting nonetheless. What makes a good test?  What would convince me?  What would unconvince him?
 

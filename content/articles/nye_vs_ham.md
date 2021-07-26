@@ -1,8 +1,7 @@
 Title: Creationism Laid Bare
 Date: 2014-02-06
 Tags:  science, creationism, evolution, religion
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/z6kgvhG3AkI" frameborder="0" allowfullscreen></iframe>
+image: Screen Shot 2021-07-26 at 15.12.57.png
 
 Seems as if everyone is talking about the recent Ken Ham vs Bill Nye debate on evolution and creation, so I figured I'd put in my two cents.  
 
@@ -23,6 +22,11 @@ Seems as if everyone is talking about the recent Ken Ham vs Bill Nye debate on e
 
 
 Finally, there were I think two statements by Ham that I found refreshing.  He flatly admitted that he was *starting with* Biblical inerrancy, and working from there.  He also flatly admitted that *no evidence* would sway him from that position.  Those two statements really do lay the creationist agenda bare.
+
+
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/z6kgvhG3AkI" frameborder="0" allowfullscreen></iframe>
+
 
 [post about proof]: http://web.bryant.edu/~bblais/anyone-using-the-term-scientific-proof-doesnt-know-science.html
 [Gish Gallop]: http://rationalwiki.org/wiki/Gish_Gallop

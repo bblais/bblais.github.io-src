@@ -1,7 +1,6 @@
 title: We should all be biased
 Date: 2015-01-05
-
-<img src="images/capsule.png" width=200>
+image: capsule.png
 
 A friend and colleague of mine said to me recently that she was nervous that she might become "biased against any new health invention/method/etc... because virtually all of them have been ridiculous".  This is a feeling I've had from time to time, and I've heard it leveled against skeptics from the proponents of these new methods.
 

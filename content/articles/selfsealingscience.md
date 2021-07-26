@@ -1,9 +1,7 @@
 title: Is Science a Self-Sealing Process?
 date: 8/19/16
 subtitle: 
-
-
-<Img src="images/city-view-1427730_1920.jpg">
+image:city-view-1427730_1920.jpg
 
 
 

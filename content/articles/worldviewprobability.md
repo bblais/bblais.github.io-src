@@ -1,9 +1,6 @@
 title: Mapping Worldview to Probability
 date: Sep 6, 2016
-
-
-
-<Img src="images/horsehead1.png">
+image:horsehead1.png
 
 
 

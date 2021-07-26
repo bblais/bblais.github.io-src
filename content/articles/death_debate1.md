@@ -1,10 +1,14 @@
 Title: Supporting Dualism
 Date: 2014-05-16
 Subtitle: A Profound Distortion
+image: Screen Shot 2021-07-26 at 15.09.13.png
+
+
+I just finished listening to this excellent debate.  I thought the proponents of dualism were credulous, and ignored the specific requests by the opponents to rule out alternatives.  I'll get into that in another post, but I had to respond to this one point immediately, because it is so easy to confirm that it jumped out at me.  
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/h0YtL5eiBYw" frameborder="0" allowfullscreen></iframe>
 
-I just finished listening to this excellent debate.  I thought the proponents of dualism were credulous, and ignored the specific requests by the opponents to rule out alternatives.  I'll get into that in another post, but I had to respond to this one point immediately, because it is so easy to confirm that it jumped out at me.  At [time point 1h26m29s] we have the following:
+At [time point 1h26m29s] we have the following:
 
 Eben Alexander:
 
