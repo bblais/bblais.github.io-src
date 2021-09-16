@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "95833795faa2b8ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bb846dc734e2e13",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5509928ce303e966",
+    "type": "split",
+    "children": [
+      {
+        "id": "dcce71fcdb7190a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e1fa156ed9f56bfc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ef650c661754a448",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "16ebffb7d8a194b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "596483c8137594c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03ba774a8463bdb9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5bb846dc734e2e13",
+  "lastOpenFiles": [
+    "articles/media/bad_apologetics_2021.md",
+    "images/media/graceful_atheist_2021.png",
+    "images/media/library.png",
+    "images/media/local_maximum_2020.png",
+    "images/media/book_sie.png",
+    "articles/media/Untitled.md",
+    "articles/media/graceful_atheist_2021.md",
+    "articles/math/MCMC Simple - Cauchy.md",
+    "articles/math/MCMC Simple - mu known sigma.md",
+    "articles/math/Jaynes Deciderata.md"
+  ]
+}

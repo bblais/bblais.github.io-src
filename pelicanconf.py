@@ -5,6 +5,9 @@ AUTHOR = 'Brian Blais'
 SITENAME = 'bblais on the web'
 SITEURL = 'http://localhost:8000'
 
+DISQUS_SITEURL = 'https://bblais.github.io'
+DISQUS_SITENAME = 'bblaisontheweb'
+
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
@@ -32,11 +35,7 @@ SUMMARY_MAX_LENGTH = 30
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-ABOUT = """
-I am a Scientist, Skeptic, and Professor at <a href='http://www.bryant.edu/'>Bryant University</a> 
-and the <a href='https://www.brown.edu/research/projects/brain-and-neural-systems/'>IBNS, Brown University</a>.  
-My goal is to make technical subject matters widely accessible and to use my analytical and computational skills 
-to assist anyone with their science-related problems."""
+ABOUT = """I am a Scientist, Skeptic, and Professor at <a href='http://www.bryant.edu/'>Bryant University</a> and the <a href='https://www.brown.edu/research/projects/brain-and-neural-systems/'>IBNS, Brown University</a>.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems."""
 
 ABOUT_LONG= """
 I am a Scientist, Skeptic, and Professor at <a href='http://www.bryant.edu/'>Bryant University</a> 

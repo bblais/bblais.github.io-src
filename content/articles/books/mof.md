@@ -5,14 +5,15 @@ image: measure_of_faith_cover_draft2.png
 
 From the trivial to the monumental our decisions are governed by – or should be governed by – rational thought. This book explores the role of rational thought as described by the rules of probability applied to the ideas in traditional religious discourse. It provides a basic introduction to the rules of probability for those who want a refresher and then proceeds to apply those rules to standard arguments for the existence of God, the resurrection of Jesus, the evidence for miracles, and the concept of faith. Through this exploration, a common thread of analysis is woven to describe notions of simplicity in explanations, independence of evidence, and the common cognitive biases we all share.
 
-## The Book
+I envision this book to be a living document that I update as I expand topics, clarify the topics I have covered, and improve the examples.  Please let me know if you find any omissions, typos, errors, etc... as well as any suggestions for further work!
 
+
+## The Book -- Free Download
+
+* Download the full source from [the GitHub site](https://github.com/bblais/A-Measure-Of-Faith) or [just get the pdf](https://github.com/bblais/A-Measure-Of-Faith/raw/master/A%20Measure%20of%20Faith%20-%20Brian%20Blais.pdf)
 * On Amazon you can get [the print book] or [the Kindle book]
 * Follow me [on Twitter](https://twitter.com/bblais) and ask me any questions!
 
-#### Updates free for a year
-
-I envision this book to be a living document that I update as I expand topics, clarify the topics I have covered, and improve the examples.  If I make **any updates** to the book in any way within a year, you can get a free update of an e-copy by contacting me at [bblais@gmail.com](mailto:bblais@gmail.com) and providing some demonstration that you purchased it.
 
 
 ## From the Blog

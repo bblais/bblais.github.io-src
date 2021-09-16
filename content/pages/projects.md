@@ -15,7 +15,7 @@ Title: Projects
 * [plasticnet + splikes:  synaptic modification in rate and spike-based neurons](https://github.com/bblais/Plasticnet)
 > This project aims at providing a simple-to-use neural simulator at a medium-level of complexity. This package combines both rate and spike-based models.
 
-* [Natural Images](https://drive.google.com/file/d/0B0pJ77HPErGWM2xraE91SGF1RkE/edit?usp=sharing)
+* [Natural Images](https://drive.google.com/open?id=1e-azd0c-k13mqQHv5dP2lluzF-_HQoR_&authuser=bblais%40bryant.edu&usp=drive_fs)
 > This is a collection of natural images used in my research. It contains the original images, scripts for processing the images, as well as scripts to download some of the standard databases, such as the Olshausen and VanHateren image databases.
 
 * [vacuum world](http://dl.dropbox.com/u/1813623/Vacuum_World.zip)

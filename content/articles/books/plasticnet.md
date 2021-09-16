@@ -1,5 +1,5 @@
 Title: Models of Learning and Memory
-Date: 2019-1-14
+Date: 2019-1-13
 Tags: science, neuroscience
 image: neuron1.jpg
 
@@ -11,7 +11,7 @@ Simulate biologically derived neural networks of medium complexity - both rate- 
 * [Theory of Cortical Plasticity by Leon N. Cooper, Brian S. Blais, Harel Z. Shouval, Nathan Intrator](https://www.amazon.com/Theory-Cortical-Plasticity-Shouval-Hardcover/dp/B011DC35P0/ref=sr_1_6?dchild=1&keywords=brian+blais&qid=1589558432&sr=8-6)
 > Is theory possible in neuroscience? Not only possible, in our opinion, necessary. For a system as complex as the brain it is obvious that we cannot just make observations. (The number of possible observations is substantially larger than the available number of scientist-hours, even projecting several centuries into the future.) Without a theoretical structure to connect diverse observations with one another, the result would be a listing of facts of little use in understanding what the brain is about.In the work that follows, we present the Bienenstock, Cooper and Munro (BCM) theory of synaptic plasticity. The theory is sufficiently concrete so that it can be and, as is discussed below, has been compared with experiment. 
 
-* [Natural Images](https://drive.google.com/file/d/0B0pJ77HPErGWM2xraE91SGF1RkE/edit?usp=sharing)
+* [Natural Images](https://drive.google.com/open?id=1e-azd0c-k13mqQHv5dP2lluzF-_HQoR_&authuser=bblais%40bryant.edu&usp=drive_fs)
 > This is a collection of natural images used in my research. It contains the original images, scripts for processing the images, as well as scripts to download some of the standard databases, such as the Olshausen and VanHateren image databases.
 
 
