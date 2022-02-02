@@ -1,7 +1,7 @@
 Title: How much evidence is needed?
 Date: 2022-02-03
 image: 
-status: published
+status: draft
 
 A particular response has now happened twice in an ongoing discussion about extraordinary claims, and I felt I needed to think about it more deeply.  
 
