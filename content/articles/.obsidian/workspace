@@ -1,15 +1,18 @@
 {
   "main": {
-    "id": "2366ad58a0a676d5",
+    "id": "3d59e350d3d53067",
     "type": "split",
     "children": [
       {
-        "id": "5e0dd9cd19f4af8b",
+        "id": "6cbd354d1a7b0258",
         "type": "leaf",
-        "active": true,
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "religion/How much evidence is needed.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -37,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mclatchie",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,9 +69,12 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "religion/How much evidence is needed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -81,5 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "lastOpenFiles": []
+  "active": "6cbd354d1a7b0258",
+  "lastOpenFiles": [
+    "religion/How much evidence is needed.md",
+    "religion/What would convince me.md",
+    "religion/Science as a metal detector.md",
+    "religion/Proton Decay and the Resurrection of Jesus.md",
+    "religion/Bad Apologetics - miscellaneous topics from Jonathan McLatchie.md",
+    "religion/Priors and Miracles.md",
+    "media/still_unbelievable_2020_1.md",
+    "religion/3 Reasons Why Belief In God Makes Sense …or not.md",
+    "science/2022-01-13 Reproducing Chemical Reaction Paper.md",
+    "science/2022-01-06 Gillespie.md"
+  ]
 }

@@ -3,7 +3,7 @@ Date: 2020-05-29
 Tags: religion, miracles, intelligent design
 image: media/stillunbelievable2020_1.jpg
 
-Matthew hosts a conversation between myself and Jonathan McLatchie to further the conversation on why Jonathan is confident that the resurrection of Jesus can be accepted as an historical event. The conversation goes beyond that and touches on the question of whether we should be accepting of personal testimony for strange single occurrence events as well as a bit of biology.
+Matthew hosts a conversation between myself and Jonathan McLatchie to further the conversation on why Jonathan is confident that the resurrection of Jesus can be accepted as an historical event. The conversation goes beyond that and touches on the question of whether we should be accepting of personal testimony for strange single occurrence events as well as a bit of biology.  One of my followups on [suspect medical procedures mentioned by Jonathan McLatchie is here](http://localhost:8000/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/).
 
 
 This podcast episode can be obtained at

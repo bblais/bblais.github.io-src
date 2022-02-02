@@ -19,11 +19,12 @@ Let's make the following assumptions:
 
 then we set up the calculation
 
-\begin{eqnarray}
--G \frac{m_1 m_2}{r_{\rm start}}  + 0 &=& -G \frac{m_1 m_2}{r_{\rm end}} + \frac{1}{2} m_1 v^2 + \frac{1}{2} m_2 v^2  \\
- \frac{1}{2} (100 {\rm kg}+100 {\rm kg}) v^2 &=& -6.7\times 10^{-11} \left[\frac{{\rm J}{\rm m}}{{\rm kg}^2}\right]\frac{100 {\rm kg} \cdot 100 {\rm kg}}{3 {\rm m}} - \left( -6.7\times 10^{-11} \left[\frac{{\rm J}{\rm m}}{{\rm kg}^2}\right]\frac{100 {\rm kg} \cdot 100 {\rm kg}}{0.5 {\rm m}}\right)
-\end{eqnarray}
-
+$$
+\begin{aligned}
+-G \frac{m_1 m_2}{r_{\rm start}}  + 0 &= -G \frac{m_1 m_2}{r_{\rm end}} + \frac{1}{2} m_1 v^2 + \frac{1}{2} m_2 v^2  \\
+ \frac{1}{2} (100 {\rm kg}+100 {\rm kg}) v^2 &= -6.7\times 10^{-11} \left[\frac{{\rm J}{\rm m}}{{\rm kg}^2}\right]\frac{100 {\rm kg} \cdot 100 {\rm kg}}{3 {\rm m}} - \left( -6.7\times 10^{-11} \left[\frac{{\rm J}{\rm m}}{{\rm kg}^2}\right]\frac{100 {\rm kg} \cdot 100 {\rm kg}}{0.5 {\rm m}}\right)
+\end{aligned}
+$$
 ```python
 In [7]: G=6.7e-11
 
@@ -39,10 +40,12 @@ In [12]: -G*m1*m2/r_start-(-G*m1*m2/r_end)
 Out[12]: 1.1166666666666668e-06
 ```
 
-\begin{eqnarray}
+$$
+\begin{aligned}
 \frac{1}{2} (100 {\rm kg}+100 {\rm kg}) v^2 &=& 1.12 \times 10^{-6} {\rm J} \\
 v&=&1.1\times 10^{-4} {\rm m}/{\rm s} 
-\end{eqnarray}
+\end{aligned}
+$$
 
 
 ```python
@@ -54,10 +57,12 @@ Out[14]: 0.00010583005244258362
 
 Assuming a constant acceleration, for each person to travel half of the 2.5 m distance separation, would be
 
-\begin{eqnarray}
+$$
+\begin{aligned}
 \frac{v_{\rm final}}{2} &=& \frac{2.5 {\rm m}}{t} \\
 t&=& 45000 {\rm s} = 12 {\rm hr}
-\end{eqnarray}
+\end{aligned}
+$$
 
 which is much shorter time than I was expecting!  
 

@@ -22,12 +22,14 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 
+
 # Social widget
 SOCIAL = {'twitter': 'https://twitter.com/bblais',
 'linkedin':'https://www.linkedin.com/in/brian-blais-bb66482b/',
 'github':'https://github.com/bblais',
 'email':'mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;',
-'youtube':'https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w',}
+'youtube':'https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w',
+'rss':'https://bblais.github.io/feeds/all.atom.xml'}
 
 DEFAULT_PAGINATION = 21
 SUMMARY_MAX_LENGTH = 30
@@ -103,7 +105,10 @@ MARKDOWN = {
 }
 
 PLUGIN_PATHS = ['/Users/bblais/Documents/Git/pelican-plugins']
-PLUGINS = ['render_math','sitemap', 'extract_toc', 'tipue_search']    
+IGNORE_FILES = [".ipynb_checkpoints",'*.py']
+IPYNB_MARKUP_USE_FIRST_CELL = True
+
+PLUGINS = ['render_math','sitemap', 'extract_toc', 'tipue_search','obsidian']    
 SITEMAP={'format':'xml'}
 TIPUE_SEARCH = True
 TEMPLATE_PAGES = {
