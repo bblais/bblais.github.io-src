@@ -6,9 +6,7 @@ status: draft
 
 Here I summarize the (9 hour!) conversation that I was a part of here:  [Bad Apologetics Ep 20 - Miracles & even MORE even NEWER Resurrection evidence](https://youtu.be/FLCZFKNiEtg) where we respond to the  [Unbelievable? episode: Is there medical evidence for miracles? Craig Keener, Michael Shermer & Elijah Stephens](https://www.youtube.com/watch?v=5O3YZqFDxbs).   I want this post to be the place where I put as many of the specific miracle claims, the actual evidence presented, and some of the responses.  I wrote about some of these cases [in another post](https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/)
 
-The institution that is referenced for the work is [Global Medical Research Institute (GMRI)](https://www.globalmri.org/) and the documentary about miracles referenced is [Send Proof](https://www.sendproof.com).  
-
-## Specific Miracle Claims:
+## Specific Miracle Claims Covered:
 
 - [Case Report of gastroparesis healing: 16 years of a chronic syndrome resolved after proximal intercessory prayer](https://www.sciencedirect.com/science/article/pii/S0965229918313116)
 - [Case report of instantaneous resolution of juvenile macular degeneration blindness after proximal intercessory prayer](https://www.sciencedirect.com/science/article/pii/S1550830720300926) - probably Marolyn Ford, but it can be hard to tell without the names on the papers.
@@ -16,6 +14,8 @@ The institution that is referenced for the work is [Global Medical Research Inst
 - [Chris Gunderson](https://www.youtube.com/watch?v=v0QtFCpFg9I) who was born with an incurable disorder called Chronic Pseudo Obstruction Syndrome, which was cured by prayer
 - [Bruce Van Natta](https://www.youtube.com/watch?v=8pqj2i9gb8U&t=1s) who had a truck fall on him, destroying much of his intestine, but shortly after prayer his intestine miraculously regrew.
 - [Study of the therapeutic effects of proximal intercessory prayer (STEPP) on auditory and visual impairments in rural Mozambique](https://pubmed.ncbi.nlm.nih.gov/20686441/)
+
+The institution that is referenced for the work is [Global Medical Research Institute (GMRI)](https://www.globalmri.org/) and the documentary about miracles referenced is [Send Proof](https://www.sendproof.com).  
 
 
 ## Fishing for positive outcomes
@@ -39,7 +39,9 @@ The entire approach of those arguing for miracles focuses on the (presumed) succ
 
 ## Worldviews and Evidence
 
-At time point 1:06:53 [here](https://youtu.be/FLCZFKNiEtg?t=4013) it's pointed out that even if miracles could be the case, regardless of your worldview, how would you be able to demonstrate that God did it?  Once you admit there are other agents, you need a process for actually determining that God -- as opposed to some other agent or natural process -- actually was the cause.
+[Time stamp 1:06:53](https://youtu.be/FLCZFKNiEtg?t=4013) 
+
+Even if miracles could be the case, regardless of your worldview, how would you be able to demonstrate that God did it?  Once you admit there are other agents, you need a process for actually determining that God -- as opposed to some other agent or natural process -- actually was the cause.
 
 I also think that there is a two-stage process for investigating these and similar processes (i.e. aliens, homeopathy).  The James Randi foundation did this as well, with a preliminary test before the more in-depth test.  The point is to first establish that there is some interesting effect there, regardless of the cause, and only after passing that threshold do we get to consider a more in-depth investigation.
 
@@ -47,16 +49,22 @@ Also, the theists show a profound lack of imagination in coming up with studies 
 
 ## Physicians
 
-At time point 1:47:35 [here](https://youtu.be/FLCZFKNiEtg?t=6463) Keener quotes a study that showed that half of the physicians studied said that they had seen what they consider to be miracles.  However studies also show about 80% of ER nurses and 64% of ER doctors believe lunar cycles affect patients' mental health, even though the data do not support such an effect.  There are any examples of this, so see https://pubmed.ncbi.nlm.nih.gov/15166467/ and https://nationalpost.com/news/canada/full-moon-does-not-affect-mental-health-emergency-room-study-suggests as a couple.
+[Time stamp 1:47:35](https://youtu.be/FLCZFKNiEtg?t=6463) 
+
+Keener quotes a study that showed that half of the physicians studied said that they had seen what they consider to be miracles.  However studies also show about 80% of ER nurses and 64% of ER doctors believe lunar cycles affect patients' mental health, even though the data do not support such an effect.  There are any examples of this, so see https://pubmed.ncbi.nlm.nih.gov/15166467/ and https://nationalpost.com/news/canada/full-moon-does-not-affect-mental-health-emergency-room-study-suggests as a couple.
 
 
 ## Controls
 
-At [time point 1:52:05](https://youtu.be/FLCZFKNiEtg?t=6725) [James Fodor] compares healing claims to homeopathy -- we have millions claiming an effect, and if we just counted those then we might be convinced that homeopathy was a real treatment.  What is missing are the controls -- how often does the "treatment" happen and there is no effect, and how often is there an effect but no treatment.  A comparison of base-rates is needed and Keener doesn't seem to care about this when it comes to miracles.  
+[Time stamp 1:52:05](https://youtu.be/FLCZFKNiEtg?t=6725) 
+
+[James Fodor] compares healing claims to homeopathy -- we have millions claiming an effect, and if we just counted those then we might be convinced that homeopathy was a real treatment.  What is missing are the controls -- how often does the "treatment" happen and there is no effect, and how often is there an effect but no treatment.  A comparison of base-rates is needed and Keener doesn't seem to care about this when it comes to miracles.  
 
 ## Timeline and a Face Palm
 
-At [time point 1:56:59](https://youtu.be/FLCZFKNiEtg?t=7019) they outline a couple of cases.  James rightly points out that the most these people ever seem to provide is:
+[Time stamp 1:56:59](https://youtu.be/FLCZFKNiEtg?t=7019) 
+
+James rightly points out that the most these people ever seem to provide is:
 
 1. evidence that someone was sick at one time
 2. evidence that they were not sick at a later time
@@ -69,7 +77,7 @@ How do we know the initial diagnosis was accurate?
 
 ## Bruce Van Natta
 
-[Time pojnt 1:59:25. ](https://youtu.be/FLCZFKNiEtg?t=7165)
+[Time stamp 1:59:25. ](https://youtu.be/FLCZFKNiEtg?t=7165)
 
 - [Bruce Van Natta](https://www.youtube.com/watch?v=8pqj2i9gb8U&t=1s) who had a truck fall on him, destroying much of his intestine, but shortly after prayer his intestine miraculously regrew.
 
@@ -89,7 +97,7 @@ This is like the difference between theists asking skeptics to explain how the d
 
 # # Case Report of gastroparesis healing
 
-[Time point 2:08:18](https://youtu.be/FLCZFKNiEtg?t=7698)
+[Time stamp 2:08:18](https://youtu.be/FLCZFKNiEtg?t=7698)
 
 - [Case Report of gastroparesis healing: 16 years of a chronic syndrome resolved after proximal intercessory prayer](https://www.sciencedirect.com/science/article/pii/S0965229918313116)
 
@@ -149,7 +157,7 @@ I misspoke in the episode for the next one, thinking the name was Barbara Snyder
 
 ##  Case report of instantaneous resolution of juvenile macular degeneration blindness after proximal intercessory prayer
 
-[Time Stamp 2:37:40](https://youtu.be/FLCZFKNiEtg?t=9460)
+[Time stamp 2:37:40](https://youtu.be/FLCZFKNiEtg?t=9460)
 
 - [Case report of instantaneous resolution of juvenile macular degeneration blindness after proximal intercessory prayer](https://www.sciencedirect.com/science/article/pii/S1550830720300926) - probably Marolyn Ford, but it can be hard to tell without the names on the papers.
 
@@ -201,7 +209,9 @@ These two cases are some of the best they have, and they are only modestly inter
 
 ## The stories change
 
-[Time stamp 3:07:35](https://youtu.be/FLCZFKNiEtg?t=11255) We can see the stories changing in the telling, being simplified, critical details dropped.  This highlights many of the problems I've been talking about and we get to see it in real-time.
+[Time stamp 3:07:35](https://youtu.be/FLCZFKNiEtg?t=11255) 
+
+We can see the stories changing in the telling, being simplified, critical details dropped.  This highlights many of the problems I've been talking about and we get to see it in real-time.
 
 
 
@@ -211,6 +221,103 @@ These two cases are some of the best they have, and they are only modestly inter
 
 >  i think michael's right about obviously so many things are coincidence so we have to weigh a lot of factors to see um you know is there a theistic context to it that that tends to predominate in in the cases where we have these and so on you need a lot of cases to be able to to test that but uh the issue that he raises about replicability is is a real issue in the sense that you know when when we speak of of god creating everything and we speak of you know as christians speak of god's handiwork being all around us you know that's that's those are things that can be tested for replicability but we may disagree on the explanation you know levels of causation but miracles as one-offs so to speak they're not replicable and so they're not really testable by replicable means you can't um you know ensure that you're going to have one the next time around at the same time there's all sorts of things we have to deal with that aren't replicable certainly in historiography i have to deal with that so we want to know how somebody died we can't kill them again to to to ensure that and that's why i brought up how in different different disciplines we have to use the epistemic approach that's suitable for that discipline and so for miracles i think a case study approach is much better
 
+This is pretty silly.  They are claiming there is a causal effect, they are claiming that these things happen regularly enough to be observed, yet they want to hide behind the idea that it is somewhat random and not actually try to test it.  We don't do this for any medical claims.  If someone says a treatment works, even at the 1% level, it is tested carefully to see if it works -- especially if there are no obvious side effects.   This is special pleading -- wanting to hold their claims to a lower standard than other claims.  
+
+They also make the claim that, for example, in Heidi Baker's ministry in Mozambique these healing happen "all the time" and are thus replicable.   It is a notable pattern for something to become less observable to more carefully you're able to observe it.  UFO sightings happened all the time in the 1970s and 1980s but suddenly drop when we put cameras in everyone's pocket?  This is the pattern we see of something that is non-existent, and the healings follow this exact same pattern.  If something is real, when we can more carefully observe it, it becomes easier to see not harder.
+
+[Time stamp 3:15:45](https://youtu.be/FLCZFKNiEtg?t=11745)
+
+Kamil makes the interesting point that the testimonies of different religions only reflect what that particular religion has as a theological component.  Near death experiences are only reported within religions that support dualism.  Stories of recalled past memories from past lives only occurs within religions that support reincarnation.  This is totally expected on naturalism, but not expected under theism.  It's not impossible under theism, but it is an odd omission and speaks to God's motivation.  James points out that God seems to choose not to use all his abilities -- he could heal amputees, even while someone is in an MRI, but chooses note to.   God could choose methods that are not so easily confused with memory biases, measurement errors, and other distortions and it is suspicious that he doesn't operate that way.  
+
+## On Standards of Evidence
+
+[Time stamp 3:19:43](https://youtu.be/FLCZFKNiEtg?t=11983)
+
+> From *Send Proof*  Elijah StephensI didn't realize how difficult it would be [to find evidence for miracle healings].  If someone gets healed, you often can't get back in contact with that person -- "it almost feels like if a miracle happens you have about 48 hours and then their gone".  You need to collect the records, have a medical professional who can actually make sense of that data, and have a medical specialist  who is willing to look at the data.  A doctor won't want to look at a regrown kidney because it will look like he did insurance fraud.  Also there is this general trend of naturalism in which you are looked down upon if you believe that the supernatural can occur so there is this whole culture at play where the medical community is working against finding truth"
+
+I hear the theist complaining about how hard it is to test miracles and I find the objection lame.  Try comparing these claims to, say, the difficulty in confirming the Higgs boson, gravity waves, black holes, or the accelerating universe.  Each of these is far harder than the rather trivial challenges to testing miracle claims.  Also, while we have been generally optimistic that these miracle claims are not the result of deliberate fraud, one does have to consider that as a real possibility and find ways to rule it out.  Finally, this gripe about a naturalistic bias is completely misguided.  The first step -- which the theists have not achieved -- is to just demonstrate that there is a real effect to be investigated.  These theists are in fact arguing for a lower level of evidence than we demand of the universities and pharmaceutical companies for their claims.  
+
+We are interested in the truth and are aware of many other factors (e.g. placebo, memory contamination, fraud, spontaneous remission, etc...) that will confound the effect so scientists have set up steps (e.g. randomized controlled studies, well considered controls, etc...) to avoid these confounders.  These steps are in place to get at the truth, not to specifically put up barriers to rule out miracles.  If miracles are real then these steps -- while possibly inconvenient -- would be easy to demonstrate.  Pharmaceutical companies don't complain about these steps, they just do the work.  The theists seem unwilling to do the work and want a pass anyway.  Whining that it's hard is just lame. 
+
+As James says, "God really needs to up his game."
+
+
+## Why are these miracles as opposed to just rare events?
+
+[Time stamp 3:32:41](https://youtu.be/FLCZFKNiEtg?t=12761)
+
+> Justin: why do you feel sympathetic to the view that what they're finding is evidence for supernatural healing rather than just extraordinary somewhat unexplained events ?
+
+ > Keener: what is specific about that data that suggests it isn't just a fluke you know one of those one in a million things that just happens sometimes yeah anomalies occur so it's important to look for an accumulation of anomalies so you don't just have what could be a coincidence. [...]  these things actually do tend to happen in certain circles more than more than in others and that's why for me it would be hard for me to see it as a is a coincidence
+
+This is a direct claim, that these miracles occur much more frequently in some groups (e.g. Christians) than other groups.  Easily testable, and I'd be surprised if this is a real effect once you get past the selection bias and sociological effects, and have good controls including separating number of miracle reports from actual anomalous medical events.  For example it's obvious you'll get more miracle reports in Christian circles than, say, atheist circles even if miracles don't exist.  I doubt Keener has tried to actually get this done beyond the anecdotal level.  Keener doesn't explore alternative hypotheses and how he'd distinguish between them.  He seems really swayed by anecdotal evidence in everything he's written or said, from my experience. 
+
+## The murderer and prior experience
+
+[Time stamp 3:40:05](https://youtu.be/FLCZFKNiEtg?t=13205)
+
+> Shermer: well the counterfactual what about the christian families who pray for their loved one who's dying from cancer and they just die nothing happens from the prayer that happens all the time.  [...] why are they not healed if the context matters and we're defining a miracle as you know divine intervention not just a highly improbable event then how come there's no divine intervention there and if the answer is well god works in mysterious ways who knows well you know that's kind of a hand wave 
+> 
+> Elijah: i think also calling a handwave kind of undermines something is imagine you caught a murderer and uh you saw him shoot a guy and he goes well i i haven't shot anyone before in my life  um is that what we're trying to show is these are real examples i can't explain the soldier coming home that that makes perfect sense but what i can say is there was a blind lady and she got prayer and her eyes opened up and she had macular degeneration they can verify that before and afterwards and i'm not sure it's rational to call those uh uh just coincidences 
+
+The analogy doesn't work, and honestly I think this is a miracle talking-point that Elijah is misusing here.  When I've heard the murderer analogy it is to argue against Hume's uniform human experience against miracles, because someone could argue for the murderer by claiming it is against his uniform experience to murder someone -- he's never murdered anyone before.  In this case, Shermer's argument is that there is a context (e.g. prayer, laying of hands, religious service, etc...) where miracles are claimed to be happening but they happen in only a small part of those same contexts and there's not a good reason give for that difference.  The analogy breaks down here because of a difference of information (we have some context for prayer but none in the analogy) and it seems out of place.
+
+A question also came out that if the scientific standard seems too high for these theists, in which discipline would the standard not be too high?  Not legal, not medical, not historical, etc...  Doesn't seem to be anything other than perhaps theology.
+
+## Inference to the best explanation
+
+[Time stamp 3:45:49](https://youtu.be/FLCZFKNiEtg?t=13549)
+
+> Elijah: they can verify that before and afterwards and i'm not sure it's rational to call those uh uh just coincidences like you're assuming some type of causality there um and i i think if you even allow for the possibility of something like the christian god to exist then um you've got to take seriously that it could be his action and then make an inference to the best explanation and where i think the voice of science comes in the best is in eliminating hypotheses not necessarily proving that's his voice and so you can go back and go well there's seven different hypotheses science can help us before eliminating some and then we've got two or three and we've got to critically think and go what do i think's most likely the case and i think that's the human situation and we make that call all the time we make it in court 
+
+
+>Nathan: it's like he  understands broadly what he should be doing but then that stands in place of him actually doing it it's like as if just finally having a bit of a grasp of how we should reason about the these things....suppose we agree with you now well why is that the best explanation?
+
+>James:  yes so think about what Shermer has done. He's effectively asked "look, according to your explanation we would expect miracles to occur actually in many more cases because god apparently has the the reasons and the motivation and the context for him to perform miracles there but he doesn't, so there's a plausibility issue there with with your explanation"  Shermer's identified one aspect that seems to be accounted for poorly on the miracle explanation.  The response we get is to say "Well what you have to do is you have to compare explanations and see which one's the best" and it's like "Right! Yeah ,that's what Ii just asked you about!"...can you address the point and not just resort to this other issue that is actually not really in contention?  These responses just seem so, I don't know, juvenile to me like it's like they haven't thought about these issues.  
+
+>Nathan: I think what we're seeing here are the fruits of apologetics in some ways. I sort of think that these popular apologetics books will briefly touch on some of these tools that should be used but then that's a stand-in that makes people think that they're actually using them. It's like "no trust me, this is a legit methodology and it leads to the conclusion" and that's enough to legitimize  your reasoning process.   Just to have the words "inference to the best explanation"  that legitimizes the inference that you're making rather than actually being able to use inference to the best explanation.  
+
+Nathan's point here is interesting, especially in light of the idea that the murderer example is not being used in the right place, that Elijah has this set of standard "tools" that he pulls out but doesn't seem to understand their use or limitations and is prone to misapply them.
+
+>Kamil: so he basically said, look the way we do it is that we have, let's say seven different possible explanations, six of them are naturalistic which we can disconfirm using science and then the seventh is the explanation that God did it.  And the way we proceed is that we use  medical science to eliminate the six and we can't really confirm or disconfirm the last remaining one but because we eliminated all of the alternatives that must be the one right or at least it's reasonable to believe that this is the one -- it's the best explanation.  I'm just wondering, is it possible to do it the other way around? Is it possible to start by eliminating the theistic hypothesis? I think no, because theism is vaguely defined.  How would you eliminate the hypothesis that a miracle did in fact happen? 
+
+>James: I'm not a fan of eliminating explanations because i think that that's almost impossible because you can always augment the hypothesis with further details, so the issue is going to be one of comparative plausibility and explanatory scope.   So for example, if I just say oh well there was spontaneous remission you could say that's implausible given our medical knowledge but it's going to be very hard to establish that that's actually like impossible, to definitively rule it out and so the question of which is a more plausible explanation and not can you rule it out.
+
+>Brian: Well actually I think you can do a bit better than that by using essentially the case studies to say, okay, these are the sorts of situations where we would expect miracles to happen and  what types of miracles we might see , sometimes we have things that go into remission so how do we rule that out, we have to come up with some kind of randomized control study in order to test miracles.  And I think with a little imagination one can probably control for things like spontaneous remission and background effects and even some of the kind of unknown effects  by a suitably designed experiment.  But theists show no interest in doing this,  they're satisfied with the first bad study that confirms what they already believe.  
+
+>Brian: Essentially Shermer's complaint about prayer being done and nothing happening is part what you would have in any kind of controlled study because you would have the case looking at all prayer events and which ones had effects and which ones didn't, that's the basic thing   they seem unable to even grasp that idea and it shows a certain unwillingness to actually try to find the truth and to rule out these actual alternatives.  It's not enough to show an effect that's really rare, maybe that's your first motivation, like "oh wow, this is a weird case. maybe we can study this" That's how a lot of science is done, it starts with  "oh wow, that's weird" and then we can go and start testing it but theists don't seem to even want to take that next step.
+
+
+
+## Skeptical of your Skepticism
+
+[Time stamp 3:55:20](https://youtu.be/FLCZFKNiEtg?t=14120)
+
+> Elijah: you got to be skeptical of your skepticism so if you don't allow for a God to exist then you're not open-minded ...  I could show you cases of arms growing back theoretically speaking and you would not believe it you would come up with natural explanations
+
+This phrase shows a profound lack of understanding what skepticism is.  Skepticism is basically that we proportion our belief to the evidence, and we've found (through science) that to do it we need to disbelieve most claims, that we need to acknowledge our biases, and to recognize that even the scientific process is limited.  This last part is the reason we set up replication, controls, and other processes to minimize the effects of the limitations.  This kind of phrasing is trying to stop people from being skeptical of *their* claims (and only their claims).  It's part of the lowering of the standards of evidence.  As Nathan puts it, it's telling believers who doubt "stop those naughty thoughts."  James says, to refuse to put in the controls to avoid the biases we know we have, is a form of dogmatism -- we're looking for the result we already believe and we refuse to put in the methods that would allow us to isolate the different variables.    
+
+
+> James: can we just make it a thing to always mention that like although it's not that popular these days that deism or non-interventionist form of theism are a thing like you can totally believe in god and still not be okay with miracles? It just really annoys me this is always conflated. It's just like a lack of imagination there's just like Christian fundamentalism and there's atheist naturalism and there's no other world views, apparently.
+
+
+What really annoys me is when they say "I could show you cases of arms growing back theoretically speaking and you would not believe it" when the best evidence they have barely rises to the level of being interesting, let alone something amazing like this.  Don't presume what I'll believe, show me evidence of an arm growing back first, then perhaps we'll see -- but I'd need the proper controls.  Could it be an illusion?  False reporting?  Has it been confirmed?  Etc....  Yes, I'll look for these mundane explanations first before jumping to agency, because those are the most common explanations of extraordinary claims.  Any legitimate effect should be able to withstand this scrutiny (and more!), but with the best they ever give us (like the cases above), the second you dig a little bit you find that all the evidence kind of vaporizes or there are plausible alternative explanations that take only a minute to come up with.  There is nothing even close to an arm growing back.  The same thing occurs with UFO claims, homeopathy studies, and psychic abilities.  
+
+
+## Keener on Confirmation Bias
+
+[Time stamp 4:12:31](https://youtu.be/FLCZFKNiEtg?t=15151)
+
+> Keener: There's confirmation bias I think that can happen either way.  I think a lot of times people will see something as a miracle because we're inclined to believe in miracles, you can also have confirmation bias to say I'm inclined not to see this as a miracle because I just don't think those things happen. 
+
+The bias is on the person making the positive claim.  What is being missed here is *it shouldn't matter what the skeptic says* -- the evidence should be strong enough to convince the skeptic.  Quoting myself here (from [this post](https://bblais.github.io/posts/2012/Sep/25/naturalistic-bias-presupposing-naturalism/)), 
+
+Here are two examples from my life where I was skeptical of an extraordinary claim, one where it turned out my perspective was correct and the other not.
+
+1.  In the 1990's, the [first evidence for the acclerating universe](http://en.wikipedia.org/wiki/Accelerating_universe) came out.  I remember thinking, "No way this is true."  At the time, I thought their calibration of the supernovae used as standard candles was somehow incorrect.  Did the researchers approach this skepticism with "oh, you just are biased against theories that propose unknown external forces, or violations of known laws"?  No.  Other groups repeated it, they confirmed any calibration, and came up with a theoretical structure (using the Cosmological Constant) to describe it.  Then I was convinced.  Was I wrong in my skepticism?  Absolutely not.  The response to skeptics is to bring the evidence to bear on it.  If the evidence is not enough to convince a reasonable skeptic, then we can't be particularly confident in it.
+2.  Recently, there was some data indicating possibly faster-than-light neutrinos.  [I had a response to this here](https://brianblais.wordpress.com/2011/10/14/faster-than-light-why-the-lawyer-is-wrong/), where I was skeptical of the result.  Again, it was a group of careful scientists who had done the measurements, and had taken into account everything they could think of.  I still didn't believe it.  Did the researchers approach this skepticism with "oh, you just are biased against theories that propose unknown external forces, or violations of known laws"?  No.  Others tried to analyze the same data and the set-up, and the scientists explored other explanations.   [Turned out to be a loose cable](http://news.sciencemag.org/scienceinsider/2012/02/breaking-news-error-undoes-faster.html).  Here again, my skepticism was well placed.
+
+It's not biased to be skeptical.  It isn't irrational to demand a higher-than-average standard for extraordinary claims, no matter what.  If you make such a claim, and that higher-than-average standard is not met, then you cannot be confident in that claim.  It doesn't matter whether the claim is religious or scientific, the same rules apply.  If you complain that the standards are too high, then you don't belong on the playing field and you don't deserve to be taken seriously.
 
 
 
@@ -230,8 +337,7 @@ A good response to this is found by Steven Novella at **[Proximal Intercessory P
 > 
 >  Now, I know you can read headlines so you know this was a study of proximal intercessory prayer, but the point is – even if you assess the details of the study divorced from knowledge of what the intervention is, it should be obvious that this study tells us nothing.
     
-Further...
-
+This pretty much summarizes the problems with this study.
 
 
 
