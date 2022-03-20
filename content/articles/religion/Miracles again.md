@@ -1,10 +1,12 @@
 Title: A long discussion about miracles
 Date: 2022-03-17
-image: dawid-zawila--G3rw6Y02D0-unsplash.jpg
+image: Bad_Apologetics_Miracles.png
 tags: unbelievable
 status: draft
 
-Here I summarize the (9 hour!) conversation that I was a part of here:  [Bad Apologetics Ep 20 - Miracles & even MORE even NEWER Resurrection evidence](https://youtu.be/FLCZFKNiEtg) where we respond to the  [Unbelievable? episode: Is there medical evidence for miracles? Craig Keener, Michael Shermer & Elijah Stephens](https://www.youtube.com/watch?v=5O3YZqFDxbs).   I want this post to be the place where I put as many of the specific miracle claims, the actual evidence presented, and some of the responses.  I wrote about some of these cases [in another post](https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/)
+Here I summarize the (9 hour!) conversation that I was a part of here:  [Bad Apologetics Ep 20 - Miracles & even MORE even NEWER Resurrection evidence](https://youtu.be/FLCZFKNiEtg) where we respond to the  [Unbelievable? episode: Is there medical evidence for miracles? Craig Keener, Michael Shermer & Elijah Stephens](https://www.youtube.com/watch?v=5O3YZqFDxbs) and a video with Sean McDowell interviewing Craig Keener called [Latest Evidence for Modern Miracles](https://www.youtube.com/watch?v=qBFZJ5M53r4).   I want this post to be the place where I put as many of the specific miracle claims, the actual evidence presented, and some of the responses.  I wrote about some of these cases [in another post](https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/)
+
+I've written about [miracles many times](https://bblais.github.io/search.html?q=miracle).  
 
 ## Specific Miracle Claims Covered:
 
@@ -14,7 +16,10 @@ Here I summarize the (9 hour!) conversation that I was a part of here:  [Bad Apo
 - [Chris Gunderson](https://www.youtube.com/watch?v=v0QtFCpFg9I) who was born with an incurable disorder called Chronic Pseudo Obstruction Syndrome, which was cured by prayer
 - [Bruce Van Natta](https://www.youtube.com/watch?v=8pqj2i9gb8U&t=1s) who had a truck fall on him, destroying much of his intestine, but shortly after prayer his intestine miraculously regrew.
 - [Study of the therapeutic effects of proximal intercessory prayer (STEPP) on auditory and visual impairments in rural Mozambique](https://pubmed.ncbi.nlm.nih.gov/20686441/)
-
+- [Delia Knox healed from being paralyzed after 22 years](https://www.youtube.com/watch?v=Eo4UF07Z2Wo)
+- [Sean George comes back after a heart attack](https://youtu.be/j6X1R81B8gk)
+- [JP Moreland gets a pool table](https://youtu.be/S-JOeevGRoM?t=2209)
+- 
 The institution that is referenced for the work is [Global Medical Research Institute (GMRI)](https://www.globalmri.org/) and the documentary about miracles referenced is [Send Proof](https://www.sendproof.com).  
 
 
@@ -227,7 +232,7 @@ They also make the claim that, for example, in Heidi Baker's ministry in Mozambi
 
 [Time stamp 3:15:45](https://youtu.be/FLCZFKNiEtg?t=11745)
 
-Kamil makes the interesting point that the testimonies of different religions only reflect what that particular religion has as a theological component.  Near death experiences are only reported within religions that support dualism.  Stories of recalled past memories from past lives only occurs within religions that support reincarnation.  This is totally expected on naturalism, but not expected under theism.  It's not impossible under theism, but it is an odd omission and speaks to God's motivation.  James points out that God seems to choose not to use all his abilities -- he could heal amputees, even while someone is in an MRI, but chooses note to.   God could choose methods that are not so easily confused with memory biases, measurement errors, and other distortions and it is suspicious that he doesn't operate that way.  
+Kamil makes the interesting point that the testimonies of different religions only reflect what that particular religion has as a theological component.  Near death experiences are only reported within religions that support dualism.  Stories of recalled past memories from past lives only occurs within religions that support reincarnation.  And why aren't there miracle claims of people spontaneously generating electricity?  This is totally expected on naturalism, but not expected under theism.  It's not impossible under theism, but it is an odd omission and speaks to God's motivation.  James points out that God seems to choose not to use all his abilities -- he could heal amputees, even while someone is in an MRI, but chooses note to.   God could choose methods that are not so easily confused with memory biases, measurement errors, and other distortions and it is suspicious that he doesn't operate that way.  
 
 ## On Standards of Evidence
 
@@ -314,18 +319,53 @@ The bias is on the person making the positive claim.  What is being missed here 
 
 Here are two examples from my life where I was skeptical of an extraordinary claim, one where it turned out my perspective was correct and the other not.
 
-1.  In the 1990's, the [first evidence for the acclerating universe](http://en.wikipedia.org/wiki/Accelerating_universe) came out.  I remember thinking, "No way this is true."  At the time, I thought their calibration of the supernovae used as standard candles was somehow incorrect.  Did the researchers approach this skepticism with "oh, you just are biased against theories that propose unknown external forces, or violations of known laws"?  No.  Other groups repeated it, they confirmed any calibration, and came up with a theoretical structure (using the Cosmological Constant) to describe it.  Then I was convinced.  Was I wrong in my skepticism?  Absolutely not.  The response to skeptics is to bring the evidence to bear on it.  If the evidence is not enough to convince a reasonable skeptic, then we can't be particularly confident in it.
+1.  In the 1990's, the [first evidence for the accelerating universe](http://en.wikipedia.org/wiki/Accelerating_universe) came out.  I remember thinking, "No way this is true."  At the time, I thought their calibration of the supernovae used as standard candles was somehow incorrect.  Did the researchers approach this skepticism with "oh, you just are biased against theories that propose unknown external forces, or violations of known laws"?  No.  Other groups repeated it, they confirmed any calibration, and came up with a theoretical structure (using the Cosmological Constant) to describe it.  Then I was convinced.  Was I wrong in my skepticism?  Absolutely not.  The response to skeptics is to bring the evidence to bear on it.  If the evidence is not enough to convince a reasonable skeptic, then we can't be particularly confident in it.
 2.  Recently, there was some data indicating possibly faster-than-light neutrinos.  [I had a response to this here](https://brianblais.wordpress.com/2011/10/14/faster-than-light-why-the-lawyer-is-wrong/), where I was skeptical of the result.  Again, it was a group of careful scientists who had done the measurements, and had taken into account everything they could think of.  I still didn't believe it.  Did the researchers approach this skepticism with "oh, you just are biased against theories that propose unknown external forces, or violations of known laws"?  No.  Others tried to analyze the same data and the set-up, and the scientists explored other explanations.   [Turned out to be a loose cable](http://news.sciencemag.org/scienceinsider/2012/02/breaking-news-error-undoes-faster.html).  Here again, my skepticism was well placed.
 
 It's not biased to be skeptical.  It isn't irrational to demand a higher-than-average standard for extraordinary claims, no matter what.  If you make such a claim, and that higher-than-average standard is not met, then you cannot be confident in that claim.  It doesn't matter whether the claim is religious or scientific, the same rules apply.  If you complain that the standards are too high, then you don't belong on the playing field and you don't deserve to be taken seriously.
 
+## Keener on replication
+
+[Time stamp 4:17:15](https://youtu.be/FLCZFKNiEtg?t=15435)
+
+> Keener: in terms of anomalies whether they're anomalies or whether they're explainable in some way it helps if there's a pattern.   They're not replicable but if there's a pattern like nine times out of ten where this happens it's in the context of prayer, that should say something. We we need a whole lot of a whole lot of cases to be able to to examine that.
+
+Nine out of ten with prayer is the *meaning* of replicable, so I don't know what he really is thinking when he says miracles are not replicable.  Is he thinking (a strawman of) 100% of the time?
+
+> James: Keener says simultaneously that there are hundreds of millions of cases but also that none of this can be replicated.  I don't understand how it's possible for both those things to be true. If there's that many cases there should be enough regularity to detect these things statistically which is exactly the tools we've developed in science to do and to rule out other factors.  It's all just ad hoc special pleading.
+
+On the one hand they use the excuse of "it's not replicable" when asked about how to test it, and on the other hand they want to also say that miracles are common -- more common than people realize.  This is trying to have your cake and eat it too.   Psychics do this all the time as well. 
+
+
+## On charlatans
+
+[Time stamp 4:22:03](https://youtu.be/FLCZFKNiEtg?t=15723)
+
+> Elijah:  I think this: the fact that there are fake miracles does not preclude the fact that there can be real miracles.  Knowledge falls on a continuum.  I don't think "I don't know" should be your default position unless that's really where you fall and so what I encourage people to do is read all sides, make an inference to the best explanation and go "this is what i think is most likely the case". Secondly we're talking about these things objectively, put yourself in situations where you can have experiential knowledge: pray for sick people that you know they would not be healed unless God showed up. If there's one thing I hope this film does for people that are inside of the Christian faith is that it makes them confident enough to go pray for sick people in impossible situations because that is a means to knowledge as well 
+
+> James: Shermer's essential point is how do you distinguish charlatans from real miracles and the answer is well you weigh up the evidence and you look at the best explanation.  Well, yeah but could we be a bit more specific?  So the first part of the answer is sort of true but trivial and also not what they've been doing but then the second part contradicts that by saying "just assume that it's true anyway and start praying for people."  What is that? Like that's just assuming what you wanted to establish.  How is an epistemically responsible thing to do?
+
+It is interesting the Elijah seems to understand that we need evidence to believe a claim, that we need to weigh alternative hypotheses, but he seems to have no idea what a controlled study is or why it is necessary.  
+
+To be charitable to Elijah's point, perhaps he's meaning that if you pray for someone yourself in an impossible situation and there is improvement, you can tell the difference between the fake and real miracle personally.  He doesn't seem to understand the ways that people can fool themselves.  Further, Nathan points out the problem is that Elijah needs to actually tell us some some epistemic story about what it is that puts people who pray in a position to know that God is the cause of the miracle happening.  This is why causal connections are so hard to establish, because not only do you have to demonstrate a real effect, you have to somehow distinguish possible causes.  Even if you said it had to be supernatural, how could you rule out Loki doing it, just for fun?
+
+I don't think they have established a real effect yet, so it's premature to speak about causes.
 
 
 ## Therapeutic effects of proximal intercessory prayer in rural Mozambique
 
 - [Study of the therapeutic effects of proximal intercessory prayer (STEPP) on auditory and visual impairments in rural Mozambique](https://pubmed.ncbi.nlm.nih.gov/20686441/)
 
-A good response to this is found by Steven Novella at **[Proximal Intercessory Prayer](https://theness.com/neurologicablog/index.php/proximal-intercessory-prayer/)
+[Time stamp 4:33:48](https://youtu.be/FLCZFKNiEtg?t=16428)
+
+> Elijah:  I also think we in the west have a bias toward poor people as not having knowledge of when something's dead or an arm is broken or something of that nature and so I think when people put themselves in situations where they pray for the sick and a whole village knows this child was born blind from birth they're 15 years old and that person sees gets their sight back and this is a different religion and that village testifies he was blind now,  he sees that is a different scenario than we're  talking about here and the lens of science really can't speak to that. But if you're that kid you've got to go what's more probable: an event that just randomly happened or the God that prayed I was praying to gave me my sight back, and so that is a part of the conversation.  I think people sitting back and watching kind of don't take into account that this is life-changing stuff that's happening to these people.
+
+ As James pointed out, individual testimony is  irrelevant.  For example, if you take the population of people who go to Rome on pilgrimage each year, you can calculate the fraction of those with diseases that will go into remission.  Each of those people are in the same position as the boy Elijah speaks about and will certainly attribute a God-given miracle to their healing.  One needs larger than $N=1$ to establish these effects -- which is why case studies are so ineffective at doing so.  It will be life-changing for those individuals, for sure, even under the condition where there are no miracles.  
+
+
+[Time stamp 4:41:48](https://youtu.be/FLCZFKNiEtg?t=16908)
+
+A good response to this particular study is by Steven Novella at **[Proximal Intercessory Prayer](https://theness.com/neurologicablog/index.php/proximal-intercessory-prayer/):
 
 >Let’s take the following hypothetical study: The study included 24 subjects who were all treated openly with the intervention in question. There was no blinding or control group – so everyone in the study, subjects and experimenters, knew that every subject was getting the treatment. The treatment involves active physical intervention with the subject. The protocol also calls for multiple interventions if initial treatments are not effective – essentially the subjects receive repeat treatments as long as possible until they report a response.
 >    
@@ -337,8 +377,69 @@ A good response to this is found by Steven Novella at **[Proximal Intercessory P
 > 
 >  Now, I know you can read headlines so you know this was a study of proximal intercessory prayer, but the point is – even if you assess the details of the study divorced from knowledge of what the intervention is, it should be obvious that this study tells us nothing.
     
-This pretty much summarizes the problems with this study.
+This pretty much summarizes the problems with this study.  It's amazing that this kind of study convinces anyone -- it violates pretty much every rule of good medicine with its multiple selection biases, lack of blinding, and lack of controls.  Since this is touted as one of the best, and one of only three papers ever seemingly cited when skeptics ask for evidence of miracles, is not impressive to say the least.  That fact alone is strong evidence that miracles are not real.
 
+
+## Paralyzed Woman, Delia Knox, being healed on video
+
+Now we move on to a video with Sean McDowell interviewing Craig Keener called [Latest Evidence for Modern Miracles](https://www.youtube.com/watch?v=qBFZJ5M53r4). 
+
+[Time stamp 4:47:03](https://youtu.be/FLCZFKNiEtg?t=17223)
+
+The story is of a person who was paralyzed from the waist down due to a car accident and 22 years later they were prayed for and healed.
+
+The first question is, are there real miracles that get recorded on video.  Keener gives a lot of waffle, and then some video of the woman that is thoroughly unconvincing.  The video of the miracle itself doesn't show much, and seems to show potentially abusive behavior of people lifting her out the chair, and supporting her as she attempts to walk in a far from medically controlled environment.  There is a second video interview with the woman herself that reports completely different medical history, and differs substantially from the details Keener gives.  She mentions a head injury from her accident not a spinal cord injury and never mentions that she was irreversibly paralyzed below the waist.  She never quotes her doctors about her condition, and provides no documentation whatsoever -- there is simply nothing to work with.  I've written about this before about UFO claims, that they fall into two categories:
+
+1. claims with no available data, so one can't investigate, so one shouldn't believe it
+2. claims with available data, where one can investigate, and it's shown that the evidence doesn't support the claim, so one shouldn't believe it
+
+There could potentially be a category 3 where the evidence does support the claim, but I have never seen it in any that I have personally investigated, either for UFO claims or for miracle claims.  This example is a category 1 miracle claim.
+
+Given the number of miracle claims, and the bold claims of Christians throughout these videos, and the proliferation of cameras in people's pockets, there should be thousands of convincing videos of miracles.  As I've said before, the fact that there are no videos of this sort is strong evidence against the veracity of miracles.  
+
+[Time stamp 5:06:44](https://youtu.be/FLCZFKNiEtg?t=18414) 
+
+Someone in the chat asked "do all of Keener's cases differ as much from what actually was reported to what was reported by him?"  Given Keener's habits of simplifying and distorting the actual original claims, and the demonstration throughout all of this that his standards for evidence are terribly low, it calls into question is entire 1300 page book on miracles.  
+
+## Sean George has a heart attack and comes back
+
+[Time stamp 5:07:32](https://youtu.be/FLCZFKNiEtg?t=18452)
+
+The story is that the Dr Sean George had a heart attack, a thousand chest compressions, many electric shocks, went on for an hour and half -- Keener says 5 minutes without oxygen, flat line for an hour and a half.  When his wife prayed, having been told that he was gone, the heart monitor "sprang back to life" and then the doctors were able to revive him.
+
+At least there is documentation published at https://seangeorge.com.au/my-story/medical-details/
+
+This is clearly a rare medical case -- but with 7 billion people you'd expect some of these often just by the law of large numbers. The statements about being brain dead are all unsubstantiated -- there was oxygen both from the chest compressions and when he was hooked up to machinery.  The statements of flat-line are also unsubstantiated -- there isn't evidence they were measuring it all throughout the chess compressions, etc...  It's been shown that there is a high survival rate for patients with their heart rhythm responds to shocks.  And even after CPR is stopped, there is an observed [phenomenon of spontaneous recovery of heart activity](https://en.wikipedia.org/wiki/Lazarus_syndrome) after as much as 15 minutes, and his recovered after 10 minutes.   Is this case unusual? Sure.  Is it a miracle?   Not at all, given that all of the facts of his case fall within the known bounds of what is possible and observed, even if rare.  A document going through these particular medical statements with citations can be [found here](https://www.podbean.com/site/EpisodeDownload/PBAD05A9XRV79).  It's walked though in a 5-part blog series:
+
+1. https://www.patheos.com/blogs/secularoutpost/2019/04/06/the-resurrection-of-dr-sean-george-part-1-summary/
+2. https://www.patheos.com/blogs/secularoutpost/2019/05/10/the-resurrection-of-dr-sean-george-part-2-littlewoods-law/
+3. https://www.patheos.com/blogs/secularoutpost/2019/05/24/the-resurrection-of-dr-sean-george-part-3-georges-argument/
+4. https://www.patheos.com/blogs/secularoutpost/2019/05/26/the-resurrection-of-dr-sean-george-part-4-evaluation-premise-1c/
+5. https://www.patheos.com/blogs/secularoutpost/2019/06/26/the-resurrection-of-dr-sean-george-part-5-evaluation-of-premise-a4/
+
+
+[Time stamp 5:21:58](https://youtu.be/FLCZFKNiEtg?t=19318)
+
+We keep coming back to the question about how you would test for miracles.  At a minimum, one has to 
+
+- establish base-rates for the natural recoveries
+- document the timeline clearly
+- evaluate alternative explanations -- and their prior probabilities
+- include both the positive and negative outcomes of the treatment
+- have good controls and experimental design to remove confounders
+
+Each of the cases we've looked at have failed several or all of these properties of good investigation, and should not be believed.  We would not believe any medical claim that didn't have these properties, so we are not having too high of a standard -- we are just refusing to lower the standard in these cases.  The fact that the best theists can come up with are so readily handled should be a caution to anyone trusting their claims.
+
+
+## JP Moreland gets a pool table
+
+[Time stamp 5:38:54](https://youtu.be/FLCZFKNiEtg?t=20334)
+
+> Moreland: we asked god to give us a really good pool table just like the kind that you find in a pool hall, that isn't a cheap one that if you hit it up it shakes.   And then I said "In Jesus's name, Amen" and so we moved on.  About a week and a half later at my daughter Allison's soccer there were like 20 families and 20 moms and dads there and  one of the fathers that I had said hi to but i didn't know him, walks up to me and he says "Hi, I'm so-and-so" and I said "I'm JP" and he said "how are you doing?"  I said "I'm doing well" and he said "Well listen this may sound odd to you, but could you use a pool table?"
+
+You should watch [Pinecreek's reaction here](https://youtu.be/g59UeHb7y6Q?t=3932) -- it pretty much sums it up.
+
+This one is obviously ludicrous, but I think undermines the theists claims quite a lot.  Once you admit that getting a pool table after prayer is a miracle, then you've admitted that your standards of evidence are outrageously poor.  It also calls into question the motives of God -- God is more concerned to give you a pool table than to cure leukemia in children or heart defects or nearly anything else.  People casually talk about God helping to find their car keys or help their sportsing team win, which are not miraculous but imply the intervention of the agent and thus fall under the same umbrella.  By counting these as "hits" and ignoring the deaths of starving children because they are "misses" and don't support their narrative is an indictment of the entire mode of thought.  
 
 
 
