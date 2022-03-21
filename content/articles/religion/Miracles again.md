@@ -1,5 +1,5 @@
 Title: A long discussion about miracles
-Date: 2022-03-17
+Date: 2022-03-21
 image: Bad_Apologetics_Miracles.png
 tags: unbelievable
 status: draft
@@ -10,15 +10,16 @@ I've written about [miracles many times](https://bblais.github.io/search.html?q=
 
 ## Specific Miracle Claims Covered:
 
-- [Case Report of gastroparesis healing: 16 years of a chronic syndrome resolved after proximal intercessory prayer](https://www.sciencedirect.com/science/article/pii/S0965229918313116)
-- [Case report of instantaneous resolution of juvenile macular degeneration blindness after proximal intercessory prayer](https://www.sciencedirect.com/science/article/pii/S1550830720300926) - probably Marolyn Ford, but it can be hard to tell without the names on the papers.
-- [Barbara Snyder (Barbara Cummiskey Snyder) – healed from multiple sclerosis](https://1c15.co.uk/barbara-snyder-barbara-cummiskey-snyder-healed-from-multiple-sclerosis/)
-- [Chris Gunderson](https://www.youtube.com/watch?v=v0QtFCpFg9I) who was born with an incurable disorder called Chronic Pseudo Obstruction Syndrome, which was cured by prayer
-- [Bruce Van Natta](https://www.youtube.com/watch?v=8pqj2i9gb8U&t=1s) who had a truck fall on him, destroying much of his intestine, but shortly after prayer his intestine miraculously regrew.
-- [Study of the therapeutic effects of proximal intercessory prayer (STEPP) on auditory and visual impairments in rural Mozambique](https://pubmed.ncbi.nlm.nih.gov/20686441/)
-- [Delia Knox healed from being paralyzed after 22 years](https://www.youtube.com/watch?v=Eo4UF07Z2Wo)
-- [Sean George comes back after a heart attack](https://youtu.be/j6X1R81B8gk)
-- [JP Moreland gets a pool table](https://youtu.be/S-JOeevGRoM?t=2209)
+- [Bruce Van Natta](#bruce-van-natta) who had a truck fall on him, destroying much of his intestine, but shortly after prayer his intestine miraculously regrew.
+- [Case Report of gastroparesis healing: 16 years of a chronic syndrome resolved after proximal intercessory prayer](#case-report-of-gastroparesis-healing)
+- [Chris Gunderson](#chris-gunderson) who was born with an incurable disorder called Chronic Pseudo Obstruction Syndrome, which was cured by prayer
+- [Case report of instantaneous resolution of juvenile macular degeneration blindness after proximal intercessory prayer]([case-report-of-instantaneous-resolution-of-juvenile-macular-degeneration-blindness-after-proximal-intercessory-prayer](https://www.sciencedirect.com/science/article/pii/S1550830720300926)) - probably Marolyn Ford, but it can be hard to tell without the names on the papers.
+- [Study of the therapeutic effects of proximal intercessory prayer (STEPP) on auditory and visual impairments in rural Mozambique](#therapeutic-effects-of-proximal-intercessory-prayer-in-rural-mozambique)
+- [Delia Knox healed from being paralyzed after 22 years](#paralyzed-woman-delia-knox-being-healed-on-video)
+- [Sean George comes back after a heart attack](#sean-george-has-a-heart-attack-and-comes-back)
+- [JP Moreland gets a pool table](#jp-moreland-gets-a-pool-table)
+- [Barbara Snyder (Barbara Cummiskey Snyder) – healed from multiple sclerosis](#barbara-snyder-healed-from-multiple-sclerosis)
+
 - 
 The institution that is referenced for the work is [Global Medical Research Institute (GMRI)](https://www.globalmri.org/) and the documentary about miracles referenced is [Send Proof](https://www.sendproof.com).  
 
@@ -50,7 +51,7 @@ Even if miracles could be the case, regardless of your worldview, how would you 
 
 I also think that there is a two-stage process for investigating these and similar processes (i.e. aliens, homeopathy).  The James Randi foundation did this as well, with a preliminary test before the more in-depth test.  The point is to first establish that there is some interesting effect there, regardless of the cause, and only after passing that threshold do we get to consider a more in-depth investigation.
 
-Also, the theists show a profound lack of imagination in coming up with studies that can test the involvement of an agent, while ruling out other effects.  James Fodor suggests, as an example, doing the prayer studies in different languages to help rule out some of the competing effects.  The fact that someone can come up with a simple idea like that, and none of the studies include these sorts of considerations, show that the theists aren't even trying to test their ideas.
+Also, the theists show a profound lack of imagination in coming up with studies that can test the involvement of an agent, while ruling out other effects.  [James Fodor] suggests, as an example, doing the prayer studies in different languages to help rule out some of the competing effects.  The fact that someone can come up with a simple idea like that, and none of the studies include these sorts of considerations, show that the theists aren't even trying to test their ideas.
 
 ## Physicians
 
@@ -100,7 +101,7 @@ James:
 
 This is like the difference between theists asking skeptics to explain how the disciples ate fish with Jesus, when in reality what we have to explain is that we have a *text that has a story where*  the disciples ate fish with Jesus.  Taking the story as the evidence is problematic. 
 
-# # Case Report of gastroparesis healing
+## Case Report of gastroparesis healing
 
 [Time stamp 2:08:18](https://youtu.be/FLCZFKNiEtg?t=7698)
 
@@ -152,6 +153,13 @@ In Steven Novella's post at [Proximal Intercessory Prayer](https://theness.com/n
 > In my opinion this study represents a larger trend that I have discussed before – clinical research going backwards in quality after higher quality studies yield negative results. We have seen this with acupuncture – after well-controlled trials were negative, some proponents decided that “pragmatic” (i.e. unblinded) studies were better. We see this with homeopathy, where well-controlled studies are negative and then dismissed because treatments were not individualized.
 
 The one-on-one treatments, when they show an effect, are confounded by the more intense experience, the one-on-one attention, the group pressures, etc...  You are adding a lot of psychological elements which make it harder to establish causation.
+
+## Chris Gunderson
+
+[Chris Gunderson](https://www.youtube.com/watch?v=v0QtFCpFg9I) who was born with an incurable disorder called Chronic Pseudo Obstruction Syndrome, which was cured by prayer
+
+This one is much like the previous one, but there is no study -- just the stories.  We don't know the timeline at all or the specifics, or any actual measurements.  We only have the stories.  It's here for completeness, even though there isn't much more we can say.
+
 
 ---
 
@@ -441,6 +449,14 @@ You should watch [Pinecreek's reaction here](https://youtu.be/g59UeHb7y6Q?t=3932
 
 This one is obviously ludicrous, but I think undermines the theists claims quite a lot.  Once you admit that getting a pool table after prayer is a miracle, then you've admitted that your standards of evidence are outrageously poor.  It also calls into question the motives of God -- God is more concerned to give you a pool table than to cure leukemia in children or heart defects or nearly anything else.  People casually talk about God helping to find their car keys or help their sportsing team win, which are not miraculous but imply the intervention of the agent and thus fall under the same umbrella.  By counting these as "hits" and ignoring the deaths of starving children because they are "misses" and don't support their narrative is an indictment of the entire mode of thought.  
 
+## Barbara Snyder healed from multiple sclerosis
+- [Barbara Snyder (Barbara Cummiskey Snyder) – healed from multiple sclerosis](https://1c15.co.uk/barbara-snyder-barbara-cummiskey-snyder-healed-from-multiple-sclerosis/)
+
+This miracle claim never came up in the episode.  I commented on the story [here](https://bblais.github.io/posts/2022/Feb/03/sometimes-there-really-isnt-enough-evidence-to-believe-a-claim/) but there is very little to go on.   Here's my comment,
+
+> Thinking about the Snyder "miracle", I do wonder why in these cases there isn't much more extensive medical documentation? It would seem that these people are constantly dealing with skeptics, and the easiest way to address it would be to get the pre- and post- medical test data rather than a summary by one doctor, after the fact. Is it possible she was misdiagnosed -- it wasn't MS, so looking for an MS recovery may be misdirected? Is it possible that there was MS and something else, in which case looking for a full recovery from MS is misdirected? Without further data, it is impossible to rule out these things, but you'd think the data would be available with something this recent?
+
+From my reading also, MS can also go into spontaneous remission -- usually temporary -- but we don't have any follow-ups, detailed timelines documented, etc... We have stories.  There isn't anything that could tie the prayer as the causal element, given that she was most likely prayed for often an we're picking out the one case before a claimed recovery.
 
 
 ---
