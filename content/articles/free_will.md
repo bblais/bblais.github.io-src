@@ -27,5 +27,5 @@ So, when a flower opens in the day and closes a night, or even [follows the sun]
 
 
 [article about free will]: http://www.slate.com/articles/health_and_science/science/2013/09/free_will_debate_what_does_free_will_mean_and_how_did_it_evolve.html
-[initial perspective elsewhere]: http://web.bryant.edu/~bblais/free-will-and-entropy.html
+[initial perspective elsewhere]: {filename}wordpress_migration/free-will-and-entropy.md
 [follows the sun]: https://www.youtube.com/watch?v=g8mr0R3ibPU

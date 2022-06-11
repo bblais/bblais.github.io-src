@@ -33,4 +33,4 @@ We use a process of verification by others, of repeatability, of open and honest
 
 [Dogma Debate Episode]: http://www.spreaker.com/user/smalleyandhyso/154-atheist-vs-atheist-on-morals_1?utm_source=widget&utm_medium=widget
 [statistical numbing]: http://www.psychologytoday.com/blog/how-risky-is-it-really/201108/statistical-numbing-why-millions-can-die-and-we-don-t-care
-[ongoing discussion about morality]: http://web.bryant.edu/~bblais/objective-morality-defined.html#comment-1712880131
+[ongoing discussion about morality]: {filename}obj_morality_reduc.md

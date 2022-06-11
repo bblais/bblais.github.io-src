@@ -24,5 +24,5 @@ I'm the first to admit that the learning curve of [LaTeX] is pretty steep, but o
 [the review]: http://serialmentor.com/blog/2014/12/27/post-publication-review-of-the-plos-one-paper-comparing-ms-word-and-latex-how-not-to-compare-document-preparation
 [PloS One comparison]: http://www.plosone.org/article/info:doi/10.1371/journal.pone.0115069
 [LaTeX]: http://latex-project.org/ftp.html
-[my book]: http://web.bryant.edu/~bblais/statistical-inference-for-everyone-sie.html
+[my book]: {filename}projects/sie.md
 [Markdown]: http://daringfireball.net/projects/markdown/syntax

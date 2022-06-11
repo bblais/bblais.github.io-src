@@ -214,7 +214,7 @@ As far as I can tell, the term abduction is an unnecessary term.  It seems to me
 
 
 
-[My basic perspective]: http://web.bryant.edu/~bblais/philosophy-and-science-whats-the-difference.html
+[My basic perspective]: {filename}philosophy_science_.md
 [Giunta-Dillahunty debate]: https://www.youtube.com/watch?v=Ea_p5eQE-iM
 [on the Dogma Debate show]: http://www.spreaker.com/user/smalleyandhyso/191-matt-dillahunty-in-studio?utm_source=widget&utm_medium=widget
 [Stanford Encyclopedia of Philosophy article on Abduction]: http://plato.stanford.edu/entries/abduction/

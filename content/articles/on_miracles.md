@@ -161,13 +161,13 @@ Of course, if you could demonstrate it otherwise, please let me know!  I'd love 
 
 For some other items I've written about miracles, see:
 
-1. [http://web.bryant.edu/~bblais/do-healing-miracles-happen.html](http://web.bryant.edu/~bblais/do-healing-miracles-happen.html)
-2. [http://web.bryant.edu/~bblais/a-little-about-miracles.html](http://web.bryant.edu/~bblais/a-little-about-miracles.html)
-3. [http://web.bryant.edu/~bblais/unbelievable-project-miracles-and-healing-is-it-evidence-for-the-truth-of-christianity.html](http://web.bryant.edu/~bblais/unbelievable-project-miracles-and-healing-is-it-evidence-for-the-truth-of-christianity.html)
+1. [Do healing miracles happen?]({filename}Unbelievable Project/Healing Miracles_.md)
+2. [A little about miracles]({filename}wordpress_migration/a-little-about-miracles.md)
+3. [Miracles and healing - is it evidence for the truth of Christianity?]({filename}Unbelievable Project/unbelievable-project-miracles-and-healing-is-it-evidence-for-the-truth-of-christianity.md)
 
 
 
-[post about the misquoting Hume]: http://web.bryant.edu/~bblais/misquoting-hume.html
+[post about the misquoting Hume]: {filename}hume_miracles.md
 [article on miracles]: http://plato.stanford.edu/entries/miracles/
 [Matthew Ferguson's blog]:https://adversusapologetica.wordpress.com/2013/06/29/knocking-out-the-pillars-of-the-minimal-facts-apologetic/
 

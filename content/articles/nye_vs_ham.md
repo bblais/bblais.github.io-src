@@ -28,6 +28,6 @@ Finally, there were I think two statements by Ham that I found refreshing.  He f
 <iframe width="560" height="315" src="//www.youtube.com/embed/z6kgvhG3AkI" frameborder="0" allowfullscreen></iframe>
 
 
-[post about proof]: http://web.bryant.edu/~bblais/anyone-using-the-term-scientific-proof-doesnt-know-science.html
+[post about proof]: {filename}proof.md
 [Gish Gallop]: http://rationalwiki.org/wiki/Gish_Gallop
 [estimates of age]: http://www.talkorigins.org/faqs/dalrymple/scientific_age_earth.html

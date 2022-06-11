@@ -19,6 +19,6 @@ So in summary, science cannot test supernatural *explanations*, because they are
 
 
 [Can Science Test Supernatural Worldviews]: http://www.naturalism.org/Can%20Science%20Test%20Supernatural%20Worldviews-%20Final%20Author%27s%20Copy%20%28Fishman%202007%29.pdf
-[here]: http://web.bryant.edu/~bblais/closed-to-the-supernatural.html
-[again here]: http://web.bryant.edu/~bblais/the-supernatural-and-the-history-of-cosmology.html
+[here]: {filename}wordpress_migration/closed-to-the-supernatural.md
+[again here]: {filename}wordpress_migration/the-supernatural-and-the-history-of-cosmology.md
 [Dark Matter]: http://en.wikipedia.org/wiki/Dark_matter

@@ -12,28 +12,28 @@ There is a great paper *[Thermal noise and the emergence of the arrow of time: A
 
 That's it!  If you start with a system of particles, say, all on the left half this system will evolve to a state which is pretty well mixed.  
 
-<img src="images/entropy/1a.png" align=center>
+![]({static}/images/entropy/1a.png)
 
 
 One way to measure this is to count the number of particles on the left-half of the box.
 
-<img src="images/entropy/1b.png" align=center>
+![]({static}/images/entropy/1b.png)
 
 ## Unscrambling the egg
 
 One thing that is interesting is that, although the system is entirely deterministic, it does lead to a well-mixed system over time - entropy increases.  Another thing that is interesting is that if we were to run time backwards -- reverse all of the particles, and make the interaction rotate now *counter-clockwise* instead of clockwise -- we should be able to "unwind" the simulation back to its very ordered beginning.  This is like reversing time in the universe and unscrambling an egg. 
 
-<img src="images/entropy/3.png" align=center>
+![]({static}/images/entropy/3.png)
 
 ## Why don't we see an egg unscrambling?
 
 In the case of the real world, we never see an egg unscramble -- ever.  Why?  Even the slightest variation or uncertainty in the system makes the mixing not reverse.  If, after the mixing, we were to randomly modify just *one* particle in the small, simple system described and then try to unmix it by running time backward it won't work.  Even that tiniest change is enough to block us from unscrambling the egg, as shown below.  First the original mixing...
 
-<img src="images/entropy/4.png" align=center>
+![]({static}/images/entropy/4.png)
 
 and then messing up one particle (can you see which one? compare $t=36$ to $t=37$)...and then reversing time and trying to "unmix" the system.
 
-<img src="images/entropy/7.png" align=center>
+![]({static}/images/entropy/7.png)
 
 ## What does it mean?
 

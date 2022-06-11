@@ -2,7 +2,7 @@ Title: Chemical Reaction Dynamics
 Subtitle: Reproducing a Computational Paper
 Date: 2022-01-14
 status: published
-image: kai-dahms-217U8oxGoQ4-unsplash.jpg
+image: kai-dahms-217U8oxGoQ4-unsplash. jpg
 
 As an exercise, I like to reproduce computational papers, but with my own tools.  This let's me know that I understand completely what is being  written and in many cases allows me to extend and debug my own tools.  I'm going to do a series of these as I work through some of my reading list.  The first one I'm doing is available here:
 

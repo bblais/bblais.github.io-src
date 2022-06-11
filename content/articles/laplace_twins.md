@@ -58,7 +58,7 @@ $$P(I|S)=1/2$$
 
 ## What would Laplace do?
 
-The text refers to an "uninformative prior", in a derogatory way, and then proceeds to mistakenly use an *informative*, incorrect prior and attribute it to Laplace.  Laplace, [like Hume](http://web.bryant.edu/~bblais/misquoting-hume.html), is mischaracterized so often it really is remarkable.  Let's follow through how the text gets the $P(S|I)=2/3$ presumably what Laplace would do.  To get this, we assume that there are two states (identical and fraternal) and that uninformative means equal probability to these states.  Thus the prior is $P(I)=1/2$, and the same calculation proceeds as 
+The text refers to an "uninformative prior", in a derogatory way, and then proceeds to mistakenly use an *informative*, incorrect prior and attribute it to Laplace.  Laplace, [like Hume]({filename}hume_miracles.md), is mischaracterized so often it really is remarkable.  Let's follow through how the text gets the $P(S|I)=2/3$ presumably what Laplace would do.  To get this, we assume that there are two states (identical and fraternal) and that uninformative means equal probability to these states.  Thus the prior is $P(I)=1/2$, and the same calculation proceeds as 
 
 \begin{eqnarray}
 \frac{P(I|S)}{P(\sim I|S)} &=& \frac{P(S|I)P(I)}{P(S|\sim I)P(\sim I)} \\
@@ -101,7 +101,7 @@ Like a good scientist, Laplace would probably follow this line of logic with som
 P(I|S) &=& \int_0^1 \frac{1/2 \cdot q}{1/2\cdot q + 1/4\cdot (1-q)} {\rm Beta}(h+1,N+1) dq 
 \end{eqnarray}
 
-which is easiest done numerically.  Using the sie library from [my book](http://web.bryant.edu/~bblais/statistical-inference-for-everyone-sie.html) I have for $h=0$, $N=0$, 
+which is easiest done numerically.  Using the sie library from [my book]({filename}projects/sie.md) I have for $h=0$, $N=0$, 
 
 ```python
 h=0

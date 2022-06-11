@@ -12,4 +12,4 @@ Blake Giunta also commented that "before you can give evidence for what God did 
 [Voyager pictures]: http://voyager.jpl.nasa.gov/imagesvideo/neptune.html
 [Giunta-Dillahunty debate]: https://www.youtube.com/watch?v=Ea_p5eQE-iM
 [on the Dogma Debate show]: http://www.spreaker.com/user/smalleyandhyso/191-matt-dillahunty-in-studio?utm_source=widget&utm_medium=widget
-[conceding that you have no data]: http://web.bryant.edu/~bblais/philosophy-and-science-whats-the-difference.html
+[conceding that you have no data]: {filename}philosophy_science_.md

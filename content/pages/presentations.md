@@ -1,6 +1,11 @@
 title: Presentations
 [TOC]
 
+# 2022
+
+* Blais, B.S., Gaier, E.,Xiao, S. *[Modeling amblyopia treatment responses through principles of synaptic plasticity]()*. May 2022. ARVO Conference.
+> The BCM principles of activity-dependent synaptic plasticity are sufficient to model the ocular dominance shifts underlying the development of and recovery from amblyopia. The importance of the dichoptic masks and contrast disparity levels on the efficacy of the binocular therapy model suggests that these parameters require precise refinement to optimize amblyopia recovery.
+
 # 2018
 
 * Blais, B.S., *[Your Lack of Imagination Can Kill You — But You Can Be Saved by Math](https://www.youtube.com/watch?v=3xAb3aVGVM0&t=2s)*. Feb 2018.  TEDxBryantU.  Full [list of videos for the event](https://www.youtube.com/user/TEDxTalks/search?query=TEDxBryantU).

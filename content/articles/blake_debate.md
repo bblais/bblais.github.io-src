@@ -2,7 +2,7 @@ title: The Giunta-Dillahunty debate
 subtitle: In the End it's just Magic
 date: Aug 23, 2015
 
-I was listening to the [Giunta-Dillahunty debate], "Does God Exist?", and the subsequent appearance of these two [on the Dogma Debate show] and felt there was enough there that required comment.  I've commented a bit [on the structure here] and [on the terminology here], but took down a lot more notes listening to the debate again.  In this post, I refer to the debaters as Blake (Blake Giunta) and Matt (Matt Dillahunty) because it is a lot easier to type.  My notes are just my responses while listening to the debate.
+I was listening to the [Giunta-Dillahunty debate], "Does God Exist?", and the subsequent appearance of these two [on the Dogma Debate show] and felt there was enough there that required comment.  I've commented a bit [on the structure here]({filename}evidence_philosophical.md) and [on the terminology here], but took down a lot more notes listening to the debate again.  In this post, I refer to the debaters as Blake (Blake Giunta) and Matt (Matt Dillahunty) because it is a lot easier to type.  My notes are just my responses while listening to the debate.
 
 ### Causation
 
@@ -134,8 +134,7 @@ So in summary, I am not convinced *at all* that philosophical arguments - by the
 [Giunta-Dillahunty debate]: https://www.youtube.com/watch?v=Ea_p5eQE-iM
 [on the Dogma Debate show]: http://www.spreaker.com/user/smalleyandhyso/191-matt-dillahunty-in-studio?utm_source=widget&utm_medium=widget
 [List of 25 top questions in science]: http://www.sciencemag.org/content/309/5731/75.full.pdf
-[on the structure here]: http://web.bryant.edu/~bblais/evidence-vs-argument.html
-[on the terminology here]: http://web.bryant.edu/~bblais/deduction-induction-and-abduction-oh-my.html
+[on the terminology here]: {filename}abduction.md
 [excellent debate]: https://youtu.be/X0qKZqPy9T8?t=30m36s
 [Craig-Carroll debate]: https://youtu.be/X0qKZqPy9T8
 [several alternate forms found on his website]: https://beliefmap.org/god-exists/necessary-being/
@@ -144,7 +143,7 @@ So in summary, I am not convinced *at all* that philosophical arguments - by the
 [a single equation]: https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation
 [infer some of their contents]: https://en.wikipedia.org/wiki/Helium#History
 [Boltzmann Brain]: https://en.wikipedia.org/wiki/Boltzmann_brain
-[previous post when I talk about the notion of simplicity]: http://web.bryant.edu/~bblais/deduction-induction-and-abduction-oh-my.html
-[science testing the supernatural]:http://web.bryant.edu/~bblais/testing-the-supernatural.html
+[previous post when I talk about the notion of simplicity]: {filename}abduction.md
+[science testing the supernatural]:{filename}supernatural_dark_matter.md
 [but it does]: https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
 [QED]: https://en.wikipedia.org/wiki/Quantum_electrodynamics

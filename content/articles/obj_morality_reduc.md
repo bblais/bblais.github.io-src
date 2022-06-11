@@ -20,7 +20,7 @@ Secular progress in moral domains occurs when there is a reasoned discussion, al
 
 
 
-[was asked the following question]: http://web.bryant.edu/~bblais/objective-morality.html#comment-1707974225
+[was asked the following question]: {filename}obj_morality.md
 [Dogma Debate episode]: http://www.spreaker.com/user/smalleyandhyso/154-atheist-vs-atheist-on-morals_1?utm_source=widget&utm_medium=widget
 
 

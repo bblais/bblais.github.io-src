@@ -1,8 +1,8 @@
 Title: Statistical Inference for Everyone (sie)
 Date: 2014-11-21
 Tags: statistics, probability, education, science, sie
+image: Saturn_with_Dice.png
 
-<img src="images/Saturn_with_Dice.png" alt="SIE" style="width: 250px;"/>
 
 This is a new approach to an introductory statistical inference textbook, motivated by probability theory as logic.  It is targeted to the typical *Statistics 101* college student, and covers the topics typically covered in the first semester of such a course.  It is freely available under the Creative Commons License, and includes a software library in Python for making some of the calculations and visualizations easier.  
 

@@ -1,19 +1,20 @@
 Title: A long discussion about miracles
-Date: 2022-03-21
+Date: 2022-03-23
 image: Bad_Apologetics_Miracles.png
-tags: unbelievable
-status: draft
+tags: unbelievable, religion
+status: published
 
-Here I summarize the (9 hour!) conversation that I was a part of here:  [Bad Apologetics Ep 20 - Miracles & even MORE even NEWER Resurrection evidence](https://youtu.be/FLCZFKNiEtg) where we respond to the  [Unbelievable? episode: Is there medical evidence for miracles? Craig Keener, Michael Shermer & Elijah Stephens](https://www.youtube.com/watch?v=5O3YZqFDxbs) and a video with Sean McDowell interviewing Craig Keener called [Latest Evidence for Modern Miracles](https://www.youtube.com/watch?v=qBFZJ5M53r4).   I want this post to be the place where I put as many of the specific miracle claims, the actual evidence presented, and some of the responses.  I wrote about some of these cases [in another post](https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/)
 
-I've written about [miracles many times](https://bblais.github.io/search.html?q=miracle).  
+Here I summarize the (9 hour!) conversation that I was a part of here:  [Bad Apologetics Ep 20 - Miracles & even MORE even NEWER Resurrection evidence](https://youtu.be/FLCZFKNiEtg) where we respond to the  [Unbelievable? episode: Is there medical evidence for miracles? Craig Keener, Michael Shermer & Elijah Stephens](https://www.youtube.com/watch?v=5O3YZqFDxbs) and a video with Sean McDowell interviewing Craig Keener called [Latest Evidence for Modern Miracles](https://www.youtube.com/watch?v=qBFZJ5M53r4).   I want this post to be the place where I put as many of the specific miracle claims, the actual evidence presented, and some of the responses.  I wrote about some of these cases [in another post](https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/) and I've written about [miracles many times](https://bblais.github.io/search.html?q=miracle).  
+
+
 
 ## Specific Miracle Claims Covered:
 
 - [Bruce Van Natta](#bruce-van-natta) who had a truck fall on him, destroying much of his intestine, but shortly after prayer his intestine miraculously regrew.
 - [Case Report of gastroparesis healing: 16 years of a chronic syndrome resolved after proximal intercessory prayer](#case-report-of-gastroparesis-healing)
 - [Chris Gunderson](#chris-gunderson) who was born with an incurable disorder called Chronic Pseudo Obstruction Syndrome, which was cured by prayer
-- [Case report of instantaneous resolution of juvenile macular degeneration blindness after proximal intercessory prayer]([case-report-of-instantaneous-resolution-of-juvenile-macular-degeneration-blindness-after-proximal-intercessory-prayer](https://www.sciencedirect.com/science/article/pii/S1550830720300926)) - probably Marolyn Ford, but it can be hard to tell without the names on the papers.
+- [Case report of instantaneous resolution of juvenile macular degeneration blindness after proximal intercessory prayer](#case-report-of-instantaneous-resolution-of-juvenile-macular-degeneration-blindness-after-proximal-intercessory-prayer) - probably Marolyn Ford, but it can be hard to tell without the names on the papers.
 - [Study of the therapeutic effects of proximal intercessory prayer (STEPP) on auditory and visual impairments in rural Mozambique](#therapeutic-effects-of-proximal-intercessory-prayer-in-rural-mozambique)
 - [Delia Knox healed from being paralyzed after 22 years](#paralyzed-woman-delia-knox-being-healed-on-video)
 - [Sean George comes back after a heart attack](#sean-george-has-a-heart-attack-and-comes-back)
@@ -23,8 +24,25 @@ I've written about [miracles many times](https://bblais.github.io/search.html?q=
 - 
 The institution that is referenced for the work is [Global Medical Research Institute (GMRI)](https://www.globalmri.org/) and the documentary about miracles referenced is [Send Proof](https://www.sendproof.com).  
 
+## Some initial thoughts 
+
+[Time stamp 4:47](https://youtu.be/FLCZFKNiEtg?t=287)
+
+> James is right that the evidence on a lot of these cases is really really bad.  You can see why these stories are powerful and you can see why people really get motivated by them nd so i think it is important to respond to them because of that.  The way people like the stories highlights their way of thinking and provides a teachable moment about like why don't we trust claims just from the claims, even if it has a peer-reviewed journal article.   Why don't we just simply believe.
+
+Personally I like looking into the details of miracle claims because they spotlight the scientific process, when it is misused or when people try to use the authority of science but don't want to go through the admittedly hard work to earn it.
+
+## Case studies as the basis of evidence
+
+[Time stamp 19:05](https://youtu.be/FLCZFKNiEtg?t=1158)
+
+The primary studies here are Case Studies, which are some of the *lowest* and *least informative* types of studies in medicine (see [https://guides.library.stonybrook.edu/evidence-based-medicine/levels_of_evidence](https://guides.library.stonybrook.edu/evidence-based-medicine/levels_of_evidence)) with Meta-studies, Systematic reviews, and Randomized Controlled Studies being the most effective forms. 
+
+Case studies may be suggestive, but they are there so that you can propose hypotheses to test more rigorously.  No one in medicine evaluates the effectiveness of a treatment from case studies alone, or even primarily due to case studies.
 
 ## Fishing for positive outcomes
+
+[Time stamp 37:20](https://youtu.be/FLCZFKNiEtg?t=2240)
 
 On GMRI's website there is the following request: 
 
@@ -32,16 +50,8 @@ On GMRI's website there is the following request:
  
 Could you imagine a similar claim written about, say, a homeopathic remedy for cancer? *If you took our remedy, and improved, we want to hear from you. Otherwise, not.* Regardless of the contents of the specific studies, this sort of fishing for positive results is thoroughly unscientific and casts significant doubt on any results from this institution. 
 
-## Case studies as the basis of evidence
-
-The primary studies here are Case Studies, which are some of the *lowest* and *least informative* types of studies in medicine (see [https://guides.library.stonybrook.edu/evidence-based-medicine/levels_of_evidence](https://guides.library.stonybrook.edu/evidence-based-medicine/levels_of_evidence)) with Meta-studies, Systematic reviews, and Randomized Controlled Studies being the most effective forms. 
-
-Case studies may be suggestive, but they are there so that you can propose hypotheses to test more rigorously.  No one in medicine evaluates the effectiveness of a treatment from case studies alone, or even primarily due to case studies.
 
 
-## Base-rates
-
-The entire approach of those arguing for miracles focuses on the (presumed) successes but in any real study for a treatment, we need to know all of the cases -- the ones that worked and the ones that didn't -- to provide evidence of efficacy.  Also we need to know what happens when there is no treatment as a control.  None of these steps are taken in any of these cases.
 
 ## Worldviews and Evidence
 
@@ -52,6 +62,14 @@ Even if miracles could be the case, regardless of your worldview, how would you 
 I also think that there is a two-stage process for investigating these and similar processes (i.e. aliens, homeopathy).  The James Randi foundation did this as well, with a preliminary test before the more in-depth test.  The point is to first establish that there is some interesting effect there, regardless of the cause, and only after passing that threshold do we get to consider a more in-depth investigation.
 
 Also, the theists show a profound lack of imagination in coming up with studies that can test the involvement of an agent, while ruling out other effects.  [James Fodor] suggests, as an example, doing the prayer studies in different languages to help rule out some of the competing effects.  The fact that someone can come up with a simple idea like that, and none of the studies include these sorts of considerations, show that the theists aren't even trying to test their ideas.
+
+## Base-rates
+
+[Time stamp 1:30:51](https://youtu.be/FLCZFKNiEtg?t=5451)
+
+The entire approach of those arguing for miracles focuses on the (presumed) successes but in any real study for a treatment, we need to know all of the cases -- the ones that worked and the ones that didn't -- to provide evidence of efficacy.  Also we need to know what happens when there is no treatment as a control.  None of these steps are taken in any of these cases.
+
+
 
 ## Physicians
 

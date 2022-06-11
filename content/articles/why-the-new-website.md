@@ -14,6 +14,6 @@ Let me know if things work, or don't!  I'd love to know if comments work, and if
 I'm still playing, so expect changes!
 
 
-[my website]: http://web.bryant.edu/~bblais
+[my website]: https://bblais.github.com
 [pelican]: http://docs.getpelican.com/en/3.3.0/
 [Markdown]: http://http://daringfireball.net/projects/markdown/

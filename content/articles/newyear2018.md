@@ -2,7 +2,7 @@ title: Happy New Year (again)!
 date: 1/8/18
 subtitle: A Time for New Beginnings (again)
 
-As [I have written before](https://bblais.github.io/happy-new-year.html), I love the idea of New Year’s Day.  It’s a time for reflection, contemplation, self improvement.  I realize that it is technically just another day and just another year, and that one could definitely have any day in the year serve this role, but there still feels like something special for this day.
+As [I have written before]({filename}newyear2016.md), I love the idea of New Year’s Day.  It’s a time for reflection, contemplation, self improvement.  I realize that it is technically just another day and just another year, and that one could definitely have any day in the year serve this role, but there still feels like something special for this day.
 
 Back in 2016 I wrote:
 

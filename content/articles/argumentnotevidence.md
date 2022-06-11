@@ -2,7 +2,7 @@ title: Argument is Not Evidence
 date: 1/2/16
 subtitle: 
 
-So [the Mr. Deity video](https://www.youtube.com/watch?v=76Yc_DuZkLY), part two of his new series has an interesting point. The point is that arguments are not evidence. He says that in all of the debates that he seen between atheists and theists he's never seen anyone bring up this idea which really should show that the theist has lost the debate from the beginning.  I [mentioned it here](http://web.bryant.edu/~bblais/evidence-vs-argument.html) when I was looking at Blake Giunta debate with Matt Dillahunty.  
+So [the Mr. Deity video](https://www.youtube.com/watch?v=76Yc_DuZkLY), part two of his new series has an interesting point. The point is that arguments are not evidence. He says that in all of the debates that he seen between atheists and theists he's never seen anyone bring up this idea which really should show that the theist has lost the debate from the beginning.  I [mentioned it here]({filename}evidence_philosophical.md) when I was looking at Blake Giunta debate with Matt Dillahunty.  
 
 There are some things that you can learn from proofs - such as mathematical proofs. For example you may find a relationship between two things that was unintuitive at first. However I think in the case of the *existence* of an actual thing then you can gain no knowledge from philosophy or argumentation or proof. You really need something that's demonstrable, that's repeatable, something that gets around the biases and failings of the human thought process. 
 

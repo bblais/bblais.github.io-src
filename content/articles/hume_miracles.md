@@ -2,7 +2,7 @@ title: Misquoting Hume
 Date: 2015-02-21
 subtitle: The problem with words over math
 
-I recall a comment in E. T. Jaynes' book about Laplace, where he realized that most of the arguments against the claims of Laplace were arguments against things Laplace never said.  Jaynes would habitually check the original source whenever he heard claims ascribed to Laplace, and found that Laplace was consistently misquoted.  Recently, I have realized that the same can be said of Hume.   I've [written before] about the claim that Hume believed we have "no good reason at all for thinking the sun will rise tomorrow" (spoiler alert: he didn't believe this). 
+I recall a comment in E. T. Jaynes' book about Laplace, where he realized that most of the arguments against the claims of Laplace were arguments against things Laplace never said.  Jaynes would habitually check the original source whenever he heard claims ascribed to Laplace, and found that Laplace was consistently misquoted.  Recently, I have realized that the same can be said of Hume.   I've [written before]({filename}Unbelievable Project/sun_rise_tomorrow.md) about the claim that Hume believed we have "no good reason at all for thinking the sun will rise tomorrow" (spoiler alert: he didn't believe this). 
 
 So, I've seen this little pithy Hume quote: 
 
@@ -42,7 +42,7 @@ where the data are
 So, although all these things *can* occur, only a few of them *actually* have evidence strong enough to overcome their initial low prior probability.  Hume recognized this for miracles, as was clear from his writings, although it would have been clearer had he had the benefit of probabilistic vocabulary.  Don't take my word for it, go read Hume [here], [and here].
 
 
-[written before]: http://web.bryant.edu/~bblais/will-the-sun-rise-tomorrow.html
+[written before]: https://bblais.github.io/posts/2014/Sep/22/will-the-sun-rise-tomorrow/
 [part 1]: http://www.bartleby.com/37/3/14.html
 [part 2]: http://www.bartleby.com/37/3/15.html
 [here]: http://www.bartleby.com/37/3/14.html

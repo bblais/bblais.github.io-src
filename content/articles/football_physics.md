@@ -22,7 +22,7 @@ Frankly, I've found this so-called sophisticated quantitative analysis a great e
 Finally, I want to add that although I am not convinced that the Patriots cheated, I am also not convinced that they didn't.  However, the burden of proof (as in the court of law) lies squarely with the prosecution, not the defense - and they have clearly not made their case.
 
 
-[another post]: http://web.bryant.edu/~bblais/how-to-deflate-a-football-deflating-story.html
+[another post]: {filename}deflate_football.md
 [Wells report]: https://s3.amazonaws.com/s3.documentcloud.org/documents/2073728/ted-wells-report-deflategate.pdf
 [this critical analysis]: https://www.aei.org/wp-content/uploads/2015/06/On-the-Wells-report.pdf
 [New York times piece]: http://www.nytimes.com/2015/06/14/opinion/deflating-deflategate.html?_r=1

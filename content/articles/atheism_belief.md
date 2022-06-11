@@ -1,7 +1,7 @@
 Title: We find God "not guilty" of existing
 Date: 2015-05-18
 
-I was listening to the [Unbelievable podcast] on the definition of atheism, whether it is "lack in a belief in God" or "believing that God does not exist" or something else, which got me thinking about how it maps to probability (as I always do).  Matt Dillahunty clearly defines atheism as a lack of belief, and in a court-room analogy says that he finds God "not guilty of existing".  In court, you find the plaintiff "guilty" or "not guilty", not "guilty" or "innocent".  The burden of proof lies squarely with the prosecution.  If they haven't met that burden, then the jury finds the plaintiff "not guilty".  They may, or may not, believe that the plaintiff is innocent.  Establishing *innocence* in the crime changes the burden of proof to the defendant.  The difference here comes down to priors, which we can see through some illustrative examples mapped to probability.
+As part of the [Unbelievable Project]({filename}Unbelievable Project/unbelievable-project-a-non-believers-armchair-perspective-on-six-years-of-christian-debates.md), I was listening to the [Unbelievable podcast] on the definition of atheism, whether it is "lack in a belief in God" or "believing that God does not exist" or something else, which got me thinking about how it maps to probability (as I always do).  Matt Dillahunty clearly defines atheism as a lack of belief, and in a court-room analogy says that he finds God "not guilty of existing".  In court, you find the plaintiff "guilty" or "not guilty", not "guilty" or "innocent".  The burden of proof lies squarely with the prosecution.  If they haven't met that burden, then the jury finds the plaintiff "not guilty".  They may, or may not, believe that the plaintiff is innocent.  Establishing *innocence* in the crime changes the burden of proof to the defendant.  The difference here comes down to priors, which we can see through some illustrative examples mapped to probability.
 
 ## Odd and Even Stars
 
@@ -80,7 +80,5 @@ $$
 
 Atheists find God "not guilty" of existing
 
-[Unbelievable Project]: http://web.bryant.edu/~bblais/unbelievable-project-a-non-believers-armchair-perspective-on-six-years-of-christian-debates.html
 [Unbelievable podcast]: http://www.premierradio.org.uk/shows/saturday/unbelievable.aspx
-[simple rules]: http://web.bryant.edu/~bblais/unbelievable-project-a-non-believers-armchair-perspective-on-six-years-of-christian-debates.html
 [full RSS Feed of the podcasts]:  http://ondemand.premier.org.uk/unbelievable/AudioFeed.aspx
