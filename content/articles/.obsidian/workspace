@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b64b34575613ce58",
+        "id": "5198c6241c17512e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "religion/Miracles are rare except when they aren't -- how science actually makes miracle claims unlikely.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "8d7e7b21624ac365",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "science/2022-05-31 - Why do we need double-blind studies?.md",
+            "file": "religion/The God of the Philosophers.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "science/2022-05-31 - Why do we need double-blind studies?.md",
+                "file": "religion/The God of the Philosophers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8d7e7b21624ac365",
+  "active": "5198c6241c17512e",
   "lastOpenFiles": [
-    "science/2022-05-31 - Why do we need double-blind studies?.md",
-    "religion/Miracles are rare except when they aren't -- how science actually makes miracle claims unlikely.md",
-    "religion/bad_apologetics_2021_summary_part 1.md",
-    "science/2022-01-13 Reproducing Chemical Reaction Paper.md",
-    "religion/bad_apologetics_2021_summary_part 2.md",
+    "religion/Undesigned Coincidences.md",
+    "images/ochir-erdene-oyunmedeg-LmyPLbbUWhA-unsplash.jpg",
+    "images/ochir-erdene-oyunmedeg-LmyPLbbUWhA-unsplash 1.jpg",
+    "images/ochir-erdene-oyunmedeg-LmyPLbbUWhA-unsplash 2.jpg",
+    "religion/The God of the Philosophers.md",
+    "religion/bad_apologetics_2021_summary_part_3.md",
     "media/bad_apologetics_2021.md",
-    "().md",
-    "media/bad_apologetics_feb_2022.md",
-    "religion/Bad Apologetics - miscellaneous topics from Jonathan McLatchie.md",
-    "religion/How much evidence is needed.md"
+    "religion/bad_apologetics_2021_summary_part_2.md",
+    "religion/bad_apologetics_2021_summary_part_1.md",
+    "religion/Probability and Testimony.md"
   ]
 }

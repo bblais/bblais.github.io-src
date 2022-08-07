@@ -7,15 +7,20 @@ In this YouTube episode, [Bad Apologetics Ep 18 - Bayes Machine goes BRRRRRRRRR]
 
 It's 9 hours long, but I am only on for the first 7 hours.  
 
-* On YouTube: https://youtu.be/yeCBpO7pSRM
+I wrote a summary in 3 parts here:
 
-I started a summary:
+1. [Original Post]({filename}../media/bad_apologetics_2021.md)
+2. [Part 1: 1-3 hr]({filename}../religion/bad_apologetics_2021_summary_part_1.md)
+3. [Part 2: 3-6 hr]({filename}../religion/bad_apologetics_2021_summary_part_2.md)
+4. [Part 3: 6-9 hr]({filename}../religion/bad_apologetics_2021_summary_part_3.md)
 
-- [Part 1: 0:0:0 to 2:52:00](https://bblais.github.io/posts/2022/Mar/30/bad-apologetics-on-bayes-part-1/)
-- Part 2: coming soon
+
+[TOC]
 
 
-This isn't a complete log of everything said, but I tried to include the main points.  I also started with a transcript, and edited it for clarity (e.g. removing ums, and repetition) but there may still be some weird typos from the computer generated transcript that I didn't catch. I will try to quote Nathan, James, Kamil and myself if it comes from the episode.  All other text is mine, commentary either at the time or sometime afterward. 
+And the link for the full video on YouTube: https://youtu.be/yeCBpO7pSRM
+
+## TLDR
 
 The main issues are:
 
@@ -26,4 +31,6 @@ The main issues are:
 5. they don't motivate their numbers with comparable rare events, or they would have seen that their calculation of an odds ratio of $10^{44}$ is ridiculous
 6. they uncritically take the claims in the New Testament as the actual data we have, as opposed to the fact that what we have are ancient *texts* that contain those claims
 7. an uncritical view of New Testament documents, and an unprofessional response to traditional scholarship
-
+8. they don't even seem to think about why something would be explained by their preferred resurrection hypothesis.  It's just assumed that everything is explained. And then they ask, how do you, skeptic, explain this?
+9. they make up claims with no supporting citations (especially with respect to how new communities form and how hallucinations work)
+10. they don't make the very easy step of looking at what's actually happening in the world with religious people and actually getting some data, getting some background knowledge about how people actually function 
