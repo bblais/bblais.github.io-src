@@ -1,0 +1,106 @@
+{
+  "main": {
+    "id": "3d59e350d3d53067",
+    "type": "split",
+    "children": [
+      {
+        "id": "55f191394b8bd29e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f2f6df6208dfc75",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "551e881e0e993870",
+    "type": "split",
+    "children": [
+      {
+        "id": "a300c689d84be404",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da6638ee868209fd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "a6b6b63e2c2be813",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "images",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 432
+  },
+  "right": {
+    "id": "0b043ad8a8f4f531",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e811f6e6e039d0b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cbab8cea7a79e707",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9f2f6df6208dfc75",
+  "lastOpenFiles": [
+    "media/bad_apologetics_feb_2022.md",
+    "religion/Skepticism and Dubious Medical Procedures.md",
+    "media/still_unbelievable_2022.md",
+    "religion/The God of the Philosophers.md",
+    "science/One Rule to Rule Them All.md",
+    "math/MCMC Simple - Cauchy.md",
+    "determinism_entropy.md",
+    "science/10 Dogmas of Science.md",
+    "science/2021-04-09 Attraction.md",
+    "science/2022-01-06 Gillespie.md"
+  ]
+}

@@ -3,7 +3,7 @@ title: Presentations
 
 # 2022
 
-* Blais, B.S., Gaier, E.,Xiao, S. *[Modeling amblyopia treatment responses through principles of synaptic plasticity]()*. May 2022. ARVO Conference.
+* Blais, B.S., Gaier, E.,Xiao, S. *[Modeling amblyopia treatment responses through principles of synaptic plasticity](https://github.com/bblais/Amblyopia)*. May 2022. ARVO Conference.
 > The BCM principles of activity-dependent synaptic plasticity are sufficient to model the ocular dominance shifts underlying the development of and recovery from amblyopia. The importance of the dichoptic masks and contrast disparity levels on the efficacy of the binocular therapy model suggests that these parameters require precise refinement to optimize amblyopia recovery.
 
 # 2018
