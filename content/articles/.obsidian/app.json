@@ -4,5 +4,6 @@
   "livePreview": true,
   "attachmentFolderPath": "images",
   "spellcheck": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "newFileLocation": "current"
 }
