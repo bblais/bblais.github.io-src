@@ -85,7 +85,7 @@ $$
 We can now write down with this simple model, the probability of a miracle given this data,
 $$
 \begin{aligned}
-P(M|C) &= \frac{P(D|M)P(M)}{P(D|M)P(M)+P(D|\bar{M})P(\bar{M})} \\
+P(M|C) &= \frac{P(C|M)P(M)}{P(C|M)P(M)+P(C|\bar{M})P(\bar{M})} \\
 &=\frac{1\cdot m}{1\cdot m + a\cdot (1-m)} = \frac{m}{m+a\cdot(1-m)}
 \end{aligned}
 $$

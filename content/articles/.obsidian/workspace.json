@@ -8,18 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6c9f7c0abc313ea0",
+            "id": "a49481f90abdc78c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programming/ChatGPT On Code.md",
+                "file": "religion/Claims versus Evidence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "499bb7e7cd9417b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "religion/Extraordinary claims and extraordinary evidence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8bc86d99505aacb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "religion/Probability and the Independence of Testimony.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ebed78ac2682706",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "religion/Claims versus Evidence.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -56,6 +93,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "8dd4ad0243f0c6b0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -77,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/ChatGPT On Code.md",
+                "file": "religion/Claims versus Evidence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,17 +149,38 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6c9f7c0abc313ea0",
+  "active": "4ebed78ac2682706",
   "lastOpenFiles": [
+    "religion/Extraordinary claims and extraordinary evidence.md",
+    "religion/Claims versus Evidence.md",
+    "images/manki-kim-12Kb5ynfxso-unsplash.jpg",
+    "religion/More Undesigned Coincidences.md",
+    "religion/Probability and the Independence of Testimony.md",
+    "religion/The God of the Philosophers.md",
+    "media/still_unbelievable_2022.md",
+    "religion/bad_apologetics_2021_summary_part_3.md",
+    "religion/Hume on Testimony.md",
+    "religion/Bayes Nets and Religious Claims.md",
+    "media/bad_apologetics_feb_2022.md",
+    "images/robert-lukeman-_RBcxo9AU-U-unsplash.jpg",
+    "images/david-clode-wygfGUqOmqs-unsplash.jpg",
+    "religion/Probability and Testimony.md",
+    "images/Pasted image 20230327100056.png",
+    "images/Pasted image 20230327100027.png",
+    "images/Pasted image 20230327100009.png",
+    "images/Pasted image 20230326194340.png",
+    "images/Pasted image 20230226184237.png",
+    "images/Pasted image 20230226182719.png",
+    "science/2022-01-13 Reproducing Chemical Reaction Paper.md",
+    "science/2022-05-31 - Why do we need double-blind studies?.md",
+    "science/One Rule to Rule Them All.md",
+    "science/2020-07-18 - Write Up AP Physics Problem.md",
+    "programming/ChatGPT On Code.md",
     "programming/mp3_to_audiobook.md",
     "science/2022-01-06 Gillespie.md",
-    "programming/ChatGPT On Code.md",
     "programming/lmfit with pyndamics.md",
     "religion/probability of resurrection.md",
     "religion/3 Reasons Why Belief In God Makes Sense …or not.md",
-    "media/bad_apologetics_feb_2022.md",
-    "religion/Skepticism and Dubious Medical Procedures.md",
-    "media/still_unbelievable_2022.md",
-    "religion/The God of the Philosophers.md"
+    "religion/Skepticism and Dubious Medical Procedures.md"
   ]
 }
