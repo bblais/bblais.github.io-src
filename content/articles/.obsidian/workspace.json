@@ -8,55 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a49481f90abdc78c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "religion/Claims versus Evidence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "499bb7e7cd9417b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "religion/Extraordinary claims and extraordinary evidence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8bc86d99505aacb0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "religion/Probability and the Independence of Testimony.md",
+                "file": "religion/Probability and Testimony.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4ebed78ac2682706",
+            "id": "d71d63e231ad5f4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "religion/Claims versus Evidence.md",
+                "file": "religion/Fine Tuning - Probability.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a489b0fbd86a6fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "religion/Fine Tuning - Not convincing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 432
+    "width": 432,
+    "collapsed": true
   },
   "right": {
     "id": "0b043ad8a8f4f531",
@@ -122,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "religion/Claims versus Evidence.md",
+                "file": "religion/Fine Tuning - Probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,28 +138,34 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "4ebed78ac2682706",
+  "active": "d71d63e231ad5f4d",
   "lastOpenFiles": [
-    "religion/Extraordinary claims and extraordinary evidence.md",
-    "religion/Claims versus Evidence.md",
-    "images/manki-kim-12Kb5ynfxso-unsplash.jpg",
-    "religion/More Undesigned Coincidences.md",
-    "religion/Probability and the Independence of Testimony.md",
-    "religion/The God of the Philosophers.md",
-    "media/still_unbelievable_2022.md",
-    "religion/bad_apologetics_2021_summary_part_3.md",
-    "religion/Hume on Testimony.md",
-    "religion/Bayes Nets and Religious Claims.md",
-    "media/bad_apologetics_feb_2022.md",
-    "images/robert-lukeman-_RBcxo9AU-U-unsplash.jpg",
-    "images/david-clode-wygfGUqOmqs-unsplash.jpg",
+    "images/Pasted image 20230619085149.png",
+    "images/Pasted image 20230619084853.png",
+    "images/Pasted image 20230619084043.png",
+    "images/Pasted image 20230619083432.png",
+    "images/Pasted image 20230619083003.png",
+    "images/Pasted image 20230619082643.png",
+    "books/sfe.md",
+    "religion/Fine Tuning - Probability.md",
+    "religion/Fine Tuning - Not convincing.md",
     "religion/Probability and Testimony.md",
-    "images/Pasted image 20230327100056.png",
-    "images/Pasted image 20230327100027.png",
-    "images/Pasted image 20230327100009.png",
-    "images/Pasted image 20230326194340.png",
-    "images/Pasted image 20230226184237.png",
-    "images/Pasted image 20230226182719.png",
+    "religion/Undesigned Coincidences.md",
+    "religion/bad_apologetics_2021_summary_part_3.md",
+    "religion/The God of the Philosophers.md",
+    "religion/Bayes Nets and Religious Claims.md",
+    "religion/Claims versus Evidence.md",
+    "religion/Probability and the Independence of Testimony.md",
+    "religion/More Undesigned Coincidences.md",
+    "religion/Extraordinary claims and extraordinary evidence.md",
+    "religion/Hume on Testimony.md",
+    "images/Pasted image 20230615095641.png",
+    "images/Pasted image 20230615095547.png",
+    "images/jon-flobrant-_r19nfvS3wY-unsplash 1.jpg",
+    "images/jon-flobrant-_r19nfvS3wY-unsplash.jpg",
+    "images/manki-kim-12Kb5ynfxso-unsplash.jpg",
+    "media/still_unbelievable_2022.md",
+    "media/bad_apologetics_feb_2022.md",
     "science/2022-01-13 Reproducing Chemical Reaction Paper.md",
     "science/2022-05-31 - Why do we need double-blind studies?.md",
     "science/One Rule to Rule Them All.md",
@@ -180,7 +175,6 @@
     "science/2022-01-06 Gillespie.md",
     "programming/lmfit with pyndamics.md",
     "religion/probability of resurrection.md",
-    "religion/3 Reasons Why Belief In God Makes Sense …or not.md",
-    "religion/Skepticism and Dubious Medical Procedures.md"
+    "religion/3 Reasons Why Belief In God Makes Sense …or not.md"
   ]
 }
