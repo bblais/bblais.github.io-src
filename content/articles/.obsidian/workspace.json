@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "religion/Fine Tuning - Probability.md",
+                "file": "religion/Fine Tuning - Not convincing.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 432,
-    "collapsed": true
+    "width": 432
   },
   "right": {
     "id": "0b043ad8a8f4f531",
@@ -111,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "religion/Fine Tuning - Probability.md",
+                "file": "religion/Fine Tuning - Not convincing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,6 +139,14 @@
   },
   "active": "d71d63e231ad5f4d",
   "lastOpenFiles": [
+    "religion/Claims versus Evidence.md",
+    "religion/Hume on Testimony.md",
+    "religion/Bayes Nets and Religious Claims.md",
+    "religion/Fine Tuning - Not convincing.md",
+    "religion/Fine Tuning - Probability.md",
+    "{filename}../religion/Fine.md",
+    "{filename}../religion",
+    "{filename}..",
     "images/Pasted image 20230619085149.png",
     "images/Pasted image 20230619084853.png",
     "images/Pasted image 20230619084043.png",
@@ -147,23 +154,17 @@
     "images/Pasted image 20230619083003.png",
     "images/Pasted image 20230619082643.png",
     "books/sfe.md",
-    "religion/Fine Tuning - Probability.md",
-    "religion/Fine Tuning - Not convincing.md",
     "religion/Probability and Testimony.md",
     "religion/Undesigned Coincidences.md",
     "religion/bad_apologetics_2021_summary_part_3.md",
     "religion/The God of the Philosophers.md",
-    "religion/Bayes Nets and Religious Claims.md",
-    "religion/Claims versus Evidence.md",
     "religion/Probability and the Independence of Testimony.md",
     "religion/More Undesigned Coincidences.md",
     "religion/Extraordinary claims and extraordinary evidence.md",
-    "religion/Hume on Testimony.md",
     "images/Pasted image 20230615095641.png",
     "images/Pasted image 20230615095547.png",
     "images/jon-flobrant-_r19nfvS3wY-unsplash 1.jpg",
     "images/jon-flobrant-_r19nfvS3wY-unsplash.jpg",
-    "images/manki-kim-12Kb5ynfxso-unsplash.jpg",
     "media/still_unbelievable_2022.md",
     "media/bad_apologetics_feb_2022.md",
     "science/2022-01-13 Reproducing Chemical Reaction Paper.md",

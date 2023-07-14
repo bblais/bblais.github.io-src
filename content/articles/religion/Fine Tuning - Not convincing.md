@@ -1,5 +1,7 @@
 Title: Why the fine tuning argument is not convincing to me
-status: draft
+subtitle: (Part 1 of 2)
+status: published
+date: July 14, 2023
 image: jon-flobrant-_r19nfvS3wY-unsplash 1.jpg
 
 The fine-tuning argument is an argument in philosophy and cosmology that suggests the existence of a fine-tuned universe points towards the existence of a intelligent designer or a purpose behind the universe.  It starts with the observation that the fundamental constants and parameters in the universe, such as the strength of gravity, the electromagnetic force, and the mass of elementary particles, have specific values that, if altered even slightly, would render the universe inhospitable to life.  The "even slightly" is a modest way of putting it, to say the least.  
@@ -29,8 +31,8 @@ Since (1) is super unlikely, and we have no good reason to suspect (2), then (3)
 
 The first problem is not that we have "a set of parameters that are set to specific values within supremely small tolerances". The problem is that we have "current models that have parameters that are only determined empirically (they aren't determined by the theory) that seem to have drastic effects on the theories when the parameters are modified".  How is this different?  
 
-1. It is possible that the fine-tuning of a parameter is an illusion.  We might have a mistake, or an incomplete knowledge of the system, such that the fine tuning doesn't exist.  The expansion rate of the universe is one such case (covered in part of Sean Carroll's debate with William Lane Craig, responding to the Fine Tuning argument.  [Responding to the "Fine Tuning" Argument for God (Sean Carroll)](https://www.youtube.com/watch?v=R97IHcuyWI0&t=363s&pp=ygUYc2VhbiBjYXJyb2xsIGZpbmUgdHVuaW5n "Responding to the "Fine Tuning" Argument for God (Sean Carroll)")), where the naive calculation finds that the probability of that value is 1 part in $10^{60}$ but the complete calculation with general relativity shows that the the probability of that value is equal to 1 -- it has to be that value.  Not all parameters are going to be like this, but given our limited understanding, we may not be able to rule that out.
-2. It is possible that the parameters can't be modified independently -- modifying one necessarily modifies another.  In this way, the fine tuning done naively would greatly overestimate the narrowness of the tuning.  
+1. It is possible that the fine-tuning of a parameter is an illusion.  We might have a mistake, or an incomplete knowledge of the system, such that the fine tuning doesn't exist.  The expansion rate of the universe is one such case (covered in part of Sean Carroll's debate with William Lane Craig, responding to the Fine Tuning argument.  [Responding to the "Fine Tuning" Argument for God (Sean Carroll)](https://www.youtube.com/watch?v=R97IHcuyWI0&t=363s&pp=ygUYc2VhbiBjYXJyb2xsIGZpbmUgdHVuaW5n "Responding to the "Fine Tuning" Argument for God (Sean Carroll)")), where the naive calculation finds that the probability of that value is 1 part in $10^{60}$ but the complete calculation with general relativity shows that the the probability of that value is equal to 1 -- it *has* to be that value.  Not all parameters are going to be like this, but given our limited understanding, we may not be able to rule that out in many cases.
+2. It is possible that the parameters can't be modified independently -- modifying one may necessarily modify another.  In this way, the fine tuning done naively would greatly overestimate the narrowness of the tuning.  
 
 ## The second problem is with "life"
 
@@ -56,7 +58,7 @@ For a very detailed covering of this topic see the video from Digital Gnosis: [B
 
 Since God could create anything, why would that make it likely that the physical parameters be fine tuned?  God could...
 
-1. make a universe which is hostile for life in any way, and just miracle-up life
+1. make a universe which is hostile for life in every way, and just "miracle-up" life
 2. make a universe which is not fine tuned
 3. make minds not dependent on physical matter
 
@@ -64,7 +66,7 @@ Given these scenarios, seeing a fine-tuned universe could easily count as eviden
 
 ## What to do when you aren't an expert
 
-One of the issues I face is what to do when you're not an expert.  I have read a lot, and have a background in physics and neuroscience but I'm not a cosmologist.   How does one weigh arguments when seeming experts are at odds with each other?  I have to ask this question many times when the field is history or political science where I am admittedly out of my depth.  
+One of the issues I face is "what to do when you're not an expert".  How do you figure out what is most likely true?  I have read a lot, and have a background in physics and neuroscience but I'm not a cosmologist.   How does one weigh arguments when seeming experts are at odds with each other?  Personally, I have to ask this question many times when the field is history or political science where I am admittedly out of my depth.  
 
 There are a number of strategies that I use in these cases.
 
@@ -73,3 +75,4 @@ There are a number of strategies that I use in these cases.
 3. Look for cases where one side misrepresents the claims of the other side.  This is a real red-flag.
 4. Choose one particular narrow claim and try to verify that.  I do this with political cases, where each side may quote some data on their side as a small part of a larger argument.  I can look up that data and see which side is better representing it.  If one side is distorting or misleading their conclusions from this data, it is more likely they are doing it in other cases.
 
+I plan on writing a follow-up to this post framing the fine-tuning argument probabilistically but this post serves as an introduction to my perspective on this problem.
