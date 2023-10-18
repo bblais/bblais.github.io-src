@@ -1,6 +1,11 @@
 title: Publications
 [TOC]
 
+# 2023
+
+*  Gregor, K., & Blais, B. (2023). [Is Name Popularity a Good Test of Historicity?: A Statistical Evaluation of Richard Bauckham’s Onomastic Argument](https://brill.com/view/journals/jshj/aop/article-10.1163-17455197-bja10023/article-10.1163-17455197-bja10023.xml). _Journal for the Study of the Historical Jesus_, _1_(aop), 1-32.
+> In Jesus and the Eyewitnesses, Richard Bauckham argues that the popularity of personal names in Gospels-Acts corresponds remarkably well to name popularity among late ancient Palestinian Jews and that this can only be the case if Gospels-Acts characters are in most cases historical as opposed to invented in the process of 'anonymous community transmission'. Unlike the rest of the book, this argument has almost entirely evaded scholarly scrutiny. We re-examine Bauckham's conclusions, asserted with a remarkably high level of confidence but almost entirely without an actual statistical evaluation of his onomastic data, and perform the appropriate statistical analysis on the most recent dataset of Palestinian Jewish male names from 4 BCE to 73 CE. We show that Bauckham's thesis of the Gospels being based on eyewitness testimony offers no advantage in explaining the observed correspondence between name popularity in Gospels-Acts and in the contemporary Palestinian Jewish population over alternative models of name assignment, which Bauckham is meant to refute. This is because the sample of Gospels-Acts characters that are in contention of being invented in the first place is relatively small. This prevents any strong conclusions for or against Bauckham's thesis from being drawn based on the limited Gospels-Acts data. Moreover, our statistical analysis identifies some, albeit weak, evidence against Bauckham's thesis.
+
 # 2022
 
 * Squadrani, L., Curti, N. ,  Giampieri, E., Remondini, D,. Blais, B.S.,  Castellani, G. [Effectiveness of biological inspired neural network models in learning and patterns memorization.](https://www.mdpi.com/1099-4300/24/5/682)  Entropy Vol 24 p 682 (2022) https://doi.org/10.3390/e24050682 [pdf](https://www.dropbox.com/s/e3bc8l67l6dbc1p/entropy-24-00682.pdf?dl=0)

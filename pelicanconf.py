@@ -37,11 +37,10 @@ SUMMARY_MAX_LENGTH = 30
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-ABOUT = """I am a Scientist, Skeptic, and Professor at <a href='http://www.bryant.edu/'>Bryant University</a> and the <a href='https://www.brown.edu/research/projects/brain-and-neural-systems/'>IBNS, Brown University</a>.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems."""
+ABOUT = """I am a Scientist, Skeptic, and Professor at <a href='http://www.bryant.edu/'>Bryant University</a>.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems."""
 
 ABOUT_LONG= """
-I am a Scientist, Skeptic, and Professor at <a href='http://www.bryant.edu/'>Bryant University</a> 
-and the <a href='https://www.brown.edu/research/projects/brain-and-neural-systems/'>IBNS, Brown University</a>.  
+I am a Scientist, Skeptic, and Professor at <a href='http://www.bryant.edu/'>Bryant University</a>.  
 My goal is to make technical subject matters widely accessible and to use my analytical and computational skills 
 to assist anyone with their science-related problems.
 <p>
@@ -90,9 +89,14 @@ THEME='themes/html5up-editorial - bblais'
 DIRECT_TEMPLATES = ['index','about','archives', 'contact','thanks','search','tags']
 
 from markdown import markdown
-from mdx_urlize import UrlizeExtension
 MARKDOWN = {
-    'extensions':['attr_list','codehilite','extra','meta','toc','footnotes',UrlizeExtension()],
+    'extensions':['attr_list',
+    'codehilite',
+    'extra',
+    'meta',
+    'toc',
+    'footnotes',
+    ],
     'extension_configs': {
         'markdown.extensions.codehilite': {'noclasses':True,'pygments_style':'native'},
         'markdown.extensions.codehilite': {'css_class':'highlight'},

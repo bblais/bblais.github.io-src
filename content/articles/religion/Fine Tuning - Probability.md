@@ -1,10 +1,11 @@
 Title: Fine Tuning
-subtitle: A Bayesian Approach
+subtitle: -- A Bayesian Approach (Part 2 of 2)
+date: Sep 7, 2023
 status: draft
 tags: statistics, Bayesian
 image: jon-flobrant-_r19nfvS3wY-unsplash 1.jpg
 
-In a [previous post]({filename}../religion/Fine Tuning - Not convincing.md) I outline the fine tuning argument, and some of the reasons I find it unconvincing.  In this post I walk through the same material but use probability theory to describe it.  In some cases I think this approach makes the argument clearer, perhaps in other cases it make it more opaque -- your mileage may vary.  At any rate, it should help a reader go through some of Luke Barnes's work like [*"A Reasonable Little Question: A Formulation of the Fine-Tuning Argument"*](https://quod.lib.umich.edu/e/ergo/12405314.0006.042/--reasonable-little-question-a-formulation-of-the-fine-tuning?rgn=main;view=fulltext) which I read after doing the work for this post.
+In a [previous post]({filename}../religion/Fine Tuning - Not convincing.md) I outline the fine tuning argument, and some of the reasons I find it unconvincing.  In this post I walk through the same material but use probability theory to describe it, translating the math to pictures wherever I can.  In some cases I think this approach makes the argument clearer, perhaps in other cases it make it more opaque -- your mileage may vary.  At any rate, it should help a reader go through some of Luke Barnes's work like [*"A Reasonable Little Question: A Formulation of the Fine-Tuning Argument"*](https://quod.lib.umich.edu/e/ergo/12405314.0006.042/--reasonable-little-question-a-formulation-of-the-fine-tuning?rgn=main;view=fulltext) which I read after doing the work for this post.
 
 ## The setup
 
@@ -36,7 +37,7 @@ P(N|\text{life})&\sim \int_\phi P(\text{life}|\phi,N)P(\phi|N)P(N) d\phi \\
 P(T|\text{life})&\sim \int_\phi P(\text{life}|\phi,T)P(\phi|T)P(T) d\phi 
 \end{aligned}
 $$
-We can take the priors to be equal, $P(N)=P(T)=0.5$ for the moment, which is equivalent to ignoring the priors -- something apologists always do.  The argument then becomes that the likelihood ratios are so skewed that no reasonable difference in priors could overcome it.  This will come up again in the objections.
+If we can take the priors to be equal, $P(N)=P(T)=0.5$ for the moment it  is equivalent to ignoring the priors -- something apologists always do.  The argument then becomes that the likelihood ratios are so skewed that no reasonable difference in priors could overcome it.  This will come up again in the objections.
 
 ## The argument
 
@@ -67,13 +68,13 @@ We show how the terms in the equation above map to these statements of the argum
 
 ### A short digression on the integral
 
-The marginalization step we introduced to "get rid of" the parameter, $\phi$, for example,
+The marginalization step we introduced to "get rid of" the parameter, $\phi$, is the way to take into account the uncertainty of the parameter in a rigorous way.  Mathematically it is expressed as an integral,
 $$
 \begin{aligned}
 \int_\phi P(\text{life}|\phi,N)P(\phi|N) d\phi 
 \end{aligned}
 $$
-is way to take into account the uncertainty of a parameter in a rigorous way.  As a picture it is easy to see it as the percent overlap of the two functions, as shown here:
+As a picture it is easy to see it as the percent overlap of the two functions, as shown here:
 
 ![[Pasted image 20230619084043.png]]
 
@@ -86,12 +87,9 @@ So, the fine tuning argument boils down to the idea that the percent overlap in 
 ![[Pasted image 20230619085149.png]]
 
 
-
-
 ## Objections
 
 ### The priors are not negligible nor are they equal
-
 
 
 ### $P(\phi|N)$ might be narrow

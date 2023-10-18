@@ -1,4 +1,4 @@
-I am a Scientist, Skeptic, and Professor of [Science and Technology] at [Bryant University] and the [Institute for Brain and Neural Systems], Brown University.  I have wide ranging interests in physics, climate, neuroscience, machine learning, and statistics.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems.
+I am a Scientist, Skeptic, and Professor of [Science and Technology] at [Bryant University].  I have wide-ranging interests in physics, climate, neuroscience, machine learning, and statistics.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems.
 
 Some of my interests,
 
@@ -22,5 +22,4 @@ You can [find my CV here].
 
 [Science and Technology]: http://web.bryant.edu/~science
 [Bryant University]: http://www.bryant.edu
-[Institute for Brain and Neural Systems]: http://www.brown.edu/research/projects/brain-and-neural-systems/
 [find my CV here]: {{ SITEURL }}/static/cv.pdf

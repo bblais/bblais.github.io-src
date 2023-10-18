@@ -2,6 +2,7 @@ Title: Miracles with Brian Blais
 Date: 2022-11-01
 Tags: religion, miracles
 image: media/stillunbelievable2020_1.jpg
+status: published
 
 Matthew and Andrew welcome me back to talk about miracles. Andrew gives an update on the failed prayer to heal his eyesight, and towards the end of the show, there is a special appearance by David from Skeptics and Seekers.   We reference the [long discussion about miracles] from my appearance on the Digital Gnosis YouTube channel.
 
