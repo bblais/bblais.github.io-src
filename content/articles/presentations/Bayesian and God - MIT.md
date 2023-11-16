@@ -11,5 +11,6 @@ Links:
 
 - [https://calendar.mit.edu/event/probability_and_god](https://calendar.mit.edu/event/probability_and_god)
 - [pdf of the talk]({static}/static/MIT Talk - Oct 2023.pdf)
+- [video of the talk](https://youtu.be/RFq1134pIc4?si=Q9OnMzMN1BkcbDDy)
 
 

@@ -12,7 +12,7 @@ My first approach with such work is to reproduce it quantitatively, so that I ca
 
 ### The notation is sloppy
 
-Sometimes the post refers to a prior as $P(T)$ and sometimes as $P(M|K)$, where $K$ is background knowledge.  This should be $P(T|K)$ with the "$|K$" through the entire analysis (as ET Jaynes does).  If you want to be lazy (as I usually do 😀) then drop it everywhere and have $P(M)$ as your prior.  
+Sometimes the post refers to a prior as $P(T)$ and sometimes as $P(M|K)$, where $K$ is background knowledge.  This should be $P(T|K)$ with the "$|K$" through the entire analysis (as [ET Jaynes](https://bayes.wustl.edu/etj/node1.html) does).  If you want to be lazy (as I usually do 😀) then drop it everywhere and have $P(M)$ as your prior.  
 
 ###  The probability values are not well laid out.  
 

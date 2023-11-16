@@ -1,12 +1,12 @@
 Title: Can Science Explain Everything?
-Date: 2019-02-14
+Date: 2023-11-15
 Subtitle: Unbelievable Project: John Lennox vs Peter Atkins - 2nd February 2019
 Tags: unbelievable
-status: draft
+status: published
 image: roman-mager-59976-unsplash.jpg
 
 
-Can science explain everything?  Christian guest John Lennox is emeritus Professor of Mathematics and Philosophy of Science at Oxford University. Atheist guest Peter Atkins is emeritus Professor of Chemistry at Oxford University.  The episode can be found on the [Unbelievable website](https://www.premierchristianradio.com/Shows/Saturday/Unbelievable/Episodes/Unbelievable-John-Lennox-vs-Peter-Atkins-Can-Science-Explain-Everything-Live-Debate).
+Can science explain everything?  Christian guest John Lennox is emeritus Professor of Mathematics and Philosophy of Science at Oxford University. Atheist guest Peter Atkins is emeritus Professor of Chemistry at Oxford University.  The episode can be found on the [Unbelievable website](https://www.premier.plus/unbelievable/podcasts/episodes/john-lennox-vs-peter-atkins-can-science-explain-everything-live-debate).
 
 * Justin Brierley - Christian Moderator 
 {. .theist}
@@ -27,10 +27,12 @@ Here John is seemingly equating the word "believe" with "faith" even though I’
 {.me}
 
 As for whether science can explain everything I would say "I don’t know". There may be limits but we haven’t yet seen those limits. There have been people in the past who have said that certain things were impossible to measure:
+{.me}
 
 > On the subject of stars, all investigations which are not ultimately reducible to simple visual observations are ... necessarily denied to us. While we can conceive of the possibility of determining their shapes, their sizes, and their motions, we shall never be able by any means to study their chemical composition or their mineralogical structure ... Our knowledge concerning their gaseous envelopes is necessarily limited to their existence, size ... and refractive power, we shall not at all be able to determine their chemical composition or even their density... I regard any notion concerning the true mean temperature of the various stars as forever denied to us. - [August Compte, 1835, *Cours de la Philosophie Positive*](http://www.faculty.virginia.edu/rwoclass/astr1210/comte.html).
 
 and
+{.me}
 
 > In "LENS-LIKE ACTION OF A STAR BY THE DEVIATION OF LIGHT IN THE GRAVITATIONAL FIELD", "There is no hope of observing this phenomenon directly" - [Einstein, 1936, *Science*](http://science.sciencemag.org/content/84/2188/506).
 

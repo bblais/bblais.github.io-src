@@ -1,3 +1,22 @@
+.me {
+    color: purple;
+    font-weight: bold;
+}
+.theist {
+    color: Green;
+}
+.tq {
+    color: Green;
+    font-weight: bold;
+}
+.atheist {
+    color: DarkBlue;
+}
+.aq {
+    color: DarkBlue;
+    font-weight: bold;
+}
+
 .toc {
     border-radius: 0.5em;
     margin-bottom: 1em;
