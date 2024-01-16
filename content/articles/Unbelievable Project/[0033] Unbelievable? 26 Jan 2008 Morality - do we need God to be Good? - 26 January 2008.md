@@ -35,7 +35,7 @@ Marilyn - It's not much easier for a Christian to navigate through these moral d
 
 The theist is making the claim that basing morality on God helps you through these moral dilemmas, and I think the atheist is absolutely right.  I am, and she is, more or less Utilitarian.  Sam Harris says that the issue is with making sure that your utility function is broad enough to handle complex consequences.{.me}
 
-Marilyn - Even with the New Testamant, you have to do interpreting and selecting and so one.  *"Who is actually doing that?    You're doing it!"*{.aq} {.atheist}
+Marilyn - Even with the New Testament, you have to do interpreting and selecting and so on.  *"Who is actually doing that?    You're doing it!"*{.aq} {.atheist}
 
 Gavin - We have to step back and ask *"Why are we even wasting our time talking about this?, why does it matter that we are more humane?  How do we know what more human means?"*{.tq} {.theist}
 
@@ -65,7 +65,7 @@ Gavin - There are *"clearer teachings"*{.tq} in the Bible, and the reason that t
 
 I'd like to ask why the *"clearer teachings"*{.tq} in the Bible was not clear to people even 200 years ago?  I'd like to ask why there was a *"consensus about what is implied for Christian moral behavior"*{.tq} 200 years ago that included owning slaves, and treating women as inferiors, and yet Doug is not willing to claim that these are part of the consensus now...if this so-called clear message can change across time, then it is not clear.{.me}
 
-Here's something I never really thought about before.  In the Bible we have dictates, like "turn the other cheek", without any context.  What happens is people then apply their context, or impose it, and thus can justify nearly anything.  A moral message without the context is not a very useful one.  Determining the correct context determines the message, and thus one is doing Secular Moral Reasoning in the end anyway. {.me}
+Here's something I never really thought about before.  In the Bible we have dictates, like "turn the other cheek", without any context.  What happens is people then apply their context or impose it, and thus can justify nearly anything.  A moral message without context is not a very useful one.  Determining the correct context determines the message, and thus one is doing Secular Moral Reasoning in the end anyway. {.me}
 
 Because we do this so naturally, people don't seem to recognize that they themselves are the author of their moral code.{.me}
 

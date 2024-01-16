@@ -1,7 +1,8 @@
 Title: "Why I became an atheist" Part 1 and Part 2- John Loftus & Peter May - 05 April 2008, 12 April 2008
-Date: 2014-01-15
+Date: 2023-11-19
 Tags: unbelievable, creation, science, harmonization, skeptic
-Status: draft
+Status: published
+image: prometheus-design-45sFSKai4Q4-unsplash.jpg
 
 As part of the [Unbelievable Project], I am taking notes and "arm-chair" responding to each of the [Unbelievable podcast] episodes 
 satisfying a set of [simple rules].
@@ -31,7 +32,7 @@ Peter - outlines the argument from first cause:{.theist}
 
 This argument is totally unconvincing to me, and I doubt many really have faith due to this argument.  What are my biggest problems?  Here is a short list:{.me}
 
-1. "everything that begins to exist has a cause" - this is stated, but never demonstrated.  In fact there are uncaused events in quantum mechanics.{.me}
+1. "everything that begins to exist has a cause" - this is stated, but never demonstrated.  In fact, there are uncaused events in quantum mechanics.{.me}
 2. "the universe has a beginning" - our universe, perhaps, had a singularity where time and space started.  Is that a beginning?  Perhaps.  Perhaps it is part of a multi-verse that is eternal, and this is just one event in it.  Given this possibility, even this claim doesn't do what he'd like it to do{.me}
 3. "therefore the universe has a cause"  - let's, for the sake of argument, go along with this statement.  Does it really tell us about the nature of the cause?  It could be a natural cause, but something out of time and space.  There could be some other dimension, or nature, that we don't understand -- still natural -- that causes universes.  It does not require a mind, and thus does not require any personality.{.me}
 4. Has Peter demonstrated that minds can exist outside of a body?  Is there even a *single* example of this?{.me}
@@ -91,11 +92,11 @@ The [Outsider Test of Faith], named by John Loftus, is the following:{.me}
 
 >Test your beliefs as if you were an outsider to the faith you are evaluating. If your faith stands up under muster, then you can have your faith. If not, abandon it, for any God who requires you to believe correctly when we have this extremely strong tendency to believe what we were born into, surely should make the correct faith pass the outsider test. If your faith cannot do this, then the God of your faith is not worthy of being worshipped.{.aq} {.atheist}
 
-The test relies on the fact that people tend to believe the things that they were raised with.  In addition, we often have a selection bias, which is that we accept those facts which fit our current beliefs and ignore or discount those that run counter to our current beliefs.  This is one of the reasons we have controlled studies in science, and peer review, and the demand for replicability in science.  We have to make a process to artificially overcome these biases, because the biases keep us from finding the truth.  I tell my students to try to be *more* skeptical of claims that support what you already believe, to try to compensate a little bit for the selection bias.{.me}
+The test relies on the fact that people tend to believe the things that they were raised with.  In addition, we often have a selection bias, which is that we accept those facts that fit our current beliefs and ignore or discount those that run counter to our current beliefs.  This is one of the reasons we have controlled studies in science, and peer review, and the demand for replicability in science.  We have to make a process to artificially overcome these biases because the biases keep us from finding the truth.  I tell my students to try to be *more* skeptical of claims that support what they already believe, to try to compensate a little bit for the selection bias.{.me}
 
 Peter - *"I noticed in your website you say there is a lot of doubt for any supposed historical event.  Now this seems to be an extraordinary degree of skepticism because everything we know is historic, even last week's program."*{.tq}{.theist}
 
-I don't think that this is hyper-skepticism, because it depends on the prior probability for the claim.  Did Socrates exist?  Perhaps.  Did Hitler exist?  Almost certainly.  Did Julius Caesar exist?  Almost certainly, although somewhat less likely than Hitler.  Now you might be thinking that this is hyper-skepticism.  A non-zero probability for Hitler *not* existing?  It is possible that I'm in a Truman Show type environment, in which case every historical thing I have learned is suspect.  I don't think it is likely, but it is possible.  In fact I think it is so unlikely that I'm willing to consider Hitler and Julius Caesar as historical facts, but I am not willing to consider Socrates or Jesus as historical facts.  But let me stress something at this point - each and every example I've used in this paragraph was for the existence of a person, something which has a decently high prior probability, and definitely does not violate any physical laws or anything like that.  The second you introduce claims like, "Person A was raised from the dead", it doesn't matter much if it was 2000 years ago or [40 years ago].  The more recent claim is more likely, but not so much that I would take it seriously.  Everything comes down to probability.{.me}
+I don't think that this is hyper-skepticism because it depends on the prior probability for the claim.  Did Socrates exist?  Perhaps.  Did Hitler exist?  Almost certainly.  Did Julius Caesar exist?  Almost certainly, although somewhat less likely than Hitler.  Now you might be thinking that this is hyper-skepticism.  A non-zero probability for Hitler *not* existing?  It is possible that I'm in a Truman Show type environment, in which case every historical thing I have learned is suspect.  I don't think it is likely, but it is possible.  In fact, I think it is so unlikely that I'm willing to consider Hitler and Julius Caesar as historical facts, but I am not willing to consider Socrates or Jesus as historical facts.  But let me stress something at this point - each and every example I've used in this paragraph was for the existence of a person, something which has a decently high prior probability, and definitely does not violate any physical laws or anything like that.  The second you introduce claims like, "Person A was raised from the dead", it doesn't matter much if it was 2000 years ago or [40 years ago].  The more recent claim is more likely, but not so much that I would take it seriously.  Everything comes down to probability.{.me}
 
     
 [Unbelievable Project]: http://brianblais.wordpress.com/2013/02/27/unbelievable-project-a-non-believers-armchair-perspective-on-six-years-of-christian-debates/

@@ -1,6 +1,12 @@
 title: Presentations
 [TOC]
 
+# 2023
+
+* Blais, B.S. *[What Do Zombies, Vampires, and Three-Sided Coins Have in Common? A Research Scientist's Journey into the Weird and Wonderful](https://drive.google.com/open?id=16rNGQcohzxjyZ1Jys4JsjeAeloXthn1n&usp=drive_fs)*. 
+> This talk explores the variety of projects Professor Blais has had involving undergraduate research students. The projects span a wide range of topics from the zombie apocalypse, three-sided coins, and brain modeling but have common features in probability, statistics, and simulation. Also covered will be the process for picking a topic in the first place, what the steps are for doing research, and the timeline for an honors thesis. 
+
+
 # 2022
 
 * Blais, B.S., Gaier, E.,Xiao, S. *[Modeling amblyopia treatment responses through principles of synaptic plasticity](https://github.com/bblais/Amblyopia)*. May 2022. ARVO Conference.
