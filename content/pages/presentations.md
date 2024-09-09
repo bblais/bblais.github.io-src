@@ -7,6 +7,9 @@ title: Presentations
 > This talk explores the variety of projects Professor Blais has had involving undergraduate research students. The projects span a wide range of topics from the zombie apocalypse, three-sided coins, and brain modeling but have common features in probability, statistics, and simulation. Also covered will be the process for picking a topic in the first place, what the steps are for doing research, and the timeline for an honors thesis. 
 
 
+* Blais, B.S. *[Probability and God](https://youtu.be/RFq1134pIc4?si=Y_YLNBYxR3r2N4Pi)*. Link to [PDF here](https://drive.google.com/open?id=1R5G0jZYUm5cZml3_L3dBmn29cKU2awxu&usp=drive_fs)
+> In this talk, I will present a framework for rational inquiry based on probability theory. Probability theory is a branch of mathematics that deals with uncertainty and how to reason about it. I will explain the basic concepts and principles of probability, and how they can be applied to any domain of interest, including theology, the study of the nature of God and religious beliefs. I will explore some of the key theological concepts, such as belief, faith, miracles, and the existence of God, and how they can be analyzed using probability. I will also compare and contrast the scientific method with other ways of acquiring knowledge, such as revelation and intuition. My aim is to provide a clear and consistent way of thinking about these topics, and to reveal the hidden assumptions and implications of various theological arguments. Along the way, I will demonstrate some surprising and counterintuitive results that arise from probability theory, and how they can lead to errors in reasoning.
+
 # 2022
 
 * Blais, B.S., Gaier, E.,Xiao, S. *[Modeling amblyopia treatment responses through principles of synaptic plasticity](https://github.com/bblais/Amblyopia)*. May 2022. ARVO Conference.

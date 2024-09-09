@@ -115,7 +115,7 @@ PLUGIN_PATHS = ['/Users/bblais/Documents/Git/pelican-plugins']
 IGNORE_FILES = [".ipynb_checkpoints",'*.py']
 IPYNB_MARKUP_USE_FIRST_CELL = True
 
-PLUGINS = ['render_math','sitemap', 'tipue_search','obsidian']    
+PLUGINS = ['pelican_katex','sitemap', 'tipue_search','obsidian']    
 SITEMAP={'format':'xml'}
 TIPUE_SEARCH = True
 TEMPLATE_PAGES = {

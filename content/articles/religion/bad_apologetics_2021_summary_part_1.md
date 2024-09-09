@@ -232,7 +232,7 @@ That's why [James's RHBS model](https://youtu.be/zNVQKUSn00Y) has four parts -- 
 
 [Time stamp 1:08:19](https://youtu.be/yeCBpO7pSRM?t=4099)
 
-> Brian:  I find that this way of formulating it  kind of piles a bunch of things into th "not $R$" part -- and even the "$R$" part -- that they're not really explicitly doing. 
+> Brian:  I find that this way of formulating it  kind of piles a bunch of things into the "not $R$" part -- and even the "$R$" part -- that they're not really explicitly doing. 
  Kamile said that they're two important parts of Bayes theorem but I would actually state that there are three.   I [gave a TEDx talk](https://youtu.be/3xAb3aVGVM0) where I going to try to give an intuitive explanation of the structure of Bayes theorem: a belief in a particular explanation should scale with *how well that explanation fits the data* (called the likelihood),  it should also scale with *how plausible that explanation was before you saw any data* (the prior), and then the third part is the belief is scaled down by essentially all of the alternatives.  So the problem with the phrasing it in this "$R$ vs "not $R$" comparison and not breaking it out into all the possibilities is that you end up not being specific about your alternatives of doing things like Kamile said, like ignoring things where an explanation is designed for only  part of the data.  It makes it a lot less constrained. And I think if they broke it out, they would see it would be less constrained. 
 
 ![[Pasted image 20220327154748.png]]

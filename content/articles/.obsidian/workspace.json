@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "36db876f444a8b23",
+        "id": "1e995c02c5effd4e",
         "type": "tabs",
         "children": [
           {
-            "id": "41ba4a19f0693b5d",
+            "id": "da0d3a05effb2ca8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "religion/Bible in a Year.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2e040580a5f16fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unbelievable Project/[0043] Unbelievable? 5 Apr 2008 12 Apr 2008 \"Why I became an atheist\" Part 1 and Part 2 - John Loftus & Peter May - 05 April 2008.md",
+                "file": "religion/Reproducing Richard Carrier's Calculations.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "why i became an ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "religion/Bible in a Year.md",
+                "file": "religion/Reproducing Richard Carrier's Calculations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -135,36 +124,37 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "41ba4a19f0693b5d",
+  "active": "da0d3a05effb2ca8",
   "lastOpenFiles": [
-    "religion/What would I expect in the Bible?.md",
+    "images/patrick-fore-0gkw_9fy0eQ-unsplash.jpg",
+    "religion/Bayesian Reasoning in Intelligent Design.md",
+    "religion/God of the Gaps.md",
+    "religion/Reproducing Richard Carrier's Calculations.md",
+    "programming/mp3_to_audiobook.md",
+    "programming/ChatGPT On Code.md",
     "Unbelievable Project/[0043] Unbelievable? 5 Apr 2008 12 Apr 2008 \"Why I became an atheist\" Part 1 and Part 2 - John Loftus & Peter May - 05 April 2008.md",
+    "religion/What would convince me.md",
     "religion/Some More Comments on Undesigned Coincidences.md",
+    "images/derek-otway-0gYliQPbeKo-unsplash.jpg",
+    "critical thinking/Your Lack of Imagination Can Kill You…but you can be saved by math.md",
+    "religion/bad_apologetics_2021_summary_part_1.md",
+    "media/tedx_talk.md",
+    "religion/More Undesigned Coincidences.md",
+    "religion/Claims versus Evidence.md",
+    "religion/Extraordinary claims and extraordinary evidence.md",
+    "religion/Undesigned Coincidences.md",
+    "religion/Probability and Testimony.md",
+    "religion/What would I expect in the Bible?.md",
     "religion/Bible in a Year.md",
     "religion/The God of the Philosophers.md",
-    "religion/Extraordinary claims and extraordinary evidence.md",
     "images/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg",
     "productivity/How NaNoWriMo Got Me Back to the Gym.md",
     "Unbelievable Project/[0033] Unbelievable? 26 Jan 2008 Morality - do we need God to be Good? - 26 January 2008.md",
     "Unbelievable Project/[0024] Unbelievable? 24 Nov 2007 - The atheist who sold his soul on ebay - 24 November 2007.md",
     "religion/Bad Apologetics - miscellaneous topics from Jonathan McLatchie.md",
-    "religion/More Undesigned Coincidences.md",
-    "religion/Undesigned Coincidences.md",
     "Unbelievable Project/lennox.md",
     "religion/Hume on Testimony.md",
-    "bayes_god.md",
-    "religion/Bayes Nets and Religious Claims.md",
-    "Unbelievable Project/[0321] The Probability of the Resurrection - Calum Miller & Chris Hallquist - Unbelievable? - 06 July 2013.md",
     "images/lucas-favre-JnoNcfFwrNA-unsplash.jpg",
-    "productivity/productivity_part2.md",
-    "philosophy_science_.md",
-    "productivity/There is more than enough time.md",
-    "productivity/scrum.md",
-    "presentations/Bayesian and God - MIT.md",
-    "religion/bad_apologetics_2021_summary_part_2.md",
-    "media/bad_apologetics_feb_2022.md",
-    "religion/bad_apologetics_2021_summary_part_3.md",
-    "religion/bad_apologetics_2021_summary_part_1.md",
     "images/secsocmit.jpg",
     "images/Screenshot 2023-10-17 at 06.26.25.png",
     "images/danylo-suprun-YhSoK3TOg78-unsplash.jpg",
@@ -173,7 +163,6 @@
     "images/Pasted image 20230619085149.png",
     "images/Pasted image 20230619084853.png",
     "images/Pasted image 20230619084043.png",
-    "images/Pasted image 20230619083432.png",
-    "images/Pasted image 20230619083003.png"
+    "images/Pasted image 20230619083432.png"
   ]
 }
