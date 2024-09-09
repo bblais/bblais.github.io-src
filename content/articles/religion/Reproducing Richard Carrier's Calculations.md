@@ -136,7 +136,7 @@ This reproduces the numbers Carrier presents.
 
 One thing about this calculation is that it is fairly long and quite tedious.  There are a number of places it can go wrong.  Updating with new data becomes a challenge of bookkeeping, and it is a challenge to make sure that the equations written match the data and the numerical results without typos or missing terms.  This is the sort of thing that computers do quite well - tedious and systematic calculations and presentations. 
 
-I put all the code here:  https://github.com/bblais/Reproduce-Richard-Carrier-Calculations
+I put all the code here:  [https://github.com/bblais/Reproduce-Richard-Carrier-Calculations](https://github.com/bblais/Reproduce-Richard-Carrier-Calculations)
 
 The code allows me to do:
 
