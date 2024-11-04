@@ -18,11 +18,11 @@ In this example, like [the last one](https://bblais.github.io/posts/2021/Apr/15/
 For a Bayesian solution, we need to specify the likelihood function -- how our model produces the data -- and the prior probability for the parameters.  The likelihood function is determined exactly as before,
 
 $$
-\begin{eqnarray}
-x_i &\sim& \mu + \epsilon_i \\
-P(x_i|\mu,\sigma) &\sim& \text{Normal}(x_i-\mu,\sigma) \\
-P(\{x_i\}|\mu,\sigma) &\sim& \prod_i \text{Normal}(x_i-\mu,\sigma) 
-\end{eqnarray}
+\begin{aligned}
+x_i &\sim \mu + \epsilon_i \\
+P(x_i|\mu,\sigma) &\sim \text{Normal}(x_i-\mu,\sigma) \\
+P(\{x_i\}|\mu,\sigma) &\sim \prod_i \text{Normal}(x_i-\mu,\sigma) 
+\end{aligned}
 $$
 but with *unknown* scale, $\sigma$.
 
@@ -34,10 +34,10 @@ In the "*Statistics 101*" examples, the results are typically equivalent to *uni
 In this example, like [the last one](https://bblais.github.io/posts/2021/Apr/15/stats-101-examples-with-mcmc/), there is some true value, we call $\mu$, with normally-distributed noise but this time with unknown scale, $\sigma$.  The likelihood function is determined identically as before, 
 
 $$
-\begin{eqnarray}
-x_i &\sim& \mu + \epsilon_i \\
-P(x_i|\mu,\sigma) &\sim& \text{Normal}(\mu,\sigma) 
-\end{eqnarray}
+\begin{aligned}
+x_i &\sim \mu + \epsilon_i \\
+P(x_i|\mu,\sigma) &\sim \text{Normal}(\mu,\sigma) 
+\end{aligned}
 $$
 known $\sigma$
 

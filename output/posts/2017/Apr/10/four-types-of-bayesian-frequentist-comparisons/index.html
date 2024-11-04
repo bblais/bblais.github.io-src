@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Four Types of Bayesian-Frequentist Comparisons  · bblais on the web
+</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://bblais.github.io/theme/css/main.css" />
+		<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+		crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="https://bblais.github.io/theme/css/custom.css" media="screen">
+    
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+		<!-- Main -->
+			<div id="main">
+
+				<div class="inner">
+
+					<!-- Header -->
+						<header id="header">
+							<a href="https://bblais.github.io/index.html" class="logo"><strong>bblais on the web</strong></a>
+							<ul class="icons">
+								<li><a href="https://twitter.com/bblais" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/bblais" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://bblais.github.io/feeds/all.atom.xml" class="icon solid fa-rss"><span class="label">YouTube</span></a></li>
+								<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</header>
+
+
+
+
+
+
+
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Four Types of Bayesian-Frequentist Comparisons</h1> 
+ 
+										<p><strong><time pubdate="pubdate" datetime="2017-04-10T00:00:00-04:00">Mon 10 April 2017</strong>
+												In  
+													<em><a href="https://bblais.github.io/category/articles.html">#articles</a></em>
+										</p>
+									</header>
+
+										<span class="image left"><img src="https://bblais.github.io/images/ocean-water-1149661_960_720.jpg"></span>
+
+
+									<p>In my conversations with some of my statistics colleagues who are less familiar with Bayes methods, I came up with four categories of problems that come up in Bayesian-Frequentist comparisons.</p>
+<h2 id="conditional-probability-problems">Conditional probability problems</h2>
+<p>An example of this is</p>
+<blockquote>
+<p>A patient goes to see a doctor. The doctor performs a test with 99 percent reliability--that is, 99 percent of people who are sick test positive and 99 percent of the healthy people test negative. The doctor knows that only 1 percent of the people in the country are sick. Now the question is: if the patient tests positive, what are the chances the patient is sick?</p>
+</blockquote>
+<p>There are a million of these sorts of questions, and I did about 5-10 of the questions from the actuarial P test.  Clearly the use of Bayes Theorem is essential in all of this, and is uncontroversial on these problems - there really isn’t an alternative.  If you dislike the term "Bayesian" here, as some textbooks seem to, you can refer to these as conditional probability problems but we're talking about the same thing.  So, the difference between so-called Orthodox or Frequentist approaches and so-called Bayesian approaches to problems must lie in other types of problems.  I'll note that intro stats books of all stripes include these problems, and from a Bayesian perspective they are typically limited to these types of problems.</p>
+<h2 id="sampling-distribution-of-the-mean">Sampling distribution of the mean</h2>
+<p>My first encounter with the difference between Frequentist and Bayesian perspectives was in the "sampling distribution of the mean” chapter.  The problem, say, is given a series of measurements of something (i.e. the mass of Saturn, the lengths of flower petals, etc…) what is the best estimate for the underlying quantity - e.g. what is the best estimate of the mass of Saturn and how confident are we in that measurement?  Say, from orbital data, we get the following 10 data points for the mass of Saturn (in Earth-masses):</p>
+<p>102,  95,  85,  86,  93, 105,  96,  91, 104, 115</p>
+<p>What is the best estimate for the mass of Saturn, and our uncertainty in that estimate?</p>
+<p>Both Frequentist and Bayesian methods come up with
+\begin{eqnarray}
+\mu&amp;=&amp;\bar{x} \pm \frac{S}{\sqrt{N}} \
+\bar{x}&amp;=&amp; \frac{1}{N} \sum_{k=1}^{N} x_k \
+S^2&amp;=&amp; \frac{1}{(N-1)}\sum_{k=1}^{N} (x_k-\bar{x})^2
+\end{eqnarray}</p>
+<p>The Bayesian and Frequentist approaches will come up with - numerically - the same answer to this question, but the vocabulary will be different.  One speaks about the probability of the mean value, the other about the properties of the sampling distribution with respect to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> data points.  In either case, it makes no difference <em>practically</em>.</p>
+<h2 id="jaynes-type-galilean-problems">Jaynes-type Galilean problems</h2>
+<p>Where the rubber meets the road is a problem like the one proposed by Lindley, where he flipped a thumbtack and noted that sometimes it lands "point up" and others “point down”. His actual data was:</p>
+<blockquote>
+<p>U U U D U D U U U U U D  (9 Ups, and 3 Downs)</p>
+</blockquote>
+<p>And the question is, <em>can we be 95% sure of this tack being an unfair tack?</em>  Given the physical properties of thumbtacks, we really don’t have any expectation that it <em>should</em> be fair (unlike a coin, where we have a symmetry argument).  We come up with different answers - quantitatively and possible qualitatively - on this one (see page 54 of the <a href="http://web.bryant.edu/~bblais/pdf/pres_011407.pdf">presentation on the three-sided coin I gave</a>)</p>
+<h2 id="anything-with-the-cauchy-distribution">Anything with the Cauchy distribution</h2>
+<p>There is one final category of problems in the comparison with Bayesian and Frequentist methods. </p>
+<p>Imagine we have a lighthouse which is off shore some known distance, B, and is located along the shore at some unknown location <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">x=a</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span>:</p>
+<div class="highlight"><pre><span></span><code>         (lighthouse)
+               <span class="k">*</span>          ---
+                           ^
+                           |
+                           B
+                           |
+                           V
+————shore——————+——————————————————————&gt;  x
+              x=a
+</code></pre></div>
+
+<p>we want to estimate the location (“a”) from a series of locations of flashes on the shore - the lighthouse is spinning around and flashing at random times.  We can only observe where the flash lands on the shore, not the direction it came from.   The data is, for example, the locations of these 10 flashes:</p>
+<p>-4.89,  1.03,  1.64,  1.17,  0.74,  1.46,  0.76,  -7.16,  0.31,  2.48</p>
+<p>One can show that the location of a single flash should follow a Cauchy distribution:  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>x</mi><mi mathvariant="normal">∣</mi><mi>a</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>B</mi><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><msup><mi>B</mi><mn>2</mn></msup><mo>+</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">p(x|a,B) = B/(B^2 + (x-a)^2)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mord">∣</span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">/</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal">a</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>.  This is due to the angular geometry of the problem.</p>
+<p>The question is, what is the best estimate of “a”?  What is the uncertainty in this estimate? What methods would you employ?  The Bayesian treatment for this problem is in D.S. Sivia’s, <em>Data Analysis: a Bayesian Tutorial, Second Edition</em> (Oxford, 2006).  A very similar problem is given in <a href="http://www.greenteapress.com/thinkbayes/html/thinkbayes010.html">Think Bayes</a> and another nice treatment is on <a href="http://www.di.fc.ul.pt/~jpn/r/bugs/lighthouse.html">João Pedro Neto's blog</a>.</p>
+<p>I'm pretty sure this problem is resistant to any procedure relying on sampling distributions (as all Frequentist procedures are) due to the <a href="https://en.wikipedia.org/wiki/Cauchy_distribution">peculiar properties of the Cauchy Distribution</a>.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>It is important when discussing different perspectives to keep clear what the vocabulary is - what are we actually talking about?  If you limit the problems to simple conditional probability problems, there isn't any difference between the Bayesian and Frequentist perspectives and one might wonder what the big deal is?  However, if you expand the problem set to include limited <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> problems, with non-Normal distributions (such as Beta and Cauchy), then the differences start to become apparent.  </p>
+
+
+								</section>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    // var disqus_config = function () {
+    //     // Replace PAGE_URL with your page's canonical URL variable
+    //     this.page.url = PAGE_URL;  
+        
+    //     // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    //     this.page.identifier = PAGE_IDENTIFIER; 
+    // };
+    
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        var disqus_shortname = "bblaisontheweb"; 
+        var disqus_title = "Four Types of Bayesian-Frequentist Comparisons";
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+	
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                        <section id="search" class="alt">
+                            <form class="navbar-search" action="https://bblais.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> 
+                                <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+                        </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="https://bblais.github.io/index.html">Homepage</a></li>
+                                    <li>
+                                        <span class="opener"><a href="https://bblais.github.io/index.html#0" title="">Blog</a></span>
+                                        <ul>
+                                            <li><a href="https://bblais.github.io/index.html#blog">Recent</a></li>
+                                            <li><a href="https://bblais.github.io/category/articles.html">articles <span>(85)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/books.html">books <span>(3)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/math.html">math <span>(8)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/media.html">media <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/presentations.html">presentations <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/productivity.html">productivity <span>(7)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/programming.html">programming <span>(5)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/projects.html">projects <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/religion.html">religion <span>(31)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/science.html">science <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/unbelievable-project.html">Unbelievable Project <span>(21)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/wordpress_migration.html">wordpress_migration <span>(160)</span></a></li>
+     
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://bblais.github.io/pages/presentations.html">Presentations</a></li>
+                                    <li><a href="https://bblais.github.io/pages/projects.html">Projects</a></li>
+                                    <li><a href="https://bblais.github.io/pages/publications.html">Publications</a></li>
+                                    <li><a href="https://bblais.github.io/archives.html">Archives</a></li>
+                                    <li><a href="https://bblais.github.io/about.html">About</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Popular Posts</h2>
+                                </header>
+
+                                <div class="mini-posts">
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2021/Apr/09/gravitational-attraction/" class="image">
+                                                <img src="https://bblais.github.io/images/muzammil-soorma-R11bppS4q8o-unsplash.jpg" alt="muzammil-soorma-R11bppS4q8o-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Gravitational Attraction </strong>
+                                                <p>What would happen if two people out in space a few meters apart, abandoned by their spacecraft, decided to wait until gravity pulled them together?  My initial thought was that …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/" class="image">
+                                                <img src="https://bblais.github.io/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg" alt="roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                                            </a>
+                                            <p><strong>A Simple Physics Problem Gets Messy </strong>
+                                                <p>A physics problem from a practice AP test came to my attention, when my daughter was in AP physics this past spring.  I went over her solutions when she did …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/" class="image">
+                                                <img src="https://bblais.github.io/images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Skepticism and Dubious Medical Procedures </strong>
+                                                <p>In my discussion with Jonathan McLatchie on the Still Unbelievable podcast, I said that there hasn’t been a verified miracle claim even since Hume’s essay on miracles.  Here I look into the papers he references in response.</p></p>
+                                        </article>
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>What problems are you interested in?  How can I help?</p>
+                                <ul class="contact">
+                                    <li class="icon brands fa-twitter"><a href="https://twitter.com/bblais">@bblais</a></li>
+                                    <li class="icon solid fa-envelope"><a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></li>
+                                    <li class="icon solid fa-phone"><a href="tel://4012326153">(401) 232-6153</a></li>
+                                    <li class="icon solid fa-home">Bryant University<br>
+                                        1150 Douglas Pike<br>
+                                        Smithfield, RI<br>
+                                        02917 US</li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">&copy; 2021 - All rights reserved. Adapted from <a href="https://html5up.net/editorial">Editorial Theme</a> html5up.net | @ajlkn, 
+                                    Converted to <a href="https://blog.getpelican.com">Pelican</a> theme by <a href="#">Brian Blais</a>. </p>
+                            </footer>
+
+                    </div>
+                </div>
+
+		</div>
+
+
+    <!-- Scripts -->
+	<script src="https://bblais.github.io/theme/js/jquery.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
+	<script src="https://bblais.github.io/theme/js/browser.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/breakpoints.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/util.js"></script>
+	<script src="https://bblais.github.io/theme/js/main.js"></script>
+	<script>
+		function validateForm(query)
+		{
+			return (query.length > 0);
+		}
+	</script>
+	
+	
+	</body>
+</html>

@@ -1,0 +1,25 @@
+I am a Scientist, Skeptic, and Professor of [Science and Technology] at [Bryant University].  I have wide-ranging interests in physics, climate, neuroscience, machine learning, and statistics.  My goal is to make technical subject matters widely accessible and to use my analytical and computational skills to assist anyone with their science-related problems.
+
+Some of my interests,
+
+* Theoretical Neuroscience
+    * learning and memory in neural systems
+    * vision
+    * spike-timing dependent plasticity
+* Statistical Inference
+    * frequentist versus Bayesian statistics
+    * Bayesian approaches to learning and memory
+    * propagation of uncertainties
+* Climate
+    * paleoclimate and proxies of CO$_2$ and temperature
+* Dynamical Systems
+    * disease epidemiology
+    * effects of economic feedback
+
+
+You can [find my CV here].
+
+
+[Science and Technology]: http://web.bryant.edu/~science
+[Bryant University]: http://www.bryant.edu
+[find my CV here]: {{ SITEURL }}/static/cv.pdf

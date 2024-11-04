@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Convert mp3 files to audiobook for Apple Books  - ...youtube playlists, cds, and more...  · bblais on the web
+</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://bblais.github.io/theme/css/main.css" />
+		<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+		crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="https://bblais.github.io/theme/css/custom.css" media="screen">
+    
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+		<!-- Main -->
+			<div id="main">
+
+				<div class="inner">
+
+					<!-- Header -->
+						<header id="header">
+							<a href="https://bblais.github.io/index.html" class="logo"><strong>bblais on the web</strong></a>
+							<ul class="icons">
+								<li><a href="https://twitter.com/bblais" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/bblais" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://bblais.github.io/feeds/all.atom.xml" class="icon solid fa-rss"><span class="label">YouTube</span></a></li>
+								<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</header>
+
+
+
+
+
+
+
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Convert mp3 files to audiobook for Apple Books</h1> 
+ <h2> ...youtube playlists, cds, and more... </h2> 
+										<p><strong><time pubdate="pubdate" datetime="2021-05-17T00:00:00-04:00">Mon 17 May 2021</strong>
+												In  
+													<em><a href="https://bblais.github.io/category/programming.html">#programming</a></em>
+										</p>
+									</header>
+
+										<span class="image left"><img src="https://bblais.github.io/images/eugenio-mazzone-6ywyo2qtaZ8-unsplash.jpg"></span>
+
+
+									<p>The Mac/iPhone Books app has some issues.  Before switching the content out of iTunes into a separate app, audiobooks were housed in the same app as music.  You could edit the metadata on individual tracks, you could easily import an audiobook cd and just change the type to "Audiobook" and things would work.  If something was wrong with the title of a track, or the track number, you could go in and edit it.  Once they switched to Books, this level of editing was no longer possible.  Until recently I was doing the tedious task of editing in Music, copying to Books, seeing errors, copying back etc...  The errors were often things like Books breaking the audiobook into separate "books" because the track numbers weren't read right, or the tracks would be out of order, or the artwork wouldn't come through.  I was ok with this workaround tedium until recently, when I wanted to start following a youtube channel called <a href="https://www.youtube.com/channel/UCy63pdWnpupE8MfxpMNfRNg">Digital Gnosis</a>.  One of my favorite playlists is called <a href="https://www.youtube.com/playlist?list=PLggkCqSR7N1eq3UGURGKs9hcJNV-uIn4n">Bad Apologetics</a>, with 15 episodes so far with an average length <strong>around 7 and a half hours a piece</strong>!  So this state of affairs has forced me to retool my workflow, because I can't be at my computer to watch a 9 hour video, and I don't want to pay youtube to be able to listen while my phone is locked, and there are too many videos/playlists to deal with by hand.  So here goes my solution.</p>
+<h2 id="make-a-folder-of-mp3-files">Make a folder of mp3 files</h2>
+<p>Using the tool youtube-dl, installed with</p>
+<div class="highlight"><pre><span></span><code>pip install youtube-dl --upgrade
+</code></pre></div>
+
+<p>we download all of the videos in a playlist, convert to mp3, and put them in the current folder.  This playlist is called Open Conversations, so I put it in a folder named for that.</p>
+<div class="highlight"><pre><span></span><code>youtube-dl -i --extract-audio --audio-format mp3 <span class="s2">&quot;https://www.youtube.com/playlist?list=PLggkCqSR7N1dBxUjy51NdVGPJ78JXEdl-&quot;</span>
+</code></pre></div>
+
+<p>One can also do this by importing audiobook CDs and place the tracks in a folder.</p>
+<h2 id="get-the-book-info-correct">Get the book info correct</h2>
+<p>We continue with a script to get the track titles correct.  This part is a little manual, because the naming scheme for the tracks are individual to the playlist.  A little bit of string magic does the trick.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
+<span class="n">folder</span><span class="o">=</span><span class="s1">&#39;Open Conversations&#39;</span>
+<span class="n">fnames</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">folder</span><span class="o">+</span><span class="s2">&quot;/*.mp3&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">fnames</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Output:</p>
+<div class="highlight"><pre><span></span><code>[&#39;Open Conversations/Open Conversation #001-vCEu612_tbc.mp3&#39;,
+&#39;Open Conversations/Open Conversation #002-DW6LTgzxI2c.mp3&#39;,
+&#39;Open Conversations/Open Conversation #003-yxF3OJpLW8w.mp3&#39;,
+&#39;Open Conversations/Open Conversation #004-kBSczog9hjY.mp3&#39;,
+&#39;Open Conversations/Open Conversation #005-Ba9JeLKLx4M.mp3&#39;,
+&#39;Open Conversations/Open Conversation #006 _ Defining Terms and Open Conversation with JIL-ypzf9gCPMW4.mp3&#39;,
+&#39;Open Conversations/Open Conversation #007-mrzHt60jaJ0.mp3&#39;,
+&#39;Open Conversations/Open Conversation #008- Socially Distanced New Year Open Hangout - PineCreek, Cam, Erin, Autumn, Rob, etc-8yGK_yh-CTY.mp3&#39;,
+&#39;Open Conversations/Open Conversation #009-T-V0VnGG_FI.mp3&#39;,
+&#39;Open Conversations/Open Conversation #010-IcN-O-cbP80.mp3&#39;,
+&#39;Open Conversations/Open Conversation #011-hfIJLjO7xss.mp3&#39;,
+&#39;Open Conversations/Open Conversation #012-XD-Al7-_ezM.mp3&#39;,
+&#39;Open Conversations/Open Conversation #013-WxwxA5I-pN4.mp3&#39;,
+&#39;Open Conversations/Open Conversation #014-STmBT9OSNVw.mp3&#39;,
+&#39;Open Conversations/Open Conversation #015-ClVDRgd29aY.mp3&#39;,
+&#39;Open Conversations/Open Conversation #016-RjiSEfq4NJY.mp3&#39;,
+&#39;Open Conversations/Open Conversation #017 - 500 Arguments Against Christianity Aftershow-TVEEgX6NqbE.mp3&#39;,
+&#39;Open Conversations/Open Conversation #018 - James Fodor, Causation, Craig and more...-Kj3L8L3vXZI.mp3&#39;]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">album</span><span class="o">=</span><span class="n">folder</span>
+<span class="n">artist</span><span class="o">=</span><span class="s1">&#39;Digital Gnosis&#39;</span>
+<span class="n">artwork</span><span class="o">=</span><span class="s1">&#39;Open Converstions Cover.png&#39;</span>
+<span class="n">mime</span><span class="o">=</span><span class="s1">&#39;image/png&#39;</span>
+
+<span class="c1"># this part has to be done by hand because each </span>
+<span class="c1"># person&#39;s playlist has a different naming format</span>
+<span class="n">titles</span><span class="o">=</span><span class="p">[</span><span class="n">_</span><span class="p">[:</span><span class="o">-</span><span class="mi">16</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Open Conversations/Open Conversation &#39;</span><span class="p">,</span><span class="s1">&#39;Open Conversations - Ep &#39;</span><span class="p">)</span> 
+                <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">fnames</span><span class="p">]</span>
+<span class="n">display</span><span class="p">(</span><span class="n">titles</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Output:</p>
+<div class="highlight"><pre><span></span><code>[&#39;Open Conversations - Ep #001&#39;,
+&#39;Open Conversations - Ep #002&#39;,
+&#39;Open Conversations - Ep #003&#39;,
+&#39;Open Conversations - Ep #004&#39;,
+&#39;Open Conversations - Ep #005&#39;,
+&#39;Open Conversations - Ep #006 _ Defining Terms and Open Conversation with JIL&#39;,
+&#39;Open Conversations - Ep #007&#39;,
+&#39;Open Conversations - Ep #008- Socially Distanced New Year Open Hangout - PineCreek, Cam, Erin, Autumn, Rob, etc&#39;,
+&#39;Open Conversations - Ep #009&#39;,
+&#39;Open Conversations - Ep #010&#39;,
+&#39;Open Conversations - Ep #011&#39;,
+&#39;Open Conversations - Ep #012&#39;,
+&#39;Open Conversations - Ep #013&#39;,
+&#39;Open Conversations - Ep #014&#39;,
+&#39;Open Conversations - Ep #015&#39;,
+&#39;Open Conversations - Ep #016&#39;,
+&#39;Open Conversations - Ep #017 - 500 Arguments Against Christianity Aftershow&#39;,
+&#39;Open Conversations - Ep #018 - James Fodor, Causation, Craig and more...&#39;]
+</code></pre></div>
+
+<p><strong>NOTE:</strong> Having the album name in the track title, followed by " - " and the track name seems to be important for the Books app to get the title and tracks right for some reason.</p>
+<h2 id="write-out-the-mp3-meta-data-with-the-mutagen-library">Write out the mp3 meta data with the <a href="https://mutagen.readthedocs.io/en/latest/"><code>mutagen</code></a> library.</h2>
+<p>The docs are a bit sparse here, so between the docs and stackoverflow, I pieced together enough to set the titles, album, tracknumber, and album art for each mp3 file.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">mutagen.easyid3</span> <span class="kn">import</span> <span class="n">EasyID3</span>
+<span class="kn">from</span> <span class="nn">mutagen.id3</span> <span class="kn">import</span> <span class="n">ID3</span>
+<span class="kn">import</span> <span class="nn">mutagen</span>
+
+<span class="n">write</span><span class="o">=</span><span class="kc">True</span> <span class="c1"># for debugging</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fnames</span><span class="p">):</span>
+
+
+    <span class="k">if</span> <span class="n">write</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">meta</span> <span class="o">=</span> <span class="n">EasyID3</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">mutagen</span><span class="o">.</span><span class="n">id3</span><span class="o">.</span><span class="n">ID3NoHeaderError</span><span class="p">:</span>
+            <span class="n">meta</span> <span class="o">=</span> <span class="n">mutagen</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">easy</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">meta</span><span class="o">.</span><span class="n">add_tags</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">meta</span><span class="o">=</span><span class="p">{}</span>
+
+
+    <span class="n">title</span><span class="o">=</span><span class="n">titles</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+
+    <span class="n">meta</span><span class="p">[</span><span class="s1">&#39;album&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">album</span>
+    <span class="n">meta</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">title</span>
+    <span class="n">meta</span><span class="p">[</span><span class="s1">&#39;artist&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">artist</span>
+    <span class="n">meta</span><span class="p">[</span><span class="s1">&#39;tracknumber&#39;</span><span class="p">]</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">meta</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">write</span><span class="p">:</span>
+        <span class="n">meta</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+        <span class="n">file</span> <span class="o">=</span> <span class="n">ID3</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="c1"># Load the file</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">delall</span><span class="p">(</span><span class="s2">&quot;APIC&quot;</span><span class="p">)</span> <span class="c1"># Delete every APIC tag (Cover art)</span>
+
+        <span class="n">imagedata</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">artwork</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">mutagen</span><span class="o">.</span><span class="n">id3</span><span class="o">.</span><span class="n">APIC</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">mime</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Front cover&#39;</span><span class="p">,</span> <span class="n">imagedata</span><span class="p">))</span>
+
+        <span class="n">file</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c1"># Save the file    </span>
+</code></pre></div>
+
+<p>Then <em>bingo!</em> you can copy the folder of mp3 to the Books app, and all will be well.  Now I just have to find time to listen to it all.</p>
+
+
+								</section>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    // var disqus_config = function () {
+    //     // Replace PAGE_URL with your page's canonical URL variable
+    //     this.page.url = PAGE_URL;  
+        
+    //     // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    //     this.page.identifier = PAGE_IDENTIFIER; 
+    // };
+    
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        var disqus_shortname = "bblaisontheweb"; 
+        var disqus_title = "Convert mp3 files to audiobook for Apple Books";
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+	
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                        <section id="search" class="alt">
+                            <form class="navbar-search" action="https://bblais.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> 
+                                <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+                        </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="https://bblais.github.io/index.html">Homepage</a></li>
+                                    <li>
+                                        <span class="opener"><a href="https://bblais.github.io/index.html#0" title="">Blog</a></span>
+                                        <ul>
+                                            <li><a href="https://bblais.github.io/index.html#blog">Recent</a></li>
+                                            <li><a href="https://bblais.github.io/category/articles.html">articles <span>(85)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/books.html">books <span>(3)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/math.html">math <span>(8)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/media.html">media <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/presentations.html">presentations <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/productivity.html">productivity <span>(7)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/programming.html">programming <span>(5)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/projects.html">projects <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/religion.html">religion <span>(31)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/science.html">science <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/unbelievable-project.html">Unbelievable Project <span>(21)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/wordpress_migration.html">wordpress_migration <span>(160)</span></a></li>
+     
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://bblais.github.io/pages/presentations.html">Presentations</a></li>
+                                    <li><a href="https://bblais.github.io/pages/projects.html">Projects</a></li>
+                                    <li><a href="https://bblais.github.io/pages/publications.html">Publications</a></li>
+                                    <li><a href="https://bblais.github.io/archives.html">Archives</a></li>
+                                    <li><a href="https://bblais.github.io/about.html">About</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Popular Posts</h2>
+                                </header>
+
+                                <div class="mini-posts">
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2021/Apr/09/gravitational-attraction/" class="image">
+                                                <img src="https://bblais.github.io/images/muzammil-soorma-R11bppS4q8o-unsplash.jpg" alt="muzammil-soorma-R11bppS4q8o-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Gravitational Attraction </strong>
+                                                <p>What would happen if two people out in space a few meters apart, abandoned by their spacecraft, decided to wait until gravity pulled them together?  My initial thought was that …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/" class="image">
+                                                <img src="https://bblais.github.io/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg" alt="roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                                            </a>
+                                            <p><strong>A Simple Physics Problem Gets Messy </strong>
+                                                <p>A physics problem from a practice AP test came to my attention, when my daughter was in AP physics this past spring.  I went over her solutions when she did …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/" class="image">
+                                                <img src="https://bblais.github.io/images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Skepticism and Dubious Medical Procedures </strong>
+                                                <p>In my discussion with Jonathan McLatchie on the Still Unbelievable podcast, I said that there hasn’t been a verified miracle claim even since Hume’s essay on miracles.  Here I look into the papers he references in response.</p></p>
+                                        </article>
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>What problems are you interested in?  How can I help?</p>
+                                <ul class="contact">
+                                    <li class="icon brands fa-twitter"><a href="https://twitter.com/bblais">@bblais</a></li>
+                                    <li class="icon solid fa-envelope"><a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></li>
+                                    <li class="icon solid fa-phone"><a href="tel://4012326153">(401) 232-6153</a></li>
+                                    <li class="icon solid fa-home">Bryant University<br>
+                                        1150 Douglas Pike<br>
+                                        Smithfield, RI<br>
+                                        02917 US</li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">&copy; 2021 - All rights reserved. Adapted from <a href="https://html5up.net/editorial">Editorial Theme</a> html5up.net | @ajlkn, 
+                                    Converted to <a href="https://blog.getpelican.com">Pelican</a> theme by <a href="#">Brian Blais</a>. </p>
+                            </footer>
+
+                    </div>
+                </div>
+
+		</div>
+
+
+    <!-- Scripts -->
+	<script src="https://bblais.github.io/theme/js/jquery.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
+	<script src="https://bblais.github.io/theme/js/browser.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/breakpoints.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/util.js"></script>
+	<script src="https://bblais.github.io/theme/js/main.js"></script>
+	<script>
+		function validateForm(query)
+		{
+			return (query.length > 0);
+		}
+	</script>
+	
+	
+	</body>
+</html>

@@ -32,17 +32,21 @@ $$
 
 Since in both models the history of flips makes no difference to the next flip we get
 
-\begin{eqnarray}
-P(H_{m+1}|D,M_1) &=& P(H_{m+1}|M_1) = 0.5\\
-P(H_{m+1}|D,M_2) &=& P(H_{m+1}|M_2) = 1
-\end{eqnarray}
+$$
+\begin{aligned}
+P(H_{m+1}|D,M_1) &= P(H_{m+1}|M_1) = 0.5\\
+P(H_{m+1}|D,M_2) &= P(H_{m+1}|M_2) = 1
+\end{aligned}
+$$
 
 So, the bulk of the probability comes from the probability of each model given the data.  Applying Bayes' Rule, we get 
 
-\begin{eqnarray}
-P(M_1|D) &\sim& P(D|M_1)P(M_1)=\frac{0.5^m \cdot P(M_1)}{T} \\
-P(M_2|D) &\sim& P(D|M_2)P(M_2)=\frac{1^m \cdot P(M_2)}{T}
-\end{eqnarray}
+$$
+\begin{aligned}
+P(M_1|D) &\sim P(D|M_1)P(M_1)=\frac{0.5^m \cdot P(M_1)}{T} \\
+P(M_2|D) &\sim P(D|M_2)P(M_2)=\frac{1^m \cdot P(M_2)}{T}
+\end{aligned}
+$$
 
 where $T$ is the total probability of the data and the probabilities $P(M_1)$ and $P(M_2)$ are the priors for Model 1 and Model 2, respectively.  
 

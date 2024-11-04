@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Will the Sun Rise Tomorrow?  - Hume, Laplace, and Bayes  · bblais on the web
+</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://bblais.github.io/theme/css/main.css" />
+		<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+		crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="https://bblais.github.io/theme/css/custom.css" media="screen">
+    
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+		<!-- Main -->
+			<div id="main">
+
+				<div class="inner">
+
+					<!-- Header -->
+						<header id="header">
+							<a href="https://bblais.github.io/index.html" class="logo"><strong>bblais on the web</strong></a>
+							<ul class="icons">
+								<li><a href="https://twitter.com/bblais" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/bblais" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://bblais.github.io/feeds/all.atom.xml" class="icon solid fa-rss"><span class="label">YouTube</span></a></li>
+								<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</header>
+
+
+
+
+
+
+
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Will the Sun Rise Tomorrow?</h1> 
+ <h2> Hume, Laplace, and Bayes </h2> 
+										<p><strong><time pubdate="pubdate" datetime="2014-09-22T00:00:00-04:00">Mon 22 September 2014</strong>
+												In  
+													<em><a href="https://bblais.github.io/category/unbelievable-project.html">#Unbelievable Project</a></em>
+										</p>
+									</header>
+
+										<span class="image left"><img src="https://bblais.github.io/images/default.png"></span>
+
+
+									<p>On a recent <a href="http://www.premierchristianradio.com/shows/saturday/unbelievable.aspx">Unbelievable podcast</a> there is a discussion between  <a href="http://www.premierchristianradio.com/Shows/Saturday/Unbelievable/Episodes/Unbelievable-Is-our-universe-more-likely-on-atheism-or-theism-Calum-Miller-vs-James-Croft">Calum Miller and James Croft</a> on the topic "is our universe more likely on atheism or theism?", where Calum introduces probabilistic arguments throughout.  At one point he brings up evidence for the sun coming up, as an example of knowledge claims and models.</p>
+<h2 id="calum-describes-hume">Calum describes Hume</h2>
+<p>Calum - "Hume basically noted that we don't have any non-circular justification for thinking that the universe will be regular, that it will continue to be regular in the future. [...] He doesn't just say that we have to be a bit unsure that the sun will rise tomorrow, he says that we have no good reason at all for thinking the sun will rise tomorrow.  The most common justification that the sun will rise tomorrow is that it has risen every day  in the past.  But then if you compare two theories, one says that the sun rises everyday in the past and in the future and the other theory says that the sun rises everyday in the past but won't rise tomorrow.  Both those theories predict the observations we already have, both those theories lead us to expect the observations, and so the observations we currently have don't distinguish between these two theories.  And yet one of those theories predicts the sun will rise tomorrow and one of them predicts that the sun won't rise tomorrow.  So, even though we have those observations, they don't really do an obviously good job of determining which of these theories is true.  [...]  He is saying that the past observations don't give us that good reason for thinking that the sun will rise tomorrow.  This is the Problem of Induction and has perplexed philosophers for centuries."{.tq}</p>
+<h2 id="what-does-hume-actually-say-about-the-sun-rising">What does Hume <em>actually</em> say about the Sun rising?</h2>
+<p><a href="http://www.marxists.org/reference/subject/philosophy/works/en/hume.htm">Hume writes</a>: </p>
+<blockquote>
+<p>Matters of fact, which are the second objects of human reason, are not ascertained in the same manner; nor is our evidence of their truth, however great, of a like nature with the foregoing. The contrary of every matter of fact is still possible, because it can never imply a contradiction, and is conceived by the mind with the same facility and distinctness, as if ever so conformable to reality. That the sun will not rise tomorrow is no less intelligible a proposition, and implies no more contradiction, than the affirmation, that it will rise. We should in vain, therefore, attempt to demonstrate its falsehood. Were it demonstratively false, it would imply a contradiction, and could never be distinctly conceived by the mind. An Enquiry Concerning Human Understanding (1772). Hackett Publ Co. 1993; Chapter on Cause and Effect.</p>
+</blockquote>
+<p>Here Hume is essentially stating that all propositions have a non-zero probability (however small they might be) unless they are <em>logically</em> impossible.  This is not saying, at all, that we have no good reason to believe the sun will rise tomorrow.</p>
+<blockquote>
+<p>The bread, which I formerly ate, nourished me: that is, a body of such sensible qualities was, at that time, endued with such secret powers; but does it follow, that other bread must also nourish me at another time, and that like sensible qualities must always be attended with like secret powers? The consequence seems nowise necessary. </p>
+</blockquote>
+<p>Again, although Hume predates probability theory, this is essentially what he is saying - the consequence is not logically <em>necessary</em> (i.e. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">q</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">e</mi></mrow><mi mathvariant="normal">∣</mi><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false">)</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P({\rm consequence}|{\rm observations})&lt;1</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathrm">consequence</span></span></span><span class="mord">∣</span><span class="mord"><span class="mord"><span class="mord mathrm">observations</span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>).  We see this as a direct application of probability theory,  a totally uncontroversial application at that.  </p>
+<p>I fail to see that the "problem" of induction is really a problem.  I also fail to see Hume claiming that there is no good reason to see the consequence following from the the observations, just that he doesn't see one:</p>
+<blockquote>
+<p>The connection between these propositions is not intuitive. There is required a medium, which may enable the mind to draw such an inference, if indeed it be drawn by reasoning and argument. What that medium is, I must confess, passes my comprehension, and it is incumbent on those to produce it, who assert that it really exists, and is the origin of all our conclusions concerning matter of fact.</p>
+</blockquote>
+<p>The medium Hume refers to is simply the calculus of probability, something which post-dates Hume's writings.  Hume was being honest that he didn't see a way, and he did not claim that there was no possible way - that would be an argument from ignorance.  </p>
+<h2 id="what-does-laplace-say-about-the-sun-rising">What does Laplace say about the Sun rising?</h2>
+<p>Once we have probability theory, then we can actually do some simple calculations concerning the probability of the sun rising tomorrow.  Of course these calculations are not a complete description of the problem, but give the flavor of it.  Laplace used the sunrise problem as an example application of his Rule of Succession, which itself is derived from the rules of probability.  The calculation goes something like this.</p>
+<ul>
+<li>Our model is that the sun rises with unknown probability <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></li>
+<li>Given complete ignorance of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span> we assume an initial uniform probability</li>
+<li>The sun has risen every day for the written record, say, 10000 years</li>
+<li>the probability for rising tomorrow, which is also the mean value of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span> over the posterior, is given by the <a href="http://en.wikipedia.org/wiki/Rule_of_succession">Rule of Succession</a> (also known as the "assume one success and one failure"):
+\begin{eqnarray}
+P(r_{\rm tomorrow}|r_{\rm today}, r_{\rm yesterday}, r_{\rm day before}, \ldots, r_{0}) 
+&amp;=&amp; \frac{10000 {\rm yr}\times 365 {\rm d}/{\rm yr}+1}{10000 {\rm yr}\times 365 {\rm d}/{\rm yr}+2}\\
+&amp;=&amp;0.9999997
+\end{eqnarray}</li>
+</ul>
+<p>It <a href="http://en.wikipedia.org/wiki/Rule_of_succession#Mathematical_details">gets messier</a> when you can't even assume that both a failure and a success are possible, but it <a href="http://en.wikipedia.org/wiki/Rule_of_succession#Mathematical_details">can still be done</a> without any change to the qualitative result.</p>
+<p>Clearly we have quite good reasons to believe the that sun will rise tomorrow.</p>
+<h2 id="two-theories">Two theories</h2>
+<p>We go back to Calum's two theories: </p>
+<blockquote>
+<p>If you compare two theories, one says that the sun rises everyday in the past and in the future and the other theory says that the sun rises everyday in the past but won't rise tomorrow.  Both those theories predict the observations we already have, both those theories lead us to expect the observations, and so the observations we currently have don't distinguish between these two theories.{.tq}</p>
+</blockquote>
+<p>The situation for arguing a high probability of tomorrow's sun rise is far more compelling, however, because our information is not simply that the sun has risen in the past, but includes observations of the patterns of the seasons, the predictions of the phases of the moon and Venus, and a whole host of other factors which significantly increase the chance the sun will rise.  Laplace knew this well, and was using this example not as a serious calculation, but as a pedagogical example.</p>
+<p>As a consequence, both of Calum's so-called theories do <em>not</em> predict the observations we already have - only one of them does.  Even if we accept just the observations for which both theories are consistent in the past, one has to view this two-theory perspective from the point of prediction.  It's now tomorrow, and "Theory B" doesn't work - so we modify it to say the sun won't rise <em>tomorrow</em> (the new tomorrow).  That next day comes with a sunrise, and this "Theory B 2.0" is wrong (again) and has to be modified (again).  It is clear that "Theory B" fails, and we should be less confident in it.  That's why, in science, it isn't nearly enough to be consistent with past data - one must make predictions, not just post-dictions, and test it.  It is often trivial to come up with "explanations" for data we already have.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>It seems to me that the so-called "Problem of Induction" was solved centuries ago, with the advent of probability theory, and all such hand-wringing seems to be only for philosophers.  In the sciences, these challenges to induction just aren't taken seriously.   I'll sleep soundly tonight with the confident knowledge that the sun will rise again tomorrow, despite the protestations of philosophers.</p>
+
+
+								</section>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    // var disqus_config = function () {
+    //     // Replace PAGE_URL with your page's canonical URL variable
+    //     this.page.url = PAGE_URL;  
+        
+    //     // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    //     this.page.identifier = PAGE_IDENTIFIER; 
+    // };
+    
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        var disqus_shortname = "bblaisontheweb"; 
+        var disqus_title = "Will the Sun Rise Tomorrow?";
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+	
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                        <section id="search" class="alt">
+                            <form class="navbar-search" action="https://bblais.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> 
+                                <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+                        </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="https://bblais.github.io/index.html">Homepage</a></li>
+                                    <li>
+                                        <span class="opener"><a href="https://bblais.github.io/index.html#0" title="">Blog</a></span>
+                                        <ul>
+                                            <li><a href="https://bblais.github.io/index.html#blog">Recent</a></li>
+                                            <li><a href="https://bblais.github.io/category/articles.html">articles <span>(85)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/books.html">books <span>(3)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/math.html">math <span>(8)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/media.html">media <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/presentations.html">presentations <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/productivity.html">productivity <span>(7)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/programming.html">programming <span>(5)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/projects.html">projects <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/religion.html">religion <span>(31)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/science.html">science <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/unbelievable-project.html">Unbelievable Project <span>(21)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/wordpress_migration.html">wordpress_migration <span>(160)</span></a></li>
+     
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://bblais.github.io/pages/presentations.html">Presentations</a></li>
+                                    <li><a href="https://bblais.github.io/pages/projects.html">Projects</a></li>
+                                    <li><a href="https://bblais.github.io/pages/publications.html">Publications</a></li>
+                                    <li><a href="https://bblais.github.io/archives.html">Archives</a></li>
+                                    <li><a href="https://bblais.github.io/about.html">About</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Popular Posts</h2>
+                                </header>
+
+                                <div class="mini-posts">
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2021/Apr/09/gravitational-attraction/" class="image">
+                                                <img src="https://bblais.github.io/images/muzammil-soorma-R11bppS4q8o-unsplash.jpg" alt="muzammil-soorma-R11bppS4q8o-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Gravitational Attraction </strong>
+                                                <p>What would happen if two people out in space a few meters apart, abandoned by their spacecraft, decided to wait until gravity pulled them together?  My initial thought was that …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/" class="image">
+                                                <img src="https://bblais.github.io/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg" alt="roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                                            </a>
+                                            <p><strong>A Simple Physics Problem Gets Messy </strong>
+                                                <p>A physics problem from a practice AP test came to my attention, when my daughter was in AP physics this past spring.  I went over her solutions when she did …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/" class="image">
+                                                <img src="https://bblais.github.io/images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Skepticism and Dubious Medical Procedures </strong>
+                                                <p>In my discussion with Jonathan McLatchie on the Still Unbelievable podcast, I said that there hasn’t been a verified miracle claim even since Hume’s essay on miracles.  Here I look into the papers he references in response.</p></p>
+                                        </article>
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>What problems are you interested in?  How can I help?</p>
+                                <ul class="contact">
+                                    <li class="icon brands fa-twitter"><a href="https://twitter.com/bblais">@bblais</a></li>
+                                    <li class="icon solid fa-envelope"><a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></li>
+                                    <li class="icon solid fa-phone"><a href="tel://4012326153">(401) 232-6153</a></li>
+                                    <li class="icon solid fa-home">Bryant University<br>
+                                        1150 Douglas Pike<br>
+                                        Smithfield, RI<br>
+                                        02917 US</li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">&copy; 2021 - All rights reserved. Adapted from <a href="https://html5up.net/editorial">Editorial Theme</a> html5up.net | @ajlkn, 
+                                    Converted to <a href="https://blog.getpelican.com">Pelican</a> theme by <a href="#">Brian Blais</a>. </p>
+                            </footer>
+
+                    </div>
+                </div>
+
+		</div>
+
+
+    <!-- Scripts -->
+	<script src="https://bblais.github.io/theme/js/jquery.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
+	<script src="https://bblais.github.io/theme/js/browser.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/breakpoints.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/util.js"></script>
+	<script src="https://bblais.github.io/theme/js/main.js"></script>
+	<script>
+		function validateForm(query)
+		{
+			return (query.length > 0);
+		}
+	</script>
+	
+	
+	</body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Simulating Stochastic Processes  - Gillespie Algorithm  · bblais on the web
+</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://bblais.github.io/theme/css/main.css" />
+		<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+		crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="https://bblais.github.io/theme/css/custom.css" media="screen">
+    
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+		<!-- Main -->
+			<div id="main">
+
+				<div class="inner">
+
+					<!-- Header -->
+						<header id="header">
+							<a href="https://bblais.github.io/index.html" class="logo"><strong>bblais on the web</strong></a>
+							<ul class="icons">
+								<li><a href="https://twitter.com/bblais" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/bblais" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://bblais.github.io/feeds/all.atom.xml" class="icon solid fa-rss"><span class="label">YouTube</span></a></li>
+								<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</header>
+
+
+
+
+
+
+
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Simulating Stochastic Processes</h1> 
+ <h2> Gillespie Algorithm </h2> 
+										<p><strong><time pubdate="pubdate" datetime="2022-01-07T00:00:00-05:00">Fri 07 January 2022</strong>
+												In  
+													<em><a href="https://bblais.github.io/category/science.html">#science</a></em>
+										</p>
+									</header>
+
+										<span class="image left"><img src="https://bblais.github.io/images/john-doyle-0HMJhaIMqvw-unsplash.jpg"></span>
+
+
+									<p>In this post we are going to explore the simulation of stochastic (i.e. random) processes, and work our way to understanding how the Gillespie algorithm works.  We'll be using mostly straightforward Python, except for my <code>Storage</code> class from https://bblais.github.io/posts/2020/Feb/24/common-python-pattern-building-up-lists-to-plot/ and some default plotting preferences specified in https://raw.githubusercontent.com/bblais/Python-for-Science/master/science/science.mplstyle.</p>
+<h2 id="imports">Imports</h2>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;science.mplstyle&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">Memory</span> <span class="kn">import</span> <span class="n">Storage</span>
+</code></pre></div>
+
+<h2 id="a-simple-problem">A simple problem</h2>
+<p>In this first problem, we have a process that occurs with probability <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>0.02</mn></mrow><annotation encoding="application/x-tex">p=0.02</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.02</span></span></span></span> per second.  When an event happens, the number <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> is incremented by 1.  The average linear rate of increase will be the same as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">number_of_simulations</span><span class="o">=</span><span class="mi">20</span>
+<span class="n">dt</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="n">p</span><span class="o">=</span><span class="mf">0.02</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number_of_simulations</span><span class="p">):</span>
+    <span class="n">S</span><span class="o">=</span><span class="n">Storage</span><span class="p">()</span>
+    <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">n</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+    <span class="k">while</span> <span class="n">t</span><span class="o">&lt;</span><span class="mi">1000</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rand</span><span class="p">()</span><span class="o">&lt;</span><span class="n">p</span><span class="o">*</span><span class="n">dt</span><span class="p">:</span>
+            <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+
+        <span class="n">t</span><span class="o">+=</span><span class="n">dt</span>
+
+        <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+
+    <span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">arrays</span><span class="p">()</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;b-o&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+
+
+<span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">p</span><span class="o">*</span><span class="n">t</span><span class="p">,</span><span class="s1">&#39;r-&#39;</span><span class="p">)</span>
+
+
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$n$&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$t$&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="output_6_1.png" src="https://bblais.github.io/images/output_6_1.png"></p>
+<p>To motivate the faster algorithm, let's run a bunch of simulations, and record the time to the first event only.  Then count up how many events happen at the various times.  </p>
+<div class="highlight"><pre><span></span><code><span class="n">S</span><span class="o">=</span><span class="n">Storage</span><span class="p">()</span>
+
+<span class="n">N</span><span class="o">=</span><span class="mi">50000</span>
+<span class="n">p</span><span class="o">=</span><span class="mf">0.03</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+
+    <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rand</span><span class="p">()</span><span class="o">&lt;</span><span class="n">p</span><span class="p">:</span>
+            <span class="k">break</span>
+
+        <span class="n">t</span><span class="o">+=</span><span class="mi">1</span>
+
+    <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span>
+
+<span class="n">t</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">arrays</span><span class="p">()</span>
+
+<span class="n">n</span><span class="p">,</span><span class="n">tn</span><span class="p">,</span><span class="n">h</span><span class="o">=</span><span class="n">hist</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="mi">200</span><span class="p">);</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time to first event&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;number of events&#39;</span><span class="p">)</span>
+
+
+<span class="n">slope</span><span class="p">,</span><span class="n">intercept</span><span class="o">=</span><span class="n">polyfit</span><span class="p">(</span><span class="n">tn</span><span class="p">[:</span><span class="mi">100</span><span class="p">],</span><span class="n">log</span><span class="p">(</span><span class="n">n</span><span class="p">[:</span><span class="mi">100</span><span class="p">]),</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">tn</span><span class="p">[:</span><span class="mi">100</span><span class="p">],</span><span class="n">exp</span><span class="p">(</span><span class="n">slope</span><span class="o">*</span><span class="n">tn</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span><span class="o">+</span><span class="n">intercept</span><span class="p">),</span><span class="s1">&#39;r-&#39;</span><span class="p">)</span>
+
+<span class="n">λ</span><span class="o">=</span><span class="n">p</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">tn</span><span class="p">,</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">λ</span><span class="o">*</span><span class="n">tn</span><span class="p">)</span><span class="o">*</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;k--&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="Pasted image 20220106220712.png" src="https://bblais.github.io/images/Pasted image 20220106220712.png"></p>
+<p>which looks exponential, so we compare it to an exponentiial fit (linear fit to the log) and an exponential with a decay factor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\lambda=p</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span>.  The fit is quite good!</p>
+<p>To normalize analytically (and make it a proper probability function), we need to make sure that the integral over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>  is 1,</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right left" columnspacing="0em" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo>=</mo><msub><mi>p</mi><mi>o</mi></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><msub><mi>p</mi><mi>o</mi></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup><mi>d</mi><mi>t</mi></mrow></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo>=</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><msubsup><mrow><mrow><mo fence="true">(</mo><mfrac><mn>1</mn><mrow><mo>−</mo><mi>λ</mi></mrow></mfrac><mo fence="true">)</mo></mrow><msub><mi>p</mi><mi>o</mi></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup><mo fence="true">∣</mo></mrow><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo>=</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mn>0</mn><mo>−</mo><mrow><mo fence="true">(</mo><mfrac><mn>1</mn><mrow><mo>−</mo><mi>λ</mi></mrow></mfrac><mo fence="true">)</mo></mrow><msub><mi>p</mi><mi>o</mi></msub></mrow></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo>=</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><msub><mi>p</mi><mi>o</mi></msub></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo>=</mo><mi>λ</mi></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+p(t)&amp;= p_o e^{-\lambda t}\\
+\int_0^{+\infty} p_o e^{-\lambda t} dt &amp;=1 \\
+\left.\left(\frac{1}{-\lambda}\right)p_o e^{-\lambda t}\right|^{+\infty}_{0} &amp;=1 \\
+0 - \left(\frac{1}{-\lambda}\right)p_o &amp;=1 \\
+p_o &amp;=\lambda
+\end{aligned}
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:11.4033em;vertical-align:-5.4516em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:5.9516em;"><span style="top:-8.6638em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span><span style="top:-6.4825em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5212em;"><span style="top:-1.7881em;margin-left:-0.4445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span><span style="top:-3.8129em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">+</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9119em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">o</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">λ</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span><span class="mord mathnormal">d</span><span class="mord mathnormal">t</span></span></span><span style="top:-3.6594em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="minner"><span class="minner"><span class="mopen nulldelimiter"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord mathnormal">λ</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">o</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">λ</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.45em;"><span class="pstrut" style="height:4.4em;"></span><span style="width:0.333em;height:2.400em;"><svg height="2.400em" viewBox="0 0 333 2400" width="0.333em" xmlns="http://www.w3.org/2000/svg"><path d="M145 15 v585 v1200 v585 c2.667,10,9.667,15,21,15 c10,0,16.667,-5,20,-15 v-585 v-1200 v-585 c-2.667,-10,-9.667,-15,-21,-15 c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1200 v585 h43z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6112em;"><span style="top:-1.7003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span><span style="top:-3.9029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">+</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9997em;"><span></span></span></span></span></span></span></span></span><span style="top:-0.9096em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">−</span><span class="mord mathnormal">λ</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">o</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:1.1804em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">o</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:5.4516em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:5.9516em;"><span style="top:-8.6638em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">o</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">λ</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span><span style="top:-6.4825em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span></span><span style="top:-3.6594em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span></span><span style="top:-0.9096em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span></span><span style="top:1.1804em;"><span class="pstrut" style="height:3.6112em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">λ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:5.4516em;"><span></span></span></span></span></span></span></span></span></span></span></span>
+therefore the distribution is </p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>λ</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+p(t) = \lambda e^{-\lambda t}
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8991em;"></span><span class="mord mathnormal">λ</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight">λ</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span></span>
+which can be seen here https://en.wikipedia.org/wiki/Exponential_distribution</p>
+<h2 id="towards-gillespie">Towards Gillespie</h2>
+<p>Instead of flipping the coin every millisecond (i.e. constant time), we can randomly pick a <em>time</em> from an exponential distribution -- the time to the next event (i.e. dynamic time).</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">constant_time</span><span class="p">(</span><span class="n">N</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">n0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">t_max</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="mf">0.02</span><span class="p">,</span><span class="n">dt</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">S_mat</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">S</span><span class="o">=</span><span class="n">Storage</span><span class="p">()</span>
+        <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+        <span class="n">n</span><span class="o">=</span><span class="n">n0</span>
+        <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+        <span class="k">while</span> <span class="n">t</span><span class="o">&lt;</span><span class="n">t_max</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">rand</span><span class="p">()</span><span class="o">&lt;</span><span class="n">p</span><span class="o">*</span><span class="n">dt</span><span class="p">:</span>
+                <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+
+            <span class="n">t</span><span class="o">+=</span><span class="n">dt</span>
+
+            <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+
+        <span class="n">S_mat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">S_mat</span>
+</code></pre></div>
+
+<p>and</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">dynamic_time</span><span class="p">(</span><span class="n">N</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="n">n0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">t_max</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="mf">0.02</span><span class="p">,</span><span class="n">dt</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">S_mat</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">S</span><span class="o">=</span><span class="n">Storage</span><span class="p">()</span>
+        <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+        <span class="n">n</span><span class="o">=</span><span class="n">n0</span>
+        <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+        <span class="k">while</span> <span class="n">t</span><span class="o">&lt;</span><span class="n">t_max</span><span class="p">:</span>
+            <span class="n">λ</span><span class="o">=</span><span class="n">p</span>
+            <span class="n">t_next</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">exponential</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">λ</span><span class="p">)</span>
+
+            <span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="o">+</span><span class="n">t_next</span>
+            <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+
+            <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+            <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+
+
+        <span class="n">S_mat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">S_mat</span>
+</code></pre></div>
+
+<p>to get</p>
+<div class="highlight"><pre><span></span><code><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">S</span> <span class="ow">in</span> <span class="n">constant_time</span><span class="p">():</span>
+    <span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">arrays</span><span class="p">()</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;b-o&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$n$&#39;</span><span class="p">)</span>
+<span class="n">title</span><span class="p">(</span><span class="s1">&#39;Constant Time&#39;</span><span class="p">)</span>
+<span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">])</span>
+<span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([]);</span>
+
+
+<span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">S</span> <span class="ow">in</span> <span class="n">dynamic_time</span><span class="p">():</span>
+    <span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">arrays</span><span class="p">()</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;b-o&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$n$&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$t$&#39;</span><span class="p">)</span>
+<span class="n">title</span><span class="p">(</span><span class="s1">&#39;Dynamic Time&#39;</span><span class="p">)</span>
+<span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">])</span>
+</code></pre></div>
+
+<p><img alt="Pasted image 20220106221326.png" src="https://bblais.github.io/images/Pasted image 20220106221326.png"></p>
+<p>Timing this, we get more than 10x faster with the dynamic time.  This would be more if the rates were lower. </p>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">timeit</span> <span class="n">S_mat</span><span class="o">=</span><span class="n">constant_time</span><span class="p">();</span>
+</code></pre></div>
+
+<blockquote>
+<p>18.8 ms ± 614 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">timeit</span> <span class="n">S_mat</span><span class="o">=</span><span class="n">dynamic_time</span><span class="p">();</span>
+</code></pre></div>
+
+<blockquote>
+<p>1.39 ms ± 29.3 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)</p>
+</blockquote>
+<h2 id="gillespie">Gillespie</h2>
+<p>We now can extend the problem to the next simplest case, where two types of events can happen, say a birth probability and a death probability.  This extension will have two added complexities from the previous example:
+1. more than one type of event
+2. the probabilities for those events, which determine the rates, depend on the variables and thus depend on time</p>
+<p>In the simple birth-death process we have,</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right left" columnspacing="0em" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><msub><mi>p</mi><mtext>birth</mtext></msub></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo>=</mo><mi>b</mi><mo>⋅</mo><mi>n</mi></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><msub><mi>p</mi><mtext>death</mtext></msub></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo>=</mo><mi>d</mi><mo>⋅</mo><mi>n</mi></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+p_\text{birth}&amp;=b\cdot n\\
+p_\text{death}&amp;=d\cdot n\\
+\end{aligned}
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:3em;vertical-align:-1.25em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.75em;"><span style="top:-3.91em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">birth</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord text mtight"><span class="mord mtight">death</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.75em;"><span style="top:-3.91em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">n</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span></span></span></span></span></span></span>
+where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> are the per-capita probability for a birth or death, respectively, and where a birth results in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\rightarrow n+1</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> and a death results in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>→</mo><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\rightarrow n-1</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>.  The Gillespie algorithm proceeds in two steps
+1. generate the next time (like above) for <em>some</em> event using the sum of the rates of all of the possible events
+2. randomly choose one of the possible events, weighted by their prospective rates -- faster processes chosen more often</p>
+<p>In code this could look like</p>
+<div class="highlight"><pre><span></span><code><span class="n">no</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">b</span><span class="o">=</span><span class="mf">0.03</span>
+<span class="n">d</span><span class="o">=</span><span class="mf">0.02</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+    <span class="n">S</span><span class="o">=</span><span class="n">Storage</span><span class="p">()</span>
+
+    <span class="n">n</span><span class="o">=</span><span class="n">no</span>
+    <span class="n">t</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+    <span class="n">t_max</span><span class="o">=</span><span class="mi">200</span>
+    <span class="k">while</span> <span class="n">t</span><span class="o">&lt;</span><span class="n">t_max</span><span class="p">:</span>
+        <span class="n">pb</span><span class="o">=</span><span class="n">b</span><span class="o">*</span><span class="n">n</span>
+        <span class="n">pd</span><span class="o">=</span><span class="n">d</span><span class="o">*</span><span class="n">n</span>
+
+        <span class="n">rates</span><span class="o">=</span><span class="p">[</span><span class="n">pb</span><span class="p">,</span><span class="n">pd</span><span class="p">]</span>
+        <span class="n">total_rates</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">rates</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">total_rates</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">time_next</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">exponential</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">total_rates</span><span class="p">)</span>
+        <span class="n">r</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">()</span><span class="o">*</span><span class="n">total_rates</span>
+
+        <span class="n">t</span><span class="o">+=</span><span class="n">time_next</span>
+        <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+        <span class="k">if</span> <span class="n">r</span><span class="o">&lt;</span><span class="n">pb</span><span class="p">:</span>
+            <span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">n</span><span class="o">-=</span><span class="mi">1</span>
+
+        <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+
+    <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">n</span>
+    <span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">arrays</span><span class="p">()</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;b.-&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+
+
+<span class="n">t</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">t_max</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">no</span><span class="o">*</span><span class="n">exp</span><span class="p">((</span><span class="n">b</span><span class="o">-</span><span class="n">d</span><span class="p">)</span><span class="o">*</span><span class="n">t</span><span class="p">),</span><span class="s1">&#39;r-&#39;</span><span class="p">)</span>    
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$n$&#39;</span><span class="p">)</span>
+<span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="n">t_max</span><span class="p">])</span>
+</code></pre></div>
+
+<p><img alt="Pasted image 20220107080030.png" src="https://bblais.github.io/images/Pasted image 20220107080030.png"></p>
+<p>for large N, this should look like the solution</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>n</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>b</mi><mo>⋅</mo><mi>n</mi><mo>−</mo><mi>d</mi><mo>⋅</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">
+\frac{dn}{dt}=b\cdot n - d\cdot n
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:2.0574em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="mord mathnormal">t</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="mord mathnormal">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span></span>
+which will be exponential (population growth),
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mi>n</mi><mi>o</mi></msub><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>−</mo><mi>d</mi><mo stretchy="false">)</mo><mo>⋅</mo><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+n=n_o e^{(b-d)\cdot t}
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.088em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">o</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">b</span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">d</span><span class="mclose mtight">)</span><span class="mbin mtight">⋅</span><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span></span>
+which you can see in the red.  In the small-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> case (like the one above, starting with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n=5</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span>, there is a lot of variation, but the <em>average</em> is the exponential curve.  Changing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>o</mi></msub><mo>=</mo><mn>500</mn></mrow><annotation encoding="application/x-tex">n_o=500</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">o</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">500</span></span></span></span> we can see the variation reduces considerably.</p>
+<p><img alt="Pasted image 20220107080819.png" src="https://bblais.github.io/images/Pasted image 20220107080819.png"></p>
+<h2 id="gillespie-with-sir-model">Gillespie with SIR Model</h2>
+<p>As a final example we look at a probabilistic <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model">SIR model</a>.  In this model we have three sub-populations or compartments, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span>, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span> for Susceptible, Infected, and Recovered.  The Susceptible become infected at a rate of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mi>S</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\beta S I</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">βS</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> and the Infected recover at a rate of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\gamma I</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">γ</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span>.  Another way to write this is as two possible events.</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable columnalign="right left" columnspacing="0em" rowspacing="0.25em"><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mi>S</mi><mo separator="true">,</mo><mi>I</mi></mrow></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo><mover><mo><mo>⟶</mo></mo><mrow><mi>β</mi><mi>S</mi><mi>I</mi></mrow></mover></mo><mi>S</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mi>I</mi><mo>+</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mi>I</mi><mo separator="true">,</mo><mi>R</mi></mrow></mstyle></mtd><mtd><mstyle displaystyle="true" scriptlevel="0"><mrow><mrow></mrow><mo><mover><mo><mo>⟶</mo></mo><mrow><mi>γ</mi><mi>I</mi></mrow></mover></mo><mi>I</mi><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mi>R</mi><mo>+</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+S,I &amp;\stackrel{\beta S I}{\longrightarrow} S-1, I+1\\
+I,R &amp;\stackrel{\gamma I}{\longrightarrow} I-1, R+1\\
+\end{aligned}
+</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:4.0007em;vertical-align:-1.7503em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.2503em;"><span style="top:-4.2503em;"><span class="pstrut" style="height:3.3442em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span><span style="top:-2.2539em;"><span class="pstrut" style="height:3.3442em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.7503em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.2503em;"><span style="top:-4.2503em;"><span class="pstrut" style="height:3.3442em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3442em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">⟶</span></span></span><span style="top:-3.7581em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">βS</span><span class="mord mathnormal mtight" style="margin-right:0.07847em;">I</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span></span></span><span style="top:-2.2539em;"><span class="pstrut" style="height:3.3442em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3364em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">⟶</span></span></span><span style="top:-3.7581em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05556em;">γ</span><span class="mord mathnormal mtight" style="margin-right:0.07847em;">I</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.011em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.7503em;"><span></span></span></span></span></span></span></span></span></span></span></span>
+So, Gillespie follows by</p>
+<ol>
+<li>generate the next time (like above) for <em>some</em> event (e.g. one of the two above) using the sum of the rates of all of the possible events</li>
+<li>randomly choose one of the possible events, weighted by their prospective rates -- faster processes chosen more often</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="n">number_of_sims</span><span class="o">=</span><span class="mi">100</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number_of_sims</span><span class="p">):</span>
+
+    <span class="n">Io</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">N</span><span class="o">=</span><span class="mi">100</span>
+    <span class="n">tmax</span><span class="o">=</span><span class="mi">100</span>
+
+
+    <span class="n">Io</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">β</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">γ</span><span class="o">=</span><span class="mf">0.5</span>
+
+
+    <span class="n">t</span><span class="o">=</span><span class="mf">0.0</span>
+    <span class="n">ni</span><span class="o">=</span><span class="n">Io</span>
+    <span class="n">ns</span><span class="o">=</span><span class="n">N</span><span class="o">-</span><span class="n">ni</span>
+    <span class="n">nr</span><span class="o">=</span><span class="mi">0</span>
+
+    <span class="n">S</span><span class="o">=</span><span class="n">Storage</span><span class="p">()</span>
+    <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">ns</span><span class="p">,</span><span class="n">ni</span><span class="p">,</span><span class="n">nr</span>    
+
+    <span class="n">tw</span><span class="o">=</span><span class="mf">0.0</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">t</span> <span class="o">&lt;</span> <span class="n">tmax</span><span class="p">):</span>
+        <span class="n">w1</span><span class="o">=</span><span class="n">β</span><span class="o">*</span><span class="n">ns</span><span class="o">*</span><span class="n">ni</span><span class="o">/</span><span class="n">N</span>  <span class="c1"># infect</span>
+        <span class="n">w2</span><span class="o">=</span><span class="n">γ</span><span class="o">*</span><span class="n">ni</span> <span class="c1"># recover</span>
+        <span class="n">w</span><span class="o">=</span><span class="n">w1</span><span class="o">+</span><span class="n">w2</span>    
+
+        <span class="n">tn</span><span class="o">=-</span><span class="n">log</span><span class="p">(</span><span class="n">rand</span><span class="p">())</span><span class="o">/</span><span class="n">w</span>  <span class="c1"># when&#39;s the next thing happening?</span>
+        <span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="o">+</span><span class="n">tn</span>
+        <span class="n">r</span><span class="o">=</span><span class="n">rand</span><span class="p">()</span><span class="o">*</span><span class="n">w</span>  <span class="c1"># which thing happened?</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;</span> <span class="n">w1</span><span class="p">):</span>
+            <span class="n">ns</span><span class="o">-=</span><span class="mi">1</span>
+            <span class="n">ni</span><span class="o">+=</span><span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">nr</span><span class="o">+=</span><span class="mi">1</span>
+            <span class="n">ni</span><span class="o">-=</span><span class="mi">1</span>
+
+
+        <span class="n">S</span><span class="o">+=</span><span class="n">t</span><span class="p">,</span><span class="n">ns</span><span class="p">,</span><span class="n">ni</span><span class="p">,</span><span class="n">nr</span>
+
+        <span class="k">if</span> <span class="n">ni</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+
+
+    <span class="n">t</span><span class="p">,</span><span class="n">ns</span><span class="p">,</span><span class="n">ni</span><span class="p">,</span><span class="n">nr</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">arrays</span><span class="p">()</span>
+
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">ns</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">ni</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">nr</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>    
+
+
+
+<span class="c1"># these numbers taken from a pyndamics simulation, just for comparison</span>
+<span class="n">t</span><span class="p">,</span><span class="n">S</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="n">R</span><span class="o">=</span><span class="p">(</span><span class="n">array</span><span class="p">([</span> <span class="mf">0.</span>        <span class="p">,</span>  <span class="mf">1.57894737</span><span class="p">,</span>  <span class="mf">3.15789474</span><span class="p">,</span>  <span class="mf">4.73684211</span><span class="p">,</span>  <span class="mf">6.31578947</span><span class="p">,</span>
+         <span class="mf">7.89473684</span><span class="p">,</span>  <span class="mf">9.47368421</span><span class="p">,</span> <span class="mf">11.05263158</span><span class="p">,</span> <span class="mf">12.63157895</span><span class="p">,</span> <span class="mf">14.21052632</span><span class="p">,</span>
+        <span class="mf">15.78947368</span><span class="p">,</span> <span class="mf">17.36842105</span><span class="p">,</span> <span class="mf">18.94736842</span><span class="p">,</span> <span class="mf">20.52631579</span><span class="p">,</span> <span class="mf">22.10526316</span><span class="p">,</span>
+        <span class="mf">23.68421053</span><span class="p">,</span> <span class="mf">25.26315789</span><span class="p">,</span> <span class="mf">26.84210526</span><span class="p">,</span> <span class="mf">28.42105263</span><span class="p">,</span> <span class="mf">30.</span>        <span class="p">]),</span>
+         <span class="n">array</span><span class="p">([</span><span class="mf">99.</span>        <span class="p">,</span> <span class="mf">96.68233609</span><span class="p">,</span> <span class="mf">92.04102645</span><span class="p">,</span> <span class="mf">83.73584541</span><span class="p">,</span> <span class="mf">71.42053096</span><span class="p">,</span>
+                <span class="mf">57.24621795</span><span class="p">,</span> <span class="mf">44.66960674</span><span class="p">,</span> <span class="mf">35.51429297</span><span class="p">,</span> <span class="mf">29.55644131</span><span class="p">,</span> <span class="mf">25.85923582</span><span class="p">,</span>
+                <span class="mf">23.59619256</span><span class="p">,</span> <span class="mf">22.21121513</span><span class="p">,</span> <span class="mf">21.36043856</span><span class="p">,</span> <span class="mf">20.83578683</span><span class="p">,</span> <span class="mf">20.51122022</span><span class="p">,</span>
+                <span class="mf">20.31000289</span><span class="p">,</span> <span class="mf">20.18506816</span><span class="p">,</span> <span class="mf">20.10742367</span><span class="p">,</span> <span class="mf">20.05914037</span><span class="p">,</span> <span class="mf">20.02910249</span><span class="p">]),</span>
+         <span class="n">array</span><span class="p">([</span> <span class="mf">1.</span>        <span class="p">,</span>  <span class="mf">2.13320482</span><span class="p">,</span>  <span class="mf">4.31469633</span><span class="p">,</span>  <span class="mf">7.89149267</span><span class="p">,</span> <span class="mf">12.25267231</span><span class="p">,</span>
+                <span class="mf">15.36581863</span><span class="p">,</span> <span class="mf">15.53893182</span><span class="p">,</span> <span class="mf">13.22645672</span><span class="p">,</span> <span class="mf">10.00259897</span><span class="p">,</span>  <span class="mf">7.01814482</span><span class="p">,</span>
+                 <span class="mf">4.70207514</span><span class="p">,</span>  <span class="mf">3.0626549</span> <span class="p">,</span>  <span class="mf">1.96059584</span><span class="p">,</span>  <span class="mf">1.2418213</span> <span class="p">,</span>  <span class="mf">0.78139042</span><span class="p">,</span>
+                 <span class="mf">0.48968045</span><span class="p">,</span>  <span class="mf">0.30609591</span><span class="p">,</span>  <span class="mf">0.19103806</span><span class="p">,</span>  <span class="mf">0.11911362</span><span class="p">,</span>  <span class="mf">0.07422209</span><span class="p">]),</span>
+         <span class="n">array</span><span class="p">([</span> <span class="mf">0.</span>        <span class="p">,</span>  <span class="mf">1.18445909</span><span class="p">,</span>  <span class="mf">3.64427722</span><span class="p">,</span>  <span class="mf">8.37266192</span><span class="p">,</span> <span class="mf">16.32679674</span><span class="p">,</span>
+                <span class="mf">27.38796342</span><span class="p">,</span> <span class="mf">39.79146144</span><span class="p">,</span> <span class="mf">51.25925031</span><span class="p">,</span> <span class="mf">60.44095972</span><span class="p">,</span> <span class="mf">67.12261936</span><span class="p">,</span>
+                <span class="mf">71.7017323</span> <span class="p">,</span> <span class="mf">74.72612997</span><span class="p">,</span> <span class="mf">76.6789656</span> <span class="p">,</span> <span class="mf">77.92239186</span><span class="p">,</span> <span class="mf">78.70738935</span><span class="p">,</span>
+                <span class="mf">79.20031666</span><span class="p">,</span> <span class="mf">79.50883592</span><span class="p">,</span> <span class="mf">79.70153827</span><span class="p">,</span> <span class="mf">79.821746</span>  <span class="p">,</span> <span class="mf">79.89667542</span><span class="p">]))</span>
+
+
+<span class="c1"># these are here to get the legend with the right colors</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">S</span><span class="p">,</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;S&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">I</span><span class="p">,</span><span class="s1">&#39;g-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;I&#39;</span><span class="p">)</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">R</span><span class="p">,</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;R&#39;</span><span class="p">)</span>    
+<span class="n">legend</span><span class="p">()</span>
+
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;number&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="Pasted image 20220107082918.png" src="https://bblais.github.io/images/Pasted image 20220107082918.png"></p>
+<p>The comparison is made with a <a href="https://bblais.github.io/pyndamics3/tutorial.zombies.html#SIR-Model">continuous version of the model using the pyndamics3 library</a>.  We will see later that we can use <a href="https://bblais.github.io/pyndamics3/">pyndamics3</a> to do <a href="https://bblais.github.io/pyndamics3/stochastic.html#Stochastic-SIR-Model">stochastic algorithms as well</a>.</p>
+
+
+								</section>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    // var disqus_config = function () {
+    //     // Replace PAGE_URL with your page's canonical URL variable
+    //     this.page.url = PAGE_URL;  
+        
+    //     // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    //     this.page.identifier = PAGE_IDENTIFIER; 
+    // };
+    
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        var disqus_shortname = "bblaisontheweb"; 
+        var disqus_title = "Simulating Stochastic Processes";
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+	
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                        <section id="search" class="alt">
+                            <form class="navbar-search" action="https://bblais.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> 
+                                <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+                        </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="https://bblais.github.io/index.html">Homepage</a></li>
+                                    <li>
+                                        <span class="opener"><a href="https://bblais.github.io/index.html#0" title="">Blog</a></span>
+                                        <ul>
+                                            <li><a href="https://bblais.github.io/index.html#blog">Recent</a></li>
+                                            <li><a href="https://bblais.github.io/category/articles.html">articles <span>(85)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/books.html">books <span>(3)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/math.html">math <span>(8)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/media.html">media <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/presentations.html">presentations <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/productivity.html">productivity <span>(7)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/programming.html">programming <span>(5)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/projects.html">projects <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/religion.html">religion <span>(31)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/science.html">science <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/unbelievable-project.html">Unbelievable Project <span>(21)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/wordpress_migration.html">wordpress_migration <span>(160)</span></a></li>
+     
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://bblais.github.io/pages/presentations.html">Presentations</a></li>
+                                    <li><a href="https://bblais.github.io/pages/projects.html">Projects</a></li>
+                                    <li><a href="https://bblais.github.io/pages/publications.html">Publications</a></li>
+                                    <li><a href="https://bblais.github.io/archives.html">Archives</a></li>
+                                    <li><a href="https://bblais.github.io/about.html">About</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Popular Posts</h2>
+                                </header>
+
+                                <div class="mini-posts">
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2021/Apr/09/gravitational-attraction/" class="image">
+                                                <img src="https://bblais.github.io/images/muzammil-soorma-R11bppS4q8o-unsplash.jpg" alt="muzammil-soorma-R11bppS4q8o-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Gravitational Attraction </strong>
+                                                <p>What would happen if two people out in space a few meters apart, abandoned by their spacecraft, decided to wait until gravity pulled them together?  My initial thought was that …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/" class="image">
+                                                <img src="https://bblais.github.io/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg" alt="roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                                            </a>
+                                            <p><strong>A Simple Physics Problem Gets Messy </strong>
+                                                <p>A physics problem from a practice AP test came to my attention, when my daughter was in AP physics this past spring.  I went over her solutions when she did …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/" class="image">
+                                                <img src="https://bblais.github.io/images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Skepticism and Dubious Medical Procedures </strong>
+                                                <p>In my discussion with Jonathan McLatchie on the Still Unbelievable podcast, I said that there hasn’t been a verified miracle claim even since Hume’s essay on miracles.  Here I look into the papers he references in response.</p></p>
+                                        </article>
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>What problems are you interested in?  How can I help?</p>
+                                <ul class="contact">
+                                    <li class="icon brands fa-twitter"><a href="https://twitter.com/bblais">@bblais</a></li>
+                                    <li class="icon solid fa-envelope"><a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></li>
+                                    <li class="icon solid fa-phone"><a href="tel://4012326153">(401) 232-6153</a></li>
+                                    <li class="icon solid fa-home">Bryant University<br>
+                                        1150 Douglas Pike<br>
+                                        Smithfield, RI<br>
+                                        02917 US</li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">&copy; 2021 - All rights reserved. Adapted from <a href="https://html5up.net/editorial">Editorial Theme</a> html5up.net | @ajlkn, 
+                                    Converted to <a href="https://blog.getpelican.com">Pelican</a> theme by <a href="#">Brian Blais</a>. </p>
+                            </footer>
+
+                    </div>
+                </div>
+
+		</div>
+
+
+    <!-- Scripts -->
+	<script src="https://bblais.github.io/theme/js/jquery.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
+	<script src="https://bblais.github.io/theme/js/browser.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/breakpoints.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/util.js"></script>
+	<script src="https://bblais.github.io/theme/js/main.js"></script>
+	<script>
+		function validateForm(query)
+		{
+			return (query.length > 0);
+		}
+	</script>
+	
+	
+	</body>
+</html>

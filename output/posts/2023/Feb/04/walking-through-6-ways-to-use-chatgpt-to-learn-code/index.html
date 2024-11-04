@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Walking through 6 Ways to Use ChatGPT to Learn Code  · bblais on the web
+</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://bblais.github.io/theme/css/main.css" />
+		<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+		crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="https://bblais.github.io/theme/css/custom.css" media="screen">
+    
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+		<!-- Main -->
+			<div id="main">
+
+				<div class="inner">
+
+					<!-- Header -->
+						<header id="header">
+							<a href="https://bblais.github.io/index.html" class="logo"><strong>bblais on the web</strong></a>
+							<ul class="icons">
+								<li><a href="https://twitter.com/bblais" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/bblais" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://bblais.github.io/feeds/all.atom.xml" class="icon solid fa-rss"><span class="label">YouTube</span></a></li>
+								<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</header>
+
+
+
+
+
+
+
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Walking through 6 Ways to Use ChatGPT to Learn Code</h1> 
+ 
+										<p><strong><time pubdate="pubdate" datetime="2023-02-04T00:00:00-05:00">Sat 04 February 2023</strong>
+												In  
+													<em><a href="https://bblais.github.io/category/programming.html">#programming</a></em>
+										</p>
+									</header>
+
+										<span class="image left"><img src="https://bblais.github.io/images/deepmind-egDR0kw-Ptw-unsplash.jpg"></span>
+
+
+									<p>So I was poking around on the web and decided to watch the video "THE Game Changer for Learning to Code"  https://www.youtube.com/embed/H1fBdboJeBo and then attempt to use it on code I use in class.  </p>
+<p>TLDR:  Describing vocabulary, describing code, making suggestions for improving code, and finding resources all very useful.  Generating code is super dangerous (ChatGPT makes incorrect code) and using it in many cases can be considered plagiarism, just as if you copied from another person.</p>
+<h3 id="describing-vocabulary-useful">Describing vocabulary -- useful</h3>
+<p>I started with,</p>
+<blockquote>
+<p><strong>ME</strong>:  you're a professor trying to teach a student about euler's method. how would you phrase it?</p>
+<p><strong>ChatGPT</strong>:
+Euler's method is a numerical method used to approximate the solution to a first-order ordinary differential equation (ODE). It is a simple and straightforward way of approximating the solution by using the tangent line to the solution curve at a given point. The basic idea behind Euler's method is to divide the interval of interest into smaller sub-intervals and then estimate the value of the solution at the end of each sub-interval by using the tangent line. This process is then repeated, starting at the end of each sub-interval, until the desired level of accuracy is reached. Euler's method is a powerful tool for solving ODEs and is widely used in many scientific and engineering applications.</p>
+</blockquote>
+<p>Not bad.  Seems useful to describe vocabulary.</p>
+<h3 id="describing-code-useful">Describing code -- useful</h3>
+<p>Then I gave it some code I used in class,</p>
+<blockquote>
+<p><strong>ME:</strong> Can you explain what this code is doing: </p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="n">x_start</span><span class="o">=-</span><span class="mi">5</span>
+<span class="n">x_end</span><span class="o">=</span><span class="mi">15</span>
+<span class="n">step</span><span class="o">=</span><span class="mi">1</span>
+
+<span class="n">S</span><span class="o">=</span><span class="n">Storage</span><span class="p">()</span>
+
+<span class="n">x</span><span class="o">=</span><span class="n">x_start</span>
+<span class="k">while</span> <span class="n">x</span><span class="o">&lt;=</span><span class="n">x_end</span><span class="p">:</span>
+
+    <span class="c1"># print(x,&quot; &quot;,end=&quot;&quot;)</span>
+
+    <span class="n">y_left</span><span class="o">=</span><span class="n">fun</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">step</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">y_right</span><span class="o">=</span><span class="n">fun</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">step</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="n">m</span><span class="o">=</span><span class="p">(</span><span class="n">y_right</span><span class="o">-</span><span class="n">y_left</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">step</span><span class="p">)</span> <span class="c1"># rise over run</span>
+
+    <span class="n">S</span><span class="o">+=</span><span class="n">x</span><span class="p">,</span><span class="n">m</span>   <span class="c1"># saving the result for later</span>
+
+    <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="o">+</span><span class="n">step</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done.&quot;</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">arrays</span><span class="p">()</span>  <span class="c1"># give me the saved results as two arrays</span>
+</code></pre></div>
+
+<blockquote>
+<p><strong>ChatGPT</strong>: This code is implementing a numerical method called the midpoint method to estimate the derivative of a function <code>fun</code> over a range <code>x_start</code> to <code>x_end</code> with a step size <code>step</code>.</p>
+<p>The <code>Storage</code> class is used to store the results of the midpoint method at each iteration. The <code>x</code> variable is initialized to <code>x_start</code> and the loop continues until <code>x</code> is greater than <code>x_end</code>.</p>
+<p>In each iteration, the values of the function <code>fun</code> at <code>x-step/2</code> and <code>x+step/2</code> are calculated and stored in <code>y_left</code> and <code>y_right</code> respectively. The derivative at the midpoint <code>x</code> is then estimated as the rise over run <code>m = (y_right - y_left) / step</code>. The result is stored in the <code>Storage</code> object <code>S</code> using the <code>+=</code> operator.</p>
+<p>Finally, after the loop, the results stored in <code>S</code> are retrieved as two arrays <code>x</code> and <code>m</code> using the <code>arrays()</code> method.</p>
+<p>The midpoint method is a simple numerical method to estimate the derivative of a function. It is based on the idea that the derivative of a function at a point can be estimated as the average rate of change over a small interval around that point.</p>
+</blockquote>
+<p>That is really impressive, and I think quite useful for students.</p>
+<h3 id="improving-code-somewhat-useful">Improving code -- somewhat useful</h3>
+<blockquote>
+<p><strong>ME:</strong> how would you improve that code?</p>
+<p><strong>ChatGPT:</strong>  Here are a few suggestions to improve the code:</p>
+<ol>
+<li>
+<p>Use functions: You can define the midpoint method as a function and reuse it for different functions and different intervals. This makes the code more modular and easier to maintain.</p>
+</li>
+<li>
+<p>Document the code: Adding comments and documentation to the code can help someone who is unfamiliar with the code understand what it does. For example, you can add a comment explaining the purpose of the code and what each variable represents.</p>
+</li>
+<li>
+<p>Input validation: You can add input validation to check if the step size <code>step</code> is positive and non-zero. You can also add input validation to check if the interval <code>x_start</code> to <code>x_end</code> is well-defined.</p>
+</li>
+<li>
+<p>Use <code>numpy</code> arrays: The <code>numpy</code> library provides arrays that are optimized for numerical computations. Instead of using the <code>Storage</code> class, you can use <code>numpy</code> arrays to store the results of the midpoint method.</p>
+</li>
+<li>
+<p>Plotting: You can use a plotting library such as <code>matplotlib</code> to visualize the results of the midpoint method. This can be helpful in understanding the results and detecting any issues with the code.</p>
+</li>
+</ol>
+<p>By making these changes, you can make the code more readable, reusable, and understandable.</p>
+</blockquote>
+<p>Most of this is good.  I laugh at (2) because I notoriously do not put documentation in.  Perhaps I should use ChatGPT to document my class code?  I don't use (4) for a couple of reasons.</p>
+<ol>
+<li>you need to know ahead of time how many values you need to save if you use arrays</li>
+<li>there is extra boilerplate code for setting up the initial arrays, and saving the data in the right indices</li>
+</ol>
+<p>The <code>Storage()</code> class I made solves these problems, and is <a href="https://bblais.github.io/posts/2020/Feb/24/common-python-pattern-building-up-lists-to-plot/">discussed in more detail here</a>. </p>
+<p>Of course, ChatGPT wouldn't be expected to know that, but it does highlight some limitations.   We do (5) in later cells, and will do (1) later, but this code was just an introduction.  </p>
+<h3 id="new-code-dangerous">New code -- dangerous!</h3>
+<blockquote>
+<p><strong>ME:</strong>  how would you use this code to find the minimum and maximum of a function? please show the resulting code</p>
+</blockquote>
+<p>What I was looking for is to use the derivative code above, find where it equals (or is close to) zero and return those points.  What I got was <strong>incorrect code</strong> described perfectly.  </p>
+<blockquote>
+<p><strong>ChatGPT:</strong> To find the minimum and maximum of a function using this code, you can modify the code to keep track of the minimum and maximum values of the derivative. If the derivative at a point is zero, it means that the function has a local extremum (minimum or maximum) at that point.</p>
+<p>Here's an updated version of the code that finds the minimum and maximum of a function:</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">midpoint_method</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x_start</span><span class="p">,</span> <span class="n">x_end</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x_start</span>
+    <span class="n">min_x</span> <span class="o">=</span> <span class="n">max_x</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">min_m</span> <span class="o">=</span> <span class="n">max_m</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">x_end</span><span class="p">:</span>
+        <span class="n">y_left</span> <span class="o">=</span> <span class="n">fun</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">step</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">y_right</span> <span class="o">=</span> <span class="n">fun</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">step</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_right</span> <span class="o">-</span> <span class="n">y_left</span><span class="p">)</span> <span class="o">/</span> <span class="n">step</span>
+        <span class="k">if</span> <span class="n">min_m</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="n">min_m</span><span class="p">:</span>
+            <span class="n">min_m</span> <span class="o">=</span> <span class="n">m</span>
+            <span class="n">min_x</span> <span class="o">=</span> <span class="n">x</span>
+        <span class="k">if</span> <span class="n">max_m</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="n">max_m</span><span class="p">:</span>
+            <span class="n">max_m</span> <span class="o">=</span> <span class="n">m</span>
+            <span class="n">max_x</span> <span class="o">=</span> <span class="n">x</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="n">step</span>
+    <span class="k">return</span> <span class="n">min_x</span><span class="p">,</span> <span class="n">min_m</span><span class="p">,</span> <span class="n">max_x</span><span class="p">,</span> <span class="n">max_m</span>
+
+<span class="n">x_start</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
+<span class="n">x_end</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">step</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">min_x</span><span class="p">,</span> <span class="n">min_m</span><span class="p">,</span> <span class="n">max_x</span><span class="p">,</span> <span class="n">max_m</span> <span class="o">=</span> <span class="n">midpoint_method</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x_start</span><span class="p">,</span> <span class="n">x_end</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Minimum at x=&quot;</span><span class="p">,</span> <span class="n">min_x</span><span class="p">,</span> <span class="s2">&quot; with derivative &quot;</span><span class="p">,</span> <span class="n">min_m</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maximum at x=&quot;</span><span class="p">,</span> <span class="n">max_x</span><span class="p">,</span> <span class="s2">&quot; with derivative &quot;</span><span class="p">,</span> <span class="n">max_m</span><span class="p">)</span>
+</code></pre></div>
+
+<blockquote>
+<p>In this updated version of the code, a function <code>midpoint_method</code> is defined to encapsulate the midpoint method. The function takes four arguments: <code>fun</code>, <code>x_start</code>, <code>x_end</code>, and <code>step</code>. The function returns four values: the <code>x</code>-coordinates and the values of the minimum and maximum derivatives.</p>
+<p>In the main part of the code, the <code>midpoint_method</code> function is called with the input parameters, and the results are stored in <code>min_x</code>, <code>min_m</code>, <code>max_x</code>, and <code>max_m</code>. Finally, the minimum and maximum are printed.</p>
+</blockquote>
+<p>This printed the <strong>minimum and maximum of the derivative not the function</strong>.  Unless you knew what was going on, this would be seriously dangerous to use.</p>
+<h3 id="finding-resources-useful">Finding resources -- useful</h3>
+<blockquote>
+<p><strong>ME:</strong> where can I learn more about numerical derivatives in python and include specific links</p>
+<p><strong>ChatGPT:</strong> Here are several resources with specific links to help you learn about numerical derivatives in Python:</p>
+<ol>
+<li>
+<p>Online tutorials:</p>
+</li>
+<li>
+<p>The official Python documentation has a section on numerical differentiation: <a href="https://docs.python.org/3/tutorial/floatingpoint.html">https://docs.python.org/3/tutorial/floatingpoint.html</a></p>
+</li>
+<li>
+<p>A comprehensive tutorial on numerical derivatives in Python can be found here: <a href="https://realpython.com/numerical-derivatives-python/">https://realpython.com/numerical-derivatives-python/</a></p>
+</li>
+<li>
+<p>Books:</p>
+</li>
+<li>
+<p>"Python for Data Analysis" by Wes McKinney covers the use of numerical methods in data analysis and provides examples using Python: <a href="https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1491957662">https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1491957662</a></p>
+</li>
+<li>
+<p>"Numerical Python" by Robert Johansson covers numerical methods and scientific computing using the Python programming language: <a href="https://www.amazon.com/Numerical-Python-Scientific-Computing-Array/dp/1491911662">https://www.amazon.com/Numerical-Python-Scientific-Computing-Array/dp/1491911662</a></p>
+</li>
+<li>
+<p>Online courses:</p>
+</li>
+<li>
+<p>Coursera offers several online courses on numerical methods and scientific computing in Python: <a href="https://www.coursera.org/courses?query=numerical%20python">https://www.coursera.org/courses?query=numerical%20python</a></p>
+</li>
+<li>Udemy also has several online courses that cover numerical methods in Python: <a href="https://www.udemy.com/topic/numerical-methods/">https://www.udemy.com/topic/numerical-methods/</a></li>
+<li>
+<p>edX offers a course on numerical methods for scientific computing with Python: <a href="https://www.edx.org/learn/numerical-methods-for-scientific-computing-with-python">https://www.edx.org/learn/numerical-methods-for-scientific-computing-with-python</a></p>
+</li>
+<li>
+<p>Scientific libraries:</p>
+</li>
+<li>
+<p>The <code>numpy</code> library in Python has a comprehensive documentation on numerical derivatives: <a href="https://numpy.org/doc/stable/reference/routines.math.html#derivatives">https://numpy.org/doc/stable/reference/routines.math.html#derivatives</a></p>
+</li>
+<li>
+<p>The <code>scipy</code> library also has a section on numerical derivatives: <a href="https://docs.scipy.org/doc/scipy/reference/signal.html#differentiation">https://docs.scipy.org/doc/scipy/reference/signal.html#differentiation</a></p>
+</li>
+<li>
+<p>Community resources:</p>
+</li>
+<li>
+<p>Stack Overflow is a great resource for asking questions and getting help with numerical derivatives in Python: <a href="https://stackoverflow.com/questions/tagged/python">https://stackoverflow.com/questions/tagged/python</a></p>
+</li>
+<li>The official Python mailing list is another good resource for asking questions and getting help: <a href="https://mail.python.org/mailman/listinfo/python-list">https://mail.python.org/mailman/listinfo/python-list</a></li>
+<li>Reddit has several communities dedicated to Python programming, including r/learnpython and r/python, where you can ask questions and get help with numerical derivatives: <a href="https://www.reddit.com/r/learnpython/">https://www.reddit.com/r/learnpython/</a> and <a href="https://www.reddit.com/r/python/">https://www.reddit.com/r/python/</a>
+</li>
+</ol>
+</blockquote>
+<h3 id="heres-the-video-again">Here's the Video Again</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H1fBdboJeBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+								</section>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    // var disqus_config = function () {
+    //     // Replace PAGE_URL with your page's canonical URL variable
+    //     this.page.url = PAGE_URL;  
+        
+    //     // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    //     this.page.identifier = PAGE_IDENTIFIER; 
+    // };
+    
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        var disqus_shortname = "bblaisontheweb"; 
+        var disqus_title = "Walking through 6 Ways to Use ChatGPT to Learn Code";
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+	
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                        <section id="search" class="alt">
+                            <form class="navbar-search" action="https://bblais.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> 
+                                <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+                        </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="https://bblais.github.io/index.html">Homepage</a></li>
+                                    <li>
+                                        <span class="opener"><a href="https://bblais.github.io/index.html#0" title="">Blog</a></span>
+                                        <ul>
+                                            <li><a href="https://bblais.github.io/index.html#blog">Recent</a></li>
+                                            <li><a href="https://bblais.github.io/category/articles.html">articles <span>(85)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/books.html">books <span>(3)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/math.html">math <span>(8)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/media.html">media <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/presentations.html">presentations <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/productivity.html">productivity <span>(7)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/programming.html">programming <span>(5)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/projects.html">projects <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/religion.html">religion <span>(31)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/science.html">science <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/unbelievable-project.html">Unbelievable Project <span>(21)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/wordpress_migration.html">wordpress_migration <span>(160)</span></a></li>
+     
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://bblais.github.io/pages/presentations.html">Presentations</a></li>
+                                    <li><a href="https://bblais.github.io/pages/projects.html">Projects</a></li>
+                                    <li><a href="https://bblais.github.io/pages/publications.html">Publications</a></li>
+                                    <li><a href="https://bblais.github.io/archives.html">Archives</a></li>
+                                    <li><a href="https://bblais.github.io/about.html">About</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Popular Posts</h2>
+                                </header>
+
+                                <div class="mini-posts">
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2021/Apr/09/gravitational-attraction/" class="image">
+                                                <img src="https://bblais.github.io/images/muzammil-soorma-R11bppS4q8o-unsplash.jpg" alt="muzammil-soorma-R11bppS4q8o-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Gravitational Attraction </strong>
+                                                <p>What would happen if two people out in space a few meters apart, abandoned by their spacecraft, decided to wait until gravity pulled them together?  My initial thought was that …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/" class="image">
+                                                <img src="https://bblais.github.io/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg" alt="roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                                            </a>
+                                            <p><strong>A Simple Physics Problem Gets Messy </strong>
+                                                <p>A physics problem from a practice AP test came to my attention, when my daughter was in AP physics this past spring.  I went over her solutions when she did …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/" class="image">
+                                                <img src="https://bblais.github.io/images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Skepticism and Dubious Medical Procedures </strong>
+                                                <p>In my discussion with Jonathan McLatchie on the Still Unbelievable podcast, I said that there hasn’t been a verified miracle claim even since Hume’s essay on miracles.  Here I look into the papers he references in response.</p></p>
+                                        </article>
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>What problems are you interested in?  How can I help?</p>
+                                <ul class="contact">
+                                    <li class="icon brands fa-twitter"><a href="https://twitter.com/bblais">@bblais</a></li>
+                                    <li class="icon solid fa-envelope"><a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></li>
+                                    <li class="icon solid fa-phone"><a href="tel://4012326153">(401) 232-6153</a></li>
+                                    <li class="icon solid fa-home">Bryant University<br>
+                                        1150 Douglas Pike<br>
+                                        Smithfield, RI<br>
+                                        02917 US</li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">&copy; 2021 - All rights reserved. Adapted from <a href="https://html5up.net/editorial">Editorial Theme</a> html5up.net | @ajlkn, 
+                                    Converted to <a href="https://blog.getpelican.com">Pelican</a> theme by <a href="#">Brian Blais</a>. </p>
+                            </footer>
+
+                    </div>
+                </div>
+
+		</div>
+
+
+    <!-- Scripts -->
+	<script src="https://bblais.github.io/theme/js/jquery.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
+	<script src="https://bblais.github.io/theme/js/browser.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/breakpoints.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/util.js"></script>
+	<script src="https://bblais.github.io/theme/js/main.js"></script>
+	<script>
+		function validateForm(query)
+		{
+			return (query.length > 0);
+		}
+	</script>
+	
+	
+	</body>
+</html>

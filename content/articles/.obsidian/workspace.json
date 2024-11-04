@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "religion/Reproducing Richard Carrier's Calculations.md",
+                "file": "science/Energy Balance Revisited.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Energy Balance Revisited"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTime"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -48,13 +52,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"status: draft\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "religion/Reproducing Richard Carrier's Calculations.md",
+                "file": "science/Leon Cooper passes away.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Leon Cooper passes away"
             }
           },
           {
@@ -105,7 +115,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ]
@@ -126,10 +138,31 @@
   },
   "active": "da0d3a05effb2ca8",
   "lastOpenFiles": [
+    "religion/How much evidence is needed.md",
+    "science/Energy Balance Revisited.md",
+    "images/Energy Balance2.drawio.svg",
+    "images/Energy Balance.drawio.svg",
+    "images/photoholgic-kKWcOwioewA-unsplash.jpg",
+    "science/One Rule to Rule Them All.md",
+    "naturalism_explored2.md",
+    "religion/Bayes Nets and Religious Claims.md",
+    "atheism_irrational.md",
+    "angle_bisector.md",
+    "Unbelievable Project/[0024] Unbelievable? 24 Nov 2007 - The atheist who sold his soul on ebay - 24 November 2007.md",
+    "science/Leon Cooper passes away.md",
+    "religion/God of the Gaps.md",
+    "images/Nobel_Laureate_Leon_Cooper_in_2007.jpg",
+    "math/Stats 101 Examples - Revisited.md",
+    "math/cool_theorem.md",
+    "math/quora1.md",
+    "math/An Interesting Twist on the Gambler’s Fallacy.md",
+    "math/MCMC Simple - Cauchy.md",
+    "math/MCMC Simple - mu known sigma.md",
+    "math/MCMC Simple - mu unknown sigma.md",
+    "math/MCMC Simple - proportion.md",
+    "religion/Reproducing Richard Carrier's Calculations.md",
     "images/patrick-fore-0gkw_9fy0eQ-unsplash.jpg",
     "religion/Bayesian Reasoning in Intelligent Design.md",
-    "religion/God of the Gaps.md",
-    "religion/Reproducing Richard Carrier's Calculations.md",
     "programming/mp3_to_audiobook.md",
     "programming/ChatGPT On Code.md",
     "Unbelievable Project/[0043] Unbelievable? 5 Apr 2008 12 Apr 2008 \"Why I became an atheist\" Part 1 and Part 2 - John Loftus & Peter May - 05 April 2008.md",
@@ -137,32 +170,11 @@
     "religion/Some More Comments on Undesigned Coincidences.md",
     "images/derek-otway-0gYliQPbeKo-unsplash.jpg",
     "critical thinking/Your Lack of Imagination Can Kill You…but you can be saved by math.md",
-    "religion/bad_apologetics_2021_summary_part_1.md",
-    "media/tedx_talk.md",
-    "religion/More Undesigned Coincidences.md",
-    "religion/Claims versus Evidence.md",
-    "religion/Extraordinary claims and extraordinary evidence.md",
-    "religion/Undesigned Coincidences.md",
-    "religion/Probability and Testimony.md",
-    "religion/What would I expect in the Bible?.md",
-    "religion/Bible in a Year.md",
-    "religion/The God of the Philosophers.md",
     "images/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg",
-    "productivity/How NaNoWriMo Got Me Back to the Gym.md",
-    "Unbelievable Project/[0033] Unbelievable? 26 Jan 2008 Morality - do we need God to be Good? - 26 January 2008.md",
-    "Unbelievable Project/[0024] Unbelievable? 24 Nov 2007 - The atheist who sold his soul on ebay - 24 November 2007.md",
-    "religion/Bad Apologetics - miscellaneous topics from Jonathan McLatchie.md",
-    "Unbelievable Project/lennox.md",
-    "religion/Hume on Testimony.md",
     "images/lucas-favre-JnoNcfFwrNA-unsplash.jpg",
     "images/secsocmit.jpg",
     "images/Screenshot 2023-10-17 at 06.26.25.png",
-    "images/danylo-suprun-YhSoK3TOg78-unsplash.jpg",
     "{filename}../religion",
-    "{filename}..",
-    "images/Pasted image 20230619085149.png",
-    "images/Pasted image 20230619084853.png",
-    "images/Pasted image 20230619084043.png",
-    "images/Pasted image 20230619083432.png"
+    "{filename}.."
   ]
 }

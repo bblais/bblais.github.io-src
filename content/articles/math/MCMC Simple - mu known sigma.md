@@ -7,7 +7,7 @@ image: edge2edge-media-uKlneQRwaxY-unsplash.jpg
 I'd like to walk through some of the "*Statistics 101*" examples (e.g. estimating $\mu$ with known $\sigma$, estimating a proportion, etc...) for which we have simple analytical solutions, but explore them with [MCMC](https://www.youtube.com/watch?v=vTUwEu53uzs).  The reason I want to do this is to introduce MCMC on simple cases, which are not much different than more complicated cases, but are better understood.  The second reason is to explore some cases which are nearly as easy, but are never covered in introductory textbooks.  In all of these I'm going to use a python library I make for my science-programming class, [stored on github](https://github.com/bblais/sci378), and the [emcee](https://emcee.readthedocs.io/en/stable/) library.  Install like:
 
 ```
-pip install "git+git://github.com/bblais/sci378" --upgrade
+pip install "git+https://github.com/bblais/sci378" --upgrade
 pip install emcee
 ```
 
@@ -18,11 +18,11 @@ We'll start with the easiest example:  there is some true value, we call $\mu$. 
 For a Bayesian solution, we need to specify the likelihood function -- how our model produces the data -- and the prior probability for the parameters.  The likelihood function is determined like
 
 $$
-\begin{eqnarray}
-x_i &\sim& \mu + \epsilon_i \\
-P(x_i|\mu,\sigma) &\sim& \text{Normal}(x_i-\mu,\sigma) \\
-P(\{x_i\}|\mu,\sigma) &\sim& \prod_i \text{Normal}(x_i-\mu,\sigma) 
-\end{eqnarray}
+\begin{aligned}
+x_i &\sim \mu + \epsilon_i \\
+P(x_i|\mu,\sigma) &\sim \text{Normal}(x_i-\mu,\sigma) \\
+P(\{x_i\}|\mu,\sigma) &\sim \prod_i \text{Normal}(x_i-\mu,\sigma) 
+\end{aligned}
 $$
 known $\sigma$
 

@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Why pseudoscientists like the chi-square test (and why it shouldn't be taught)  · bblais on the web
+</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://bblais.github.io/theme/css/main.css" />
+		<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+		crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="https://bblais.github.io/theme/css/custom.css" media="screen">
+    
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+		<!-- Main -->
+			<div id="main">
+
+				<div class="inner">
+
+					<!-- Header -->
+						<header id="header">
+							<a href="https://bblais.github.io/index.html" class="logo"><strong>bblais on the web</strong></a>
+							<ul class="icons">
+								<li><a href="https://twitter.com/bblais" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/brian-blais-bb66482b/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/bblais" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://bblais.github.io/feeds/all.atom.xml" class="icon solid fa-rss"><span class="label">YouTube</span></a></li>
+								<li><a href="mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UC8cN5_0dy5o9qNPpdLxPa8w" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</header>
+
+
+
+
+
+
+
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Why pseudoscientists like the chi-square test (and why it shouldn't be taught)</h1> 
+ 
+										<p><strong><time pubdate="pubdate" datetime="2010-09-01T17:10:00-04:00">Wed 01 September 2010</strong>
+												In  
+													<em><a href="https://bblais.github.io/category/wordpress_migration.html">#wordpress_migration</a></em>
+										</p>
+									</header>
+
+										<span class="image left"><img src="https://bblais.github.io/images/default.png"></span>
+
+
+									<p>In a <a href="http://bblais.blogspot.com/2010/08/orthodox-statistics-conducive-to-pseudo.html">prior post</a> I outlined how orthodox statistics can lead to the
+<a href="http://en.wikipedia.org/wiki/False_dilemma">either-or logical fallacies</a> common in pseudoscience, like astrology
+and ufo-ology.</p>
+<p>In this post I focus on the &amp;chi^2^ test, it's pathologies, and why it
+is so useful for a pseudoscientist. The example is lifted from <a href="http://www.amazon.com/Probability-Theory-Logic-Science-Vol/dp/0521592712/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1283295597&amp;sr=8-1">E. T.
+Jaynes' book "Probability Theory"</a></p>
+<p>The two problems with &amp;chi^2^ are:</p>
+<ol>
+<li>it violates your strong intuition in some simple cases</li>
+<li>it can lead to different results with the exact same data, binned in
+    a different way</li>
+</ol>
+<p>Both of these properties are useful to the pseudoscientist.</p>
+<h2 id="intuition-and-chi-square-the-three-sided-coin">Intuition and Chi-square: The Three-sided coin</h2>
+<p>In each of this case we will have some data, and two models to compare
+which try to explain the data. Intuition strongly favors one, and
+&amp;chi^2^ favors the other. One of my favorite problems is the
+<a href="http://pubs.amstat.org/doi/abs/10.1198/000313007X222497">three-sided coin</a>: where the coin can fall heads, tails, or on the
+edge. Imagine we have two models for a relatively thick coin:</p>
+<ul>
+<li>Model A: p~heads~=p~tails~=0.499, p~edge~=0.002</li>
+<li>Model B: p~heads~=p~tails~=p~edge~=1/3</li>
+</ul>
+<p>And we have the following data:</p>
+<ul>
+<li>N=29: n~heads~=14, n~tails~=14, n~edge~=1</li>
+</ul>
+<p>Which model are you more confident in? Model A of course! If we use the
+&amp;psi-measure for goodness of fit with these two models, as defined in
+<a href="http://bblais.blogspot.com/2010/08/orthodox-statistics-conducive-to-pseudo.html">my prior post</a>, then we have (remember: smaller &amp;psi means
+more confident in the fit, just like smaller &amp;chi^2^):</p>
+<p><img alt="E7E94805-9E10-451E-9B95-C8EB2BA875C7.jpg" src="http://lh3.ggpht.com/_VLTJPGH7Stw/TH2VC6WKxkI/AAAAAAAAGiQ/YjW0NbJ0SsI/E7E94805-9E10-451E-9B95-C8EB2BA875C7.jpg?imgmax=800"></p>
+<p><img alt="7AFD29D5-C801-416E-82AC-F9B363147B22.jpg" src="http://lh3.ggpht.com/_VLTJPGH7Stw/TH4gCkRSb0I/AAAAAAAAGiY/8M8QyPr1vlM/7AFD29D5-C801-416E-82AC-F9B363147B22.jpg?imgmax=800"></p>
+<p>with &amp;psi~B~-&amp;psi~A~=26.85 which makes model A more then 100 times more
+likely than model B (a &amp;psi difference of 20 would be exactly 100
+times). Perfectly reasonable. What about &amp;chi^2^?</p>
+<p><img alt="31844A12-1F3E-4D51-B2D0-EFAE00BE66A7.jpg" src="http://lh3.ggpht.com/_VLTJPGH7Stw/TH2QNPSVmjI/AAAAAAAAGiI/CP3fa-MJ7Vc/31844A12-1F3E-4D51-B2D0-EFAE00BE66A7.jpg?imgmax=800"></p>
+<p>which makes model B slightly preferable to model A! Amazing! Where is
+this coming from? Apparently it is coming from the somewhat rare event
+of an edge-landing. If our data had been instead</p>
+<ul>
+<li>N=29: n~heads~=15, n~tails~=14, n~edge~=0</li>
+</ul>
+<p>then we'd have</p>
+<ul>
+<li>&amp;psi~A~=0.3</li>
+<li>&amp;psi~B~=51.2</li>
+</ul>
+<p>and</p>
+<ul>
+<li>&amp;chi^2^~A~=0.093</li>
+<li>&amp;chi^2^~B~=14.55</li>
+</ul>
+<p>where now both measures agree that model A is superior.</p>
+<table align="center" width="50%">
+<tr>
+<td>
+**Why do pseudoscientists love the &chi^2^ test?**
+
+</td>
+</tr>
+<p>
+<tr>
+<td>
+*Answer 1: Because all they need to do is wait for that inevitable,
+somewhat rare but still possible, data point and &chi^2^ yields a
+pathologically high value*
+
+</td>
+</tr>
+<p>
+</table>
+<h2 id="the-psi-measure-and-log-likelihood">The &amp;psi-measure and log-likelihood</h2>
+<p>To understand the other problem with the &amp;chi^2^ test we need to
+understand what the &amp;psi-measure is doing. As above, imagine we have a
+set of observations O~i~. We define the total number of observed points
+and the relative frequency of each observation,</p>
+<p><img alt="23229268-8820-42F8-BF8C-C984679DCB51.jpg" src="http://lh6.ggpht.com/_VLTJPGH7Stw/TH58MuJZOPI/AAAAAAAAGig/FET0c4rhfxg/23229268-8820-42F8-BF8C-C984679DCB51.jpg?imgmax=800"></p>
+<p>The maximum likelihood solution for the probabilities of observing O~i~
+for each class, i, is just the relative frequency of each observation.
+This is the "just-so" solution, where we estimate the probability of
+seeing 14 heads in 29 flips as p=14/29. This "just-so" solution will
+have the closest match, and the highest likelihood (by definition). If
+we have a model which specifies a different set of probabilities for
+each class, then it's likelihood is simply</p>
+<p><img alt="71272C22-E8B6-4497-82DF-FBDD89729630.jpg" src="http://lh4.ggpht.com/_VLTJPGH7Stw/TH59WfaMs4I/AAAAAAAAGio/YErvCX24kpc/71272C22-E8B6-4497-82DF-FBDD89729630.jpg?imgmax=800"></p>
+<p>The &amp;psi measure can be rewritten as</p>
+<p><img alt="B363F3D7-1964-421A-A8E2-B19020D0117A.jpg" src="http://lh5.ggpht.com/_VLTJPGH7Stw/TH6KOVWBbAI/AAAAAAAAGi4/nM4i1qXTzHM/B363F3D7-1964-421A-A8E2-B19020D0117A.jpg?imgmax=800"></p>
+<p>So you can think of the &amp;psi-measure as comparing a model with the
+"just-so" solution (which has maximum likelihood). Further, subtracting
+one value of &amp;psi with another (for different models) performs the
+log-likelihood ratio between the models. A proper analysis should
+include prior information, which can be <a href="http://bblais.blogspot.com/2010/08/non-psychic-octopus.html">done almost as easily</a>.</p>
+<h2 id="an-almost-equivalent-problem">An almost equivalent problem</h2>
+<p>Imagine that we have a coin with 6 faces, and we are comparing the
+following models:</p>
+<ul>
+<li>Model A: p = [0.499/2, 0.499/2, 0.499/2, 0.499/2, 0.002/2,0.002/2]</li>
+<li>Model B: p = [1/6,1/6,1/6,1/6,1/6,1/6]</li>
+</ul>
+<p>And we have the following data:</p>
+<ul>
+<li>N=29: O=[7,7,7,7,0,1]</li>
+</ul>
+<p>where I have listed the probabilities and the outcomes for each face.
+Notice that, grouping them together in pairs we retrieve the same as the
+first example. Thus when comparing the two models, with this equivalent
+problem, we should get the same value. Because the size of the problem
+changed, the individual &amp;psi values will be different (larger) because
+there are more terms in the "just-so" solution. However, the difference
+between the models should be the same. The results are:</p>
+<ul>
+<li>&amp;psi~A~=11.35 (old value 8.34)</li>
+<li>&amp;psi~B~=38.2 (old value 35.19)</li>
+</ul>
+<p>with &amp;psi~B~-&amp;psi~A~=26.85 (old value 26.85...the same!), and</p>
+<ul>
+<li>&amp;chi^2^~A~=32.6 (old value 15.33)</li>
+<li>&amp;chi^2^~B~=11.76 (old value 11.66)</li>
+</ul>
+<p>The &amp;chi^2^ for one of the models (Model A) has been inflated quite a
+lot relative to the other model. This means that, depending on how you
+bin the data, you can make whichever model that you are looking at more
+or less significantly different, without changing the data at all.</p>
+<table align="center" width="50%">
+<tr>
+<td>
+**Why do pseudoscientists love the &chi^2^ test?**
+
+</td>
+</tr>
+<p>
+<tr>
+<td>
+*Answer 2: Because all they need to do is bin their data in different
+ways to affect the level of significance of their model over the model
+to which they are comparing*
+
+</td>
+</tr>
+<p>
+</table>
+<h2 id="still-taught">Still taught?</h2>
+<p>So, why is the &amp;chi^2^ test still taught? I don't know. It has
+pathological behavior in simple systems, where somewhat rare events
+artificially inflate its value, and it can be easily used to prop up an
+unreasonable model simply by rearranging the data. Why not teach
+something, like the &amp;psi-measure, which is grounded theoretically in the
+likelihood principle and does not have such pathological behavior? If
+you prefer to use the log-likelihood instead, then that would be fine
+(and equivalent).</p>
+<p>I think it is about time to purge the &amp;chi^2^ test from our textbooks,
+and replace it with something correct.</p>
+<div class="blogger-post-footer">
+![]
+
+</div>
+
+
+								</section>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    // var disqus_config = function () {
+    //     // Replace PAGE_URL with your page's canonical URL variable
+    //     this.page.url = PAGE_URL;  
+        
+    //     // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    //     this.page.identifier = PAGE_IDENTIFIER; 
+    // };
+    
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        var disqus_shortname = "bblaisontheweb"; 
+        var disqus_title = "Why pseudoscientists like the chi-square test (and why it shouldn't be taught)";
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+	
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                        <section id="search" class="alt">
+                            <form class="navbar-search" action="https://bblais.github.io/search.html" onsubmit="return validateForm(this.elements['q'].value);"> 
+                                <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form>
+                        </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="https://bblais.github.io/index.html">Homepage</a></li>
+                                    <li>
+                                        <span class="opener"><a href="https://bblais.github.io/index.html#0" title="">Blog</a></span>
+                                        <ul>
+                                            <li><a href="https://bblais.github.io/index.html#blog">Recent</a></li>
+                                            <li><a href="https://bblais.github.io/category/articles.html">articles <span>(85)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/books.html">books <span>(3)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/critical-thinking.html">critical thinking <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/math.html">math <span>(8)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/media.html">media <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/presentations.html">presentations <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/productivity.html">productivity <span>(7)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/programming.html">programming <span>(5)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/projects.html">projects <span>(4)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/religion.html">religion <span>(31)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/science.html">science <span>(13)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/unbelievable-project.html">Unbelievable Project <span>(21)</span></a></li>
+                                            <li><a href="https://bblais.github.io/category/wordpress_migration.html">wordpress_migration <span>(160)</span></a></li>
+     
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://bblais.github.io/pages/presentations.html">Presentations</a></li>
+                                    <li><a href="https://bblais.github.io/pages/projects.html">Projects</a></li>
+                                    <li><a href="https://bblais.github.io/pages/publications.html">Publications</a></li>
+                                    <li><a href="https://bblais.github.io/archives.html">Archives</a></li>
+                                    <li><a href="https://bblais.github.io/about.html">About</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Popular Posts</h2>
+                                </header>
+
+                                <div class="mini-posts">
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2021/Apr/09/gravitational-attraction/" class="image">
+                                                <img src="https://bblais.github.io/images/muzammil-soorma-R11bppS4q8o-unsplash.jpg" alt="muzammil-soorma-R11bppS4q8o-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Gravitational Attraction </strong>
+                                                <p>What would happen if two people out in space a few meters apart, abandoned by their spacecraft, decided to wait until gravity pulled them together?  My initial thought was that …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Aug/03/a-simple-physics-problem-gets-messy/" class="image">
+                                                <img src="https://bblais.github.io/images/roman-mager-5mZ_M06Fc9g-unsplash.jpg" alt="roman-mager-5mZ_M06Fc9g-unsplash.jpg">
+                                            </a>
+                                            <p><strong>A Simple Physics Problem Gets Messy </strong>
+                                                <p>A physics problem from a practice AP test came to my attention, when my daughter was in AP physics this past spring.  I went over her solutions when she did …</p></p>
+                                        </article>
+                                        <article>
+                                            <a href="https://bblais.github.io/posts/2020/Jul/09/skepticism-and-dubious-medical-procedures/" class="image">
+                                                <img src="https://bblais.github.io/images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+                                            </a>
+                                            <p><strong>Skepticism and Dubious Medical Procedures </strong>
+                                                <p>In my discussion with Jonathan McLatchie on the Still Unbelievable podcast, I said that there hasn’t been a verified miracle claim even since Hume’s essay on miracles.  Here I look into the papers he references in response.</p></p>
+                                        </article>
+                                </div>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>What problems are you interested in?  How can I help?</p>
+                                <ul class="contact">
+                                    <li class="icon brands fa-twitter"><a href="https://twitter.com/bblais">@bblais</a></li>
+                                    <li class="icon solid fa-envelope"><a href='mai&#108;&#116;o&#58;b&#37;6&#50;%6C&#37;61i%&#55;3%40%62ry&#37;61nt%2Eed&#37;7&#53;'>b&#98;&#108;&#97;is&#64;bry&#97;&#110;t&#46;&#101;d&#117;</a></li>
+                                    <li class="icon solid fa-phone"><a href="tel://4012326153">(401) 232-6153</a></li>
+                                    <li class="icon solid fa-home">Bryant University<br>
+                                        1150 Douglas Pike<br>
+                                        Smithfield, RI<br>
+                                        02917 US</li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <footer id="footer">
+                                <p class="copyright">&copy; 2021 - All rights reserved. Adapted from <a href="https://html5up.net/editorial">Editorial Theme</a> html5up.net | @ajlkn, 
+                                    Converted to <a href="https://blog.getpelican.com">Pelican</a> theme by <a href="#">Brian Blais</a>. </p>
+                            </footer>
+
+                    </div>
+                </div>
+
+		</div>
+
+
+    <!-- Scripts -->
+	<script src="https://bblais.github.io/theme/js/jquery.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/elegant.prod.9e9d5ce754.js"></script>
+	<script src="https://bblais.github.io/theme/js/browser.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/breakpoints.min.js"></script>
+	<script src="https://bblais.github.io/theme/js/util.js"></script>
+	<script src="https://bblais.github.io/theme/js/main.js"></script>
+	<script>
+		function validateForm(query)
+		{
+			return (query.length > 0);
+		}
+	</script>
+	
+	
+	</body>
+</html>

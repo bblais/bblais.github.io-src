@@ -25,17 +25,13 @@ In this example the data take the form of a number of "successes", $h$, in a tot
 For a Bayesian solution, we need to specify the likelihood function -- how our model produces the data -- and the prior probability for the parameters.  The likelihood function is determined from the Bernoulli function,
 
 $$
-\begin{eqnarray}
-P(h|N,\theta) &\sim& \text{Bernoulli}(N,\theta) \\
-\end{eqnarray}
+P(h|N,\theta) \sim \text{Bernoulli}(N,\theta)
 $$
 
 
 In the "*Statistics 101*" examples, the results are typically equivalent to *uniform* priors on the location parameters.  This would translate to 
 $$
-\begin{eqnarray}
-P(\theta) &\sim& \text{Uniform}(0,1)
-\end{eqnarray}
+P(\theta) \sim \text{Uniform}(0,1)
 $$
 
 However there are cases where we have more information.  Even flipping a biased coin, we know that both outcomes (heads and tails) are at least *possible* to happen.  Given this, the probabilities $P(\theta=0)$ and $P(\theta=1)$ should be zero and a different prior is justified (sidenote -- the maximum entropy solution to this is a Beta(2,2) distribution or, in other words, assume one heads and one tails have been observed before the data).  I'll continue with this example with uniform priors, because in [Lindley, 1976. "Inference for a Bernoulli Process (A Bayesian View)"](https://www.jstor.org/stable/2683855?seq=1#metadata_info_tab_contents) he is flipping a particular thumbtack for which it might not be possible for it to, say, flip "down".  His data turns out to be 3 down, 9 up, so we know after the data it was possible for both outcomes but not *before* the data.
