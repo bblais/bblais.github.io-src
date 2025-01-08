@@ -28,12 +28,12 @@ Church][], but could well be from any Christian Church):
 
 This is what I hear:
 
-\begin{eqnarray}
-a&=&b=c\\\\
-a&\neq& b\\\\
-a&\neq& c\\\\
-c&\neq& b  
-\end{eqnarray}
+\begin{aligned}
+a&=b=c\\
+a&\neq b\\
+a&\neq c\\
+c&\neq b  
+\end{aligned}
 
 
 
@@ -54,12 +54,12 @@ What I hear is:
  
 
 > We [...] stress the X a lot, Not only do I think  
->\begin{eqnarray}
->a&=&b=c\\\\
->a&\neq& b\\\\
->a&\neq& c\\\\
->c&\neq& b  
->\end{eqnarray}
+>\begin{aligned}
+>a&=b=c\\
+>a&\neq b\\
+>a&\neq c\\
+>c&\neq b  
+>\end{aligned}
 >
 >  is true, but it explains a number of things. For one thing, it means
 > that  
@@ -70,7 +70,7 @@ What I hear is:
 >
 >  is built into the system. For another it helps us understand how  
 >  $$
->  a-x\\neq b-x  
+>  a-x \neq b-x  
 >  $$  
 >  and yet  
 >  $$

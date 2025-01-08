@@ -17,7 +17,9 @@ In the spirit of reproducibility I wanted to see if I could connect LoPresto's r
 
 In my method, the amount of energy entering the Earth system is the round number $S=100/r^2$ where $r$ is the distance from the sun in astronomical units (AU).  In these units, $r=1$ for the Earth.  The temperature of the surface, or any atmospheric layer, is related to the energy output of that layer, derived to be 
 $$
+\begin{equation}
 \left(\frac{T}{88.5 \text{K}}\right)^4 = E
+\end{equation}
 $$
 We look at a simple 1-layer model, where the short-wavelength albedo is $a$ and the atmosphere absorbs some fraction, $\gamma$, of the long-wavelength radiation.
 
@@ -110,7 +112,7 @@ To derive their result, we add more layers to the original model, and assume tha
 
 ![[Energy Balance2.drawio.svg]]
 
-The energy balance equations have for $n$ such layers is,
+The energy balance equations for $n$ such layers is,
 
 $$
 \begin{aligned}
@@ -172,16 +174,17 @@ $$
 $$
 We can then reproduce the table above
 
-|         |   Albedo |   T Obs. [K] |   Distance from Sun [AU] |   T (no atm) [K] |   γ (best fit) |   τ (best fit) |   T (best fit) |
-|:--------|---------:|-------------:|-------------------------:|-----------------:|---------------:|---------------:|---------------:|
-| Mercury |    0.119 |          400 |                     0.39 |            434.2 |         -0.776 |         -0.28  |          400   |
-| Venus   |    0.75  |          737 |                     0.72 |            233.2 |          1.98  |         98.729 |          736.9 |
-| Earth   |    0.306 |          288 |                     1    |            255.4 |          0.762 |          0.616 |          288   |
-| Mars    |    0.25  |          225 |                     1.52 |            211.2 |          0.446 |          0.287 |          225   |
-| Jupiter |    0.343 |          124 |                     5.2  |            110.5 |          0.739 |          0.586 |          124   |
-| Saturn  |    0.342 |           97 |                     9.58 |             81.4 |          1.006 |          1.013 |           97   |
-| Uranus  |    0.3   |           58 |                    19.22 |             58.4 |         -0.054 |         -0.026 |           58   |
-| Neptune |    0.29  |           59 |                    30.07 |             46.8 |          1.205 |          1.516 |           58.9 |
+|         | Albedo | T Obs. [K] | Distance from Sun [AU] | T (no atm) [K] | γ (best fit) | τ (best fit) | T (best fit) |
+| :------ | -----: | ---------: | ---------------------: | -------------: | -----------: | -----------: | -----------: |
+| Mercury |  0.119 |        400 |                   0.39 |          434.2 |       -0.776 |        -0.28 |          400 |
+| Venus   |   0.75 |        737 |                   0.72 |          233.2 |         1.98 |       98.729 |        736.9 |
+| Earth   |  0.306 |        288 |                      1 |          255.4 |        0.762 |        0.616 |          288 |
+| Mars    |   0.25 |        225 |                   1.52 |          211.2 |        0.446 |        0.287 |          225 |
+| Jupiter |  0.343 |        124 |                    5.2 |          110.5 |        0.739 |        0.586 |          124 |
+| Saturn  |  0.342 |         97 |                   9.58 |           81.4 |        1.006 |        1.013 |           97 |
+| Uranus  |    0.3 |         58 |                  19.22 |           58.4 |       -0.054 |       -0.026 |           58 |
+| Neptune |   0.29 |         59 |                  30.07 |           46.8 |        1.205 |        1.516 |         58.9 |
+
 The interpretation of, say, Venus's $\tau=98$ (100 effective layers!) is much easier using this result rather than the physically unreasonable $\gamma=1.98$.  In teaching this concept to students again, I may sketch the derivation, and then quote the result:
 
 $$

@@ -45,10 +45,10 @@ So I did another case:
 ### With replacement:
 
 $$
-\begin{array}{rcl}  
-P(F1,J2|{\rm replace}) &=& P(F1) \times P(J2) \  
-&=&\frac{12}{52} \times \frac{4}{52} = \frac{48}{2704}=0.0178  
-\end{array}  
+\begin{aligned} 
+P(F1,J2|{\rm replace}) &= P(F1) \times P(J2) \\
+&=\frac{12}{52} \times \frac{4}{52} = \frac{48}{2704}=0.0178  
+\end{aligned} 
 $$
 </p>
 ### Without replacement
