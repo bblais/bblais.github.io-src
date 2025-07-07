@@ -88,25 +88,33 @@ ARTICLE_EXCLUDES = ('pages','publish',)
 THEME='themes/html5up-editorial - bblais'
 DIRECT_TEMPLATES = ['index','about','archives', 'contact','thanks','search','tags']
 
+import markdown
+print("Markdown version: ",markdown.__version__)
+
 from markdown import markdown
+
 MARKDOWN = {
-    'extensions':['attr_list',
-    'codehilite',
-    'extra',
-    'meta',
-    'toc',
-    'footnotes',
+    'extensions': [
+        'markdown.extensions.attr_list',
+        'markdown.extensions.codehilite',
+        'markdown.extensions.extra',
+        'markdown.extensions.meta',
+        'markdown.extensions.toc',
+        'markdown.extensions.footnotes',
+        'mdx_linkify',
     ],
     'extension_configs': {
-        'markdown.extensions.codehilite': {'noclasses':True,'pygments_style':'native'},
-        'markdown.extensions.codehilite': {'css_class':'highlight'},
+        'markdown.extensions.codehilite': {
+            'noclasses': True,
+            'pygments_style': 'native',
+            'css_class': 'highlight',
+        },
         'markdown.extensions.extra': {},
         'markdown.extensions.meta': {},
         'markdown.extensions.toc': {
-            'title': 'Table of contents:' 
-            },
-        'markdown.extensions.footnotes' : {},
-        "markdown.extensions.toc": {"title": "Table of Contents"},        
+            'title': 'Table of Contents',
+        },
+        'markdown.extensions.footnotes': {},
     },
     'output_format': 'html5',
 }
