@@ -55,7 +55,8 @@
               "title": "Bayes and Than's argument"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,10 +173,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "c8b44f43a5666f4e",
+  "active": "9a543b58ab678850",
   "lastOpenFiles": [
-    "religion/Bayes and Than's argument.md",
     "religion/Debate Between Than Christopoulos and Matt Dillahunty - Karl Popper was right.md",
+    "religion/Bayes and Than's argument.md",
     "images/brady-wilson-Be89RaFGjaQ-unsplash.jpg",
     "religion/Debate Between Than Christopoulos and Matt Dillahunty - Swinburne is Post Hoc.md",
     "close_shave.md",
