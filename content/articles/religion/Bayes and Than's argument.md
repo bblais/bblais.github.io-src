@@ -107,7 +107,7 @@ In both of these steps [Than] drops the ball.
 
 ## Alternative models
 
-It is annoying that Christian apologist always (note: I'd love to see an exception) pull out the least charitably alternative explanations of the Biblical data, and [Than] is no exception.  He comments on hallucination, theft, and legend only.  At least he doesn't bother critiquing the swoon theory, which no modern skeptic has ever suggested.  What he doesn't do is look at specific alternatives and their explanatory value on the Biblical data, such as [James Fodor's RHBS model](https://youtu.be/K2JNoRdyaek?si=JhUkPIFuWPSoR-Ym&t=1330), [Paulogia]'s [Minimal Witnesses model](https://youtu.be/Isnl9A50ySY?si=vGwHi8_8lZL0xvgN), and [Kamil Gregor's Pareidolia](https://www.youtube.com/live/RlFpKNCne30?si=O3p4KVae8fT-nRIB&t=277) model.  I find this problematic, because it is easy to argue against the hallucination if you assume that the Biblical texts are mostly reliable and they say that 500 people saw Jesus after 3 days, but this ends up being a strawman.  So our problem now becomes,
+It is annoying that Christian apologists always [^1] pull out the least charitable alternative explanations of the Biblical data, and [Than] is no exception.  He comments on hallucination, theft, and legend only.  At least he doesn't bother critiquing the swoon theory, which no modern skeptic has ever suggested.  What he doesn't do is look at specific alternatives and their explanatory value on the Biblical data, such as [James Fodor's RHBS model](https://youtu.be/K2JNoRdyaek?si=JhUkPIFuWPSoR-Ym&t=1330), [Paulogia]'s [Minimal Witnesses model](https://youtu.be/Isnl9A50ySY?si=vGwHi8_8lZL0xvgN), and [Kamil Gregor's Pareidolia](https://www.youtube.com/live/RlFpKNCne30?si=O3p4KVae8fT-nRIB&t=277) model.  I find this problematic, because it is easy to argue against the hallucination if you assume that the Biblical texts are mostly reliable and they say that 500 people saw Jesus after 3 days, but this ends up being a strawman.  So our problem now becomes,
 
 $$
 \begin{align}
@@ -124,16 +124,16 @@ Having just said that, also for convenience, I will follow [Than]'s approach and
 
 ## The data
 
-The next problem [Than] has is with the data.  He presents things like the "historically accessible facts" above, but that is not the data.  The data is "we have texts that have stories about..." those "historically accessible facts".  For example, the empty tomb is not something that needs to be explained (although the [RHBS] model does do that), what we have to explain is "we have texts that have stories about...an empty tomb".  The [Minimal Witnesses] model, for example, states that the [entire empty tomb narrative](https://www.youtube.com/watch?v=cwI-9z5-c6E&t=392s) -- which stems from one source only -- is easily explained as a fictitious addition to explain certain counter apologetics at the time.  The character of [Joseph of Arimathea](https://en.wikipedia.org/wiki/Joseph_of_Arimathea) in whose tomb Jesus is supposedly buried has all the hallmarks of a made up character to satisfy certain plot points in the story.  Either way, the data could be explained with [Than]'s HRM model but can also be explained with more literary models.  
+The next problem [Than] has is with the data.  He presents things like the "historically accessible facts" above, but that is not the data.  The data is __we have texts that have stories about..." those "historically accessible facts"__.  For example, the empty tomb is not something that needs to be explained, although the [RHBS] model does do that.  What we have to explain is __"we have texts that have stories about...an empty tomb"__.  The [Minimal Witnesses] model, for example, states that the [entire empty tomb narrative](https://www.youtube.com/watch?v=cwI-9z5-c6E&t=392s) -- which stems from one source only -- is easily explained as a fictitious addition to explain certain counter apologetics at the time.  The character of [Joseph of Arimathea](https://en.wikipedia.org/wiki/Joseph_of_Arimathea) in whose tomb Jesus is supposedly buried has all the hallmarks of a made up character to satisfy certain plot points in the story.  Either way, the data could be explained with [Than]'s HRM model but can also be explained with more literary models.  
 
-
+[^1]:: note: I'd love to see an exception]
 ## A side note about notation and mistakes
 
 When [Than] writes down his odds form for the posterior, he writes:
 
 ![[odssformREZ.png]]
 
-First, one would never use the "+" operator to denote extra information.  In logic, "+" is attributed to the "or" operation, not the "and" operation which [Than] wants.  One can use  "$\cdot$", "," or ";" instead.  Also, this "background information" denoted by $k$ should be in all of the terms, not just in the likelihood term.  This mistake makes [Than] think his conclusions are more general than they are.  A proper rewriting of this, using [Than]'s notation, is
+I observe that one would never use the "+" operator to denote extra information.  In logic, "+" is attributed to the "or" operation, not the "and" operation which [Than] wants.  One can use  "$\cdot$", "," or ";" instead.  Also, this "background information" denoted by $k$ should be in all of the terms, not just in the likelihood term.  This mistake makes [Than] think his conclusions are more general than they are.  A proper rewriting of this, using [Than]'s notation, is
 
 $$
 \frac{P(H_{\text{Res}}|E,k)}{P(H_{\text{Alt}}|E,k)} = \frac{P(H_{\text{Res}}|k)}{P(H_{\text{Alt}}|k)}\times \frac{P(E|H_{\text{Res}},k)}{P(E|H_{\text{Alt}},k)}
